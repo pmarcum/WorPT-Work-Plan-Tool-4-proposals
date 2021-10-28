@@ -11,7 +11,7 @@ The script should be ready to start accepting input, right out of the box. You m
 
 Feel free to contact me if you run into permission problems or if you notice any bugs as you use the code.
 
-A video that describes Proposal Work Plan Tool and walks through all of its functions, including how to link the generated Latex table files on Google Drive with your Overleaf project, is provided at this YouTube link:
+A video that describes Proposal Work Plan Tool and walks through all of its functions, including how to link the generated Latex table files on Google Drive with your Overleaf project, is provided at this YouTube link: https://youtu.be/a3tGQopb0QI
 
      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
      %%%%%%%%%%  Thank you for your interest in Proposal Work Plan Tool !  %%%%%%%%%
