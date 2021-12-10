@@ -16,3 +16,10 @@ A video that describes Proposal Work Plan Tool and walks through all of its func
      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
      %%%%%%%%%%  Thank you for your interest in Proposal Work Plan Tool !  %%%%%%%%%
      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Updates: 
+12/10/2021
+  - corrected a few minor bugs (like the FTE sub-totals in the upper right cover of the TASKS tab not showing correct in-kind contributions).
+  - added ability to select "student" collaborator designations ("st(1)", "st(2)", etc.)
+  - changed the cell in the  ANONtasks tab (a hidden tab) that controls the table footnote to be a more generic text, and flagged the cell so that it can be easily found by the user and the text changed to whatever is desired (a note is now appended to that cell to describe how to change the text). 
+  - flagged the cells in several other latex template files (e.g., NOTANONtasks, NOTANONpersonnel_work_effort, etc tabs) to indicate where one might change the color schemes of the Latex tables, if desired -- see the notes that are attached to the flagged cells for details). 
