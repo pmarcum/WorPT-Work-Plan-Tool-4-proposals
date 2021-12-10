@@ -19,6 +19,8 @@ A video that describes Proposal Work Plan Tool and walks through all of its func
 
 Updates: 
 12/10/2021
+  - corrected an error in the script that kept some of the tables from rendering correctly because of an indexing issue that caused the code to grab the wrong columns of FTE data. 
+  - corrected the script so that it now properly removes any columns of years in the FTE tables for which the proposal has no FTEs assigned.  For example, if the proposal is only a 2-year grant, then only 2 years will be shown in the LAtex tables and will not waste space showing years 3, 4 and 5 that have only 0 FTEs in them.
   - corrected a few minor bugs (like the FTE sub-totals in the upper right cover of the TASKS tab not showing correct in-kind contributions).
   - added ability to select "student" collaborator designations ("st(1)", "st(2)", etc.)
   - changed the cell in the  ANONtasks tab (a hidden tab) that controls the table footnote to be a more generic text, and flagged the cell so that it can be easily found by the user and the text changed to whatever is desired (a note is now appended to that cell to describe how to change the text). 
