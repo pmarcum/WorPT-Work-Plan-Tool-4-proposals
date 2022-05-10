@@ -39,7 +39,7 @@ A video that describes Proposal Work Plan Tool and walks through all of its func
      %%%%%%%%%%  Thank you for your interest in Proposal Work Plan Tool !  %%%%%%%%%
      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Updates: 
+Updates: ver 05092022 is the latest version
 05/09/2022
   - I've made several small tweaks to the code and have forgotten what most of the tweaks were.  But the MAJOR change was incoporating bio sketches.  Now, each collaborator can fill out the biosketch template (a google sheet) and maintain it over time.  The script sweeps up all the bio sketch information and then formats each bio sketch into a uniform template. The advantage of this approach is that one can list ALL of their publications, etc. but use the righthand columns in the sheet to indicate whether that publication should be listed in the bio sketch for that proposal or not.  Some publications might be relevant only to certain proposals, but the spreadsheet allows one to store all that information in one place. 
   
