@@ -43,11 +43,12 @@ Updates: ver 03282023 is the latest version
 03/28/2023
   Significant changes have been made to add new functionality. 
   - 2 new Latex files are now generated (for a total of 11 .tex files that generate tables):
-        * a table that generates the travel budget (using information entered by the user in a new travel area in the Work Plan Tool)
+        * a table that generates the travel budget (using information entered by the user in a new travel area in the Work Plan Tool.
         * a table that generates the "non-labor" budget (Equipment, a rolled-up travel budget summary, publication fees, etc.) 
   - Related to these 2 new Latex table files: 
         * A new "TRAVEL" section in the right side of the "PERSONNEL & FTE" sheet, where the anticipated NUMBER of annual trips for both domestic and international travel may be entered for each funded team member.  The number of trips is used to later generate a travel budget table. 
-        * Created a new sheet for editing: "NONLABOR BUDGET", where the user enters ItTEMS such as "Equipment", "Materials & Supplies", etc along with a yearly budget amount. This information gets turned into one of the new Latex table files.  Also on this sheet are parameters to input related to travel, for both domestic and international trips:  airfare, per-diem, conference fees, ground transportation, and the typical number of days for a trip.  Also included is the option to allow for annual percent-increases (cost-of-living adjustments) that can be entered as different rates for these different categories (or set to zero for a flat budget profile).  - A checkbox to toggle the option of including the proposal in the "Current/Pending" funding status pages.
+        * Created a new sheet for editing: "NONLABOR BUDGET", where the user enters ItTEMS such as "Equipment", "Materials & Supplies", etc along with a yearly budget amount. This information gets turned into one of the new Latex table files.  Also on this sheet are parameters to input related to travel, for both domestic and international trips:  airfare, per-diem, conference fees, ground transportation, and the typical number of days for a trip.  Also included is the option to allow for annual percent-increases (cost-of-living adjustments) that can be entered as different rates for these different categories (or set to zero for a flat budget profile).  
+  - A checkbox to toggle the option of including the proposal in the "Current/Pending" funding status pages.
 
 Also, changes unrelated to the 2 new tables include: 
   - "HELP" buttons are now on each sheet.  When the user clicks the button, a sidepanel will appear, providing additional inforamtion regarding the usage of the sheet that the user is actively looking at. 
