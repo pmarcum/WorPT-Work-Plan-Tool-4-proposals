@@ -55,6 +55,8 @@ Also, changes unrelated to the 2 new tables include:
   - The "Add New Team Member" button is gone from the PERSONNEL & FTE sheet, and the "Add a new TOP TASK row" and "Add a new SUB LEVEL TASK row" buttons are gone from the TASKS sheet.  All new rows for both sheets are added in a more natural way using the conventional Google Sheet method for adding rows (right-click where you want the new row, then select add row).  The buttons were clunky and time-consuming because a script ran when the buttons were selected.  The buttons were done away with by sneakily embedding all formulas into the column headings, so that they cannot accidentally be overwritten by manual edits.  This new formatting of formulas was only possible by Google's recent introduction of "Named Formulas", which Work Plan Tool now makes extensive use of. The result is a cleaner, faster and more easy to maintain spreadsheet (Thank you, Google!) 
   
 A new copy of the BioSketch template is also made available, with just minor changes from the previous version (some column headings were re-worded for clarity).  Your old biosketches should be compatible with the latest version of the Work Plan. 
+
+*I plan to create a new YouTube video walking through the new Work Plan Tool, as the tool is now so different from the version that the last video was based on, that a new video is warranted.  That YouTube link will be posted here, when ready for publication.*
 ---------------------------------------------------------------
 08/17/2022
   Major changes have been made to add new functionality. 
