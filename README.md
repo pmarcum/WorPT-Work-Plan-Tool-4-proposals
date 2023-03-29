@@ -38,7 +38,19 @@ A video that describes Proposal Work Plan Tool and walks through all of its func
      %%%%%%%%%%  Thank you for your interest in Proposal Work Plan Tool !  %%%%%%%%%
      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Updates: ver 03282023 is the latest version
+Updates: ver 03292023 is the latest version
+--------------------------------------------------------------
+03/29/2023
+  bug-fix: Due to an indexing error, the first 6 publications at the top of the list in the bio-sketch file were ignored. A further complication of this indexing error was that the checked boxes indicating which publications to use for a proposal were correspondingly mis-aligned with the intended publications.  This indexing error is now resolved and all publications that are indicated by a checked box should now appear in the rendered bio-sketch. 
+  IMPACT:  although such was not necessary to fix the indexing error, a measure was taken to make the PUBLICATIONS sheet of the bio-sketch file more robust, by defining a new "named range".  Therefore, the previous biosketch files will now be incompatible with the 03292023+ versions of Work Plan Tool.  
+  
+  IF YOU DO NOT WANT TO COPY OVER ALL YOUR INFO INTO THE NEW BIO SKECTH FILE TEMPLATE, then you can retrofit your existing bio sketch files by doing the following for each file:  
+          (1) open up the bio sketch file (you will need to apply these steps to each of the bio sketch files that you have)
+          (2) click on the PUBLICATIONS tab at the bottom to bring up the PUBLICATIONS sheet. 
+          (3) right-click to select the entire row on which the column heading "CITATION" and "ADD TO OVERLEAF PROJECT?" are located.  Make sure the entire row is selected (in the template, this row would be row #6 in the spreadsheet), then choose "View More Row Actions", then "Define Named Range". 
+          (4) in the textbox that comes up in the sidepanel, replace the default "NamedRange1" with "_pHeaderRow" (but without the quotes).  Make sure that you replicate the lower and upper case letters precisely, and don't forget the underscore at the beginning.   The text box underneath should have automatically populated to say "PUBLICATIONS!6:6", if row #6 is indeed where the "CITATION" and "ADD TO OVERLEAD PROJECT?" appear.  
+          (5) Hit "Done" button, then close the side panel by clicking on the upper right corner "X"
+Your bio-sketch files should now be compliant with the latest Work Plan Tool.  Or skip the above and just copy over all the info from your existing bio-sketch file(s) into the new templates. 
 --------------------------------------------------------------
 03/28/2023
   Significant changes have been made to add new functionality. 
