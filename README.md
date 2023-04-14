@@ -47,6 +47,8 @@ Updates: ver 04142023 is the latest version
 
 04/14/2023
   minor tweaks with biosketch template:  the "PUBLICATIONS" sheet now self-populates the Overleaf ID numbers along the top right side, copying from the Overleaf IDs provided by the user on the BACKGROUND sheet.  Also, a script is now attached to the biosketch files which runs when the user edits the Overleaf ID area in the BACKGROUND sheet and adds more columns to the Overleaf ID area in the PUBLICATIONS sheet, if fewer columns are present than for the BACKGROUND Overleaf ID section. 
+  
+  cosmetic changes to the WorPT sheet - added a WorPT logo to each page. 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 03/29/2023
   bug-fix: Due to an indexing error, the first 6 publications at the top of the list in the bio-sketch file were ignored. A further complication of this indexing error was that the checked boxes indicating which publications to use for a proposal were correspondingly mis-aligned with the intended publications.  This indexing error is now resolved and all publications that are indicated by a checked box should now appear in the rendered bio-sketch. 
