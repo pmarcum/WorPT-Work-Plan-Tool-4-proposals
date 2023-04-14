@@ -41,7 +41,7 @@ A video that describes Proposal Work Plan Tool and walks through all of its func
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 Updates: ver 04142023 is the latest version
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 04/14/2023
   minor tweaks with biosketch template:  the "PUBLICATIONS" sheet now self-populates the Overleaf ID numbers along the top right side, copying from the Overleaf IDs provided by the user on the BACKGROUND sheet.  Also, a script is now attached to the biosketch files which runs when the user edits the Overleaf ID area in the BACKGROUND sheet and adds more columns to the Overleaf ID area in the PUBLICATIONS sheet, if fewer columns are present than for the BACKGROUND Overleaf ID section. 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
