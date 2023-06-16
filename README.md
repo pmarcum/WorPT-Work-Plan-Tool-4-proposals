@@ -39,7 +39,7 @@ The script should be ready to start accepting input, right out of the box. You m
 
 Feel free to contact me if you run into permission problems or if you notice any bugs as you use the code.
 
-NOTE: A new series of videos have been published that describes how to use WorPT. The video series walks through all of WorPT's functions, including how to link the generated Latex table files on Google Drive with your Overleaf project. Check out the video playlist here: https://www.youtube.com/playlist?list=PLZArBxpFn0hcrjmjzc6ZLlY2xjutNsmIA](https://www.youtube.com/playlist?list=PLZArBxpFn0hcrjmjzc6ZLlY2xjutNsmIA)
+NOTE: A new series of videos have been published that describes how to use WorPT. The video series walks through all of WorPT's functions, including how to link the generated Latex table files on Google Drive with your Overleaf project. Check out the video playlist here: https://www.youtube.com/playlist?list=PLZArBxpFn0hcrjmjzc6ZLlY2xjutNsmIA
 
            %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
            %%%  Thank you for your interest in Proposal Work Plan Tool ! %%%
