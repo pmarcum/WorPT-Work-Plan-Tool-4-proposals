@@ -47,6 +47,7 @@ NOTE: A new series of videos have been published that describes how to use WorPT
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 Updates: ver 05192023 is the latest version
+
 06/16/2023
  Only now getting around to publishing the latest versions of WorPT. Several major changes in this latest versions. 
  - The ability to modify nearly every aspect of the formatting of a table is now provided, through the use of /def lines in the generated latex code. In the table "preamble" that the user copy/pastes from the WorPT commented block at the top of the file into the proposal document, there are now several lines of code defining everything from font color to cell color and font weight.  All of these aspects of the table can now easily be changed through this preamble area. 
