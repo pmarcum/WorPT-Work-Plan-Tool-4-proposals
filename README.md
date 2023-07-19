@@ -35,7 +35,7 @@ Copes of the biosketch google sheet template should be made, one for each collab
           
 The biosketch folder is one that can be added to over time, and each biosketch can be edited and maintained over time to keep the information up-to-date. 
 
-The script should be ready to start accepting input, right out of the box. You may have to "accept permissions" when you try running "LIBRARY FUNCTIONS -> UPDATE LIBRARY" the first time.
+The script should be ready to start accepting input, right out of the box. You may have to "accept permissions" when you try running "Make Latex Files" the first time.
 
 Feel free to contact me if you run into permission problems or if you notice any bugs as you use the code.
 
