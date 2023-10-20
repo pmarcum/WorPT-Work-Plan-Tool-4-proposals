@@ -46,7 +46,10 @@ NOTE: A new series of videos have been published that describes how to use WorPT
            %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-Updates: ver 05192023 is the latest version
+Updates: ver 10192023 is the latest version
+
+10/19/2023
+- A bug was found in the part of the code that copies the latex files from Google Drive over into the GitHub repository:  if the repository is new and does not yet have the sub-folder created for the WorPT files, then this error will show itself.  The code just needed one additional line to resolve the issue.  The code-fix was an "if" statement that checks that a variable related to an existing sub-folder is "undefined", and if not, proceeds with writing the latest latex files into that existing sub-folder.  If the sub-folder does not yet exist, then the code will create the sub-folder first, then put the files into it. (Nominally, that sub-folder is called do_NOT_manually_edit)
 
 06/16/2023
  Only now getting around to publishing the latest versions of WorPT. Several major changes in this latest versions. 
