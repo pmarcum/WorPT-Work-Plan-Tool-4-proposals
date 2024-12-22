@@ -6,5 +6,5 @@
      "                   & [INSERTNUMINTTRIPS] & {internat'l} & {\$[INSERTINTAIRFARE]} & {\$[INSERTINTPERDIEM]} & {\$[INSERTINTCONF]}\\\hline"
 },
 "perPersonEntry":
-"      \smallIndent \textbf{[INSERTTEAMROLE]:} [INSERTNUMTEAMDOMTRIPS] domestic trip[INSERTDOMPLURALITY]; [INSERTNUMTEAMINTTRIPS] intern'l trip[INSERTINTPLURALITY];\newline \newline"
+"      \smallIndent \textbf{[INSERTTEAMROLE]:} [INSERTNUMDOMTRIPS] domestic trip[INSERTDOMPLURALITY]; [INSERTNUMINTTRIPS] intern'l trip[INSERTINTPLURALITY];\newline \newline"
 }
