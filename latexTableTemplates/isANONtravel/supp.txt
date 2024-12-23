@@ -1,10 +1,8 @@
 {
-"perYearEntry": {
-  "domestic":
-     "\YearBoldface\{Yr[INSERTYEARNUMBER]\} & [INSERTNUMDOMTRIPS] & \{domestic\}   & \{\$[INSERTDOMAIRFARE]\} & \{\$[INSERTDOMPERDIEM]\} & \{\$[INSERTDOMCONF]\}\\",
-  "international":
-     "                   & [INSERTNUMINTTRIPS] & \{internat'l\} & \{\$[INSERTINTAIRFARE]\} & \{\$[INSERTINTPERDIEM]\} & \{\$[INSERTINTCONF]\}\\\hline"
-},
-"perPersonEntry":
-"      \smallIndent \textbf\{[INSERTTEAMROLE]:\} [INSERTNUMDOMTRIPS] domestic trip[INSERTDOMPLURALITY]; [INSERTNUMINTTRIPS] intern'l trip[INSERTINTPLURALITY];\newline \newline"
+  "perYearEntry": 
+    {
+      "domestic": "\YearBoldface\{Yr[INSERTYEARNUMBER]\} & [INSERTNUMDOMTRIPS] & \{domestic\}   & \{\$[INSERTDOMAIRFARE]\} & \{\$[INSERTDOMPERDIEM]\} & \{\$[INSERTDOMCONF]\}\\",
+      "international": "                   & [INSERTNUMINTTRIPS] & \{internat\'l\} & \{\$[INSERTINTAIRFARE]\} & \{\$[INSERTINTPERDIEM]\} & \{\$[INSERTINTCONF]\}\\\hline"
+    },
+  "perPersonEntry": "      \smallIndent \textbf\{[INSERTTEAMROLE]:\} [INSERTNUMDOMTRIPS] domestic trip[INSERTDOMPLURALITY]; [INSERTNUMINTTRIPS] intern\'l trip[INSERTINTPLURALITY];\newline \newline"
 }
