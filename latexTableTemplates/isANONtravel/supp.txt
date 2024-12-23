@@ -1,10 +1,10 @@
 {
 "perYearEntry": {
   "domestic":
-     "\YearBoldface{Yr[INSERTYEARNUMBER]} & [INSERTNUMDOMTRIPS] & {domestic}   & {\$[INSERTDOMAIRFARE]} & {\$[INSERTDOMPERDIEM]} & {\$[INSERTDOMCONF]}\\",
+     "\YearBoldface\{Yr[INSERTYEARNUMBER]\} & [INSERTNUMDOMTRIPS] & \{domestic\}   & \{\$[INSERTDOMAIRFARE]\} & \{\$[INSERTDOMPERDIEM]\} & \{\$[INSERTDOMCONF]\}\\",
   "international":
-     "                   & [INSERTNUMINTTRIPS] & {internat'l} & {\$[INSERTINTAIRFARE]} & {\$[INSERTINTPERDIEM]} & {\$[INSERTINTCONF]}\\\hline"
+     "                   & [INSERTNUMINTTRIPS] & \{internat'l\} & \{\$[INSERTINTAIRFARE]\} & \{\$[INSERTINTPERDIEM]\} & \{\$[INSERTINTCONF]\}\\\hline"
 },
 "perPersonEntry":
-"      \smallIndent \textbf{[INSERTTEAMROLE]:} [INSERTNUMDOMTRIPS] domestic trip[INSERTDOMPLURALITY]; [INSERTNUMINTTRIPS] intern'l trip[INSERTINTPLURALITY];\newline \newline"
+"      \smallIndent \textbf\{[INSERTTEAMROLE]:\} [INSERTNUMDOMTRIPS] domestic trip[INSERTDOMPLURALITY]; [INSERTNUMINTTRIPS] intern'l trip[INSERTINTPLURALITY];\newline \newline"
 }
