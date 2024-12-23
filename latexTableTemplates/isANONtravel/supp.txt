@@ -1,8 +1,8 @@
 {
   "perYearEntry": 
     {
-      "domestic": "\\\\YearBoldface\{Yr[INSERTYEARNUMBER]\} & [INSERTNUMDOMTRIPS] & \{domestic\}   & \{$[INSERTDOMAIRFARE]\} & \{$[INSERTDOMPERDIEM]\} & \{$[INSERTDOMCONF]\}\\\\\\\\",
-      "international": "                   & [INSERTNUMINTTRIPS] & \{internat\'l\} & \{$[INSERTINTAIRFARE]\} & \{$[INSERTINTPERDIEM]\} & \{$[INSERTINTCONF]\}\\\\\\\\hline"
+      "domestic": "BACKSLASHYearBoldface\{Yr[INSERTYEARNUMBER]\} & [INSERTNUMDOMTRIPS] & \{domestic\}   & \{$[INSERTDOMAIRFARE]\} & \{$[INSERTDOMPERDIEM]\} & \{$[INSERTDOMCONF]\}BACKSLASHBACKSLASH",
+      "international": "                   & [INSERTNUMINTTRIPS] & \{internat\'l\} & \{$[INSERTINTAIRFARE]\} & \{$[INSERTINTPERDIEM]\} & \{$[INSERTINTCONF]\}BACKSLASHBACKSLASHhline"
     },
-  "perPersonEntry": "      \\\\smallIndent \\\\textbf\{[INSERTTEAMROLE]:\} [INSERTNUMDOMTRIPS] domestic trip[INSERTDOMPLURALITY]; [INSERTNUMINTTRIPS] intern\'l trip[INSERTINTPLURALITY];\\\\newline \\\\newline"
+  "perPersonEntry": "      BACKSLASHBACKSLASHsmallIndent BACKSLASHBACKSLASHtextbf\{[INSERTTEAMROLE]:\} [INSERTNUMDOMTRIPS] domestic trip[INSERTDOMPLURALITY]; [INSERTNUMINTTRIPS] intern\'l trip[INSERTINTPLURALITY];BACKSLASHBACKSLASHnewline BACKSLASHBACKSLASHnewline"
 }
