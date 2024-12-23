@@ -2,7 +2,7 @@
   "perYearEntry": 
     {
       "domestic": "\\YearBoldface{{Yr[INSERTYEARNUMBER]}} & [INSERTNUMDOMTRIPS] & domestic & \\$[INSERTDOMAIRFARE] & \\$[INSERTDOMPERDIEM] & \\$[INSERTDOMCONF] & \\$[INSERTDOMGROUND] & \\$[INSERTDOMPERTRIP] & \\$[INSERTDOMTOTALYEAR]\\\\",
-      "international": "                                  & [INSERTNUMINTTRIPS] & intern'l & \\$[INSERTINTAIRFARE] & \\$[INSERTINTPERDIEM] & \\$[INSERTINTCONF] & \\$[INSERTINTGROUND] & \\$[INSERTINTPERTRIP] & \\$[INSERTINTTOTALYEAR]\\ \\hline"
+      "international": "                                  & [INSERTNUMINTTRIPS] & intern'l & \\$[INSERTINTAIRFARE] & \\$[INSERTINTPERDIEM] & \\$[INSERTINTCONF] & \\$[INSERTINTGROUND] & \\$[INSERTINTPERTRIP] & \\$[INSERTINTTOTALYEAR]\\\\ \\hline"
     },
   "perPersonEntry": "      \\smallIndent \\textbf{{[INSERTTEAMROLE]}}: [INSERTNUMDOMTRIPS] domestic trip[INSERTDOMPLURALITY]; [INSERTNUMINTTRIPS] intern'l trip[INSERTINTPLURALITY];\\newline"
 }
