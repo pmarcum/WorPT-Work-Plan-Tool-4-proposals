@@ -1,0 +1,83 @@
+===============     HOW TO INSERT WorPT's isANONtravel FILE ===============
+
+(1) Put some customized package files in the preamble of your document that are used by WorPT tables:
+     
+    Download or connect to https://github.com/pmarcum/LaTex-Formatting and select the set of files
+    (AAS-style or general) that meet your situation. 
+    
+    You can either download the files or link Overleaf to the needed files in the GitHub repository
+    through URL, and then add the following to the preamble of your main paper. 
+
+    IF YOU HAVE ALREADY PUT THE BELOW LINES INTO YOUR PREAMBLE WHEN PREVIOUSLY INSERTING ANOTHER 
+    WorPT TABLE, YOU DON'T HAVE TO REPEAT!  JUST SKIP THIS STEP!
+
+\usepackage{FUpackages}
+\usepackage{FUformatting}
+\usepackage{FUnewCommands} % not needed by WorPT files but generally useful
+
+_________________________________________________________________________________________________
+_________________________________________________________________________________________________
+
+(2) In the place within your LaTeX document that you want to insert the WorPT table, 
+
+    COPY/PASTE the following lines (starting with the NEXT line) into that place within your document: 
+
+%====================== FORMAT PREFERENCES ===================
+\def\BannerColor{Blue}            % "Equipment, Travel, Supplies, Page Charges" banner color
+\def\BannerFontColor{White}       % "Equipment, Travel, Supplies, Page Charges" banner font color
+\def\BannerBoldface#1{\textbf{#1}}% boldface "Equipment, Travel, Supplies, Page Charges" banner
+\def\CostLabelColor{Blue}         % "Cost Category" column label color
+\def\YearLabelColor{Blue}         % "Y1", "Y2", etc  column label color
+\def\TotalLabelColor{Blue}        % "Total" column label color
+\def\ColumnBoldface#1{\textbf{#1}}% boldface "Cost Category", "Y1, Y2, ..." column labels 
+\def\TotalBoldface#1{\textbf{#1}} % boldface "Total ..." column label 
+\def\fmtA#1{\textbf{#1}}          % boldfacelisted budget items (except "domestic" and "international" Travel lines) 
+\def\fmtB#1{\textit{#1}}          % italicize "domestic" and "international" lines 
+\def\fmtC#1{\textbf{#1}}          % boldface budget amounts except "Total" and "domestic" and "international" Travel lines 
+\def\fmtD#1{\textit{#1}}          % italicize "domestic" and "international" Travel budget values 
+\def\fmtE#1{\textbf{#1}}          % boldface Total budget values except those in "Domestic" and "International" Travel lines 
+\def\fmtF#1{\textit{#1}}          % italicize budget amounts under Total, and "Domestic" / "International" Travel lines 
+
+% ============ BRIEF TABLE DESCRIPTION AT TOP OF TABLE ============
+Table\,\ref{tab:isANONnonlabor} shows rolled-up values for travel costs and other non-labor costs. 
+Travel cost details, including costing assumptions used, are presented in Table\,\ref{tab:isANONtravel}.
+\begin{table*}[h!]
+% ---- adjust to control vertical row separation/spacing, comment-out if not needed
+\renewcommand{\arraystretch}{1.0}
+% ---- adjust to control horizontal column separation/spacing, comment-out if not needed
+\setlength{\tabcolsep}{5pt}
+% ==================== TABLE GETS INSERTED HERE ==================
+\begin{tabular}{|l|*{[INSERTLASTYEARPLUSONE]}{c|}}
+  \expinput{[INSERTLATEXFILESUBDIRECTORY]/table_isANONnonlabor}
+\end{tabular}
+% ======================= CAPTION STARTS HERE ====================
+\caption{
+ \normalsize \newline \newline
+ \textbf{Notes and assumptions}:
+ \newline \newline
+ {\color{red} \underline{\scshape{Equipment Costs}}: In Yrs~1-2, we request a total of \$11K for the purchase of a laptop  
+ and associated IT equipment to replace the PI's aging laptop (purchased in 2018, well past nominal 4-year refresh cycle 
+ at the time of the proposed budget period), ``NASA-tized'' computer equipment (laptops, monitors) for use by the summer 
+ interns, and as an ``emergency'' fund, should the Science~PI's $\sim$3-yr old laptop fail or need repair.} 
+ \newline \newline
+ \underline{\scshape{Travel}}: refer to Table\,\ref{tab:isANONtravel}. \newline \newline
+ {\color{red} \underline{\scshape{Publication Costs}}: Our work plan includes the publication of four key manuscripts: 
+ (see Table \ref{tab:NOTANONschedule} for details),  but given the student projects, we have budgeted for 8 papers. 
+ We request a total of \$2K for publication costs,  using the assumption that the papers will fall between "Tier 1" and 
+ "Tier 2" categories as defined in ApJ/AJ guidelines. These fees are included in proposed budget.}
+ \newline \newline
+ {\color{red}\underline{\scshape{ Materials and Supplies}}: We request an annually-averaged budget of \$1,125 to cover 
+ purchase of disk space to back up our data products and miscellaneous office and IT supplies at PI and Science-PI home 
+ institution. The distribution of these funds is top-heavy at the beginning of the grant period, when such supplies will 
+ be needed most. The disk size of the data products will be approximately ~39~Gb per exposure: four \texttt{float32} 
+ extensions per CCD, corresponding to the \textbf{(1)} Zodiacal-CIB background, \textbf{(2)} in-field, and \textbf{(3)} 
+ out-field stray-light, and \textbf{(4)} thermal emission layers, plus one \texttt{binary} extension for the Solar System 
+ object trails (\emph{streak / no streak}), for a total of 18~4096$\times$4096 detector focal plane. 
+ Storage of these products will not be required, as they will be immediately produced by the pipeline on a exposure-by-exposure 
+ basis. End-to-end simulations shall not exceed 100~Gb, and they will be accessible to the community through a public internet server. 
+ Publication~IV will require the analysis of an area equivalent to 32 adjacent field of views, the equivalent of a sector of 
+ the \RST/WFI High Latitude Wide Area Survey, which corresponds to 128 exposures. Assuming an average exposure size of 9~Gb, 
+ plus $\sim$40~Gb for the background products, we project that we will require $\sim$10--15~Tb of disk space (including backups).}
+}
+\label{tab:isANONnonlabor}
+\end{table*}
