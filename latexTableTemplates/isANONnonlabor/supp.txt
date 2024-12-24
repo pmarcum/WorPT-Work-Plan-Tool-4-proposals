@@ -1,9 +1,11 @@
 {
-  "yearLabel":"{{\\color{{\YearLabelColor}}\\ColumnBoldface{{Y[INSERTYEARLABEL]}}}}",
-  "tableEntry":"[INSERTITEMDESC] & [INSERTITEMSPERYEAR] & [INSERTSUMOVERYEARS]\\\\",
+  "yearLabel":"{{\\color{{\YearLabelColor}}\\ColumnBoldface{{Y[INSERTYEARNUMBER]}}}}",
+  "tableEntry":"\\fmtA{{[INSERTITEMDESC]}} & [INSERTLISTOFCOSTPERYEAR] & \\fmtC{{\\$[INSERTSUMOVERYEARS]}}\\\\",
+  "costValue": "\\fmtC{{\\$[INSERTYEARLYCOST]}}",
   "travelEntry": {
-     "header": "Travel           & [INSERTBLANKPERYEAR] & \\\\",
-     "dom":    "~~~Domestic      & [INSERTDOMTOTALYEAR] & [INSERTDOMTOTALYEAR]\\\\",
-     "int":    "~~~International & [INSERTINTTOTALYEAR] & [INSERTINTTOTALYEAR]\\\\"
+     "travelSumLine":         "\\fmtA{{Travel}}           & [INSERTLISTOFDOMINTPERYEAR]   & \\fmtE{{\\$[INSERTTRAVELSUMOVERALLYEARS]}}\\\\",
+     "travelSumItemInList":   "\\fmtC{{\\$[INSERTDOMINTPERYEAR]}}",
+     "travelDomOrIntLine":    "\\fmtB{{~~~[INSERTTRAVELTYPE]}}      & [INSERTLISTOFDOMINTTOTALPERYEAR] & \\fmtF{{\\$[INSERTDOMINTTOTALYEAR]}}\\\\",
+     "travelTravelCostInList":"\\fmtD{{\\$[INSERTCOSTPERYEAR]}}",
   }
 }
