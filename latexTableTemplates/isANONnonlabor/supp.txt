@@ -6,6 +6,6 @@
   "travelSumLine": "\\fmtA{{Travel}} & [INSERTLISTOFSUMPERYEAR] & \\fmtE{{\\$[INSERTTRAVELSUMOVERALLYEARS]}}\\\\",
   "travelSumItemInList": "\\fmtC{{\\$[INSERTDOMINTPERYEAR]}}",
   "travelDomOrIntLine": "\\fmtB{{~~~[INSERTTRAVELTYPE]}} & [INSERTLISTOFDOMINTTOTALPERYEAR] & \\fmtF{{\\$[INSERTDOMINTTOTALYEAR]}}\\\\",
-  "travelTravelCostInList":"\\fmtD{{\\$[INSERTCOSTPERYEAR]}}"
+  "travelCostInList":"\\fmtD{{\\$[INSERTCOSTPERYEAR]}}"
 }
 }
