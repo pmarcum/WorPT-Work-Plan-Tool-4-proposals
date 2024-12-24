@@ -50,7 +50,7 @@ The below table provides travel costs:
  l>{\columncolor[\PerTripShadingColor]{\PerTripShadingTransparency}[\tabcolsep][\PerTripShadingMargin]}
  ll|
 }
-\expinput{[INSERTLATEXFILESUBDIRECTORY]/isANONtravel}
+\expinput{[INSERTLATEXFILESUBDIRECTORY]/table_isANONtravel}
 \end{tabular}
 % =================  CAPTION STARTS HERE ===================
 \caption{
