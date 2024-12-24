@@ -1,1 +1,9 @@
-
+{
+  "yearLabel":"{{\\color{{\YearLabelColor}}\\ColumnBoldface{{Y[INSERTYEARLABEL]}}}}",
+  "tableEntry":"[INSERTITEMDESC] & [INSERTITEMSPERYEAR] & [INSERTSUMOVERYEARS]\\\\",
+  "travelEntry": {
+     "header": "Travel           & [INSERTBLANKPERYEAR] & \\\\",
+     "dom":    "~~~Domestic      & [INSERTDOMTOTALYEAR] & [INSERTDOMTOTALYEAR]\\\\",
+     "int":    "~~~International & [INSERTINTTOTALYEAR] & [INSERTINTTOTALYEAR]\\\\"
+  }
+}
