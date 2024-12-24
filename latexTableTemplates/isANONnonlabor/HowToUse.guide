@@ -47,7 +47,7 @@ Travel cost details, including costing assumptions used, are presented in Table\
 % ---- adjust to control horizontal column separation/spacing, comment-out if not needed
 \setlength{\tabcolsep}{5pt}
 % ==================== TABLE GETS INSERTED HERE ==================
-\begin{tabular}{|l|*{[INSERTLASTYEARPLUSONE]}{c|}}
+\begin{tabular}{|l|*{[INSERTLASTYEARPLUSONE]}{l|}}
   \expinput{[INSERTLATEXFILESUBDIRECTORY]/table_isANONnonlabor}
 \end{tabular}
 % ======================= CAPTION STARTS HERE ====================
