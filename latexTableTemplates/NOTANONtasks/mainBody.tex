@@ -1,41 +1,6 @@
-%%================= BEGIN INSTRUCTIONS =================
-%%   H O W   T O   U S E   T H I S   F I L E
-%% (1) download or connect to https://github.com/pmarcum/LaTex-Formatting and select the 
-%%        set of files (aas-style or general) that meet your situation, you can either download the files or link 
-%%        Overleaf to the needed files in the GitHub repository through URL, and then add the following to
-%%        the preamble of your main paper
-%\usepackage{FUpackages}
-%\usepackage{FUformatting}
-%\usepackage{FUnewCommands} % not needed by WorPT files but generally useful
-%%
-%% (2) copy/paste the following into the main latex file where you want to put this table, and then uncomment the below lines by removing the first percent sign at the beginning of the line.
-%%   IMPORTANT SHORTCUT:  You can toggle commenting / un-commenting across multiple lines within Overleaf by mouse-selecting the desired block of lines to un-comment (or comment), and then hitting: control slash ( [Ctrl] / )   ... or ...  command slash  ([command] /)  for a PC or Mac, resp.
-%%        (Note that lines that should remain commented-out in the below block have 2 percent signs ... the first will be removed when you uncomment the whole block, but the second percent sign will remain as intended to retain that line as a true comment within the Latex document.)
-%% > > > > > > > > > > > > > < < < < < < < < < < < < < < 
-%% Block of code to be uncommented by removing the *first* percent-sign at the beginning of the following lines below (leave intentional comments with at least 1 percent sign to keep them commented!)
-%% The next couple of lines define cell and font colors that can be changed if desired (keep this comment line commented-out!)
-%\def\HeaderColor{Blue} % Color of column headings
-%\def\LabelColor{White} % Color of font column headings
-%\def\LabelBoldface#1{\textbf{#1}} % Makes column labels bold-faced; change {\textbf{#1}} to {#1} or to other preference.
-%\def\SectionColor{gray!40} % Color of section labels giving the Task category names, e.g., "Task A: ...."
-%\def\TaskColor{Black} % Color of task category label, e.g. "Task A: ...."
-%\def\TaskBoldface#1{\textbf{#1}} % Makes the task category labels bold-faced; change {\textbf{#1}} to {#1} or to other preference.
-%%
-%\addtocounter{table}{-1}  % corrects double-counting by table and longtable combination
-%\begin{table}[h]
-%   \renewcommand{\arraystretch}{1}  % changes vertical space bet/ rows
-%   \setlength{\tabcolsep}{1pt}  % changes horizontal spacing bet/ columns
-%   \centerline{
-%      \begin{minipage}{1.0\textwidth} % wide table needs to use some of the margins? comment out, change the 1.5
-%         \begin{longtable} {|p{3.9in}||c!{\color{gray!40}\vrule}c!{\color{gray!40} \vrule}!{\color{gray!40}\vrule}c!{\color{gray!40}\vrule}c||l!{\color{gray!40}\vrule}p{0.3in}|}
-%            \expinput{do_NOT_manually_edit/NOTANONtasks}
-%         \end{longtable}
-%      \end{minipage}
-%   } %close \centerline
-%   \caption{Task Management and Team Responsibilities \label{tab:NOTANONtasks}}
-%   \begin{tablenotes}[flushleft] The tasks ({\color{red}gray} headers) and sub-tasks (left), with specific assignments for the roles of task lead (middle) and expertise / analysis assistance (right).  \end{tablenotes}
-%\end{table} 
-%%================ E N D   I N S T R U C T I O N S =============== (leave this line commented out!)
+%  ________________________________________________________________________________
+% | Refer to instructions_NOTANONtasks.tex                                         |
+% | for guidance regarding how to include the NOTANONtasks table in your document  |
+% |________________________________________________________________________________|
 \hline
-\LabelBoldface{\cellcolor{\HeaderColor}\color{\LabelColor}Tasks} & \LabelBoldface{\cellcolor{\HeaderColor}\color{\LabelColor}Lead}  &\LabelBoldface{\cellcolor{\HeaderColor}\color{\LabelColor}Expertise}\\
-\hline
+[ROWTEMPLATE]\LabelBoldface{\cellcolor{\HeaderColor}\color{\LabelColor}Tasks} & \LabelBoldface{\cellcolor{\HeaderColor}\color{\LabelColor}Lead} & \LabelBoldface{\cellcolor{\HeaderColor}\color{\LabelColor}Expertise}\\ \hline
