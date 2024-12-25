@@ -1,4 +1,6 @@
-===============     HOW TO INSERT WorPT's isANONtravel FILE ===============
+=============== HOW TO INSERT WorPT's isNOTANONteamSummaries FILE ===============
+Note that isNOTANONteamSummaries is not a table, but rather a series of paragraphs of text
+describing the role of each team member
 
 (1) Put some customized package files in the preamble of your document that are used by WorPT tables:
      
@@ -18,20 +20,14 @@
 _________________________________________________________________________________________________
 _________________________________________________________________________________________________
 
-(2) In the place within your LaTeX document that you want to insert the contents of the isNOTANONteamSummaries file (which is not a table, but a narrative), 
+(2) In the place within your LaTeX document that you want to insert the contents of the isNOTANONteamSummaries file,
 
     COPY/PASTE the following lines (starting with the NEXT line) into that place within your document: 
 
-%% (2) copy/paste the following into the main latex file where you want to put this section of text (it is not a table), and then uncomment the below lines by removing the first percent sign at the beginning of the line
-%%   IMPORTANT SHORTCUT:  You can toggle commenting / un-commenting across multiple lines within Overleaf by mouse-selecting the desired block of lines to un-comment (or comment), and then hitting: control slash ( [Ctrl] / )   ... or ...  command slash  ([command] /)  for a PC or Mac, resp.
-%%        (Note that lines that should remain commented-out in the below block have 2 percent signs ... the first will be removed when you uncomment the whole block, but the second percent sign will remain as intended to retain that line as a true comment within the Latex document.)
-%% > > > > > > > > > > > > > < < < < < < < < < < < < < < 
-%% Block of code to be uncommented by removing the *first* percent-sign at the beginning of the following lines below (leave intentional comments with at least 1 percent sign to keep them commented!)
-%% The next couple of lines define cell and font colors that can be changed if desired (keep this comment line commented-out!)
-%\def\NameBoldface#1{\textbf{#1}} % Makes the name and role at the beginning of each paragraph bold-faced; change {\textbf{#1}} to {#1} or to other preference.
-%%
-%\clearpage
-%\input{do_NOT_manually_edit/NOTANONteamSummaries}
+% boldface the name and role at the beginning of each paragraph
+\def\NameBoldface#1{\textbf{#1}} 
+\clearpage
+\input{do_NOT_manually_edit/NOTANONteamSummaries}
 
 
 
