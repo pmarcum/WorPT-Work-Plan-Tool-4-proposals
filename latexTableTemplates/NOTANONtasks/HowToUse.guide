@@ -48,11 +48,12 @@ ________________________________________________________________________________
       \end{longtable}
     \end{minipage}
   } 
-  \centerline
-  \caption{Task Management and Team Responsibilities \label{tab:NOTANONtasks}}
-  \begin{tablenotes}[flushleft] 
+  \caption{
+    \normalsize
+    \textbf{Task Management and Team Responsibilities}:\\
     The tasks ({\color{red}gray} headers) and sub-tasks (left), with specific assignments for the 
     roles of task lead (middle) and expertise / analysis assistance (right).
-  \end{tablenotes}
+  }
+  \label{tab:NOTANONtasks}
 \end{table} 
 
