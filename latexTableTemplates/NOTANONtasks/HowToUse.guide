@@ -1,4 +1,4 @@
-===============     HOW TO INSERT WorPT's isANONtravel FILE ===============
+========= HOW TO INSERT WorPT's isANONtravel FILE ========
 
 (1) Put some customized package files in the preamble of your document that are used by WorPT tables:
      
@@ -15,14 +15,14 @@
 \usepackage{FUformatting}
 \usepackage{FUnewCommands} % not needed by WorPT files but generally useful
 
-_________________________________________________________________________________________________
-_________________________________________________________________________________________________
+______________________________________________________
+______________________________________________________
 
 (2) In the place within your LaTeX document that you want to insert the WorPT table, 
 
     COPY/PASTE the following lines (starting with the NEXT line) into that place within your document: 
 
-%====================== FORMAT PREFERENCES ===================
+%=================== FORMAT PREFERENCES ===============
 \def\HeaderColor{Blue}             % column heading color
 \def\LabelColor{White}             % column heading font color
 \def\LabelBoldface#1{\textbf{#1}}  % boldface column labels
