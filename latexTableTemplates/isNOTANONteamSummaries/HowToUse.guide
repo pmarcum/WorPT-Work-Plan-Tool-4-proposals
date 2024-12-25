@@ -27,7 +27,7 @@ ________________________________________________________________________________
 % boldface the name and role at the beginning of each paragraph
 \def\NameBoldface#1{\textbf{#1}} 
 \clearpage
-\input{do_NOT_manually_edit/NOTANONteamSummaries}
+\input{[INSERTLATEXFILESUBDIRECTORY]/table_NOTANONteamSummaries}
 
 
 
