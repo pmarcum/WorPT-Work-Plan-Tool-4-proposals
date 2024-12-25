@@ -44,7 +44,7 @@ ________________________________________________________________________________
         c||l!{\color{gray!40}\vrule}
         p{0.3in}|
         }
-        \expinput{[latexFileSubdirectory]/NOTANONtasks}
+        \expinput{[INSERTLATEXFILESUBDIRECTORY]/table_NOTANONtasks}
       \end{longtable}
     \end{minipage}
   } 
