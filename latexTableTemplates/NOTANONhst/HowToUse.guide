@@ -38,10 +38,10 @@ ______________________________________________________
   p{0.10in}!{\color{lightgray}\vrule}
   p{0.28in}|
  }
-   \caption{Work Effort for All Team Members \label{tab:NOTANONhst}}\\
-   \multicolumn{5}{l}{\textbf{Program \#:} HST-xx-xxxxx (Cycle XX)}\\
-   \multicolumn{5}{l}{\textbf{Program Admin PI:} [INSERTADMINPINAME]\\
-   \multicolumn{5}{l}{\textbf{Science PI:} [INSERTSCIENCEPINAME]\\
-   \expinput{[INSERTLATEXFILESUBDIRECTORY]/table_NOTANONhst}
-\end{longtable}
+ \caption{Work Effort for All Team Members \label{tab:NOTANONhst}}\\
+ \multicolumn{5}{l}{\textbf{Program \#:} HST-xx-xxxxx (Cycle XX)}\\
+ \multicolumn{5}{l}{\textbf{Program Admin PI:} [INSERTADMINPINAME]}\\
+ \multicolumn{5}{l}{\textbf{Science PI:} [INSERTSCIENCEPINAME]}\\
+ \expinput{[INSERTLATEXFILESUBDIRECTORY]/table_NOTANONhst}
+ \end{longtable}
 }
