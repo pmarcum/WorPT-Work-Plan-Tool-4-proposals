@@ -1,6 +1,5 @@
-
-=============== HOW TO INSERT WorPT's isNOTANONteamSummaries FILE ===============
-Note that isNOTANONteamSummaries is not a table, but rather a series of paragraphs of text
+=============== HOW TO INSERT WorPT's NOTANONteamSummaries FILE ===============
+Note that NOTANONteamSummaries is not a table, but rather a series of paragraphs of text
 describing the role of each team member
 
 (1) Put some customized package files in the preamble of your document that are used by WorPT tables:
@@ -21,7 +20,7 @@ describing the role of each team member
 _________________________________________________________________________________________________
 _________________________________________________________________________________________________
 
-(2) In the place within your LaTeX document that you want to insert the contents of the isNOTANONteamSummaries file,
+(2) In the place within your LaTeX document that you want to insert the contents of the NOTANONteamSummaries file,
 
     COPY/PASTE the following lines (starting with the NEXT line) into that place within your document: 
 
