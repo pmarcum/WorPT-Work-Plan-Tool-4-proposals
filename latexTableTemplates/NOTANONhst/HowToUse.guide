@@ -1,24 +1,47 @@
-%% (2) copy/paste the following into the main latex file where you want to put this table, and then uncomment the below lines by removing the first percent sign at the beginning of the line.
-%%   IMPORTANT SHORTCUT:  You can toggle commenting / un-commenting across multiple lines within Overleaf by mouse-selecting the desired block of lines to un-comment (or comment), and then hitting: control slash ( [Ctrl] / )   ... or ...  command slash  ([command] /)  for a PC or Mac, resp.
-%%        (Note that lines that should remain commented-out in the below block have 2 percent signs ... the first will be removed when you uncomment the whole block, but the second percent sign will remain as intended to retain that line as a true comment within the Latex document.)
-%% > > > > > > > > > > > > > < < < < < < < < < < < < < < 
-%% Block of code to be uncommented by removing the *first* percent-sign at the beginning of the following lines below (leave intentional comments with at least 1 percent sign to keep them commented!)
-%% The next couple of lines define cell and font colors that can be changed if desired (keep this comment line commented-out!)
-%\def\HeaderColor{Blue} % Color of column headings
-%\def\LabelColor{White} % Color of font column headings
-%\def\LabelBoldface#1{\textbf{#1}} % Makes column labels bold-faced; change {\textbf{#1}} to {#1} or to other preference.
-%%
-%\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
-%{
-%   \renewcommand{\arraystretch}{1.0} %adjust to control vertical row separation/spacing, comment-out if not needed
-%   \setlength{\tabcolsep}{5pt} %adjust to control horizontal column separation/spacing, comment-out if not needed
-%   \begin{longtable}{
-%      |L{1.8in}!{\color{lightgray}\vrule}L{1.3in}!{\color{lightgray}\vrule}L{2.5in}!{\color{lightgray}\vrule}p{0.10in}!{\color{lightgray}\vrule}p{0.28in}|
-%      }
-%      \caption{Work Effort for All Team Members \label{tab:NOTANONhst}}\\
-%      \multicolumn{5}{l}{\textbf{Program \#:} HST-xx-xxxxx (Cycle XX)}\\
-=IFERROR("%      \multicolumn{5}{l}{\textbf{Program Admin PI:} "&INDEX(FILTER(teamName,teamRole="Admin-PI"),1,4)&" "&INDEX(FILTER(teamName,teamRole="Admin-PI"),1,2)&" "&INDEX(FILTER(teamName,teamRole="Admin-PI"),1,1)&"}\\","%")
-=IFERROR("%      \multicolumn{5}{l}{\textbf{Science PI:} "&INDEX(FILTER(teamName,teamRole="Sci-PI"),1,4)&" "&INDEX(FILTER(teamName,teamRole="Sci-PI"),1,2)&" "&INDEX(FILTER(teamName,teamRole="Sci-PI"),1,1)&"}\\","%")
-=IFERROR("%      \expinput{"&INDEX(latexFileSubdirectory,1,1)&"/NOTANONhst}","%")
-%   \end{longtable}
-%}
+===============     HOW TO INSERT WorPT's NOTANONhst FILE ===============
+
+(1) Put some customized package files in the preamble of your document that are used by WorPT tables:
+     
+    Download or connect to https://github.com/pmarcum/LaTex-Formatting and select the set of files
+    (AAS-style or general) that meet your situation. 
+    
+    You can either download the files or link Overleaf to the needed files in the GitHub repository
+    through URL, and then add the following to the preamble of your main paper. 
+
+    IF YOU HAVE ALREADY PUT THE BELOW LINES INTO YOUR PREAMBLE WHEN PREVIOUSLY INSERTING ANOTHER 
+    WorPT TABLE, YOU DON'T HAVE TO REPEAT!  JUST SKIP THIS STEP!
+
+\usepackage{FUpackages}
+\usepackage{FUformatting}
+\usepackage{FUnewCommands} % not needed by WorPT files but generally useful
+
+______________________________________________________
+______________________________________________________
+
+(2) In the place within your LaTeX document that you want to insert the WorPT table, 
+
+    COPY/PASTE the following lines (starting with the NEXT line) into that place within your document: 
+
+%====================== FORMAT PREFERENCES ===================
+\def\HeaderColor{Blue}            % column heading color
+\def\LabelColor{White}            % column heading font color
+\def\LabelBoldface#1{\textbf{#1}} % boldface column labels
+
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+{
+ \renewcommand{\arraystretch}{1.0}% controls vertical row separation/spacing
+ \setlength{\tabcolsep}{5pt}      % controls horizontal column separation/spacing
+ \begin{longtable}{
+  |L{1.8in}!{\color{lightgray}\vrule}
+  L{1.3in}!{\color{lightgray}\vrule}
+  L{2.5in}!{\color{lightgray}\vrule}
+  p{0.10in}!{\color{lightgray}\vrule}
+  p{0.28in}|
+ }
+   \caption{Work Effort for All Team Members \label{tab:NOTANONhst}}\\
+   \multicolumn{5}{l}{\textbf{Program \#:} HST-xx-xxxxx (Cycle XX)}\\
+   \multicolumn{5}{l}{\textbf{Program Admin PI:} [INSERTADMINPINAME]\\
+   \multicolumn{5}{l}{\textbf{Science PI:} [INSERTSCIENCEPINAME]\\
+   \expinput{[INSERTLATEXFILESUBDIRECTORY]/table_NOTANONhst}
+\end{longtable}
+}
