@@ -73,7 +73,7 @@ The below table provides travel costs:
  \newline \newline \underline{\scshape{Travel Per Team Member}} 
  (summed over [INSERTNGRANTYEARS]-year grant):
  \newline
- [ROWTEMPLATE]\smallIndent \textbf{[TEAMROLE]}: [NUMDOMTRIPS] domestic trip[DOMPLURALITY]; [NUMINTTRIPS] intern'l trip[INTPLURALITY];\\newline
+ [ROWTEMPLATE]\smallIndent \textbf{[TEAMROLE]}: [NUMDOMTRIPS] domestic trip[DOMPLURALITY]; [NUMINTTRIPS] intern'l trip[INTPLURALITY];\newline
 
  \newline All travel will be to present science results of this project at conferences and/or visits to home institutions of 
  the team members for in-person collaboration. Note that above values above do not include institutional overhead.
