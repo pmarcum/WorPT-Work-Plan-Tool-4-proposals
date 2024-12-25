@@ -1,35 +1,6 @@
-%  ________________________________________________________________________________
-% | Refer to instructions_isANONtravel.tex                                         |
-% | for guidance regarding how to include the isANONtravel table in your document  |
-% |________________________________________________________________________________|
-%---- top header line
-\multicolumn{9}{|@{}c@{}|}{\cellcolor{\BannerColor}\color{\BannerFontColor}\BannerBoldface{Travel Cost Details}}\\
-\multicolumn{3}{|c}{} & \multicolumn{5}{>{\columncolor[\PerTripShadingColor]{\PerTripShadingTransparency}[\tabcolsep][\PerTripShadingMargin]}c}{\color{\PerTripLabelFontColor}\emph{\textbf{per trip}}} & \\
-\cline{4-8}
-%---- middle header line
-\YearTripsDestLabelBoldface{\color{\YearTripsDestLabelFontColor}{Year}} & \YearTripsDestLabelBoldface{\color{\YearTripsDestLabelFontColor}{\#Trips}} & \YearTripsDestLabelBoldface{\color{\YearTripsDestLabelFontColor}{Dest.}} & \PerTripLabelBoldface{\color{\PerTripLabelFontColor}{Airfare}} & {\PerTripLabelBoldface{\color{\PerTripLabelFontColor}{per}}} & {\PerTripLabelBoldface{\color{\PerTripLabelFontColor}{Conf.}}} & {\PerTripLabelBoldface{ \color{\PerTripLabelFontColor}{Ground}}} & {\PerTripLabelBoldface{\color{\PerTripLabelFontColor}{per}}} & \TotalLabelBoldface{\color{\TotalLabelFontColor}{Total}}\\ 
-%---- bottom header line
-\YearTripsDestLabelBoldface{} & \YearTripsDestLabelBoldface{} & \YearTripsDestLabelBoldface{} & {\PerTripLabelBoldface{}} & \PerTripLabelBoldface{\color{\PerTripLabelFontColor}{diem}}} & {\PerTripLabelBoldface{\color{\PerTripLabelFontColor}{Fee}}} & {\PerTripLabelBoldface{ \color{\PerTripLabelFontColor}{Transp.}}} & {\PerTripLabelBoldface{\color{\PerTripLabelFontColor}{trip}}} & \\
-%---- lines at bottom of column labels
-\hline \hline
-%---- table data inserted below
-\YearBoldface{Yr1} & [NUMBERDOMTRIPS] & domestic & \$[DOMAIRFARE] & \$[DOMPERDIEM] & \$[DOMCONFERENCE] & \$[DOMGROUND] & \$[DOMPERTRIP] & \$[DOMALLTRIPS]\\
-                   & [NUMBERINTTRIPS] & intern'l & \$[INTAIRFARE] & \$[INTPERDIEM] & \$[INTCONFERENCE] & \$[INTGROUND] & \$[INTPERTRIP] & \$[INTALLTRIPS]\\ \hline
-\YearBoldface{Yr2} & [NUMBERDOMTRIPS] & domestic & \$[DOMAIRFARE] & \$[DOMPERDIEM] & \$[DOMCONFERENCE] & \$[DOMGROUND] & \$[DOMPERTRIP] & \$[DOMALLTRIPS]\\
-                   & [NUMBERINTTRIPS] & intern'l & \$[INTAIRFARE] & \$[INTPERDIEM] & \$[INTCONFERENCE] & \$[INTGROUND] & \$[INTPERTRIP] & \$[INTALLTRIPS]\\ \hline
-\YearBoldface{Yr3} & [NUMBERDOMTRIPS] & domestic & \$[DOMAIRFARE] & \$[DOMPERDIEM] & \$[DOMCONFERENCE] & \$[DOMGROUND] & \$[DOMPERTRIP] & \$[DOMALLTRIPS]\\
-                   & [NUMBERINTTRIPS] & intern'l & \$[INTAIRFARE] & \$[INTPERDIEM] & \$[INTCONFERENCE] & \$[INTGROUND] & \$[INTPERTRIP] & \$[INTALLTRIPS]\\ \hline
-\YearBoldface{Yr4} & [NUMBERDOMTRIPS] & domestic & \$[DOMAIRFARE] & \$[DOMPERDIEM] & \$[DOMCONFERENCE] & \$[DOMGROUND] & \$[DOMPERTRIP] & \$[DOMALLTRIPS]\\
-                   & [NUMBERINTTRIPS] & intern'l & \$[INTAIRFARE] & \$[INTPERDIEM] & \$[INTCONFERENCE] & \$[INTGROUND] & \$[INTPERTRIP] & \$[INTALLTRIPS]\\ \hline
-\YearBoldface{Yr5} & [NUMBERDOMTRIPS] & domestic & \$[DOMAIRFARE] & \$[DOMPERDIEM] & \$[DOMCONFERENCE] & \$[DOMGROUND] & \$[DOMPERTRIP] & \$[DOMALLTRIPS]\\
-                   & [NUMBERINTTRIPS] & intern'l & \$[INTAIRFARE] & \$[INTPERDIEM] & \$[INTCONFERENCE] & \$[INTGROUND] & \$[INTPERTRIP] & \$[INTALLTRIPS]\\ \hline
-\YearBoldface{Yr6} & [NUMBERDOMTRIPS] & domestic & \$[DOMAIRFARE] & \$[DOMPERDIEM] & \$[DOMCONFERENCE] & \$[DOMGROUND] & \$[DOMPERTRIP] & \$[DOMALLTRIPS]\\
-                   & [NUMBERINTTRIPS] & intern'l & \$[INTAIRFARE] & \$[INTPERDIEM] & \$[INTCONFERENCE] & \$[INTGROUND] & \$[INTPERTRIP] & \$[INTALLTRIPS]\\ \hline
-\YearBoldface{Yr7} & [NUMBERDOMTRIPS] & domestic & \$[DOMAIRFARE] & \$[DOMPERDIEM] & \$[DOMCONFERENCE] & \$[DOMGROUND] & \$[DOMPERTRIP] & \$[DOMALLTRIPS]\\
-                   & [NUMBERINTTRIPS] & intern'l & \$[INTAIRFARE] & \$[INTPERDIEM] & \$[INTCONFERENCE] & \$[INTGROUND] & \$[INTPERTRIP] & \$[INTALLTRIPS]\\ \hline
-\YearBoldface{Yr8} & [NUMBERDOMTRIPS] & domestic & \$[DOMAIRFARE] & \$[DOMPERDIEM] & \$[DOMCONFERENCE] & \$[DOMGROUND] & \$[DOMPERTRIP] & \$[DOMALLTRIPS]\\
-                   & [NUMBERINTTRIPS] & intern'l & \$[INTAIRFARE] & \$[INTPERDIEM] & \$[INTCONFERENCE] & \$[INTGROUND] & \$[INTPERTRIP] & \$[INTALLTRIPS]\\ \hline
-\YearBoldface{Yr9} & [NUMBERDOMTRIPS] & domestic & \$[DOMAIRFARE] & \$[DOMPERDIEM] & \$[DOMCONFERENCE] & \$[DOMGROUND] & \$[DOMPERTRIP] & \$[DOMALLTRIPS]\\
-                   & [NUMBERINTTRIPS] & intern'l & \$[INTAIRFARE] & \$[INTPERDIEM] & \$[INTCONFERENCE] & \$[INTGROUND] & \$[INTPERTRIP] & \$[INTALLTRIPS]\\ \hline
-\YearBoldface{Yr10} & [NUMBERDOMTRIPS] & domestic & \$[DOMAIRFARE] & \$[DOMPERDIEM] & \$[DOMCONFERENCE] & \$[DOMGROUND] & \$[DOMPERTRIP] & \$[DOMALLTRIPS]\\
-                   & [NUMBERINTTRIPS] & intern'l & \$[INTAIRFARE] & \$[INTPERDIEM] & \$[INTCONFERENCE] & \$[INTGROUND] & \$[INTPERTRIP] & \$[INTALLTRIPS]\\ \hline
+%  ______________________________________________________________________________________________________
+% | Refer to instructions_isNOTANONteamSummaries.tex                                                     |
+% | for guidance regarding how to include the instructions_isNOTANONteamSummaries file in your document  |
+% |______________________________________________________________________________________________________|
+[ROWTEMPLATE][INSERTPREFIX] \NameBoldface{[INSERTNAME]}, \NameBoldface{[INSERTROLE]}, [INSERTBIOSUMMARY] \par
+
