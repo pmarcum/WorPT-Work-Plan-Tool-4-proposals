@@ -1,4 +1,4 @@
-=============== HOW TO INSERT WorPT's NOTANONteamSummaries FILE ===============
+======== HOW TO INSERT WorPT's NOTANONteamSummaries FILE ========
 Note that NOTANONteamSummaries is not a table, but rather a series of paragraphs of text
 describing the role of each team member
 
@@ -17,8 +17,8 @@ describing the role of each team member
 \usepackage{FUformatting}
 \usepackage{FUnewCommands} % not needed by WorPT files but generally useful
 
-_________________________________________________________________________________________________
-_________________________________________________________________________________________________
+______________________________________________________
+______________________________________________________
 
 (2) In the place within your LaTeX document that you want to insert the contents of the NOTANONteamSummaries file,
 
