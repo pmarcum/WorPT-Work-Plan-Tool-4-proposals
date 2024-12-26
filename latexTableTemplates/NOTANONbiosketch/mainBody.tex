@@ -1,1 +1,78 @@
+% COMMENT: the below produces a colorful banner with the persons name and project role
+% COMMENT: note that the script will strip out any lines that start with "% COMMENT", so you may freely comment in here
+\hline
+\multicolumn{2}{|c|}{\cellcolor{\BannerColor}\color{\NameColor}\NameBoldface{[INSERTNAME] ([INSERTROLE])}}\\ 
+\hline
+\multicolumn{2}{|c|}{\cellcolor{\SectionColor}\color{\SectionFontColor}\SectionBoldface{Current Support}}\\
+\hline
 
+% COMMENT: the script will use one of two formatting options, depending on if there are current grants
+% COMMENT: below is what gets written if there is a current grant(s)
+% COMMENT: everything between STARTCURRENT and ENDCURRENT will be used as the formatting template for entries in this section
+[STARTCURRENT]
+\LeftBoldface{Title}&[INSERTCURRENTTITLE]\\ 
+\LeftBoldface{Source of Support}&[INSERTCURRENTSOURCE]\\ 
+\LeftBoldface{Program POC}&[INSERTCURRENTPOC]\\ 
+\LeftBoldface{PI}&[INSERTCURRENTPI]\\
+\LeftBoldface{Sci PI}&[INSERTCURRENTSCIPI]\\
+\LeftBoldface{Admin PI}&[INSERTCURRENTADMINPI]\\
+\LeftBoldface{Award Period}&[INSERTCURRENTAWARDPERIOD]\\
+\LeftBoldface{Award Amount}&[INSERTCURRENTDOLLAR]\\
+\LeftBoldface{FTE}&[INSERTCURRENTFTES]\\
+[ENDCURRENT]
+
+% COMMENT: below is what gets written if there is no current / ongoing grant support
+% COMMENT: everything between STARTNOCURRENT and ENDNOCURRENT will be used as the single entry under this section
+[STARTNOCURRENT]
+\LeftBoldface{Title}&\multirow{6}{*}{No grant funding currently}\\
+\LeftBoldface{Source of Support}&{}\\
+\LeftBoldface{Program POC}&{}\\
+\LeftBoldface{PI}&{}\\
+\LeftBoldface{Sci PI}&{}\\
+\LeftBoldface{Award Period}&{}\\
+\LeftBoldface{Award Amount}&{}\\
+\LeftBoldface{FTE}&{}\\
+[ENDNOCURRENT]
+
+% COMMENT: below is the banner delineating the Pending Grant section
+\hline
+\multicolumn{2}{|c|}{\cellcolor{\SectionColor}\color{\SectionFontColor}\SectionBoldface{Pending Grant Support 
+
+% COMMENT: there are 2 optional text to appear in this banner.
+% COMMENT: the below option is selected if 
+{(not including this proposal)}
+{\color{\ThisProposalColor}(this proposal)}
+}}\\
+\hline
+
+% COMMENT: under this section are all the pending proposals awaiting review
+% COMMENT: the script will use one of two entry options, depending on if there are pending proposals
+% COMMENT: below is used if there are pending proposals under review
+% COMMENT: everything between STARTPENDING and ENDPENDING will be used as the template for entries under this section
+[STARTPENDING]
+\LeftBoldface{Title}&[INSERTPENDINGTITLE]\\
+\LeftBoldface{Source of Support}&[INSERTPENDINGSOURCE]\\
+\LeftBoldface{Program POC}&[INSERTPENDINGPOC]\\
+\LeftBoldface{PI}&[INSERTPENDINGPI]\\
+\LeftBoldface{Sci PI}&[INSERTPENDINGSCIPI]\\
+\LeftBoldface{Admin PI}&[INSERTPENDINGADMINPI]\\
+\LeftBoldface{Award Period}&[INSERTPENDINGAWARDPERIOD]\\
+\LeftBoldface{Award Amount}&[INSERTPENDINGDOLLAR]\\
+\LeftBoldface{FTE}&[INSERTPENDINGFTES]\\
+[ENDPENDING]
+
+% COMMENT: below is used if there are no pending proposals
+% COMMENT: everything between STARTNOPENDING and ENDNOPENDING will be used as single entry under this section
+[STARTNOPENDING]
+\\LeftBoldface{Title}&\multirow{6}{*}{No pending grant funding}\\
+\LeftBoldface{Source of Support}&{}\\
+\LeftBoldface{Program POC}&{}\\
+\LeftBoldface{PI}&{}\\
+\LeftBoldface{Sci PI}&{}\\
+\LeftBoldface{Admin PI}&{}\\
+\LeftBoldface{Award Period}&{}\\
+\LeftBoldface{Award Award}&{}\\
+\LeftBoldface{FTE}&{}\\
+[ENDNOPENDING]
+
+\hline
