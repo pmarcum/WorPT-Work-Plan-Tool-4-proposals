@@ -6,28 +6,29 @@
 % COMMENT: the below is educational background
 \SectionSpacing
 \LabelBoldface{Education}\\
-[INSERTEDUCATION]
+% COMMENT: the below will be used as a template for multiple educational items
+[STARTEDUCATION]
+[INSERTEDUCATIONYEAR], [INSERTEDUCATIONINSTITUTION], [INSERTEDUCATIONDEGREE], [INSERTEDUCATIONAREA]\\
+[ENDEDUCATION]
 
 % COMMENT: the below is a list of appointments
 \SectionSpacing
 \LabelBoldface{Appointments}\\
-    [INSERTAPPOINTMENTS]
+[STARTAPPOINTMENTS]
+[INSERTAPPOINTMENTYEAR], [INSERTAPPOINTMENTDESC], [INSERTAPPOINTMENTINSTION]
+[ENDAPPOINTMENTS]
 
 % COMMENT: the below is a list of awards, positions, etc.
 \SectionSpacing
 \LabelBoldface{Additional Awards, Positions, Fellowships and Proposals}\\
-   [INSERTAWARDS]
+[STARTAWARDS]
+[INSERTAWARDYEAR], [INSERTAWARDDESC]
+[ENDAWARDS]
 
 % COMMENT: the below is a list of relevant publications
 \SectionSpacing
 \LabelBoldface{Publications relevant for the proposal:}\\
+[STARTPUBLICATIONS]
 {\PublicationBullet}[INSERTPUB]
+[ENDPUBLICATIONS]
 
-
-% COMMENT: the script will use one of two formatting options, depending on if there are current grants
-% COMMENT: below is what gets written if there is a current grant(s)
-% COMMENT: everything between STARTCURRENT and ENDCURRENT will be used as the formatting template for entries in this section
-[STARTCURRENT]
-\LeftBoldface{Title}&[INSERTCURRENTTITLE]\\ 
-\LeftBoldface{Source of Support}&[INSERTCURRENTSOURCE]\\ 
-[ENDCURRENT]
