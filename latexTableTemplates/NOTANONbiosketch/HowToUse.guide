@@ -26,7 +26,7 @@ ______________________________________________________
 \def\NameBoldface#1{\textbf{#1}}              % boldface name/role at top of biographical sketch
 \def\NameColor{Blue}                          % font color of name/role at top biographical sketch
 \def\NameSize{\large }                        % font size of name/role at top of biographical sketch
-\def\LabelBoldface#1{\textbf{#1}}             % boldface category labels ("Edicuation", "Appointments", etc)
+\def\LabelBoldface#1{\textbf{#1}}             % boldface category labels ("Education", "Appointments", etc)
 \def\SectionSpacing{\par \vspace{-0.5em}}     % vertical spacing bet/ categories in biographical sketch
 \def\PublicationBullet{\scriptsize{$\bullet$}}% symbol in front of items in publication list
 
