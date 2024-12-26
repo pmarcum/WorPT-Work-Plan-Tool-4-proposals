@@ -22,7 +22,7 @@ ______________________________________________________
 
     COPY/PASTE the following lines (starting with the NEXT line) into that place within your document: 
 
-%====================== FORMAT PREFERENCES ===================
+%============= FORMAT PREFERENCES ===============
 \def\BannerColor{Blue}             % banner color at top of Current/Pending section
 \def\NameColor{White}              % font color of name at the top of Current/Pending
 \def\SectionColor{lightgray}       % separator color ("Current Support" and "Pending Grant Support") in Current/Pending
@@ -31,7 +31,7 @@ ______________________________________________________
 \def\LeftBoldface#1{\textbf{#1}}   % boldface left column text
 \def\SectionBoldface#1{\textbf{#1}}% boldface section separator words (Current Support, Pending Grant Support)
 \def\NameBoldface#1{\textbf{#1}}   % boldface banner text
- 
+% =============  start the table ==================
 \begin{longtable}{|l|p{5in}|}
   \expinput{[INSERTLATEXFILESUBDIRECTORY]/table_NOTANONcurrentpending}
 \end{longtable}
