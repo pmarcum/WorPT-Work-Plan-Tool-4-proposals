@@ -3,6 +3,7 @@
 \hline
 \multicolumn{2}{|c|}{\cellcolor{\SectionColor}\color{\SectionFontColor}\SectionBoldface{Current Support}}\\
 \hline
+
 [ROWTEMPLATE1]\LeftBoldface{Title}&[INSERTCURRENTTITLE]\\ 
 [ROWTEMPLATE1]\LeftBoldface{Source of Support}&[INSERTCURRENTSOURCE]\\ 
 [ROWTEMPLATE1]\LeftBoldface{Program POC}&[INSERTCURRENTPOC]\\ 
@@ -12,6 +13,7 @@
 [ROWTEMPLATE1]\LeftBoldface{Award Period}&[INSERTCURRENTAWARDPERIOD]\\
 [ROWTEMPLATE1]\LeftBoldface{Award Amount}&[INSERTCURRENTDOLLAR]\\
 [ROWTEMPLATE1]\LeftBoldface{FTE}&[INSERTCURRENTFTES]\\
+
 [ROWTEMPLATE2]\LeftBoldface{Title}&\multirow{6}{*}{No grant funding currently}\\
 [ROWTEMPLATE2]\LeftBoldface{Source of Support}&{}\\
 [ROWTEMPLATE2]\LeftBoldface{Program POC}&{}\\
@@ -20,5 +22,34 @@
 [ROWTEMPLATE2]\LeftBoldface{Award Period}&{}\\
 [ROWTEMPLATE2]\LeftBoldface{Award Amount}&{}\\
 [ROWTEMPLATE2]\LeftBoldface{FTE}&{}\\
-\hline
 
+\hline
+\multicolumn{2}{|c|}{\cellcolor{\SectionColor}\color{\SectionFontColor}\SectionBoldface{Pending Grant Support 
+{(not including this proposal)}
+{\color{\ThisProposalColor}(this proposal)}
+}}\\
+\hline
+% COMMENT: the script will use one of two formatting options, depending on if there are pending proposals
+% COMMENT: below is if there is a pending proposal still under review
+[ROWTEMPLATE3]\LeftBoldface{Title}&[INSERTPENDINGTITLE]\\
+[ROWTEMPLATE3]\LeftBoldface{Source of Support}&[INSERTPENDINGSOURCE]\\
+[ROWTEMPLATE3]\LeftBoldface{Program POC}&[INSERTPENDINGPOC]\\
+[ROWTEMPLATE3]\LeftBoldface{PI}&[INSERTPENDINGPI]\\
+[ROWTEMPLATE3]\LeftBoldface{Sci PI}&[INSERTPENDINGSCIPI]\\
+[ROWTEMPLATE3]\LeftBoldface{Admin PI}&[INSERTPENDINGADMINPI]\\
+[ROWTEMPLATE3]\LeftBoldface{Award Period}&[INSERTPENDINGAWARDPERIOD]\\
+[ROWTEMPLATE3]\LeftBoldface{Award Amount}&[INSERTPENDINGDOLLAR]\\
+[ROWTEMPLATE3]\LeftBoldface{FTE}&[INSERTPENDINGFTES]\\
+
+% COMMENT: below is if there are no pending proposals 
+[ROWTEMPLATE4]\\LeftBoldface{Title}&\multirow{6}{*}{No pending grant funding}\\
+[ROWTEMPLATE4]\LeftBoldface{Source of Support}&{}\\
+[ROWTEMPLATE4]\LeftBoldface{Program POC}&{}\\
+[ROWTEMPLATE4]\LeftBoldface{PI}&{}\\
+[ROWTEMPLATE4]\LeftBoldface{Sci PI}&{}\\
+[ROWTEMPLATE4]\LeftBoldface{Admin PI}&{}\\
+[ROWTEMPLATE4]\LeftBoldface{Award Period}&{}\\
+[ROWTEMPLATE4]\LeftBoldface{Award Award}&{}\\
+[ROWTEMPLATE4]\LeftBoldface{FTE}&{}\\
+
+\hline
