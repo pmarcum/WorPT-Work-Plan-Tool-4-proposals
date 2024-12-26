@@ -28,6 +28,7 @@ ______________________________________________________
 \def\LabelBoldface#1{\textbf{#1}} % boldface column labels
 
 \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+\begin{table}
 {
  \renewcommand{\arraystretch}{1.0}% controls vertical row separation/spacing
  \setlength{\tabcolsep}{5pt}      % controls horizontal column separation/spacing
@@ -44,4 +45,10 @@ ______________________________________________________
  \multicolumn{5}{l}{\textbf{Science PI:} [INSERTSCIENCEPINAME]}\\
  \expinput{[INSERTLATEXFILESUBDIRECTORY]/table_NOTANONhst}
  \end{longtable}
+ \begin{tablenotes}[flushleft] Team members, identified by their name and role in the proposed project, are listed 
+ with their institutional affiliation and position, with a "F" or "US" indicating foriegn or U.S. institution.  A 
+ brief narrative of their role in the project is given.  A 'Y' or 'N' indicates if the person is funded by the proposed 
+ budget or not, respectively.  The total work-effort of the team member is in the rightmost column (multiply shown 
+ FTE value by 12 to get work effort in number of months). 
+\end{tablenotes}
 }
