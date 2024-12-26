@@ -1,4 +1,4 @@
-====== HOW TO INSERT WorPT's NOTANONcurrentPending FILE ======
+====== HOW TO INSERT WorPT's NOTANONbiosketch FILE ======
 
 (1) Put some customized package files in the preamble of your document that are used by WorPT tables:
      
@@ -23,15 +23,12 @@ ______________________________________________________
     COPY/PASTE the following lines (starting with the NEXT line) into that place within your document: 
 
 %============= FORMAT PREFERENCES ===============
-\def\BannerColor{Blue}             % banner color at top of Current/Pending section
-\def\NameColor{White}              % font color of name at the top of Current/Pending
-\def\SectionColor{lightgray}       % separator color ("Current Support" and "Pending Grant Support") in Current/Pending
-\def\SectionFontColor{Black}       % separator font color ("Current Support" and "Pending Grant Support") in Current/Pending
-\def\ThisProposalColor{NavyBlue}   % text color of "(this proposal)" listed as "pending" in Current/Pending
-\def\LeftBoldface#1{\textbf{#1}}   % boldface left column text
-\def\SectionBoldface#1{\textbf{#1}}% boldface section separator words (Current Support, Pending Grant Support)
-\def\NameBoldface#1{\textbf{#1}}   % boldface banner text
-% =============  start the table ==================
-\begin{longtable}{|l|p{5in}|}
-  \expinput{[INSERTLATEXFILESUBDIRECTORY]/table_NOTANONcurrentpending}
-\end{longtable}
+\def\NameBoldface#1{\textbf{#1}}              % boldface name/role at top of biographical sketch
+\def\NameColor{Blue}                          % font color of name/role at top biographical sketch
+\def\NameSize{\large }                        % font size of name/role at top of biographical sketch
+\def\LabelBoldface#1{\textbf{#1}}             % boldface category labels ("Edicuation", "Appointments", etc)
+\def\SectionSpacing{\par \vspace{-0.5em}}     % vertical spacing bet/ categories in biographical sketch
+\def\PublicationBullet{\scriptsize{$\bullet$}}% symbol in front of items in publication list
+
+\clearpage                                    % could change to \newpage or \pagebreak, whatever works best
+input{[INSERTLATEXFILESUBDIRECTORY]/table_NOTANONbiosketches}
