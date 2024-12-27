@@ -1,1 +1,58 @@
+========= HOW TO INSERT WorPT's isANONtravel FILE ========
 
+(1) Put some customized package files in the preamble of your document that are used by WorPT tables:
+     
+    Download or connect to https://github.com/pmarcum/LaTex-Formatting and select the set of files
+    (AAS-style or general) that meet your situation. 
+    
+    You can either download the files or link Overleaf to the needed files in the GitHub repository
+    through URL, and then add the following to the preamble of your main paper. 
+
+    IF YOU HAVE ALREADY PUT THE BELOW LINES INTO YOUR PREAMBLE WHEN PREVIOUSLY INSERTING ANOTHER 
+    WorPT TABLE, YOU DON'T HAVE TO REPEAT!  JUST SKIP THIS STEP!
+
+\usepackage{FUpackages}
+\usepackage{FUformatting}
+\usepackage{FUnewCommands} % not needed by WorPT files but generally useful
+
+______________________________________________________
+______________________________________________________
+
+(2) In the place within your LaTeX document that you want to insert the WorPT table, 
+
+    COPY/PASTE the following lines (starting with the NEXT line) into that place within your document: 
+
+%=================== FORMAT PREFERENCES ===============
+\def\HeaderColor{Blue}             % column heading color
+\def\LabelColor{White}             % column heading font color
+\def\LabelBoldface#1{\textbf{#1}}  % boldface column labels
+\def\SectionColor{gray!40}         % section label colors giving Task category names, e.g., Task A:
+\def\TaskColor{Black}              % task category label color, e.g. Task A:
+\def\TaskBoldface#1{\textbf{#1}}   % boldface task category labels
+
+\addtocounter{table}{-1}           % corrects double-counting by table and longtable combination
+\begin{table}[h]
+  \renewcommand{\arraystretch}{1}  % changes vertical space bet/ rows
+  \setlength{\tabcolsep}{1pt}      % changes horizontal spacing bet/ columns
+  \centerline{
+    \begin{minipage}{1.0\textwidth}%increase to allow wide table spill into margin
+      \begin{longtable}{
+        |p{3.9in}||
+        c!{\color{gray!40}\vrule}
+        c!{\color{gray!40}\vrule}!{\color{gray!40}\vrule}
+        c!{\color{gray!40}\vrule}
+        c||l!{\color{gray!40}\vrule}
+        p{0.3in}|
+        }
+        \expinput{[INSERTLATEXFILESUBDIRECTORY]/table_NOTANONtasks}
+      \end{longtable}
+    \end{minipage}
+  } 
+  \caption{
+    \normalsize
+    \textbf{Task Management and Team Responsibilities}:\\
+    The tasks ({\color{red}gray} headers) and sub-tasks (left), with specific assignments for the 
+    roles of task lead (middle) and expertise / analysis assistance (right).
+  }
+  \label{tab:NOTANONtasks}
+\end{table} 
