@@ -31,4 +31,4 @@ ______________________________________________________
 \def\PublicationBullet{\scriptsize{$\bullet$}}% symbol in front of items in publication list
 
 \clearpage                                    % could change to \newpage or \pagebreak, whatever works best
-input{[INSERTLATEXFILESUBDIRECTORY]/table_NOTANONbiosketches}
+\input{[INSERTLATEXFILESUBDIRECTORY]/table_NOTANONbiosketches}
