@@ -19,11 +19,6 @@
 [INSERTROLE] & [INSERTTHISYEAR1] & [INSERTTHISYEAR2] & [INSERTTHISYEAR3] & [INSERTTHISYEAR4] & [INSERTTHISYEAR5] & [INSERTTHISYEAR6] & [INSERTTHISYEAR7] & INSERTTHISYEAR8] & [INSERTTHISYEAR9] & [INSERTTHISYEAR10] & [INSERTTHISALLYEARS]\\
 [ENDFUNDEDABOVETHRESHOLD]
 
-[STARTFUNDEDBELOWTHRESHOLD]
-% COMMENT: the below template generates a row for each team member, if the work effor is less than 0.01 FTE
-[INSERTROLE] & \multicolumn{[INSERTLASTYEAR]}{c}{minor} & $<$0.01\\
-[ENDFUNDEDBELOWTHRESHOLD]
-
 % COMMENT: the below is the colorized last line of the section providing sums per year for the funded category
 \cline{2-[INSERTLASTYEARPLUSONE]}
 \multicolumn{1}{|l}{\TotalWorkEffortBoldface{\color{\TotalWorkEffortFontColor}Total Funded Work Effort}} & 
