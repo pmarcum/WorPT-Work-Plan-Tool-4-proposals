@@ -24,3 +24,23 @@ ______________________________________________________
     COPY/PASTE the following lines (starting with the NEXT line) into that place within your document: 
 
 %====================== FORMAT PREFERENCES ===================
+\def\RoleLabelBoldface#1{\textbf{#1}}      % boldface "Role" column label
+\def\CommitmentLabelBoldface#1{\textbf{#1}}% boldface "Commitment (FTE)" column label
+\def\YearLabelBoldface#1{\textbf{#1}}      % boldface "Y1", "Y2", ...  column labels
+\def\TotalLabelBoldface#1{\textbf{#1}}     % boldface "Total" column label
+\def\SectionBannerColor{Blue}              % color of banners separating the 3 sections 
+\def\SectionBannerFontColor{White}         % font color of banners separating the 3 sections 
+\def\SectionBannerBoldface#1{\textbf{#1}}  % boldface text in banners separating the 3
+\def\TotalWorkEffortBoldface#1{\textbf{#1}}% boldface text in "Total .... Work Effort" line at section end
+\def\TotalWorkEffortFontColor{Blue}        % font color of "Total ... Work Effort" line at section end
+{
+\renewcommand{\arraystretch}{1.0}       % controls vertical row separation/spacing
+\setlength{\tabcolsep}{5pt}             % controls horizontal column separation/spacing
+\begin{longtable}{|l|*{[INSERTLASTYEARPLUSONE]}{c|}}
+  \expinput{[INSERTLATEXFILESUBDIRECTORY]/table_isANONfte}
+  \caption{
+  \label{tab:isANONfte} Details of work efforts per member to be funded for the present proposal; 
+  {\color{red}Detailed responsibilities, tied to tasks and science goals, are provided in Sec.\,\ref{Subsec:tmeline}.}
+  }
+\end{longtable}
+}
