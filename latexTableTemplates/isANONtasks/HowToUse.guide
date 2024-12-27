@@ -23,36 +23,34 @@ ______________________________________________________
     COPY/PASTE the following lines (starting with the NEXT line) into that place within your document: 
 
 %=================== FORMAT PREFERENCES ===============
-\def\HeaderColor{Blue}             % column heading color
-\def\LabelColor{White}             % column heading font color
-\def\LabelBoldface#1{\textbf{#1}}  % boldface column labels
-\def\SectionColor{gray!40}         % section label colors giving Task category names, e.g., Task A:
-\def\TaskColor{Black}              % task category label color, e.g. Task A:
-\def\TaskBoldface#1{\textbf{#1}}   % boldface task category labels
+\def\ColumnLabelBoldface#1{\textbf{#1}} % boldface column header font
+\def\YearQuarterLineColor{lightgray}    % vertical line color in year/quarter Start Finish timeline columns
+\def\YearFontColor{Red}                 % year numbers font color under "Y" columns in Start Finish timeline
+\def\TaskCategoryColor{Blue}            % task category banners color
+\def\TaskCategoryFontColor{White}       % task category title font color
+\def\TaskCategoryBoldface#1{\textbf{#1}}% boldface task category title
 
-\addtocounter{table}{-1}           % corrects double-counting by table and longtable combination
-\begin{table}[h]
-  \renewcommand{\arraystretch}{1}  % changes vertical space bet/ rows
-  \setlength{\tabcolsep}{1pt}      % changes horizontal spacing bet/ columns
-  \centerline{
-    \begin{minipage}{1.0\textwidth}%increase to allow wide table spill into margin
-      \begin{longtable}{
-        |p{3.9in}||
-        c!{\color{gray!40}\vrule}
-        c!{\color{gray!40}\vrule}!{\color{gray!40}\vrule}
-        c!{\color{gray!40}\vrule}
-        c||l!{\color{gray!40}\vrule}
-        p{0.3in}|
-        }
-        \expinput{[INSERTLATEXFILESUBDIRECTORY]/table_NOTANONtasks}
-      \end{longtable}
-    \end{minipage}
-  } 
-  \caption{
-    \normalsize
-    \textbf{Task Management and Team Responsibilities}:\\
-    The tasks ({\color{red}gray} headers) and sub-tasks (left), with specific assignments for the 
-    roles of task lead (middle) and expertise / analysis assistance (right).
-  }
-  \label{tab:NOTANONtasks}
-\end{table} 
+\addtocounter{table}{-1}                % corrects double-counting of longtable and table combination
+\begin{table*}[h!]                      % \begin{table} needed to make bottom table caption have same width as table
+   \renewcommand{\arraystretch}{0.7}    % controls vertical row separation/spacing
+   \setlength{\tabcolsep}{5pt}          % controls horizontal column separation/spacing
+   \begin{longtable}{|p{3.3in}||
+     c!{\color{\YearQuarterLineColor}\vrule}
+     c!{\color{\YearQuarterLineColor}\vrule}!{\color{\YearQuarterLineColor}\vrule}
+     c!{\color{\YearQuarterLineColor}\vrule}
+     c||p{0.45in}!{\color{\YearQuarterLineColor}\vrule}
+     p{1.2in}|}
+   \expinput{[INSERTLATEXFILESUBDIRECTORY]/table_isANONtasks}
+   \end{longtable}
+   \caption{
+     \label{tab:isANONtasks} \textbf{Task Timeline:} Team member roles, rightmost column, are 
+     cross-referenced with corresponding names in the non-anonymized personnel and work effort table.  
+     {\color{red} \textbf{Paper~1:} Sample and methods for enhancing detectability of  low SB X-ray emission, 
+     presentation of emission maps, description of database and pipeline software (which will be released in 
+     a public repository at the time of paper submission). \textbf{Paper~2:} Methodologies for measuring the 
+     gas halo size and other gas properties, analyisis of the diffuse hot gas halos as functions of galaxy 
+     properties (environment, galaxy morphology, stellar mass, and SFR based on \Chandra, \Hubble, and \Spitzer\ 
+     observations, and the SED models from the GSWLC; application of multivariate mthods to ``baseline'' the 
+     gas halo sizes (Sect.\,\ref{Sec:Baseline}). \textbf{Note~1:} See Sec.\,\ref{Sec:Sample}.}}
+   }
+\end{table*}
