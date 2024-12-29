@@ -23,6 +23,7 @@ ______________________________________________________
 
 %====================== FORMAT PREFERENCES ===================
 \clearpage
+\def\NameLabelBoldface#1{\textbf{#1}}      % boldface "Name" column label
 \def\RoleLabelBoldface#1{\textbf{#1}}      % boldface "Role" column label
 \def\CommitmentLabelBoldface#1{\textbf{#1}}% boldface "Commitment (FTE)" column label
 \def\YearLabelBoldface#1{\textbf{#1}}      % boldface "Y1", "Y2", ...  column labels
@@ -34,7 +35,9 @@ ______________________________________________________
 \def\TotalWorkEffortFontColor{Blue}        % font color of "Total ... Work Effort" line at section end
 
 \addtocounter{table}{-1}  % corrects double-counting of longtable and table combination
-\begin{table*}[h!]        % \begin{table} needed to make bottom table caption have same width as table
+\begin{table*}[h!]                  % \begin{table} needed to make caption have same width as table
+  \renewcommand{\arraystretch}{1.0} % control vertical row separation/spacing
+  \setlength{\tabcolsep}{5pt}       % control horizontal column separation/spacing
   \begin{longtable}{|l|*{[INSERTLASTYEARPLUSONE]}{c|}}
     \expinput{[INSERTLATEXFILESUBDIRECTORY]/table_NOTANONfte}
   \end{longtable}
