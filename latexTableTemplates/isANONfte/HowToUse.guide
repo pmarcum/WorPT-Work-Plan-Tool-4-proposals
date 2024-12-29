@@ -33,8 +33,10 @@ ______________________________________________________
 \def\TotalWorkEffortBoldface#1{\textbf{#1}}% boldface text in "Total .... Work Effort" line at section end
 \def\TotalWorkEffortFontColor{Blue}        % font color of "Total ... Work Effort" line at section end
 
-\addtocounter{table}{-1}  % corrects double-counting of longtable and table combination
-\begin{table*}[h!]        % \begin{table} needed to make bottom table caption have same width as table
+\addtocounter{table}{-1}            % corrects double-counting of longtable and table combination
+\begin{table*}[h!]                  % \begin{table} makes bottom table caption have same width as table
+  \renewcommand{\arraystretch}{1.0} % control vertical row separation/spacing
+  \setlength{\tabcolsep}{5pt}       % control horizontal column separation/spacing
   \begin{longtable}{|l|*{[INSERTLASTYEARPLUSONE]}{c|}}
     \expinput{[INSERTLATEXFILESUBDIRECTORY]/table_isANONfte}
   \end{longtable}
