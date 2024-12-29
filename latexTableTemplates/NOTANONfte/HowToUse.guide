@@ -38,7 +38,7 @@ ______________________________________________________
 \begin{table*}[h!]                  % \begin{table} makes caption have same width as table
   \renewcommand{\arraystretch}{1.0} % control vertical row separation/spacing
   \setlength{\tabcolsep}{5pt}       % control horizontal column separation/spacing
-  \begin{longtable}{|l|*{[INSERTLASTYEARPLUSONE]}{c|}}
+  \begin{longtable}{|l|*{[INSERTLASTYEARPLUSTWO]}{c|}}
     \expinput{[INSERTLATEXFILESUBDIRECTORY]/table_NOTANONfte}
   \end{longtable}
   \caption{
