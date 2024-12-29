@@ -1,1 +1,64 @@
+%  _____________________________________________________________________________
+% | Refer to  instructions_NOTANONfte.tex                                        |
+% | for guidance regarding how to include the NOTANONfte table in your document  |
+% |_____________________________________________________________________________|
+% COMMENT: below makes the column header labels
+\hline
+\multirow{2}{*}{\RoleLabelBoldface{Role}} & \multicolumn{[INSERTLASTYEARPLUSONE]}{c|}{\CommitmentLabelBoldface{Commitment (FTE)}}\\
+\cline{2-[INSERTLASTYEARPLUSTWO]}
+{} & \YearLabelBoldface{Y1} & \YearLabelBoldface{Y2} & \YearLabelBoldface{Y3} & \YearLabelBoldface{Y4} & \YearLabelBoldface{Y5} & \YearLabelBoldface{Y6} & \YearLabelBoldface{Y7} & \YearLabelBoldface{Y8} & \YearLabelBoldface{Y9} & \YearLabelBoldface{Y10} & \YearTotalBoldface{Total}\\
 
+% COMMENT: =================================================================================================
+% COMMENT: ==================================   WORK FUNDED BY THIS PROPOSAL SECTION
+% COMMENT: =================================================================================================
+% COMMENT: the below creates a colorized banner
+\multicolumn{[INSERTLASTYEARPLUSTWO]}{|c|}{\cellcolor{\SectionBannerColor}\color{\SectionBannerFontColor}\TaskCategoryBoldface{Work Efforts To Be Funded By This Proposal}}\\
+
+[STARTFUNDEDABOVETHRESHOLD]
+% COMMENT: the below template generates a row for each team member, if the work effor is above 0.01 FTE
+[INSERTROLE] & [INSERTY1] & [INSERTY2] & [INSERTY3] & [INSERTY4] & [INSERTY5] & [INSERTY6] & [INSERTY7] & INSERTY8] & [INSERTY9] & [INSERTY10] & [INSERTTOTAL]\\
+[ENDFUNDEDABOVETHRESHOLD]
+
+% COMMENT: the below is the colorized last line of the section providing sums per year for the funded category
+\arrayrulecolor{lightgray!60}\hline\arrayrulecolor{black}
+\multicolumn{1}{|l}{\TotalWorkEffortBoldface{\color{\TotalWorkEffortFontColor}Total Funded Work Effort}} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTFUNDY1]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTFUNDY2]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTFUNDY3]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTFUNDY4]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}INSERTFUNDY5]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTFUNDY6]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTFUNDY7]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTFUNDY8]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTFUNDY9]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTFUNDY10]} & \multicolumn{1}{c|}{\color{\TotalWorkEffortFontColor}[INSERTFUNDTOTAL]}\\
+
+% COMMENT: =================================================================================================
+% COMMENT: ==================================   WORK UNFUNDED BY THIS PROPOSAL SECTION
+% COMMENT: =================================================================================================
+% COMMENT: the below creates a colorized banner
+\multicolumn{[INSERTLASTYEARPLUSTWO]}{|c|}{\cellcolor{\SectionBannerColor}\color{\SectionBannerFontColor}\SectionBannerBoldface{Work Efforts Proposed but NOT Funded By This Proposal}}\\
+
+[STARTUNFUNDEDABOVETHRESHOLD]
+% COMMENT: the below template generates a row for each team member under the UNfunded category
+[INSERTROLE] & [INSERTY1] & [INSERTY2] & [INSERTY3] & [INSERTY4] & [INSERTY5] & [INSERTY6] & [INSERTY7] & INSERTY8] & [INSERTY9] & [INSERTY10] & [INSERTTOTAL]\\
+[ENDUNFUNDEDABOVETHRESHOLD]
+
+[STARTUNFUNDEDBELOWTHRESHOLD]
+% COMMENT: the below template generates a row for each team member, if the work effor is less than 0.01 FTE
+[INSERTROLE] & \multicolumn{[INSERTLASTYEAR]}{c|}{minor} & {$\leq$0.01}\\
+[ENDUNFUNDEDBELOWTHRESHOLD]
+
+% COMMENT: the below is the colorized last line of the section providing sums per year for the UNfunded category
+\arrayrulecolor{lightgray!60}\hline\arrayrulecolor{black}
+\multicolumn{1}{|l}{\TotalWorkEffortBoldface{\color{\TotalWorkEffortFontColor}Total Unfunded Work Effort}} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTUNFUNDY1]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTUNFUNDY2]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTUNFUNDY3]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTUNFUNDY4]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}INSERTUNFUNDY5]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTUNFUNDY6]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTUNFUNDY7]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTUNFUNDY8]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTUNFUNDY9]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTUNFUNDY10]} & \multicolumn{1}{c|}{\color{\TotalWorkEffortFontColor}[INSERTUNFUNDTOTAL]}\\
+
+% COMMENT: =================================================================================================
+% COMMENT: ==================================   TOTAL WORK EFFORT SECTION
+% COMMENT: =================================================================================================
+\multicolumn{[INSERTLASTYEARPLUSTWO]}{|c|}{\cellcolor{\SectionBannerColor}\color{\SectionBannerFontColor}\SectionBannerBoldface{Total Work Efforts Proposed (Funded $+$ Unfunded)}}\\
+
+[STARTBOTHABOVETHRESHOLD]
+% COMMENT: the below template generates a row for each team member under the UNfunded category
+[INSERTROLE] & [INSERTY1] & [INSERTY2] & [INSERTY3] & [INSERTY4] & [INSERTY5] & [INSERTY6] & [INSERTY7] & [INSERTY8] & [INSERTY9] & [INSERTY10] & [INSERTTOTAL]\\
+[ENDBOTHABOVETHRESHOLD]
+
+[STARTBOTHBELOWTHRESHOLD]
+% COMMENT: the below template generates a row for each team member, if the work effor is less than 0.01 FTE
+[INSERTROLE] & \multicolumn{[INSERTLASTYEAR]}{c|}{minor} & {$\leq$0.01}\\
+[ENDBOTHBELOWTHRESHOLD]
+
+% COMMENT: the below is the colorized last line of the section providing sums per year for the TOTAL WORK EFFORT category
+\arrayrulecolor{lightgray!60}\hline\arrayrulecolor{black}
+\multicolumn{1}{|l}{\TotalWorkEffortBoldface{\color{\TotalWorkEffortFontColor}Total Funded $+$ Unfunded Work Effort}} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTBOTHY1]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTBOTHY2]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTBOTHY3]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTBOTHY4]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTBOTHY5]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTBOTHY6]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTBOTHY7]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTBOTHY8]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTBOTHY9]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTBOTHY10]} & \multicolumn{1}{c|}{\color{\TotalWorkEffortFontColor}[INSERTBOTHTOTAL]}\\
+\hline
