@@ -24,6 +24,7 @@ ______________________________________________________
     COPY/PASTE the following lines (starting with the NEXT line) into that place within your document: 
 
 %====================== FORMAT PREFERENCES ===================
+\clearpage
 \def\RoleLabelBoldface#1{\textbf{#1}}      % boldface "Role" column label
 \def\CommitmentLabelBoldface#1{\textbf{#1}}% boldface "Commitment (FTE)" column label
 \def\YearLabelBoldface#1{\textbf{#1}}      % boldface "Y1", "Y2", ...  column labels
