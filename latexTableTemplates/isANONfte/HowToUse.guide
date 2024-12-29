@@ -15,7 +15,6 @@
 \usepackage{FUpackages}
 \usepackage{FUformatting}
 \usepackage{FUnewCommands} % not needed by WorPT files but generally useful
-
 ______________________________________________________
 ______________________________________________________
 
@@ -35,13 +34,13 @@ ______________________________________________________
 \def\TotalWorkEffortBoldface#1{\textbf{#1}}% boldface text in "Total .... Work Effort" line at section end
 \def\TotalWorkEffortFontColor{Blue}        % font color of "Total ... Work Effort" line at section end
 
-\addtocounter{table}{-1}                % corrects double-counting of longtable and table combination
-\begin{table*}[h!]                      % \begin{table} needed to make bottom table caption have same width as table
+\addtocounter{table}{-1}  % corrects double-counting of longtable and table combination
+\begin{table*}[h!]        % \begin{table} needed to make bottom table caption have same width as table
   \begin{longtable}{|l|*{[INSERTLASTYEARPLUSONE]}{c|}}
     \expinput{[INSERTLATEXFILESUBDIRECTORY]/table_isANONfte}
-    \caption{
-      \label{tab:isANONfte} Details of work efforts per member to be funded for the present proposal; 
-      {\color{red}Detailed responsibilities, tied to tasks and science goals, are provided in Sec.\,\ref{Subsec:tmeline}.}
-    }
   \end{longtable}
+  \caption{
+    \label{tab:isANONfte} Details of work efforts per member to be funded for the present proposal; 
+    {\color{red}Detailed responsibilities, tied to tasks and science goals, are provided in Sec.\,\ref{Subsec:tmeline}.}
+  }
 \end{table*}
