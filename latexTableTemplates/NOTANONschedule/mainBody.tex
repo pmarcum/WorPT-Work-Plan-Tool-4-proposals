@@ -2,3 +2,128 @@
 % | Refer to instructions_NOTANONschedule.tex                                        |
 % | for guidance regarding how to include the NOTANONschedule table in your document |
 % |__________________________________________________________________________________|
+% ------------------------- First line of headers
+\cline{2-[INSERTNUMBERYEARSLICESPLUSONE]}                               
+\multicolumn{1}{c|}{}                                                       % title column
+\multicolumn{[INSERTNUMBERYEARSLICES}{c|}{\TaskTimelineColumnSize{TASK}}    % schedule columns
+ & \multicolumn{1}{c}{}                                                   % task assignment column
+ & \multicolumn{[INSERTNUMBERFTETYPE]}{c}{}\\                             % 3-column total fte
+\cline{[INSERTNUMBERYEARSLICESPLUSTWO]-[INSERTNUMBERYEARSLICESPLUSFIVE]}
+% ------------------------- Second line of headers
+\multicolumn{1}{c|}{}                                                       % title column
+\multicolumn{[INSERTNUMBERYEARSLICES}{c|}{\TaskTimelineColumnSize{TIMELINE}}% schedule columns
+ & \multicolumn{1}{c|}{\TaskAssignmentsColumnSize{TASK}}                  %task assignments column
+ & \multicolumn{[INSERTNUMBERFTETYPE]}{c|}{\TotalFteColumnSize{TOTAL}}\\  % 3-column total fte
+\cline{2-[INSERTNUMBERYEARSLICESPLUSONE]}
+% -------------------------  Third line of headers
+\multicolumn{1}{c|}{}                                                       % title column
+ & \multicolumn{[INSERTNUMBERSLICESPERYEAR]}{c|}{\YearColumnSize{YR1}} & 
+ & \multicolumn{[INSERTNUMBERSLICESPERYEAR]}{c|}{\YearColumnSize{YR2}} & 
+ & \multicolumn{[INSERTNUMBERSLICESPERYEAR]}{c|}{\YearColumnSize{YR3}} & 
+ & \multicolumn{[INSERTNUMBERSLICESPERYEAR]}{c|}{\YearColumnSize{YR4}} & 
+ & \multicolumn{[INSERTNUMBERSLICESPERYEAR]}{c|}{\YearColumnSize{YR5}} & 
+ & \multicolumn{[INSERTNUMBERSLICESPERYEAR]}{c|}{\YearColumnSize{YR6}} & 
+ & \multicolumn{[INSERTNUMBERSLICESPERYEAR]}{c|}{\YearColumnSize{YR7}} & 
+ & \multicolumn{[INSERTNUMBERSLICESPERYEAR]}{c|}{\YearColumnSize{YR8}} & 
+ & \multicolumn{[INSERTNUMBERSLICESPERYEAR]}{c|}{\YearColumnSize{YR9}} & 
+ & \multicolumn{[INSERTNUMBERSLICESPERYEAR]}{c|}{\YearColumnSize{YR10}} & 
+ & \multicolumn{1}{c|}{\TaskAssignmentsColumnSize{ASSIGNMENTS}}           % task assignments (ID, \#week)
+ & \multicolumn{[INSERTNUMBERFTETYPE]}{c|}{\TotalFteColumnSize{FTE}}\\    % 3-column total fte
+\cline{1-1}
+% -------------------------  Forth line of headers
+\multicolumn{1}{|l|}{\TaskTitleColumnSize{TASK TITLES}}                   % title column 
+% COMMENT: year 1 calendar 
+ & \QuarterColumnSize{[INSERTYEARSLICE1YR1]} & \QuarterColumnSize{[INSERTYEARSLICE2YR1]} & \QuarterColumnSize{[INSERTYEARSLICE3YR1]} & \QuarterColumnSize{[INSERTYEARSLICE4YR1]} & \QuarterColumnSize{[INSERTYEARSLICE5YR1]} & \QuarterColumnSize{[INSERTYEARSLICE6YR1]} & \QuarterColumnSize{[INSERTYEARSLICE7YR1]} & \QuarterColumnSize{[INSERTYEARSLICE8YR1]} & \QuarterColumnSize{[INSERTYEARSLICE9YR1]} & \QuarterColumnSize{[INSERTYEARSLICE10YR1]} & \QuarterColumnSize{[INSERTYEARSLICE11YR1]}  
+% COMMENT: year 2 calendar 
+ & \QuarterColumnSize{[INSERTYEARSLICE12YR1]} & \QuarterColumnSize{[INSERTYEARSLICE1YR2]} & \QuarterColumnSize{[INSERTYEARSLICE2YR2]} & \QuarterColumnSize{[INSERTYEARSLICE3YR2]} & \QuarterColumnSize{[INSERTYEARSLICE4YR2]} & \QuarterColumnSize{[INSERTYEARSLICE5YR2]} & \QuarterColumnSize{[INSERTYEARSLICE6YR2]} & \QuarterColumnSize{[INSERTYEARSLICE7YR2]} & \QuarterColumnSize{[INSERTYEARSLICE8YR2]} & \QuarterColumnSize{[INSERTYEARSLICE9YR2]} & \QuarterColumnSize{[INSERTYEARSLICE10YR2]} & \QuarterColumnSize{[INSERTYEARSLICE11YR2]} & \QuarterColumnSize{[INSERTYEARSLICE12YR2]}  
+% COMMENT: year 3 calendar 
+& \QuarterColumnSize{[INSERTYEARSLICE1YR3]} & \QuarterColumnSize{[INSERTYEARSLICE2YR3]} & \QuarterColumnSize{[INSERTYEARSLICE3YR3]} & \QuarterColumnSize{[INSERTYEARSLICE4YR3]} & \QuarterColumnSize{[INSERTYEARSLICE5YR3]} & \QuarterColumnSize{[INSERTYEARSLICE6YR3]} & \QuarterColumnSize{[INSERTYEARSLICE7YR3]} & \QuarterColumnSize{[INSERTYEARSLICE8YR3]} & \QuarterColumnSize{[INSERTYEARSLICE9YR3]} & \QuarterColumnSize{[INSERTYEARSLICE10YR3]} & \QuarterColumnSize{[INSERTYEARSLICE11YR3]} & \QuarterColumnSize{[INSERTYEARSLICE12YR3]} & \QuarterColumnSize{[INSERTYEARSLICE1YR4]}  
+% COMMENT: year 4 calendar 
+ & \QuarterColumnSize{[INSERTYEARSLICE2YR4]} & \QuarterColumnSize{[INSERTYEARSLICE3YR4]} & \QuarterColumnSize{[INSERTYEARSLICE4YR4]} & \QuarterColumnSize{[INSERTYEARSLICE5YR4]} & \QuarterColumnSize{[INSERTYEARSLICE6YR4]} & \QuarterColumnSize{[INSERTYEARSLICE7YR4]} & \QuarterColumnSize{[INSERTYEARSLICE8YR4]} & \QuarterColumnSize{[INSERTYEARSLICE9YR4]} & \QuarterColumnSize{[INSERTYEARSLICE10YR4]} & \QuarterColumnSize{[INSERTYEARSLICE11YR4]} & \QuarterColumnSize{[INSERTYEARSLICE12YR4]}  
+% COMMENT: year 5 calendar 
+ & \QuarterColumnSize{[INSERTYEARSLICE1YR5]} & \QuarterColumnSize{[INSERTYEARSLICE2YR5]} & \QuarterColumnSize{[INSERTYEARSLICE3YR5]} & \QuarterColumnSize{[INSERTYEARSLICE4YR5]} & \QuarterColumnSize{[INSERTYEARSLICE5YR5]} & \QuarterColumnSize{[INSERTYEARSLICE6YR5]} & \QuarterColumnSize{[INSERTYEARSLICE7YR5]} & \QuarterColumnSize{[INSERTYEARSLICE8YR5]} & \QuarterColumnSize{[INSERTYEARSLICE9YR5]} & \QuarterColumnSize{[INSERTYEARSLICE10YR5]} & \QuarterColumnSize{[INSERTYEARSLICE11YR5]} & \QuarterColumnSize{[INSERTYEARSLICE12YR5]} 
+% COMMENT: year 6 calendar 
+ & \QuarterColumnSize{[INSERTYEARSLICE1YR6]} & \QuarterColumnSize{[INSERTYEARSLICE2YR6]} & \QuarterColumnSize{[INSERTYEARSLICE3YR6]} & \QuarterColumnSize{[INSERTYEARSLICE4YR6]} & \QuarterColumnSize{[INSERTYEARSLICE5YR6]} & \QuarterColumnSize{[INSERTYEARSLICE6YR6]} & \QuarterColumnSize{[INSERTYEARSLICE7YR6]} & \QuarterColumnSize{[INSERTYEARSLICE8YR6]} & \QuarterColumnSize{[INSERTYEARSLICE9YR6]} & \QuarterColumnSize{[INSERTYEARSLICE10YR6]} & \QuarterColumnSize{[INSERTYEARSLICE11YR6]} & \QuarterColumnSize{[INSERTYEARSLICE12YR6]} 
+% COMMENT: year 7 calendar 
+ & \QuarterColumnSize{[INSERTYEARSLICE1YR7]} & \QuarterColumnSize{[INSERTYEARSLICE2YR7]} & \QuarterColumnSize{[INSERTYEARSLICE3YR7]} & \QuarterColumnSize{[INSERTYEARSLICE4YR7]} & \QuarterColumnSize{[INSERTYEARSLICE5YR7]} & \QuarterColumnSize{[INSERTYEARSLICE6YR7]} & \QuarterColumnSize{[INSERTYEARSLICE7YR7]} & \QuarterColumnSize{[INSERTYEARSLICE8YR7]} & \QuarterColumnSize{[INSERTYEARSLICE9YR7]} & \QuarterColumnSize{[INSERTYEARSLICE10YR7]} & \QuarterColumnSize{[INSERTYEARSLICE11YR7]} & \QuarterColumnSize{[INSERTYEARSLICE12YR7]} 
+% COMMENT: year 8 calendar 
+ & \QuarterColumnSize{[INSERTYEARSLICE1YR8]} & \QuarterColumnSize{[INSERTYEARSLICE2YR8]} & \QuarterColumnSize{[INSERTYEARSLICE3YR8]} & \QuarterColumnSize{[INSERTYEARSLICE4YR8]} & \QuarterColumnSize{[INSERTYEARSLICE5YR8]} & \QuarterColumnSize{[INSERTYEARSLICE6YR8]} & \QuarterColumnSize{[INSERTYEARSLICE7YR8]} & \QuarterColumnSize{[INSERTYEARSLICE8YR8]} & \QuarterColumnSize{[INSERTYEARSLICE9YR8]} & \QuarterColumnSize{[INSERTYEARSLICE10YR8]} & \QuarterColumnSize{[INSERTYEARSLICE11YR8]} & \QuarterColumnSize{[INSERTYEARSLICE12YR8]} 
+% COMMENT: year 9 calendar 
+ & \QuarterColumnSize{[INSERTYEARSLICE1YR9]} & \QuarterColumnSize{[INSERTYEARSLICE2YR9]} & \QuarterColumnSize{[INSERTYEARSLICE3YR9]} & \QuarterColumnSize{[INSERTYEARSLICE4YR9]} & \QuarterColumnSize{[INSERTYEARSLICE5YR9]} & \QuarterColumnSize{[INSERTYEARSLICE6YR9]} & \QuarterColumnSize{[INSERTYEARSLICE7YR9]} & \QuarterColumnSize{[INSERTYEARSLICE8YR9]} & \QuarterColumnSize{[INSERTYEARSLICE9YR9]} & \QuarterColumnSize{[INSERTYEARSLICE10YR9]} & \QuarterColumnSize{[INSERTYEARSLICE11YR9]} & \QuarterColumnSize{[INSERTYEARSLICE12YR9]} 
+% COMMENT: year 10 calendar 
+ & \QuarterColumnSize{[INSERTYEARSLICE1YR10]} & \QuarterColumnSize{[INSERTYEARSLICE2YR10]} & \QuarterColumnSize{[INSERTYEARSLICE3YR10]} & \QuarterColumnSize{[INSERTYEARSLICE4YR10]} & \QuarterColumnSize{[INSERTYEARSLICE5YR10]} & \QuarterColumnSize{[INSERTYEARSLICE6YR10]} & \QuarterColumnSize{[INSERTYEARSLICE7YR10]} & \QuarterColumnSize{[INSERTYEARSLICE8YR10]} & \QuarterColumnSize{[INSERTYEARSLICE9YR10]} & \QuarterColumnSize{[INSERTYEARSLICE10YR10]} & \QuarterColumnSize{[INSERTYEARSLICE11YR10]} & \QuarterColumnSize{[INSERTYEARSLICE12YR10]} 
+ & \multicolumn{1}{c|}{\IdWksColumnSize{id~\#wks}}         % task assignments (ID,\#weeks)
+ & {\textbf{\SigmaColumnSize{$\Sigma$}}}                   % Col1 Total funded+unfunded FTE
+ & {\NoDollarColumnIcon}                                   % Col2 Total unfunded FTE
+ & {\DollarColumnIcon}                                     % Col3 Total funded FTE
+\hline
+
+% COMMENT: the below produces the row for a task category label
+[STARTCATEGORYSECTION]
+% begin task category
+\TaskCategoryLabel{[INSERTCATEGORYLABEL]}{[INSERTCATEGORYTITLE]} 
+& {[SL1YR1]} & {[SL2YR1]} & {[SL3YR1]} & {[SL4YR1]} & {[SL5YR1]} & {[SL6YR1]} & {[SL7YR1]} & {[SL8YR1]} & {[SL9YR1]} & {[SL10YR1]} & {[SL11YR1]} & {[SL12YR1]} % empty year slices
+& {}           % empty assignments
+& {} & {} & {} % empty total fte
+  [INSERTTASKROWS]
+
+  % COMMENT: the below produces a row for a task under a category, then all rows under category inserted at INSERTTASKROWS above
+  [STARTTASKROW]
+    % begin task
+    \TaskTitleLabel{[INSERTTASKLABEL}{[INSERTTASKTITLE]} 
+     & [SL1YR1] & [SL2YR1] & [SL3YR1] & [SL4YR1] & [SL5YR1] & [SL6YR1] & [SL7YR1] & [SL8YR1] & [SL9YR1] & [SL10YR1] & [SL11YR1] & 
+    [SL12YR1] % year 1 
+     & [SL1YR2] & [SL2YR2] & [SL3YR2] & [SL4YR2] & [SL5YR2] & [SL6YR2] & [SL7YR2] & [SL8YR2] & [SL9YR2] & [SL10YR2] & [SL11YR2] & 
+    [SL12YR2] % year 2 
+     & [SL1YR3] & [SL2YR3] & [SL3YR3] & [SL4YR3] & [SL5YR3] & [SL6YR3] & [SL7YR3] & [SL8YR3] & [SL9YR3] & [SL10YR3] & [SL11YR3] & 
+    [SL12YR3] % year 3 
+     & [SL1YR4] & [SL2YR4] & [SL3YR4] & [SL4YR4] & [SL5YR4] & [SL6YR4] & [SL7YR4] & [SL8YR4] & [SL9YR4] & [SL10YR4] & [SL11YR4] & 
+    [SL12YR4] % year 4 
+     & [SL1YR5] & [SL2YR5] & [SL3YR5] & [SL4YR5] & [SL5YR5] & [SL6YR5] & [SL7YR5] & [SL8YR5] & [SL9YR5] & [SL10YR5] & [SL11YR5] & 
+    [SL12YR5] % year 5 
+     & [SL1YR6] & [SL2YR6] & [SL3YR6] & [SL4YR6] & [SL5YR6] & [SL6YR6] & [SL7YR6] & [SL8YR6] & [SL9YR6] & [SL10YR6] & [SL11YR6] & 
+    [SL12YR6] % year 6 
+     & [SL1YR7] & [SL2YR7] & [SL3YR7] & [SL4YR7] & [SL5YR7] & [SL6YR7] & [SL7YR7] & [SL8YR7] & [SL9YR7] & [SL10YR7] & [SL11YR7] & 
+    [SL12YR7] % year 7 
+     & [SL1YR8] & [SL2YR8] & [SL3YR8] & [SL4YR8] & [SL5YR8] & [SL6YR8] & [SL7YR8] & [SL8YR8] & [SL9YR8] & [SL10YR8] & [SL11YR8] & 
+    [SL12YR8] % year 8 
+     & [SL1YR9] & [SL2YR9] & [SL3YR9] & [SL4YR9] & [SL5YR9] & [SL6YR9] & [SL7YR9] & [SL8YR9] & [SL9YR9] & [SL10YR9] & [SL11YR9] & 
+    [SL12YR9] % year 9 
+     & [SL1YR10] & [SL2YR10] & [SL3YR10] & [SL4YR10] & [SL5YR10] & [SL6YR10] & [SL7YR10] & [SL8YR10] & [SL9YR10] & [SL10YR10] & 
+    [SL11YR10] & [SL12YR10] % year 10 
+
+      % COMMENT: each of above bracketed items turns cell in calendar white or blue to produce task timeline
+      % COMMENT: below is template replacing bracketted items above, turning cell blue or white 
+      [STARTCOLOREDTIMELINE]
+      {\TimelineSize\cellcolor{\TimelineColor}}
+      [ENDCOLOREDTIMELINE]
+
+      [STARTUNCOLOREDTIMELINE]
+      {\TimelineSize\cellcolor{\TimelineColor}}
+      [ENDUNCOLOREDTIMELINE]
+
+    & {[INSERTASSIGNMENTLIST]}
+
+      % COMMENT: the assignment list consists of the team member ids followed by number of work weeks, with whitespace delimiter
+      % COMMENT: the below options are what are replace the above bracketed placeholders like [SL1YR5]
+ 
+      % COMMENT: below is format for a team member who is funded and from U.S. institution
+      [STARTFUNDEDUSTEAMASSIGNMENT]
+      {\FundedUsTeam{[TEAMID]}\,\FundedUsTeam{[FUNDEDWEEKS]} 
+      [ENDFUNDEDUSTEAMASSIGNMENT]
+ 
+      % COMMENT: below is format for a team member who is UNfunded and from U.S. institution
+      [STARTUNFUNDEDUSTEAMASSIGNMENT]
+      {\UnfundedUsTeam{[TEAMID]}\,\UnfundedUsTeam{[FUNDEDWEEKS]} 
+      [ENDUNFUNDEDUSTEAMASSIGNMENT]
+
+      % COMMENT: below is format for a team member who is from NON U.S. institution (and by definition, unfunded)
+      [STARTINTERNATIONALTEAMASSIGNMENT]
+      {\InternationalTeam{[TEAMID]}\,\InternationalTeam{[FUNDEDWEEKS]} 
+      [ENDINTERNATIONALTEAMASSIGNMENT]
+
+    % COMMENT: the below is the total FTE for each FTE type for this task
+    & \FteTotalFormat{[INSERTFTETOTAL]} & \FteUnfundedFormat{[INSERTFTEUNFUNDED]} & \FteFundedFormat{[INSERTFTEFUNDED]}\\
+  [ENDTASKROW] 
+  \hline
+[ENDCATEGORYROW]
