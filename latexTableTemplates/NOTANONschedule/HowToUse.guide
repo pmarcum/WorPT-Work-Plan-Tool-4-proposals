@@ -22,3 +22,62 @@ ______________________________________________________
     COPY/PASTE the following lines (starting with the NEXT line) into that place within your document: 
 
 %====================== FORMAT PREFERENCES ===================
+\def\TaskTimelineColumnSize{\scriptsize}        % Task Timeline label text size
+\def\TaskAssignmentsColumnSize{\scriptsize}     % Task Assignments label text size
+\def\TotalFteColumnSize{\scriptsize}            % Totaled FTEs label text size
+\def\YearColumnSize{\scriptsize}                % "YEAR1", "YEAR2"... label text size
+\def\TaskTitleColumnSize{\normalsize}           % "TASK TITLES" column label text size
+\def\QuarterColumnSize{\scriptsize}             % "1", "2"... year-quarter label text size
+\def\IdWksColumnSize{\scriptsize}               % "id wks" text size
+\def\SigmaColumnIcon{\textbf{\large{$\Sigma$}}} % sigma symbol label size
+\def\NoDollarColumnIcon{\noDollarIcon{-0.4}{0.4mm}{0.2}{0.15}} % "no dollar" symbol label size
+\def\DollarColumnIcon{\dollarIcon{-0.4}{0.2}{0.015}}% green "dollar" symbol label size
+\def\TaskCategoryLabel#1#2{                     % Task Category label format
+  {\normalsize\textbf\scshape{#1}}~{\normalsize\textbf{#2}}}
+\def\TaskTitleLabel#1#2{                        % Task title format
+  ~{\scriptsize{\textbf{\scshape{#1}}}}~{
+  \color{mediumelectricblue}{\footnotesize\textbf{#2}}}}
+\def\FteTotalFormat#1{\small{#1}}               % Sigma column format
+\def\FteUnfundedFormat#1{\small{#1}}            % no-dollar column format
+\def\FteFundedFormat#1{\small \color{blue}{#1}} % "funded" column format
+\def\TimelineColor{mediumelectricblue}          % TASK TIMELINE cell color
+\def\TimelineSize{\tiny}                        % width control of TASK TIMELINE cells
+\def\FundedUsTeam#1{\small \color{blue}{#1}}    % funded US team members ID, \#weeks format
+\def\UnfundedUsTeam#1{\small \color{black}{#1}} % UNfunded US team members ID, \#weeks fomat
+\def\InternationalTeam#1{\small \color{red}{#1}}% international team members ID, \#weeks format
+
+\addtocounter{table}{-1}                        % corrects double-counting of sidewaystable/longtable use
+\begin{sidewaystable}                           % landscape mode; comment out if not needed
+\begingroup
+ \setlength{\tabcolsep}{1pt}                    % changes horizontal spacing between columns
+ \renewcommand{\arraystretch}{0.8}              % changes vertical space between rows
+ \centerline{
+  \begin{minipage}{1.5\textwidth}               % change margin for wide table
+   \begin{longtable} {
+    |>{\raggedright\arraybackslash}p{4.1in}     % title column
+    *{[INSERTNUMBERYEARS]}{                     % timeline columns
+    |p{1ex}!{\color{lightgray}\vrule}*{[INSERTNUMBERSLICESPERYEARMINUSTWO]}
+    {p{1ex}!{\color{lightgray}\vrule}}p{1ex}}
+    |>{\raggedright\arraybackslash}p{24ex}      % task assignments (ID and \#Weeks)
+    |p{5ex}!{\color{lightgray}\vrule}           % total (funded and unfunded) FTE
+    p{5ex}!{\color{lightgray}\vrule}            % total UNfunded FTE
+    c|                                          % total funded FTE
+   }
+   \expinput{do_NOT_manually_edit/table_NOTANONschedule}
+   \end{longtable}
+  \end{minipage}
+ }
+\endgroup
+\caption{
+ \label{tab:NOTANONschedule} Resource-loaded project schedule, where: 
+ \def\NoDollarCaptionIcon{\noDollarIcon{-0.3}{0.4mm}{0.2}{0.15}\hspace{-0.3em}$=$} Not funded by this grant,  
+ \def\DollarCaptionIcon{\dollarIcon{-0.3}{0.2}{0.015}\hspace{-0.3em}$=$} funded by this grant, 
+ \def\SigmaCaptionIcon{\textbf{\large{$\Sigma$}} $=$} funded $+$ unfunded; 
+ Tasks are listed (left side), with duration of task activity indicated in blue-colored timelines that 
+ measure quarter-years (1,2,3,4). Task assignments identify specific team members responsible for 
+ implementation with associated work weeks, where color indicates institutional affiliation 
+ (blue$=$funded/U.S., black$=$not funded/U.S., red=international). "Total FTE" (right side) are integrated 
+ work-weeks converted into FTE per task (1~FTE$=$12~months), displayed as "total",  "unfunded by this grant", 
+ and "funded by this grant", resp.  Assignment identities: \input{[INSERTFILEFOLDER]/id2namekey.tex}.
+}
+\end{sidewaystable}  % comment out if not used
