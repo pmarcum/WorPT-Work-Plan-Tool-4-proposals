@@ -78,6 +78,6 @@ ______________________________________________________
  implementation with associated work weeks, where color indicates institutional affiliation 
  (blue$=$funded/U.S., black$=$not funded/U.S., red=international). "Total FTE" (right side) are integrated 
  work-weeks converted into FTE per task (1~FTE$=$12~months), displayed as "total",  "unfunded by this grant", 
- and "funded by this grant", resp.  Assignment identities: \input{[INSERTFILEFOLDER]/ids2names.tex}.
+ and "funded by this grant", resp.  Assignment identities: \input{[INSERTLATEXFILESUBDIRECTORY]/ids2names.tex}.
 }
 \end{sidewaystable}  % comment out if not used
