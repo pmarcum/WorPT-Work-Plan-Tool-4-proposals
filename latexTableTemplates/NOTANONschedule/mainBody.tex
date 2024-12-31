@@ -66,6 +66,8 @@
 & {}           % empty assignments
 & {} & {} & {} % empty total fte
 
+  [INSERTTASKSUNDERTHISCATEGORY]
+
   % COMMENT: the below produces a row for a task under a category, then all rows under category inserted at INSERTTASKROWS above
   [STARTTASKROW]
     % begin task
@@ -91,7 +93,7 @@
       {\TimelineSize\cellcolor{\TimelineColor}}
       [ENDUNCOLOREDTIMELINE]
 
-    & {[INSERTASSIGNMENTLIST]}
+    & {[INSERTASSIGNMENTLISTFORTHISTASK]}
 
       % COMMENT: the assignment list consists of the team member ids followed by number of work weeks, with whitespace delimiter
       % COMMENT: the below options are what are replace the above bracketed placeholders like [SL1YR5]
@@ -115,4 +117,4 @@
     & \FteTotalFormat{[INSERTFTETOTAL]} & \FteUnfundedFormat{[INSERTFTEUNFUNDED]} & \FteFundedFormat{[INSERTFTEFUNDED]}\\
   [ENDTASKROW] 
   \hline
-[ENDCATEGORYROW]
+[ENDCATEGORYSECTION]
