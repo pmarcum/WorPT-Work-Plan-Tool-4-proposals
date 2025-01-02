@@ -14,8 +14,9 @@ individual WorPT biosketch google sheet. The last page in that google sheet
 is where the list of grants, and their statuses, are written.  The WorPT
 script will copy every grant that is still either active or has a status
 indicating that no information regarding selection has yet been obtained,
-and will format those grants into this current/pending form. It is
-important for each user to keep their biosketch updated, so that the 
+and will format those grants into this current/pending form.
+
+It is important for each user to keep their biosketch updated, so that the 
 information that is extracted for both the current/pending and bio-sketch
 sections of a proposal have valid and current information.
 
@@ -36,6 +37,7 @@ ______________________________________________________________________
 * IF YOU HAVE ALREADY PUT THE BELOW LINES INTO YOUR PREAMBLE WHEN 
   PREVIOUSLY INSERTING ANOTHER WorPT TABLE, YOU CAN SKIP THIS STEP!
 
+------ COPY below 3 lines and PASTE in preamble of your document ------
 \usepackage{FUpackages}
 \usepackage{FUformatting}
 \usepackage{FUnewCommands} % not needed by WorPT files but maybe useful
