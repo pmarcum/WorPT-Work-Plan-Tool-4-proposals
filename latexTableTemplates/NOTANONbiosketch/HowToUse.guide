@@ -35,6 +35,7 @@ ______________________________________________________________________
 * IF YOU HAVE ALREADY PUT THE BELOW LINES INTO YOUR PREAMBLE WHEN 
   PREVIOUSLY INSERTING ANOTHER WorPT TABLE, YOU CAN SKIP THIS STEP!
 
+------ COPY below 3 lines and PASTE in preamble of your document ------
 \usepackage{FUpackages}
 \usepackage{FUformatting}
 \usepackage{FUnewCommands} % not needed by WorPT files but maybe useful
