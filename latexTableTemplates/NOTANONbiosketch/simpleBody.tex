@@ -14,6 +14,14 @@
 % COMMENT: These COMMENT lines are only to help those wanting to edit the github 
 % COMMENT: versions of these files
 
+% COMMENT: the below sets up the default formatting
+\def\NameBoldface#1{\textbf{#1}}              % boldface name/role
+\def\NameColor{Blue}                          % font color of name/role
+\def\NameSize{\large }                        % font size of name/role
+\def\LabelBoldface#1{\textbf{#1}}             % boldface "Education",... labels
+\def\SectionSpacing{\par \vspace{-0.5em}}     % vertical spacing bet/ categories
+\def\PublicationBullet{\scriptsize{$\bullet$}{\hspace{-0.3em}}}
+
 % COMMENT: the below creates the very top of each bio sketch, with the name 
 % COMMENT: appearing boldface and in color, and affiliation beneath the name
 \NameBoldface{\color{\NameColor}{\NameSize [INSERTNAME] ([INSERTROLE]):}}\\
