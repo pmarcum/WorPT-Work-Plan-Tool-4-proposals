@@ -56,9 +56,13 @@ ______________________________________________________
  \centerline{
   \begin{minipage}{1.5\textwidth}               % change margin for wide table
    \begin{longtable} {
-    |>{\raggedright\arraybackslash}p{4.1in}     % title column
+    |>{\raggedright\arraybackslash}p{3.4in}     % title column
+% You will likely need to adjust the widths to accomodate your title, task assignments columns
+% The table looks best if the titles appear on single lines that do not wrap to next line
+% You can shorten the titles in WorPT and regenerate the latex files and/or go to landscape mode to 
+% make the table look good (one line per task looks best)
     *{[INSERTNUMBERYEARS]}{|p{1ex}!{\color{lightgray}\vrule}*{[INSERTNUMBERSLICESPERYEARMINUSTWO]}{p{1ex}!{\color{lightgray}\vrule}}p{1ex}} % timeline columns
-    |>{\raggedright\arraybackslash}p{24ex}      % task assignments (ID and \#Weeks)
+    |>{\raggedright\arraybackslash}p{20ex}      % task assignments (ID and \#Weeks)
     |p{5ex}!{\color{lightgray}\vrule}           % total (funded and unfunded) FTE
     p{5ex}!{\color{lightgray}\vrule}            % total UNfunded FTE
     c|                                          % total funded FTE
