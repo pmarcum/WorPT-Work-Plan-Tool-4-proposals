@@ -1,4 +1,4 @@
-%  _________________________________________________________________________________
+:%  _________________________________________________________________________________
 % | Refer to  instructions_NOTANONbiosketch.tex                                     |
 % | for guidance regarding how to include the NOTANONbiosketch file in your document|
 % |_________________________________________________________________________________|
@@ -10,34 +10,39 @@
 % COMMENT: These COMMENT lines are only to help those wanting to edit the github 
 % COMMENT: versions of these files
 
+% COMMENT: the below creates the very top of each bio sketch, with the name 
+% COMMENT: appearing boldface and in color, and affiliation beneath the name
 \NameBoldface{\color{\NameColor}{\NameSize [INSERTNAME] ([INSERTROLE]):}}\\
 [INSERTAFFILIATION]
 
-% COMMENT: the below is educational background
+% COMMENT: the below constructs the educational background section
 \SectionSpacing
 \LabelBoldface{Education}\\
-% COMMENT: the below will be used as a template for multiple educational items
+% COMMENT: the below is the template for each educational line in the list
 [STARTEDUCATION]
 [INSERTEDUCATIONYEAR], [INSERTEDUCATIONINSTITUTION], [INSERTEDUCATIONDEGREE], [INSERTEDUCATIONAREA]
 [ENDEDUCATION]
 
-% COMMENT: the below is a list of appointments
+% COMMENT: the below creates the appointments section
 \SectionSpacing
 \LabelBoldface{Appointments}\\
+% COMMENT: the below is the template for each appointment line in the list
 [STARTAPPOINTMENTS]
 [INSERTAPPOINTMENTYEAR], [INSERTAPPOINTMENTDESC], [INSERTAPPOINTMENTINSTITUTION]
 [ENDAPPOINTMENTS]
 
-% COMMENT: the below is a list of awards, positions, etc.
+% COMMENT: the below generates the awards, positions,... section
 \SectionSpacing
 \LabelBoldface{Additional Awards, Positions, Fellowships and Proposals}\\
+% COMMENT: the below is the template for each line in this list
 [STARTAWARDS]
 [INSERTAWARDYEAR], [INSERTAWARDDESC]
 [ENDAWARDS]
 
-% COMMENT: the below is a list of relevant publications
+% COMMENT: the below generates the relevant publications section
 \SectionSpacing
 \LabelBoldface{Publications relevant for the proposal:}\\
+% COMMENT: the below is the template used for each publication item in the list
 [STARTPUBLICATIONS]
 {\PublicationBullet}[INSERTPUB]
 [ENDPUBLICATIONS]
