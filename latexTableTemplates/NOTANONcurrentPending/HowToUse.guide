@@ -63,7 +63,7 @@ ______________________________________________________________________
 
 % ______________________NOTANONcurrentPending_________________________
 \clearpage                % could also be \newpage or \pagebreak
-\input{[INSERTLATEXFILESUBDIRECTORY]/simple_NOTANONbiosketches}
+\input{[INSERTLATEXFILESUBDIRECTORY]/simple_NOTANONcurrentPending}
 
 ______________________________________________________________________
 |  STEP (2B)    (choose this if you did NOT choose STEP (2A)          |
@@ -75,18 +75,18 @@ ______________________________________________________________________
 
 --------------------- COPY BELOW HERE ------------------
 % ______________________NOTANONcurrentPending__________________________
-% Formatting preferences for the bio sketch section are below
+% Formatting preferences for the current and pending section are below
 % Defaults can be changed after lines are copied into your latex file
 % _____________________________________________________________________
-\def\BannerColor{Blue}             % banner color at top of Current/Pending section
-\def\NameColor{White}              % font color of name at the top of Current/Pending
-\def\SectionColor{lightgray}       % separator color ("Current Support" and "Pending Grant Support") in Current/Pending
-\def\SectionFontColor{Black}       % separator font color ("Current Support" and "Pending Grant Support") in Current/Pending
-\def\ThisProposalColor{NavyBlue}   % text color of "(this proposal)" listed as "pending" in Current/Pending
-\def\LeftBoldface#1{\textbf{#1}}   % boldface left column text
-\def\SectionBoldface#1{\textbf{#1}}% boldface section separator words (Current Support, Pending Grant Support)
-\def\NameBoldface#1{\textbf{#1}}   % boldface banner text
+\def\BannerColor{Blue}           % Current/Pending top banner color
+\def\NameColor{White}            % Current/Pending top banner font color
+\def\SectionColor{lightgray}     % "Current Support" & "Pending Grant Support" color
+\def\SectionFontColor{Black}     % "Current Support" and "Pending Grant Support" font color
+\def\ThisProposalColor{NavyBlue} % "this proposal" font color in "pending"
+\def\LeftBoldface#1{\textbf{#1}} % boldface left column text
+\def\SectionBoldface#1{\textbf{#1}}% boldface Current Support, Pending Grant Support font
+\def\NameBoldface#1{\textbf{#1}} % boldface banner text
 % =============  start the table ==================
 \begin{longtable}{|l|p{5in}|}
-  \expinput{[INSERTLATEXFILESUBDIRECTORY]/table_NOTANONcurrentpending}
+\expinput{[INSERTLATEXFILESUBDIRECTORY]/table_NOTANONcurrentpending}
 \end{longtable}
