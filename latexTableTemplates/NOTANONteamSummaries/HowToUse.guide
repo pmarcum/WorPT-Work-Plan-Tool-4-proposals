@@ -1,30 +1,33 @@
 ======== HOW TO INSERT WorPT's NOTANONteamSummaries FILE ========
-Note that NOTANONteamSummaries is not a table, but rather a series of paragraphs of text
-describing the role of each team member
+Note that NOTANONteamSummaries is NOT a table per se, but rather a 
+series of paragraphs describing the role of each team member, that 
+will create the "Team Member Roles" narrative section in your proposal. 
 
-(1) Put some customized package files in the preamble of your document that are used by WorPT tables:
-     
-    Download or connect to https://github.com/pmarcum/LaTex-Formatting and select the set of files
-    (AAS-style or general) that meet your situation. 
-    
-    You can either download the files or link Overleaf to the needed files in the GitHub repository
-    through URL, and then add the following to the preamble of your main paper. 
-
-    IF YOU HAVE ALREADY PUT THE BELOW LINES INTO YOUR PREAMBLE WHEN PREVIOUSLY INSERTING ANOTHER 
-    WorPT TABLE, YOU DON'T HAVE TO REPEAT!  JUST SKIP THIS STEP!
+______________________________________________________________________
+|  (1)  (if not already done for previous installation of WorPT file) | 
+|   Put some customized package files in the preamble of your document|
+|   that are used by WorPT tables:                                    |
+______________________________________________________________________    
+* Download or connect to https://github.com/pmarcum/LaTex-Formatting and 
+  select the set of files (AAS-style or general) that meet your situation. 
+* You can either download the files or link Overleaf to the needed files 
+  in the GitHub repository through URL, and then add the following to the 
+  preamble of your main paper. 
+* IF YOU HAVE ALREADY PUT THE BELOW LINES INTO YOUR PREAMBLE WHEN 
+  PREVIOUSLY INSERTING ANOTHER WorPT TABLE, YOU CAN SKIP THIS STEP!
 
 \usepackage{FUpackages}
 \usepackage{FUformatting}
-\usepackage{FUnewCommands} % not needed by WorPT files but generally useful
+\usepackage{FUnewCommands} % not needed by WorPT files but maybe useful
 
-______________________________________________________
-______________________________________________________
+______________________________________________________________________
+|  (2) copy/paste the below, where you want the file to be inserted   | 
+|_____________________________________________________________________|
+* COPY/PASTE the following lines (starting with the following line, all 
+  the way down to bottom of this file) into place within your document
+  where you want the table contents to appear.
 
-(2) In the place within your LaTeX document that you want to insert the contents of the NOTANONteamSummaries file,
-
-    COPY/PASTE the following lines (starting with the NEXT line) into that place within your document: 
-
-% boldface the name and role at the beginning of each paragraph
+% The below boldfaces names and roles at the beginning of each paragraph
 \def\NameBoldface#1{\textbf{#1}} 
 \clearpage
 \input{[INSERTLATEXFILESUBDIRECTORY]/table_NOTANONteamSummaries}
