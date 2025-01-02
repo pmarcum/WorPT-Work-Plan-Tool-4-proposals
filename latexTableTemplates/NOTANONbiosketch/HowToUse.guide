@@ -1,34 +1,55 @@
-====== HOW TO INSERT WorPT's NOTANONbiosketch FILE ======
+==================================
+==       NOTANONbiosketch       ==
+==================================
+DESCRIPTION:
+Is a series of pages (in a form-like format for consistant look) giving
+a brief CV for each team member who is indicated as needing to have a 
+biosketch on the PERSONNEL & FTE page. If the box is checked under
+"bio sketch?" column for a person, then that person's bio sketch will 
+be generated and included as part of this file.
 
-(1) Put some customized package files in the preamble of your document that are used by WorPT tables:
-     
-    Download or connect to https://github.com/pmarcum/LaTex-Formatting and select the set of files
-    (AAS-style or general) that meet your situation. 
-    
-    You can either download the files or link Overleaf to the needed files in the GitHub repository
-    through URL, and then add the following to the preamble of your main paper. 
+A bio sketch for a person is generated from that person's individual 
+WorPT biosketch google sheet. Checked boxes in that sheet indicate what
+publications and awards to mention, etc., customizing for this particular
+proposal. The NOTANONbiosketch WorPT file can serve as the "bio sketches"
+section of your proposal.  
 
-    IF YOU HAVE ALREADY PUT THE BELOW LINES INTO YOUR PREAMBLE WHEN PREVIOUSLY INSERTING ANOTHER 
-    WorPT TABLE, YOU DON'T HAVE TO REPEAT!  JUST SKIP THIS STEP!
+HOW TO USE: 
+Follow Step 1 (if never done previously for this proposal),
+and Step 2, to include the contents of this file into your proposal. 
+______________________________________________________________________
+|  (1)  (if not already done for previous installation of WorPT file) | 
+|   Put some customized package files in the preamble of your document|
+|   that are used by WorPT tables:                                    |
+______________________________________________________________________    
+* Download or connect to https://github.com/pmarcum/LaTex-Formatting and 
+  select the set of files (AAS-style or general) that meet your situation. 
+* You can either download the files or link Overleaf to the needed files 
+  in the GitHub repository through URL, and then add the following to the 
+  preamble of your main paper. 
+* IF YOU HAVE ALREADY PUT THE BELOW LINES INTO YOUR PREAMBLE WHEN 
+  PREVIOUSLY INSERTING ANOTHER WorPT TABLE, YOU CAN SKIP THIS STEP!
 
 \usepackage{FUpackages}
 \usepackage{FUformatting}
-\usepackage{FUnewCommands} % not needed by WorPT files but generally useful
+\usepackage{FUnewCommands} % not needed by WorPT files but maybe useful
 
-______________________________________________________
-______________________________________________________
+______________________________________________________________________
+|  (2) copy/paste the below, where you want the file to be inserted   | 
+|_____________________________________________________________________|
+* COPY the lines following "copy below here" line all the way down to
+  bottom of this file and COPY into place within your document where you
+  want the table contents to appear.
 
-(2) In the place within your LaTeX document that you want to insert the WorPT table, 
-
-    COPY/PASTE the following lines (starting with the NEXT line) into that place within your document: 
-
-%============= FORMAT PREFERENCES ===============
-\def\NameBoldface#1{\textbf{#1}}              % boldface name/role at top of biographical sketch
-\def\NameColor{Blue}                          % font color of name/role at top biographical sketch
-\def\NameSize{\large }                        % font size of name/role at top of biographical sketch
-\def\LabelBoldface#1{\textbf{#1}}             % boldface category labels ("Education", "Appointments", etc)
-\def\SectionSpacing{\par \vspace{-0.5em}}     % vertical spacing bet/ categories in biographical sketch
+--------------------- COPY BELOW HERE ------------------
+% ______________ formatting preferences for the bio sketch section are below
+% These preferences can be adjusted after these lines are placed into your latex file
+\def\NameBoldface#1{\textbf{#1}}              % boldface name/role
+\def\NameColor{Blue}                          % font color of name/role
+\def\NameSize{\large }                        % font size of name/role
+\def\LabelBoldface#1{\textbf{#1}}             % boldface "Education", "Appointments",... labels
+\def\SectionSpacing{\par \vspace{-0.5em}}     % vertical spacing bet/ categories
 \def\PublicationBullet{\scriptsize{$\bullet$}}% symbol in front of items in publication list
-
+% _____________ start the actual content:
 \clearpage                                    % could change to \newpage or \pagebreak, whatever works best
 \input{[INSERTLATEXFILESUBDIRECTORY]/table_NOTANONbiosketches}
