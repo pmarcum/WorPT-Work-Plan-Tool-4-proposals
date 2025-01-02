@@ -21,6 +21,7 @@ ______________________________________________________
 
     COPY/PASTE the following lines (starting with the NEXT line) into that place within your document: 
 
+\newpage
 %====================== FORMAT PREFERENCES ===================
 \def\TaskTimelineColumnSize{\scriptsize}        % Task Timeline label text size
 \def\TaskAssignmentsColumnSize{\scriptsize}     % Task Assignments label text size
@@ -47,7 +48,8 @@ ______________________________________________________
 \def\InternationalTeam#1{\small \color{red}{#1}}% international team members ID, \#weeks format
 
 \addtocounter{table}{-1}                        % corrects double-counting of sidewaystable/longtable use
-%\begin{sidewaystable}                          % uncomment for landscape mode
+\begin{table*][h!]                              % \begin{table} makes caption have same width as table
+%\begin{sidewaystable}                          % comment-out begin{table}, uncomment this line for landscape mode
 \begingroup
  \setlength{\tabcolsep}{1pt}                    % changes horizontal spacing between columns
  \renewcommand{\arraystretch}{0.8}              % changes vertical space between rows
@@ -78,4 +80,5 @@ ______________________________________________________
  work-weeks converted into FTE per task (1~FTE$=$12~months), displayed as "total",  "unfunded by this grant", 
  and "funded by this grant", resp.  Assignment identities: \input{[INSERTLATEXFILESUBDIRECTORY]/idsToNames_NOTANONschedule.tex}.
 }
+\end{table*}          % comment out and uncomment end{sidewaystable} if using landscape mode
 %\end{sidewaystable}  % uncomment if used
