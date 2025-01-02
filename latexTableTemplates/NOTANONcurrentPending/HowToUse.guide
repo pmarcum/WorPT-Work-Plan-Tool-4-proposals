@@ -87,6 +87,7 @@ ______________________________________________________________________
 \def\SectionBoldface#1{\textbf{#1}}% boldface Current Support, Pending Grant Support font
 \def\NameBoldface#1{\textbf{#1}} % boldface banner text
 % =============  start the table ==================
+\clearpage        % can also be \newpage
 \begin{longtable}{|l|p{5in}|}
 \expinput{[INSERTLATEXFILESUBDIRECTORY]/table_NOTANONcurrentpending}
 \end{longtable}
