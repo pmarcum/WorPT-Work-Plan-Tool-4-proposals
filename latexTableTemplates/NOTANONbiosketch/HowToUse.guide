@@ -60,7 +60,7 @@ ______________________________________________________________________
 |_____________________________________________________________________|
 
 % ______________________NOTANONbiosketch______________________________
-\clearpage                % could also be \newpage or \pagebreak
+\clearpage      % could also be \newpage or \pagebreak or just comment out
 \input{[INSERTLATEXFILESUBDIRECTORY]/simple_NOTANONbiosketches}
 
 ______________________________________________________________________
@@ -84,5 +84,5 @@ ______________________________________________________________________
 \def\PublicationBullet{\scriptsize{$\bullet$}{\hspace{-0.3em}}}
 % above is the symbol that appears in front of items in publication list
 % _____________ content starts below:
-\clearpage                                    % could also be \newpage or \pagebreak
+\clearpage   % could also be \newpage or \pagebreak or comment out
 \input{[INSERTLATEXFILESUBDIRECTORY]/table_NOTANONbiosketches}
