@@ -18,10 +18,11 @@ HOW TO USE:
 Follow Step 1 (if never done previously for this proposal),
 and Step 2, to include the contents of this file into your proposal. 
 ______________________________________________________________________
-|  (1)  (if not already done for previous installation of WorPT file) | 
+|  STEP (1)                                                           |
+|  (if not already done for previous installation of WorPT file)      | 
 |   Put some customized package files in the preamble of your document|
 |   that are used by WorPT tables:                                    |
-______________________________________________________________________    
+|_____________________________________________________________________|   
 * Download or connect to https://github.com/pmarcum/LaTex-Formatting and 
   select the set of files (AAS-style or general) that meet your situation. 
 * You can either download the files or link Overleaf to the needed files 
@@ -35,21 +36,25 @@ ______________________________________________________________________
 \usepackage{FUnewCommands} % not needed by WorPT files but maybe useful
 
 ______________________________________________________________________
-|  (2) copy/paste the below, where you want the file to be inserted   | 
+|  STEP (2)                                                           |
+|  copy/paste the below, where you want the file to be inserted       | 
 |_____________________________________________________________________|
 * COPY the lines following "copy below here" line all the way down to
   bottom of this file and COPY into place within your document where you
   want the table contents to appear.
 
 --------------------- COPY BELOW HERE ------------------
-% ______________ formatting preferences for the bio sketch section are below
-% These preferences can be adjusted after these lines are placed into your latex file
+% ____________________________________________________________________
+% Formatting preferences for the bio sketch section are below
+% Defaults can be changed after lines are copied into your latex file
+% _____________________________________________________________________
 \def\NameBoldface#1{\textbf{#1}}              % boldface name/role
 \def\NameColor{Blue}                          % font color of name/role
 \def\NameSize{\large }                        % font size of name/role
-\def\LabelBoldface#1{\textbf{#1}}             % boldface "Education", "Appointments",... labels
+\def\LabelBoldface#1{\textbf{#1}}             % boldface "Education",... labels
 \def\SectionSpacing{\par \vspace{-0.5em}}     % vertical spacing bet/ categories
-\def\PublicationBullet{\scriptsize{$\bullet$}}% symbol in front of items in publication list
-% _____________ start the actual content:
-\clearpage                                    % could change to \newpage or \pagebreak, whatever works best
+\def\PublicationBullet{\scriptsize{$\bullet$}{\hspace{-0.3em}}}
+% above is the symbol that appears in front of items in publication list
+% _____________ content starts below:
+\clearpage                                    % could also be \newpage or \pagebreak
 \input{[INSERTLATEXFILESUBDIRECTORY]/table_NOTANONbiosketches}
