@@ -47,7 +47,7 @@ ______________________________________________________
 \def\InternationalTeam#1{\small \color{red}{#1}}% international team members ID, \#weeks format
 
 \addtocounter{table}{-1}                        % corrects double-counting of sidewaystable/longtable use
-\begin{sidewaystable}                           % landscape mode; comment out if not needed
+%\begin{sidewaystable}                          % uncomment for landscape mode
 \begingroup
  \setlength{\tabcolsep}{1pt}                    % changes horizontal spacing between columns
  \renewcommand{\arraystretch}{0.8}              % changes vertical space between rows
@@ -55,9 +55,7 @@ ______________________________________________________
   \begin{minipage}{1.5\textwidth}               % change margin for wide table
    \begin{longtable} {
     |>{\raggedright\arraybackslash}p{4.1in}     % title column
-    *{[INSERTNUMBERYEARS]}{                     % timeline columns
-    |p{1ex}!{\color{lightgray}\vrule}*{[INSERTNUMBERSLICESPERYEARMINUSTWO]}
-    {p{1ex}!{\color{lightgray}\vrule}}p{1ex}}
+    *{[INSERTNUMBERYEARS]}{|p{1ex}!{\color{lightgray}\vrule}*{[INSERTNUMBERSLICESPERYEARMINUSTWO]}{p{1ex}!{\color{lightgray}\vrule}}p{1ex}} % timeline columns
     |>{\raggedright\arraybackslash}p{24ex}      % task assignments (ID and \#Weeks)
     |p{5ex}!{\color{lightgray}\vrule}           % total (funded and unfunded) FTE
     p{5ex}!{\color{lightgray}\vrule}            % total UNfunded FTE
@@ -80,4 +78,4 @@ ______________________________________________________
  work-weeks converted into FTE per task (1~FTE$=$12~months), displayed as "total",  "unfunded by this grant", 
  and "funded by this grant", resp.  Assignment identities: \input{[INSERTLATEXFILESUBDIRECTORY]/ids2names.tex}.
 }
-\end{sidewaystable}  % comment out if not used
+%\end{sidewaystable}  % uncomment if used
