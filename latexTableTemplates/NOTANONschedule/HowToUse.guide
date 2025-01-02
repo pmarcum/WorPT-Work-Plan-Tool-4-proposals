@@ -48,7 +48,7 @@ ______________________________________________________
 \def\InternationalTeam#1{\small \color{red}{#1}}% international team members ID, \#weeks format
 
 \addtocounter{table}{-1}                        % corrects double-counting of sidewaystable/longtable use
-\begin{table*][h!]                              % \begin{table} makes caption have same width as table
+\begin{table*}[h!]                              % \begin{table} makes caption have same width as table
 %\begin{sidewaystable}                          % comment-out begin{table}, uncomment this line for landscape mode
 \begingroup
  \setlength{\tabcolsep}{1pt}                    % changes horizontal spacing between columns
