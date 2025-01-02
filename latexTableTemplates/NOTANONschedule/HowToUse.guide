@@ -70,9 +70,9 @@ ______________________________________________________
 \endgroup
 \caption{
  \label{tab:NOTANONschedule} Resource-loaded project schedule, where: 
- \NoDollarColumnIcon\hspace{-0.3em}$=$} Not funded by this grant,  
- \DollarColumnIcon\hspace{-0.3em}$=$} funded by this grant, 
- \SigmaColumnIcon\hspace{-0.3em}$=$} funded $+$ unfunded; 
+ {\NoDollarColumnIcon\hspace{-0.3em}$=$\hspace{-0.3em}}Not funded by this grant,  
+ {\DollarColumnIcon\hspace{-0.3em}$=$\hspace{-0.3em}}funded by this grant, 
+ {\SigmaColumnIcon\hspace{-0.3em}$=$\hspace{-0.3em}}funded $+$ unfunded; 
  Tasks are listed (left side), with duration of task activity indicated in blue-colored timelines that 
  measure quarter-years (1,2,3,4). Task assignments identify specific team members responsible for 
  implementation with associated work weeks, where color indicates institutional affiliation 
