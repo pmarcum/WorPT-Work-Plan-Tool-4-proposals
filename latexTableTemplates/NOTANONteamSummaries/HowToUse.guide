@@ -1,8 +1,14 @@
-======== HOW TO INSERT WorPT's NOTANONteamSummaries FILE ========
-Note that NOTANONteamSummaries is NOT a table per se, but rather a 
-series of paragraphs describing the role of each team member, that 
-will create the "Team Member Roles" narrative section in your proposal. 
+==================================
+==     NOTANONteamSummaries     ==
+==================================
+DESCRIPTION:
+Is a series of paragraphs (not in tabular form) describing
+the role of each team member, that will create the "Team Member Roles" 
+narrative section in your proposal. 
 
+HOW TO USE: 
+Follow Step 1 (if never done previously for this proposal),
+and Step 2, to include the contents of this file into your proposal. 
 ______________________________________________________________________
 |  (1)  (if not already done for previous installation of WorPT file) | 
 |   Put some customized package files in the preamble of your document|
@@ -23,10 +29,11 @@ ______________________________________________________________________
 ______________________________________________________________________
 |  (2) copy/paste the below, where you want the file to be inserted   | 
 |_____________________________________________________________________|
-* COPY/PASTE the following lines (starting with the following line, all 
-  the way down to bottom of this file) into place within your document
-  where you want the table contents to appear.
+* COPY the lines following "copy below here" line all the way down to
+  bottom of this file and COPY into place within your document where you
+  want the table contents to appear.
 
+--------------------- COPY BELOW HERE ------------------
 % The below boldfaces names and roles at the beginning of each paragraph
 \def\NameBoldface#1{\textbf{#1}} 
 \clearpage
