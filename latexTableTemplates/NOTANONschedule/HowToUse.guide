@@ -68,9 +68,9 @@ ______________________________________________________
 \endgroup
 \caption{
  \label{tab:NOTANONschedule} Resource-loaded project schedule, where: 
- \def\NoDollarCaptionIcon{\noDollarIcon{-0.3}{0.4mm}{0.2}{0.15}\hspace{-0.3em}$=$} Not funded by this grant,  
- \def\DollarCaptionIcon{\dollarIcon{-0.3}{0.2}{0.015}\hspace{-0.3em}$=$} funded by this grant, 
- \def\SigmaCaptionIcon{\textbf{\large{$\Sigma$}} $=$} funded $+$ unfunded; 
+ \NoDollarCaptionIcon\hspace{-0.3em}$=$} Not funded by this grant,  
+ \DollarCaptionIcon\hspace{-0.3em}$=$} funded by this grant, 
+ \SigmaCaptionIcon\hspace{-0.3em}$=$} funded $+$ unfunded; 
  Tasks are listed (left side), with duration of task activity indicated in blue-colored timelines that 
  measure quarter-years (1,2,3,4). Task assignments identify specific team members responsible for 
  implementation with associated work weeks, where color indicates institutional affiliation 
