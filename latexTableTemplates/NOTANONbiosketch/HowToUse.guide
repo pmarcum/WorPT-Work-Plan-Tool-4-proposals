@@ -35,8 +35,31 @@ ______________________________________________________________________
 \usepackage{FUformatting}
 \usepackage{FUnewCommands} % not needed by WorPT files but maybe useful
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+| STEP (2)                                                            |
+| You have 2 options:                                                 |
+|                                                                     |
+| STEP (2A) is the SIMPLE option, giving you default formatting       |
+| without ability to change the formatting on-the-fly.                |
+|                                                                     |
+| STEP (2B) involves copy/pasting more lines, but gives you lots of   |
+| control over the formatting options of the tables.                  |
+|                                                                     |
+|    choose either STEP (2A) or STEP (2B), but not both!              |
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 ______________________________________________________________________
-|  STEP (2)                                                           |
+|  STEP (2A)  [ if you choose this, then skip STEP (2B) ]             |
+|  copy the 3 lines below, paste where you want the file to appear    |
+|  in your latex document.                                            | 
+|_____________________________________________________________________|
+
+% ______________________NOTANONbiosketch______________________________
+\clearpage                % could also be \newpage or \pagebreak
+\input{[INSERTLATEXFILESUBDIRECTORY]/simple_NOTANONbiosketches}
+
+______________________________________________________________________
+|  STEP (2B)    (choose this if you did NOT choose STEP (2A)          |
 |  copy/paste the below, where you want the file to be inserted       | 
 |_____________________________________________________________________|
 * COPY the lines following "copy below here" line all the way down to
@@ -44,7 +67,7 @@ ______________________________________________________________________
   want the table contents to appear.
 
 --------------------- COPY BELOW HERE ------------------
-% ____________________________________________________________________
+% ______________________NOTANONbiosketch______________________________
 % Formatting preferences for the bio sketch section are below
 % Defaults can be changed after lines are copied into your latex file
 % _____________________________________________________________________
