@@ -2,9 +2,23 @@
 % | Refer to instructions_NOTANONtasks.tex                                         |
 % | for guidance regarding how to include the NOTANONtasks table in your document  |
 % |________________________________________________________________________________|
+
+% COMMENT: The below makes the colorized column headers
 \hline
 \LabelBoldface{\cellcolor{\HeaderColor}\color{\LabelColor}Tasks} & \LabelBoldface{\cellcolor{\HeaderColor}\color{\LabelColor}Lead} & \LabelBoldface{\cellcolor{\HeaderColor}\color{\LabelColor}Expertise}\\
 \hline
-[ROWTEMPLATE1]\multicolumn{3}{|c|}{\cellcolor{\SectionColor}\color{\TaskColor}\TaskBoldface{Task [INSERTID]: [INSERTTITLE]}}\\ \hline
-[ROWTEMPLATE2][INSERTID]: {[INSERTTITLE]} & [INSERTLEAD] & [INSERTEXPERTS]\\ \hline
 
+[INSERTTABLECONTENTS]
+
+% COMMENT: The below is a template for a task CATEGORY entry row of the table
+% COMMENT: Below this row, all the related tasks will be listed (the template for those
+% COMMENT: tasks is the template following this one)
+[STARTCATEGORYENTRYTEMPLATE]
+\multicolumn{3}{|c|}{\cellcolor{\SectionColor}\color{\TaskColor}\TaskBoldface{Task [INSERTID]: [INSERTTITLE]}}\\ \hline
+[ENDCATEGORYENTRYTEMPLATE]
+
+% COMMENT: The below is a template for a task row in the table that falls under a 
+% COMMENT: category.  The template for a category is above, for the task is below
+[STARTTASKENTRYTEMPLATE]
+[INSERTID]: {[INSERTTITLE]} & [INSERTLEAD] & [INSERTEXPERTS]\\ \hline
+[ENDTASKENTRYTEMPLATE]
