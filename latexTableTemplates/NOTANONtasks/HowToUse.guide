@@ -51,6 +51,15 @@ ______________________________________________________________________
 \def\SectionColor{gray!40}         % section label colors giving Task category names, e.g., Task A:
 \def\TaskColor{Black}              % task category label color, e.g. Task A:
 \def\TaskBoldface#1{\textbf{#1}}   % boldface task category labels
+% create a shortcut for defining the table column formating
+\newcolumntype{T}[5]{
+  |>{\raggedright\arraybackslash}p{#1} % title column
+  *{2}{|p{#2}!{\color{#3}\vrule}*{2}{p{#2}!{\color{#3}\vrule}}p{#2}} % timeline columns
+  |>{\raggedright\arraybackslash}p{#4} % task assignment column
+  |p{#5}!{\color{#3}\vrule}            % total fte, sum column
+  p{#5}!{\color{#3}\vrule}             % total fte, unfunded column
+  c|                                   % total fte, funded column
+}
 
 \addtocounter{table}{-1}           % corrects double-counting by table and longtable combination
 \begin{table}[h]
