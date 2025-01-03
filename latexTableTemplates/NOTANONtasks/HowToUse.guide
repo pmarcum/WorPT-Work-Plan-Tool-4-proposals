@@ -32,13 +32,12 @@ ______________________________________________________________________
 \usepackage{FUformatting}
 \usepackage{FUnewCommands} % not needed by WorPT files but maybe useful
 
-_____________________________________________________________________
+______________________________________________________________________
 |  STEP (2)                                                           |
-|  copy/paste the below, where you want the file to be inserted       | 
+| copy the lines following "COPY BELOW HERE" line all the way down to |
+| bottom of this file and PASTE into place within your document where |
+| you want the table contents to appear.                              |
 |_____________________________________________________________________|
-* copy the lines following "COPY BELOW HERE" line all the way down to
-  bottom of this file and PASTE into place within your document where you
-  want the table contents to appear.
 
 --------------------- COPY BELOW HERE ------------------
 % ___________________________NOTANONtasks______________________________
@@ -59,6 +58,8 @@ _____________________________________________________________________
   \centerline{
     \begin{minipage}{1.0\textwidth}%increase to allow wide table spill into margin
       \begin{longtable}{
+% The below numbers in inches can be changed to optimize the column widths and alignment
+% The values associated with vrule are the opacity of the vertical lines
         |p{3.9in}||
         c!{\color{gray!40}\vrule}
         c!{\color{gray!40}\vrule}!{\color{gray!40}\vrule}
