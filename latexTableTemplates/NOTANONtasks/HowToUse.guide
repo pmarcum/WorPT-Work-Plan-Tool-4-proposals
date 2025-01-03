@@ -45,48 +45,38 @@ ______________________________________________________________________
 % Formatting preferences for the tasks section are below
 % Defaults can be changed after lines are copied into your latex file
 % _____________________________________________________________________
-\def\HeaderColor{Blue}             % column heading color
-\def\LabelColor{White}             % column heading font color
-\def\LabelBoldface#1{\textbf{#1}}  % boldface column labels
-\def\SectionColor{gray!40}         % section label colors giving Task category names, e.g., Task A:
-\def\TaskColor{Black}              % task category label color, e.g. Task A:
-\def\TaskBoldface#1{\textbf{#1}}   % boldface task category labels
+\def\HeaderColor{Blue}      % column heading color
+\def\LabelColor{White}      % column heading font color
+\def\LabelBoldface#1{\textbf{#1}}% boldface column labels
+\def\SectionColor{gray!40}  % category label colors
+\def\TaskColor{Black}       % category label font color
+\def\TaskBoldface#1{\textbf{#1}} % boldface task category labels
 % create a shortcut for defining the table column formating
-\newcolumntype{T}[5]{
-  |>{\raggedright\arraybackslash}p{#1} % title column
-  *{2}{|p{#2}!{\color{#3}\vrule}*{2}{p{#2}!{\color{#3}\vrule}}p{#2}} % timeline columns
-  |>{\raggedright\arraybackslash}p{#4} % task assignment column
-  |p{#5}!{\color{#3}\vrule}            % total fte, sum column
-  p{#5}!{\color{#3}\vrule}             % total fte, unfunded column
-  c|                                   % total fte, funded column
+\newcolumntype{T}[4]{
+  |p{#1}||                  % title column
+  c!{\color{#3!#4}\vrule}   % faint vertical line bet Lead/Expertise
+  c|                        % Lead column
+  p{#2}|                    % Expertise column
 }
 
-\addtocounter{table}{-1}           % corrects double-counting by table and longtable combination
+\addtocounter{table}{-1}    % corrects double-counting by table and longtable combination
 \begin{table}[h]
-  \renewcommand{\arraystretch}{1}  % changes vertical space bet/ rows
-  \setlength{\tabcolsep}{1pt}      % changes horizontal spacing bet/ columns
-  \centerline{
-    \begin{minipage}{1.0\textwidth}%increase to allow wide table spill into margin
-      \begin{longtable}{
-% The below numbers in inches can be changed to optimize the column widths and alignment
-% The values associated with vrule are the opacity of the vertical lines
-        |p{3.9in}||
-        c!{\color{gray!40}\vrule}
-        c!{\color{gray!40}\vrule}!{\color{gray!40}\vrule}
-        c!{\color{gray!40}\vrule}
-        c||l!{\color{gray!40}\vrule}
-        p{0.3in}|
-        }
-        \expinput{[INSERTLATEXFILESUBDIRECTORY]/table_NOTANONtasks}
-      \end{longtable}
-    \end{minipage}
-  } 
-  \caption{
-    \normalsize
-    \textbf{Task Management and Team Responsibilities}:\\
-    The tasks ({\color{red}gray} headers) and sub-tasks (left), with specific assignments for the 
-    roles of task lead (middle) and expertise / analysis assistance (right).
-  }
-  \label{tab:NOTANONtasks}
+\renewcommand{\arraystretch}{1} % changes vertical space bet/ rows
+\setlength{\tabcolsep}{1pt} % changes horizontal spacing bet/ columns
+\centerline{\begin{minipage}{1.0\textwidth} % increase to allow wide table spill into margin
+\begin{longtable}{T{3.9in}{0.3}{gray}{40}}
+% The above numbers can be changed to optimize the column widths and table colors
+% The values are the column widths of the task labels, lead, and expertise, resp. 
+% and the color and opacity of the faint line between the lead and expertise columns
+\expinput{[INSERTLATEXFILESUBDIRECTORY]/table_NOTANONtasks}
+\end{longtable}
+\end{minipage}}
+\caption{
+\normalsize
+\textbf{Task Management and Team Responsibilities}:\\
+The tasks ({\color{red}gray} headers) and sub-tasks (left), with specific assignments for the 
+roles of task lead (middle) and expertise / analysis assistance (right).
+}
+\label{tab:NOTANONtasks}
 \end{table} 
 
