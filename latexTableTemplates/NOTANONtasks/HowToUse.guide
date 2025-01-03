@@ -1,45 +1,48 @@
-========= HOW TO INSERT WorPT's isANONtravel FILE ========
+==================================
+==         NOTANONtasks         ==
+==================================
+DESCRIPTION:
+Is a table of project tasks, organized under task categories, as
+specified by the TASKS page in the WorPT spreadsheet. The task lead and
+team members assisting with each task are specified as well. No
+level-of-effort information is given in this table, only tasks and 
+assignments to illustrate team member involvement. 
 
-(1) Put some customized package files in the preamble of your document that are used by WorPT tables:
-     
-    Download or connect to https://github.com/pmarcum/LaTex-Formatting and select the set of files
-    (AAS-style or general) that meet your situation. 
-    
-    You can either download the files or link Overleaf to the needed files in the GitHub repository
-    through URL, and then add the following to the preamble of your main paper. 
+HOW TO USE: 
+Follow Step 1 (if never done previously for this proposal),
+and Step 2, to include the contents of this file into your proposal. 
+______________________________________________________________________
+|  STEP (1)                                                           |
+|  (if not already done for previous installation of WorPT file)      | 
+|   Put some customized package files in the preamble of your document|
+|   that are used by WorPT tables:                                    |
+|_____________________________________________________________________|   
+* Download or connect to https://github.com/pmarcum/LaTex-Formatting and 
+  select the set of files (AAS-style or general) that meet your situation. 
+* You can either download the files or link Overleaf to the needed files 
+  in the GitHub repository through URL, and then add the following to the 
+  preamble of your main paper. 
+* IF YOU HAVE ALREADY PUT THE BELOW LINES INTO YOUR PREAMBLE WHEN 
+  PREVIOUSLY INSERTING ANOTHER WorPT TABLE, YOU CAN SKIP THIS STEP!
 
-    IF YOU HAVE ALREADY PUT THE BELOW LINES INTO YOUR PREAMBLE WHEN PREVIOUSLY INSERTING ANOTHER 
-    WorPT TABLE, YOU DON'T HAVE TO REPEAT!  JUST SKIP THIS STEP!
-
+------ COPY below 3 lines and PASTE in preamble of your document ------
 \usepackage{FUpackages}
 \usepackage{FUformatting}
-\usepackage{FUnewCommands} % not needed by WorPT files but generally useful
+\usepackage{FUnewCommands} % not needed by WorPT files but maybe useful
 
-______________________________________________________
-______________________________________________________
+_____________________________________________________________________
+|  STEP (2)                                                           |
+|  copy/paste the below, where you want the file to be inserted       | 
+|_____________________________________________________________________|
+* copy the lines following "COPY BELOW HERE" line all the way down to
+  bottom of this file and PASTE into place within your document where you
+  want the table contents to appear.
 
-2A
-\addtocounter{table}{-1}       % corrects double-counting by table and longtable combination
-\begin{table}[h] \renewcommand{\arraystretch}{1} % changes vertical space bet/ rows
-\setlength{\tabcolsep}{1pt}    % changes horizontal spacing bet/ columns
-\centerline{\begin{minipage}{1.0\textwidth} %increase to allow wide table spill into margin
-% Change the below numbers to increase/decrease column widths as necessary
-\begin{longtable}{|p{3.9in}||c!{\color{gray!40}\vrule}c!{\color{gray!40}\vrule}!{\color{gray!40}\vrule}
-c!{\color{gray!40}\vrule}c||l!{\color{gray!40}\vrule}p{0.3in}|}
-\expinput{[INSERTLATEXFILESUBDIRECTORY]/simple_NOTANONtasks}
-\end{longtable} \end{minipage}}
-\caption{\normalsize \textbf{Task Management and Team Responsibilities}:\\
-The tasks ({\color{red}gray} headers) and sub-tasks (left), with specific assignments for the 
-roles of task lead (middle) and expertise / analysis assistance (right).}
-\label{tab:NOTANONtasks}
-\end{table} 
-
-
-(2) In the place within your LaTeX document that you want to insert the WorPT table, 
-
-    COPY/PASTE the following lines (starting with the NEXT line) into that place within your document: 
-
-%=================== FORMAT PREFERENCES ===============
+--------------------- COPY BELOW HERE ------------------
+% ___________________________NOTANONtasks______________________________
+% Formatting preferences for the tasks section are below
+% Defaults can be changed after lines are copied into your latex file
+% _____________________________________________________________________
 \def\HeaderColor{Blue}             % column heading color
 \def\LabelColor{White}             % column heading font color
 \def\LabelBoldface#1{\textbf{#1}}  % boldface column labels
