@@ -23,7 +23,8 @@ Follow Step 1 (if never done previously for this proposal),
 and Step 2, to include the contents of this file into your proposal. 
 ______________________________________________________________________
 |  STEP (1)  [if needed]                                              |
-|no need to repeat if already done for previous installation of files | 
+| can skip if already done for previous installation of a WorPT file  |
+|                                                                     |
 |   Put some customized package files in the preamble of your document|
 |   that are used by WorPT tables:                                    |
 |                                                                     |
