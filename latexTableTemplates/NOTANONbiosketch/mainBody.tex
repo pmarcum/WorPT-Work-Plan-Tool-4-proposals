@@ -48,3 +48,17 @@
 {\PublicationBullet}[INSERTPUB]
 [ENDPUBLICATIONS]
 
+% COMMENT: the below are 2 options for how each bio sketch is separated from others
+% COMMENT: if the option that each bio sketch be put on a new page (if the purple 
+% COMMENT: box above the "biosketch?" column on PERSONNEL & FTE page), then use
+% COMMENT: below option. 
+[STARTNEWPAGEOPTION]
+\\ \n \newpage \n
+[ENDNEWPAGEOPTION]
+
+% COMMENT: if the box is not checked, then use this option that writes one bio sketch
+% COMMENT: immediately after the other, allowing possibility that a biosketch falls on
+% COMMENT: two pages instead of one
+[STARTNONEWPAGEOPTION]
+\n \medskip \n \hrule \n \vspace{5pt} \n \medskip
+[ENDNONEWPAGEOPTION]
