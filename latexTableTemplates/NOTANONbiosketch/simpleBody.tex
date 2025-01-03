@@ -22,39 +22,6 @@
 \def\SectionSpacing{\par \vspace{-0.5em}}     % vertical spacing bet/ categories
 \def\PublicationBullet{\scriptsize{$\bullet$}{\hspace{-0.3em}}}
 
-% COMMENT: the below creates the very top of each bio sketch, with the name 
-% COMMENT: appearing boldface and in color, and affiliation beneath the name
-\NameBoldface{\color{\NameColor}{\NameSize [INSERTNAME] ([INSERTROLE]):}}\\
-[INSERTAFFILIATION]
-
-% COMMENT: the below constructs the educational background section
-\SectionSpacing
-\LabelBoldface{Education}\\
-% COMMENT: the below is the template for each educational line in the list
-[STARTEDUCATION]
-[INSERTEDUCATIONYEAR], [INSERTEDUCATIONINSTITUTION], [INSERTEDUCATIONDEGREE], [INSERTEDUCATIONAREA]
-[ENDEDUCATION]
-
-% COMMENT: the below creates the appointments section
-\SectionSpacing
-\LabelBoldface{Appointments}\\
-% COMMENT: the below is the template for each appointment line in the list
-[STARTAPPOINTMENTS]
-[INSERTAPPOINTMENTYEAR], [INSERTAPPOINTMENTDESC], [INSERTAPPOINTMENTINSTITUTION]
-[ENDAPPOINTMENTS]
-
-% COMMENT: the below generates the awards, positions,... section
-\SectionSpacing
-\LabelBoldface{Additional Awards, Positions, Fellowships and Proposals}\\
-% COMMENT: the below is the template for each line in this list
-[STARTAWARDS]
-[INSERTAWARDYEAR], [INSERTAWARDDESC]
-[ENDAWARDS]
-
-% COMMENT: the below generates the relevant publications section
-\SectionSpacing
-\LabelBoldface{Publications relevant for the proposal:}\\
-% COMMENT: the below is the template used for each publication item in the list
-[STARTPUBLICATIONS]
-{\PublicationBullet}[INSERTPUB]
-[ENDPUBLICATIONS]
+% COMMENT: everything else from here on down would be the same contents as the 
+% COMMENT: mainBody file, so just insert the contents below
+[INSERTMAINBODY]
