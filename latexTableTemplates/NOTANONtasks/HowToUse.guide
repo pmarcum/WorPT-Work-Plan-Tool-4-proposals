@@ -16,14 +16,16 @@ ______________________________________________________________________
 |  (if not already done for previous installation of WorPT file)      | 
 |   Put some customized package files in the preamble of your document|
 |   that are used by WorPT tables:                                    |
+|                                                                     |
+| * Download or connect to https://github.com/pmarcum/LaTex-Formatting|
+|   and select the set of files (AAS-style or general) that meet your |
+|   situation.                                                        | 
+| * You can either download the files or link Overleaf to the needed  | 
+|   files in the GitHub repository through URL, and then add the      |
+|   following to the preamble of your main paper.                     |
+| * IF YOU HAVE ALREADY PUT THE BELOW LINES INTO YOUR PREAMBLE WHEN   |
+|   PREVIOUSLY INSERTING ANOTHER WorPT TABLE, YOU CAN SKIP THIS STEP! |
 |_____________________________________________________________________|   
-* Download or connect to https://github.com/pmarcum/LaTex-Formatting and 
-  select the set of files (AAS-style or general) that meet your situation. 
-* You can either download the files or link Overleaf to the needed files 
-  in the GitHub repository through URL, and then add the following to the 
-  preamble of your main paper. 
-* IF YOU HAVE ALREADY PUT THE BELOW LINES INTO YOUR PREAMBLE WHEN 
-  PREVIOUSLY INSERTING ANOTHER WorPT TABLE, YOU CAN SKIP THIS STEP!
 
 ------ COPY below 3 lines and PASTE in preamble of your document ------
 \usepackage{FUpackages}
