@@ -47,7 +47,13 @@
 
 % COMMENT: below is the banner delineating the Pending Grant section
 \hline
-\multicolumn{2}{|c|}{\cellcolor{\SectionColor}\color{\SectionFontColor}\SectionBoldface{Pending Grant Support} [INSERTOPTIONALTEXT]}\\ \hline
+\multicolumn{2}{|c|}{\cellcolor{\SectionColor}\color{\SectionFontColor}\SectionBoldface{Pending Grant Support} [INSERTINCLUSIONOPTION]}\\ \hline
+
+% COMMENT: there are 2 optional text to appear in this banner. Below option if user
+% COMMENT: indicated current proposal WILL be included in current/pending
+[STARTINCLUDECURRENTPROPOSAL]
+{(including this proposal)}
+[ENDINCLUDECURRENTPROPOSAL]
 
 % COMMENT: there are 2 optional text to appear in this banner. Below option if user
 % COMMENT: indicated current proposal should NOT be included in current/pending
@@ -56,10 +62,10 @@
 [ENDDONOTINCLUDECURRENTPROPOSAL]
 
 % COMMENT: below option if user indicated current proposal SHOULD be included;
-% COMMENT: proposal is marked with the below
-[STARTINCLUDECURRENTPROPOSAL]
+% COMMENT: proposal is marked with the below tag
+[STARTCURRENTPROPOSALMARKER]
 {\color{\ThisProposalColor}(this proposal)~~}
-[ENDINCLUDECURRENTPROPOSAL]
+[ENDCURRENTPROPOSALMARKER]
 
 [INSERTPENDINGFUNDINGENTRIES]
 
