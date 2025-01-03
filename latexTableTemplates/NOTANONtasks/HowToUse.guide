@@ -18,6 +18,23 @@
 ______________________________________________________
 ______________________________________________________
 
+2A
+\addtocounter{table}{-1}       % corrects double-counting by table and longtable combination
+\begin{table}[h] \renewcommand{\arraystretch}{1} % changes vertical space bet/ rows
+\setlength{\tabcolsep}{1pt}    % changes horizontal spacing bet/ columns
+\centerline{\begin{minipage}{1.0\textwidth} %increase to allow wide table spill into margin
+% Change the below numbers to increase/decrease column widths as necessary
+\begin{longtable}{|p{3.9in}||c!{\color{gray!40}\vrule}c!{\color{gray!40}\vrule}!{\color{gray!40}\vrule}
+c!{\color{gray!40}\vrule}c||l!{\color{gray!40}\vrule}p{0.3in}|}
+\expinput{[INSERTLATEXFILESUBDIRECTORY]/simple_NOTANONtasks}
+\end{longtable} \end{minipage}}
+\caption{\normalsize \textbf{Task Management and Team Responsibilities}:\\
+The tasks ({\color{red}gray} headers) and sub-tasks (left), with specific assignments for the 
+roles of task lead (middle) and expertise / analysis assistance (right).}
+\label{tab:NOTANONtasks}
+\end{table} 
+
+
 (2) In the place within your LaTeX document that you want to insert the WorPT table, 
 
     COPY/PASTE the following lines (starting with the NEXT line) into that place within your document: 
