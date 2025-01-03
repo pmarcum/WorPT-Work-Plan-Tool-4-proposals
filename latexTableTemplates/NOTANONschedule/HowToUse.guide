@@ -46,43 +46,44 @@ ______________________________________________________
 \def\FundedUsTeam#1{\small \color{blue}{#1}}    % funded US team members ID, \#weeks format
 \def\UnfundedUsTeam#1{\small \color{black}{#1}} % UNfunded US team members ID, \#weeks fomat
 \def\InternationalTeam#1{\small \color{red}{#1}}% international team members ID, \#weeks format
+\newcolumntype{T}[5]{
+  |>{\raggedright\arraybackslash}p{#1} % title column
+  *{2}{|p{#2}!{\color{#5}\vrule}*{2}{p{#2}!{\color{#5}\vrule}}p{#2}} % timeline columns
+  |>{\raggedright\arraybackslash}p{#3} % task assignment column
+  |p{#4}!{\color{#5}\vrule}            % total fte, sum column
+  p{#4}!{\color{#5}\vrule}             % total fte, unfunded column
+  c|                                   % total fte, funded column
+}
 
-\addtocounter{table}{-1}                        % corrects double-counting of sidewaystable/longtable use
-\begin{table*}[h!]                              % \begin{table} makes caption have same width as table
-%\begin{sidewaystable}                          % comment-out begin{table}, uncomment this line for landscape mode
-\begingroup
- \setlength{\tabcolsep}{1pt}                    % changes horizontal spacing between columns
- \renewcommand{\arraystretch}{0.8}              % changes vertical space between rows
- \centerline{
-  \begin{minipage}{1.5\textwidth}               % change margin for wide table
-   \begin{longtable} {
-    |>{\raggedright\arraybackslash}p{3.4in}     % title column
+\addtocounter{table}{-1}          % corrects double-counting of sidewaystable/longtable use
+\begin{table*}[h!]                % \begin{table} makes caption have same width as table
+%\begin{sidewaystable}            % comment-out begin{table}, uncomment this line for landscape mode
+\setlength{\tabcolsep}{1pt}       % changes horizontal spacing between columns
+\renewcommand{\arraystretch}{0.8} % changes vertical space between rows
+\centerline{
+\begin{minipage}{1.5\textwidth}   % change margin for wide table
+\begin{longtable} {T{3.4in}{1ex}{20ex}{5ex}{lightgray}}
 % You will likely need to adjust the widths to accomodate your title, task assignments columns
 % The table looks best if the titles appear on single lines that do not wrap to next line
 % You can shorten the titles in WorPT and regenerate the latex files and/or go to landscape mode to 
-% make the table look good (one line per task looks best)
-    *{[INSERTNUMBERYEARS]}{|p{1ex}!{\color{lightgray}\vrule}*{[INSERTNUMBERSLICESPERYEARMINUSTWO]}{p{1ex}!{\color{lightgray}\vrule}}p{1ex}} % timeline columns
-    |>{\raggedright\arraybackslash}p{20ex}      % task assignments (ID and \#Weeks)
-    |p{5ex}!{\color{lightgray}\vrule}           % total (funded and unfunded) FTE
-    p{5ex}!{\color{lightgray}\vrule}            % total UNfunded FTE
-    c|                                          % total funded FTE
-   }
-   \expinput{do_NOT_manually_edit/table_NOTANONschedule}
-   \end{longtable}
-  \end{minipage}
- }
-\endgroup
+% make the table look good (one line per task looks best)       
+% Above 5 entries are widths of title,timeline,faint line color,assignments,total FTE
+% and color of faint vertical lines, respectively  
+\expinput{do_NOT_manually_edit/table_NOTANONschedule}
+\end{longtable}
+\end{minipage}
+}
 \caption{
- \label{tab:NOTANONschedule} Resource-loaded project schedule, where: 
- {\NoDollarColumnIcon\hspace{-0.3em}$=$\hspace{-0.3em}}Not funded by this grant,  
- {\DollarColumnIcon\hspace{-0.3em}$=$\hspace{-0.3em}}funded by this grant, 
- {\SigmaColumnIcon\hspace{-0.3em}$=$\hspace{-0.3em}}funded $+$ unfunded; 
- Tasks are listed (left side), with duration of task activity indicated in blue-colored timelines that 
- measure quarter-years (1,2,3,4). Task assignments identify specific team members responsible for 
- implementation with associated work weeks, where color indicates institutional affiliation 
- (blue$=$funded/U.S., black$=$not funded/U.S., red=international). "Total FTE" (right side) are integrated 
- work-weeks converted into FTE per task (1~FTE$=$12~months), displayed as "total",  "unfunded by this grant", 
- and "funded by this grant", resp.  Assignment identities: \input{[INSERTLATEXFILESUBDIRECTORY]/idsToNames_NOTANONschedule.tex}.
+\label{tab:NOTANONschedule} Resource-loaded project schedule, where: 
+{\NoDollarColumnIcon\hspace{-0.3em}$=$\hspace{-0.3em}}Not funded by this grant,  
+{\DollarColumnIcon\hspace{-0.3em}$=$\hspace{-0.3em}}funded by this grant, 
+{\SigmaColumnIcon\hspace{-0.3em}$=$\hspace{-0.3em}}funded $+$ unfunded; 
+Tasks are listed (left side), with duration of task activity indicated in blue-colored timelines that 
+measure quarter-years (1,2,3,4). Task assignments identify specific team members responsible for 
+implementation with associated work weeks, where color indicates institutional affiliation 
+(blue$=$funded/U.S., black$=$not funded/U.S., red=international). "Total FTE" (right side) are integrated 
+work-weeks converted into FTE per task (1~FTE$=$12~months), displayed as "total",  "unfunded by this grant", 
+and "funded by this grant", resp.  Assignment identities: \input{[INSERTLATEXFILESUBDIRECTORY]/idsToNames_NOTANONschedule.tex}.
 }
 \end{table*}          % comment out and uncomment end{sidewaystable} if using landscape mode
 %\end{sidewaystable}  % uncomment if used
