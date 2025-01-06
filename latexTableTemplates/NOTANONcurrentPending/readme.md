@@ -22,7 +22,7 @@ NOTE: WorPT biosketch spreadsheet files should be kept up-to-date so that the in
    
 <pre><code>
 \newpage       % You can comment out or use \clearpage instead
-\include{\WorPTfolder/table_NOTANONcurrentPending}
+\include{do_NOT_manually_edit/table_NOTANONcurrentPending}  % if you used a different folder name, replace do_NOT_Manually_edit with the correct name
 <mark>% Put customizations for NOTANONcurrentPending HERE</mark>
 \begin{NOTANONcurrentPending}
 \end{NOTANONcurrentPending}  
@@ -33,7 +33,7 @@ NOTE: WorPT biosketch spreadsheet files should be kept up-to-date so that the in
 The default settings produce a nice-looking file, so you probably won't have to do any customization for this file. But if desired, you can change colors, font style and spacing using additional lines that are copy/pasted into your document. Specifically: 
 <ol>
 <li>COPY any or all lines in the code block below that are related to the formatting parameter that you want to edit. The lines below show default values. You will edit those values to make desired changes.</li>
-<li>PASTE the copied lines into your document at the "% Put customizations for NOTANONcurrentPending HERE" line in the code that you copy/pasted in Step 2. Most importantly, the desired formatting lines should be pasted somewhere <b>between</b> the \include{\WorPTfolder/table_NOTANONcurrentPending} and \begin{NOTANONcurrentPending} lines. </li>
+<li>PASTE the copied lines into your document at the "% Put customizations for NOTANONcurrentPending HERE" line in the code that you copy/pasted in Step 2. Most importantly, the desired formatting lines should be pasted somewhere <b>between</b> the \include{do_NOT_manually_edit/table_NOTANONcurrentPending} and \begin{NOTANONcurrentPending} lines. </li>
 <li>EDIT the pasted lines in your document, as desired. Some examples are given at the bottom of this page.</li>
 NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; you do not have to copy/paste all of the below lines!
 </ol>
@@ -82,7 +82,7 @@ Copy/paste the below if you want to do things like remove or add vertical lines 
 The below is an example of how one can change the appearance of the contents within a LaTeX document. After copy/pasting the code to incorporate the file contents into my document, I decided to change the color of the name banners from blue to black, the font color to yellow, and to italicize the font in the name banner.  I also needed to make the right column a bit wider. To accomplish these tasks, I copy/pasted the relevant formatting lines that control these items and then edited my preferences. Here is a peek at what my LaTeX document looks like:  
 <pre><code>
 \newpage       % You can comment out or use \clearpage instead
-\include{\WorPTfolder/table_NOTANONcurrentPending}
+\include{do_NOT_manually_edit/table_NOTANONcurrentPending}
 
 % Put customizations for NOTANONcurrentPending HERE
     
