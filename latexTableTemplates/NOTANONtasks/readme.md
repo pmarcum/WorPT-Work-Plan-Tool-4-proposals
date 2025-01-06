@@ -47,7 +47,7 @@ NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; yo
 </code></pre>
 <b>The below can nudge the table to the left (increase value) or right (decrease value)</b>
 <pre><code>
-\def\WideTable{1.2\textwidth}    % bigger value=nudge table to left
+\def\WideTable{1.2\textwidth}    % bigger values nudge table to left
 </code></pre>
     
 <b>The below are asethetic preferences only, like color and font style</b>
