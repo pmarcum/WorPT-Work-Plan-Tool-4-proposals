@@ -13,7 +13,7 @@ level-of-effort information is given in this table, only tasks and assignments t
 <ol>
 <li><mark>COPY the lines in the code block below</mark>, then</li>
 <li><mark>PASTE into your document WHERE you want the content to appear</mark>, then</li>
-<li><mark>MODIFY the editable lines you just pasted in your document as needed.</mark> The editable lines are: the <b>caption</b>, the <b>table label</b>, turning the <b>landscape mode</b> on/off, and inclusion of <b>additional customizations</b> at the designated line (see next step for more details). </li>
+<li><mark>MODIFY the editable lines you just pasted in your document as needed.</mark> The lines that may be edited (or even deleted altogether if not wanted) are indicated by highlight below. </li>
 </ol>
 <pre><code>
 \include{\WorPTfolder/mainBody}
