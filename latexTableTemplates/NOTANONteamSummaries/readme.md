@@ -1,9 +1,4 @@
-<b>NOTANONteamSummaries</b> is a file containing a short (1-page) CV for each team member who is indicated as needing to have a biosketch on the PERSONNEL & FTE page. If the box is checked under "bio sketch?" column for a person, then that person's bio sketch will be generated and included as part of this file. All biosketches are formatted to have a consistant appearance. 
-
-A bio sketch for a person is generated from that person's individual WorPT biosketch google sheet. Checked boxes in that sheet indicate what publications and awards to mention, etc., customizing for this particular proposal. The NOTANONteamSummaries WorPT file can serve as the "bio sketches" section of your proposal.  
-
-NOTE: Biosketch files should be kept up-to-date so that the information that is extracted for both the current/pending and bio-sketch
-sections of a proposal have valid and current information.
+<b>NOTANONteamSummaries</b> is a file containing a paragraph for each team member describing the role in the proposed project. The file is generated from the text written in the WorPT spreadsheet under "ROLE/BACKGROUND NARRATIVE" on the PERSONNEL & FTE page. The person's name is attached to the beginning of the paragraph and boldfaced. 
 
 <font size="3">WorPT table example: <b>NOTANONteamSummaries</b></font>
 <br>
@@ -29,37 +24,27 @@ sections of a proposal have valid and current information.
 </li>
 
 <li><b>Customize appearance</b> [<i>do as many times as needed</i>]
-The default settings produce a nice-looking file, so you probably won't have to do any customization for this file. But if desired, you can change colors, font style and spacing using additional lines that are copy/pasted into your document. Specifically: 
+The default settings produce a nice-looking file, so you probably won't have to do any customization for this file. The options for changing the appearance are severely limited for this file.
 <ol>
 <li>COPY any or all lines in the code block below that are related to the formatting parameter that you want to edit. The lines below show default values. You will edit those values to make desired changes.</li>
 <li>PASTE the copied lines into your document at the "% Put customizations for NOTANONteamSummaries HERE" line in the code that you copy/pasted in Step 2. Most importantly, the desired formatting lines should be pasted somewhere <b>between</b> the \include{do_NOT_manually_edit/table_NOTANONteamSummaries} and \begin{NOTANONteamSummaries} lines. </li>
 <li>EDIT the pasted lines in your document, as desired. Some examples are given at the bottom of this page.</li>
 NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; you do not have to copy/paste all of the below lines!
 </ol>
-<b>The below lines are what you will most likely need to copy/paste, to get your column widths just right. Highlights indicate what can be edited:</b>    
+<b>The below line is the only option for changing the format. Highlights indicate what can be edited:</b>    
 <pre><code>
-\def\NameColor{<mark>Blue</mark>}                          % font color of name/role appearing at top of biosketch
-\def\NameSize{<mark>\large</mark>}                         % font size of name/role
-\def\NameBoldface#1{<mark>\textbf</mark>{#1}}              % boldface name/role
-\def\LabelBoldface#1{<mark>\textbf</mark>{#1}}             % boldface "Education",... labels
-</code></pre>
-<b>Use the following to compress or make more vertical space between the "Education", "Appointments", etc sections:</b>
-<pre><code>
-\def\SectionSpacing{\par \vspace{<mark>-0.5em</mark>}}     % vertical spacing bet/ categories
-</code></pre>
-<b>Use the below to change the symbol that marks the beginning of each entry in the publication list:</b>
-<pre><code>
-\def\PublicationBullet{<mark>\scriptsize{$\bullet$}{\hspace{-0.3em}}</mark>}
+\def\NameBoldface#1{<mark>\textbf</mark>{#1}}             % boldface the name at top of paragraph for that person
 </code></pre>
 </li>
 
 <li><b>Examples</b>
-The below is an example of how one can change the appearance of the contents within a LaTeX document. After copy/pasting the code to incorporate the file contents into my document, I decided to change the color of the names from the default blue color, to Black and also to italicize the names. I copy/pasted the 2 formatting lines that control these items and then edited my preferences. Here is a peek at what my LaTeX document looks like:  
+The below is an example of how one can change the appearance of the contents within a LaTeX document. I copy/pasted the only formatting line that controls font style and edited so that the name is both boldfaced and italicized. Here is a peek at what my LaTeX document looks like:  
 <pre><code>
-\include{do_NOT_manually_edit/NOTANONteamSummaries}
-    
-\def\NameBoldface#1{\emph{#1}}              % boldface name/role
-\def\NameColor{Black}                          % font color of name/role
+\newpage       % You can comment out or use \clearpage instead
+\include{do_NOT_manually_edit/NOTANONteamSummaries}  % replace do_NOT_manually_edit with correct folder name if something different
+% Put customizations for NOTANONteamSummaries HERE
+  
+\def\NameBoldface#1{\textbf{\emph{#1}}}              % boldface name/role
 
 \begin{NOTANONteamSummaries}
 \end{NOTANONteamSummaries}
@@ -68,6 +53,6 @@ NOTE: To return to default values, all I have to do is comment-out (put a "%" at
 </li>
 
 <li><b>NUCLEAR OPTION:</b>
-If you just cannot get the content to look like you want it to look, you can always copy/paste the entire table_NOTANONteamSummaries file that appears in the WorPT subfolder, into your document, and then edit at-will.  Some of the WorPT files involve complicated LaTeX code, so be sure that you have a good mastery of LaTeX and know what you are doing before implementing this option!
+If you just cannot get the content to look like you want it to look, you can always copy/paste the entire table_NOTANONteamSummaries file that appears in the WorPT subfolder, into your document, and then edit at-will.  Some of the WorPT files involve complicated LaTeX code, so be sure that you have a good mastery of LaTeX and know what you are doing before implementing this option! (But this particular file is extremely simple!)
 </li>
 </ol>
