@@ -17,9 +17,9 @@ level-of-effort information is given in this table, only tasks and assignments t
 </ol>
 <pre><code>
 \include{\WorPTfolder/mainBody}
-% Put customizations for NOTANONtasks HERE
+<mark>% Put customizations for NOTANONtasks HERE</mark>
 \begin{NOTANONtasks}
-<mark style="background-color:green;">\caption{\normalsize\textbf{Task Management and Team Responsibilities}:\\
+<mark>\caption{\normalsize\textbf{Task Management and Team Responsibilities}:\\
 The tasks ({\color{red}gray} headers) and sub-tasks (left), with specific assignments for the roles of task lead (middle) and expertise / analysis assistance (right).} \label{tab:NOTANONtasks}</mark>
 \end{NOTANONtasks}
 </code></pre>
@@ -33,41 +33,41 @@ You can change column widths, column alignment, colors, font style using additio
 <li>EDIT the pasted lines in your document, as desired. Some examples are given at the bottom of this page.</li>
 NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; you do not have to copy/paste all of the beow lines!
 </ol>
-<b>The below lines are what you will most likely need to copy/paste, to get your column widths just right:</b>
+<b>The below lines are what you will most likely need to copy/paste, to get your column widths just right. Highlights indicate what can be edited:</b>
 <pre><code>
-\LandScapetrue                   % puts table in landscape mode
-\def\TaskWidth{3.9in}            % width of leftmost ("Tasks") column
-\def\LeadWidth{1.2in}            % width of middle ("Lead") column
-\def\ExpertiseWidth{1.8in}       % width of rightmost ("Expertise") column
+\LandScapetrue                   % appearance in your document will put the table in landscape mode
+\def\TaskWidth{<mark>3.9in</mark>}            % width of leftmost ("Tasks") column
+\def\LeadWidth{<mark>1.2in</mark>}            % width of middle ("Lead") column
+\def\ExpertiseWidth{<mark>1.8in</mark>}       % width of rightmost ("Expertise") column
 </code></pre>
 <b>The below lines might be useful - they adjust the table compactness:</b>
 <pre><code>
-\def\SpaceBetweenRows{1}         % vertical compactness of rows
-\def\SpaceBetweenColumns{1pt}    % spacing between columns (bigger value=wider column margin)
+\def\SpaceBetweenRows{<mark>1</mark>}         % vertical compactness of rows
+\def\SpaceBetweenColumns{<mark>1pt</mark>}    % spacing between columns (bigger value=wider column margin)
 </code></pre>
 <b>The below can nudge the table to the left (increase value) or right (decrease value)</b>
 <pre><code>
-\def\WideTable{1.2\textwidth}    % bigger values nudge table to left
+\def\WideTable{<mark>1.2\textwidth</mark>}    % bigger values nudge table to left
 </code></pre>
     
 <b>The below are asethetic preferences only, like color and font style</b>
 <pre><code>
-\def\HeaderColor{Blue}           % column heading color
-\def\LabelColor{White}           % column heading font color
-\def\LabelBoldface#1{\textbf{#1}}% boldface column labels; change "\textbf" to "\emph" or whatever
-\def\SectionColor{gray!40}       % category label colors
-\def\TaskColor{Black}            % category label font color
-\def\TaskBoldface#1{\textbf{#1}} % boldface task category labels; change "\textbf" to "\emph" or whatever
-\def\VerticalLineColor{gray!40}  % color of line between "Lead" and "Expertise"
+\def\HeaderColor{<mark>Blue</mark>}           % column heading color
+\def\LabelColor{<mark>White</mark>}           % column heading font color
+\def\LabelBoldface#1{<mark>\textbf</mark>{#1}}% boldface column labels; change "\textbf" to "\emph" or whatever
+\def\SectionColor{<mark>gray!40</mark>}       % category label colors
+\def\TaskColor{<mark>Black</mark>}            % category label font color
+\def\TaskBoldface#1{<mark>\textbf</mark>{#1}} % boldface task category labels; change "\textbf" to "\emph" or whatever
+\def\VerticalLineColor{<mark>gray!40</mark>}  % color of line between "Lead" and "Expertise"
 </code></pre>
 
 <b>The below table preamble gives you considerably MORE control over table layout than just changing parameter values.</b>
-Copy/paste the below if you want to do things like remove or add vertical lines or change a column from left-alignment to center-aligned, for example. You can replace the \TaskWidth and other parameters with hard-coded numbers if desired, and change the "p" to other alignment modes. Things that should NOT be changed (otherwise, the LaTeX will break) are the "T" variable and number of columns. 
+Copy/paste the below if you want to do things like remove or add vertical lines or change a column from left-alignment to center-aligned, for example. You can replace the \TaskWidth and other parameters with hard-coded numbers if desired, and change the "p" to other alignment modes. You can change anything that is in highlight. Things that should NOT be changed (otherwise, the LaTeX will break) are the "T" variable and number of columns. 
 <pre><code>
 \newcolumntype{T}{
-  |p{\TaskWidth}||                                 % title column
-  p{\LeadWidth}!{\color{\VerticalLineColor}\vrule} % line bet Lead/Expertise% timeline columns
-  p{\ExpertiseWidth}|                              % Expertise column
+  <mark>|p</mark>{<mark>\TaskWidth</mark>}<mark>||</mark>                                 % title column
+  <mark>p</mark>{<mark>\LeadWidth</mark>}<mark>!{\color{\VerticalLineColor}\vrule}</mark> % line bet Lead/Expertise% timeline columns
+  <mark>p</mark>{<mark>\ExpertiseWidth</mark>}<mark>|</mark>                              % Expertise column
 }
 </code></pre> 
 </li>
