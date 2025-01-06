@@ -7,7 +7,7 @@ sections of a proposal have valid and current information.
 
 <font size="3">WorPT table example: <b>NOTANONbiosketches</b></font>
 <br>
-<img src="https://lh3.googleusercontent.com/d/1hQWaFzw0-oolj-ZgvmulSnWuO5ptYoTM" width=30%>
+<img src="https://lh3.googleusercontent.com/d/1hQWaFzw0-oolj-ZgvmulSnWuO5ptYoTM" width=40%>
 <hr>
 <b>HOW TO USE:</b>
 <ol>
