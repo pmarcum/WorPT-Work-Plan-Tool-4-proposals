@@ -19,7 +19,7 @@ level-of-effort information is given in this table, only tasks and assignments t
 \include{\WorPTfolder/mainBody}
 % Put customizations for NOTANONtasks HERE
 \begin{NOTANONtasks}
-<mark>\caption{\normalsize\textbf{Task Management and Team Responsibilities}:\\
+<mark style="background-color:green;">\caption{\normalsize\textbf{Task Management and Team Responsibilities}:\\
 The tasks ({\color{red}gray} headers) and sub-tasks (left), with specific assignments for the roles of task lead (middle) and expertise / analysis assistance (right).} \label{tab:NOTANONtasks}</mark>
 \end{NOTANONtasks}
 </code></pre>
