@@ -61,16 +61,27 @@
 \def\TaskCategoryFontColor{White}       % task category title font color
 \def\TaskCategoryBoldface#1{\textbf{#1}}% boldface task category title
 
-\addtocounter{table}{-1}                % corrects double-counting of longtable and table combination
+\def\SpaceBetweenRows{0.7}
+\def\SpaceBetweenColumns{5pt}
+\def\TaskAddCounter{-1}          % corrects table number messed up by table,longtable combination)
+\def\TaskWidth{3.3in}
+\def\LeadWidth{0.45in}
+\def\ExpertiseWidth{1.2in}
+
+
+
+\addtocounter{table}{\TaskAddCounter}                % corrects double-counting of longtable and table combination
 \begin{table*}[h!]                      % \begin{table} needed to make bottom table caption have same width as table
-   \renewcommand{\arraystretch}{0.7}    % controls vertical row separation/spacing
-   \setlength{\tabcolsep}{5pt}          % controls horizontal column separation/spacing
-   \begin{longtable}{|p{3.3in}||
+   \renewcommand{\arraystretch}{\SpaceBetweenRows}    % controls vertical row separation/spacing
+   \setlength{\tabcolsep}{\SpaceBetweenColumns}          % controls horizontal column separation/spacing
+   \begin{longtable}{
+     |p{\TaskWidth}||
      c!{\color{\YearQuarterLineColor}\vrule}
      c!{\color{\YearQuarterLineColor}\vrule}!{\color{\YearQuarterLineColor}\vrule}
      c!{\color{\YearQuarterLineColor}\vrule}
-     c||p{0.45in}!{\color{\YearQuarterLineColor}\vrule}
-     p{1.2in}|}
+     c||
+     p{\LeadWidth}!{\color{\YearQuarterLineColor}\vrule}
+     p{\ExpertiseWidth}|}
    \expinput{[INSERTLATEXFILESUBDIRECTORY]/table_isANONtasks}
    \end{longtable}
    \caption{
