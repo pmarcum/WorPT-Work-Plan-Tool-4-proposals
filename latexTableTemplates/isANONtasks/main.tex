@@ -1,1 +1,55 @@
+%=================== FORMAT PREFERENCES ===============
+\def\ColumnLabelBoldface#1{\textbf{#1}} % boldface column header font
+\def\YearQuarterLineColor{lightgray}    % vertical line color in year/quarter Start Finish timeline columns
+\def\YearFontColor{Red}                 % year numbers font color under "Y" columns in Start Finish timeline
+\def\TaskCategoryColor{Blue}            % task category banners color
+\def\TaskCategoryFontColor{White}       % task category title font color
+\def\TaskCategoryBoldface#1{\textbf{#1}}% boldface task category title
 
+\addtocounter{table}{-1}                % corrects double-counting of longtable and table combination
+\begin{table*}[h!]                      % \begin{table} needed to make bottom table caption have same width as table
+   \renewcommand{\arraystretch}{0.7}    % controls vertical row separation/spacing
+   \setlength{\tabcolsep}{5pt}          % controls horizontal column separation/spacing
+   \begin{longtable}{|p{3.3in}||
+     c!{\color{\YearQuarterLineColor}\vrule}
+     c!{\color{\YearQuarterLineColor}\vrule}!{\color{\YearQuarterLineColor}\vrule}
+     c!{\color{\YearQuarterLineColor}\vrule}
+     c||p{0.45in}!{\color{\YearQuarterLineColor}\vrule}
+     p{1.2in}|}
+   \expinput{[INSERTLATEXFILESUBDIRECTORY]/table_isANONtasks}
+   \end{longtable}
+   \caption{
+     \label{tab:isANONtasks} \textbf{Task Timeline:} Team member roles, rightmost column, are 
+     cross-referenced with corresponding names in the non-anonymized personnel and work effort table.  
+     {\color{red} \textbf{Paper~1:} Sample and methods for enhancing detectability of  low SB X-ray emission, 
+     presentation of emission maps, description of database and pipeline software (which will be released in 
+     a public repository at the time of paper submission). \textbf{Paper~2:} Methodologies for measuring the 
+     gas halo size and other gas properties, analyisis of the diffuse hot gas halos as functions of galaxy 
+     properties (environment, galaxy morphology, stellar mass, and SFR based on \Chandra, \Hubble, and \Spitzer\ 
+     observations, and the SED models from the GSWLC; application of multivariate mthods to ``baseline'' the 
+     gas halo sizes (Sect.\,\ref{Sec:Baseline}). \textbf{Note~1:} See Sec.\,\ref{Sec:Sample}.}
+  }
+\end{table*}
+
+
+
+%  ________________________________________________________________________________
+% | Refer to instructions_isANONtasks.tex                                         |
+% | for guidance regarding how to include the isANONtasks table in your document  |
+% |________________________________________________________________________________|
+\hline
+\multirow{2}{*}{\ColumnLabelBoldface{Task Description}} & \multicolumn{2}{c}{\ColumnLabelBoldface{Start}} & \multicolumn{2}{!{\color{\YearQuarterLineColor}\vrule}c||}{\ColumnLabelBoldface{Finish}} & \ColumnLabelBoldface{Task} & \ColumnLabelBoldface{Team}\\
+\cline{2-5}
+\rule{0pt}{12pt} & {\color{\YearFontColor}Y} & Q & {\color{\YearFontColor}Y} & Q & \ColumnLabelBoldface{Lead} & \ColumnLabelBoldface{Expertise}\\
+
+% COMMENT: the below template creates a colorized banner with the task category identification and title, for each task category
+[STARTBANNER]
+\multicolumn{7}{|c|}{\cellcolor{\TaskCategoryColor}\color{\TaskCategoryFontColor}\TaskCategoryBoldface{Task [INSERTCATEGORYID]: [INSERTCATEGORYTITLE]}}\\
+[ENDBANNER]
+
+% COMMENT: the below template generates a table row for each task under the given task category
+[STARTTASK]
+[INSERTTASKID]: {[INSERTTASKTITLE]}  & {\color{\YearFontColor}[INSERTSTARTYEAR]} & [INSERTSTARTQTR] & {\color{\YearFontColor}[INSERTFINISHYEAR]} & [INSERTFINISHQTR] & [INSERTLEADROLE] & [INSERTEXPERTISEROLE]\\
+[ENDTASK]
+
+\hline
