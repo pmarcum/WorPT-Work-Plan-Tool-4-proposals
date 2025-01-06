@@ -1,1 +1,25 @@
+%___________________________________________________________________________________________________________________
+% Refer to:
+%   https://github.com/pmarcum/WorPT-Work-Plan-Tool-4-proposals/blob/main/latexTableTemplates/[INSERTFILENAME]/readme.md
+% for instructions and LaTeX code to copy/paste into your document, to incorporate this file. 
+%___________________________________________________________________________________________________________________
 
+\def\WorPTfolder{[INSERTFILENAME]} % set the folder name where WorPT files are contained
+
+% ___________________________________________
+%       Default formatting preferences
+% ___________________________________________
+
+%--- boldfaces the name at the beginning of each paragraph associated with that name
+\def\NameBoldface#1{\textbf{#1}}            % boldface the name at top of paragraph for that person
+
+% COMMENT: the below template formats the paragraph for each person
+[STARTSUMMARYTEMPLATE]
+[INSERTPREFIX] \NameBoldface{[INSERTNAME]}, \NameBoldface{[INSERTROLE]}, [INSERTBIOSUMMARY] \par
+[ENDSUMMARYTEMPLATE]
+
+\newenvironment{[INSERTFILENAME]}{%
+[INSERTSUMMARIES]
+}
+{%
+}
