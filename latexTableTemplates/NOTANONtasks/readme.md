@@ -1,5 +1,5 @@
 <p style="position: relative; overflow:auto">
-  <img src="https://drive.google.com/file/d/12BO4XZpEwodyHwtDSvcrKBhmCwkxysLS/view?usp=sharing" 
+  <img src="https://lh3.googleusercontent.com/d/12BO4XZpEwodyHwtDSvcrKBhmCwkxysLS" 
        width=300
        style="display:inline-block;padding-right:10px"
        alt="WorPT-NOTANONtasks">
