@@ -43,7 +43,7 @@ The default typically works well because the table + longtable combination cause
 </code></pre>
 <b>The below lines might be useful - they adjust the table compactness:</b>
 <pre><code>
-\def\SpaceBetweenRows{<mark>1</mark>}       % vertical compactness of rows
+\def\SpaceBetweenRows{<mark> 1 </mark>}       % vertical compactness of rows
 \def\SpaceBetweenColumns{<mark>1pt</mark>}  % spacing between columns (bigger value=wider column margin)
 </code></pre>
 <b>The below can nudge the table to the left (increase value) or right (decrease value)</b>
