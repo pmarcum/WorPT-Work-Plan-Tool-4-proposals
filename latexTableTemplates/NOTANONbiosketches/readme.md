@@ -38,8 +38,8 @@ NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; yo
 </ol>
 <b>The below lines are what you will most likely need to copy/paste, to get your column widths just right. Highlights indicate what can be edited:</b>    
 <pre><code>
-\def\NameColor{<mark>Blue</mark>}                          % font color of name/role appearing at top of biosketch
-\def\NameSize{<mark>\large</mark>}                        % font size of name/role
+\def\NameColor{<mark>Blue</mark>}                         % font color of name/role appearing at top of biosketch
+\def\NameSize{<mark>\large</mark>}                         % font size of name/role
 \def\NameBoldface#1{<mark>\textbf</mark>{#1}}              % boldface name/role
 \def\LabelBoldface#1{<mark>\textbf</mark>{#1}}             % boldface "Education",... labels
 </code></pre>
