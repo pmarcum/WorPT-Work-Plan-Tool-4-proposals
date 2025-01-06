@@ -69,7 +69,7 @@ Copy/paste the below if you want to do things like remove or add vertical lines 
   <mark>c</mark>!{<mark>\color{\YearQuarterLineColor}\vrule</mark>} % Start/year
   <mark>c</mark>!{<mark>\color{\YearQuarterLineColor}\vrule</mark>}!{<mark>\color{\YearQuarterLineColor}\vrule</mark>} % Start/quarter
   <mark>c</mark>!<mark>{\color{\YearQuarterLineColor}\vrule</mark>} % Finish/year
-  <mark>c||</mark>                            % Finish/quarter
+  <mark>c||</mark>                        % Finish/quarter
   <mark>p</mark>{<mark>\LeadWidth</mark>}<mark>!{\color{\YearQuarterLineColor}\vrule}</mark> % Task Lead column
   <mark>p</mark>{<mark>\ExpertiseWidth</mark>}<mark>|</mark>        % Expertise column 
 }
