@@ -57,11 +57,11 @@ The default typically works well because the table + longtable combination cause
 <b>The below are aesthetic preferences only, like color and font style</b>
 <pre><code>
 \def\HeaderColor{<mark>Blue</mark>}           % column heading color
-\def\LabelColor{<mark>White</mark>}           % column heading font color
-\def\LabelBoldface#1{<mark>\textbf</mark>{#1}}% boldface column labels; change "\textbf" to "\emph" or whatever
-\def\SectionColor{<mark>gray!40</mark>}       % category label colors
-\def\TaskColor{<mark>Black</mark>}            % category label font color
-\def\TaskBoldface#1{<mark>\textbf</mark>{#1}} % boldface task category labels; change "\textbf" to "\emph" or whatever
+\def\HeaderFontColor{<mark>White</mark>}           % column heading font color
+\def\HeaderBoldface#1{<mark>\textbf</mark>{#1}}% boldface column heading labels; change "\textbf" to "\emph" or whatever
+\def\SectionColor{<mark>gray!40</mark>}       % category dection label colors
+\def\SectionFontColor{<mark>Black</mark>}            % category section label font color
+\def\SectionBoldface#1{<mark>\textbf</mark>{#1}} % boldface category section labels; change "\textbf" to "\emph" or whatever
 \def\VerticalLineColor{<mark>gray!40</mark>}  % color of line between "Lead" and "Expertise"
 </code></pre>
 
