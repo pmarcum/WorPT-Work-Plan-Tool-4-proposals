@@ -69,17 +69,19 @@ The tasks ({\color{red}gray} headers) and sub-tasks (left), with specific assign
   </code>
 </pre>
 
-<b>The below gives you MORE control over table layout than just changing the above parameter values.</b>
-Copy/paste the below if you want to do things like remove or add vertical lines or change a column from left-alignment to center-aligned, for example.
+<b>The below table preamble gives you considerably MORE control over table layout than just changing parameter values.</b>
+Copy/paste the below if you want to do things like remove or add vertical lines or change a column from left-alignment to center-aligned, for example. You can replace the \TaskWidth and other parameters with hard-coded numbers if desired, and change the "p" to other alignment modes. Things that should NOT be changed (otherwise, the LaTeX will break) are the "T" variable and number of columns. 
 <pre>
   <code>
 \newcolumntype{T}{
-  |p{\TaskWidth}||               % title column
+  |p{\TaskWidth}||                                 % title column
   p{\LeadWidth}!{\color{\VerticalLineColor}\vrule} % line bet Lead/Expertise% timeline columns
-  p{\ExpertiseWidth}|            % Expertise column
+  p{\ExpertiseWidth}|                              % Expertise column
 }
        </code>
      </pre> 
   </li>
 </ol>
 
+<b>NUCLEAR OPTION:</b>
+If you just cannot get the table to look like you want it to look, you can always copy/paste the entire table_NOTANONtasks.tex file that appears in the do_NOT_manually_edit folder, into your document, and then edit at-will.  Some of the WorPT files involve complicated LaTeX code, so be sure that you have a good mastery of LaTeX and know what you are doing before implementing this option!
