@@ -9,8 +9,7 @@ level-of-effort information is given in this table, only tasks and assignments t
 <b>HOW TO USE:</b>
 <ol>
 <li><b>Special WorPT Packages</b> [<i>one-time-only task</i>]Copy/paste the special packages in preamble of your document, if you haven't done so previously. (see https://github.com/pmarcum/WorPT-Work-Plan-Tool-4-proposals/blob/main/WorPTpackages for more info).</li>
-<li><mark><b>How To Put File Contents Into Your Document</b></mark> [<i>do once for inclusion of this file</i>]
-These lines will render a table with minimal effort on your part.
+<li><mark><b>How To Put File Contents Into Your Document</b></mark> [<i>do once for inclusion of this file</i>] 
 <ol>
 <li>COPY the lines in the code block below, then</li>
 <li>PASTE into your document WHERE you want the content to appear, then</li>
@@ -25,7 +24,7 @@ These lines will render a table with minimal effort on your part.
 The tasks ({\color{red}gray} headers) and sub-tasks (left), with specific assignments for the roles of task lead (middle) and expertise / analysis assistance (right).} \label{tab:NOTANONtasks}
 \end{NOTANONtasks}
 </code></pre>
-NOTE: You need to copy/paste ALL these lines into your document to render the LaTeX as intended. You <b>may</b> delete the lines starting with "%" (e.g., the commented-out lines) if you do not want them in your document, but the remaining lines need to be copy/pasted verbatim. 
+NOTE: <mark>You need to copy/paste ALL these lines into your document to render the LaTeX as intended.</mark> You <b>may</b> delete the lines starting with "%" (e.g., the commented-out lines) if you do not want them in your document, but the remaining lines need to be copy/pasted verbatim. 
 </li>
 <li><b>Customize appearance</b> [<i>do as many times as needed</i>]
 You can change column widths, column alignment, colors, font style using additional lines that are copy/pasted into your document. Specifically: 
