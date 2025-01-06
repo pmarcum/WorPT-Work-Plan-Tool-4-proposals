@@ -14,7 +14,8 @@
 <li>MODIFY the editable lines you just pasted in your document as needed. The lines that may be edited (or even deleted altogether if not wanted) are indicated by highlight below. </li>
 </ol>
 <pre><code>
-\include{do_NOT_manually_edit/table_isANONtasks}  % replace do_NOT_manually_edit if not correct folder name
+\include{do_NOT_manually_edit/table_isANONtasks}  % reset/define parameters used for this file
+% NOTE: replace do_NOT_manually_edit if not correct folder name
 <mark>% Put customizations for isANONtasks HERE</mark>
 \begin{isANONtasks}
 <mark>\caption{\textbf{Task Timeline:} Team member roles, rightmost column, are cross-referenced with corresponding names in the non-anonymized personnel and work effort table. {\color{red} \textbf{Paper~1:} Sample and methods for enhancing detectability of  low SB X-ray emission, presentation of emission maps, description of database and pipeline software (which will be released in a public repository at the time of paper submission). \textbf{Paper~2:} Methodologies for measuring the gas halo size and other gas properties, analyisis of the diffuse hot gas halos as functions of galaxy properties (environment, galaxy morphology, stellar mass, and SFR based on \Chandra, \Hubble, and \Spitzer\ observations, and the SED models from the GSWLC; application of multivariate mthods to ``baseline'' the  gas halo sizes (Sect.\,\ref{Sec:Baseline}). \textbf{Note~1:} See Sec.\,\ref{Sec:Sample}.}} 
