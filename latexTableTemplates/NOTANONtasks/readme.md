@@ -23,7 +23,6 @@ level-of-effort information is given in this table, only tasks and assignments t
 The tasks ({\color{red}gray} headers) and sub-tasks (left), with specific assignments for the roles of task lead (middle) and expertise / analysis assistance (right).} \label{tab:NOTANONtasks}</mark>
 \end{NOTANONtasks}
 </code></pre>
-NOTE: <mark>You need to copy/paste ALL these lines into your document to render the LaTeX as intended.</mark> You <b>may</b> delete the lines starting with "%" (e.g., the commented-out lines) if you do not want them in your document, but the remaining lines need to be copy/pasted verbatim. 
 </li>
 <li><b>Customize appearance</b> [<i>do as many times as needed</i>]
 You can change column widths, column alignment, colors, font style using additional lines that are copy/pasted into your document. Specifically: 
