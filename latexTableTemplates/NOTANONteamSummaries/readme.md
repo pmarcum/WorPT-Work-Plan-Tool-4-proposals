@@ -16,7 +16,7 @@
    
 <pre><code>
 \newpage       % You can comment out or use \clearpage instead
-\include{do_NOT_manually_edit/table_NOTANONteamSummaries}  % replace do_NOT_manually_edit with correct folder name if something different
+\include{<mark>do_NOT_manually_edit</mark>/table_NOTANONteamSummaries}  % replace do_NOT_manually_edit with correct folder name if something different
 <mark>% Put customizations for NOTANONteamSummaries HERE</mark>
 \begin{NOTANONteamSummaries}
 \end{NOTANONteamSummaries}  
