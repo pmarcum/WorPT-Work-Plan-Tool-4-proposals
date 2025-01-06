@@ -65,7 +65,7 @@ Copy/paste the below if you want to do things like remove or add vertical lines 
 <pre><code>
 \newcolumntype{T}{
   <mark>|p</mark>{<mark>\TaskWidth</mark>}<mark>||</mark>                                 % title column
-  <mark>p</mark>{<mark>\LeadWidth</mark>}<mark>!{\color{\VerticalLineColor}\vrule}</mark> % line bet Lead/Expertise% timeline columns
+  <mark>p</mark>{<mark>\LeadWidth</mark>}<mark>!{\color{\VerticalLineColor}\vrule}</mark> % line bet Lead/Expertise
   <mark>p</mark>{<mark>\ExpertiseWidth</mark>}<mark>|</mark>                              % Expertise column
 }
 </code></pre> 
