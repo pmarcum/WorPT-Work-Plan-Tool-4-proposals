@@ -1,11 +1,65 @@
-%  ________________________________________________________________________________
-% | Refer to instructions_NOTANONtasks.tex                                         |
-% | for guidance regarding how to include the NOTANONtasks table in your document  |
-% |________________________________________________________________________________|
+%___________________________________________________________________________________________________________________
+% Refer to:
+%   https://github.com/pmarcum/WorPT-Work-Plan-Tool-4-proposals/blob/main/latexTableTemplates/[INSERTFILENAME]/readme.md
+% for instructions and LaTeX code to copy/paste into your document, to incorporate this file. 
+%___________________________________________________________________________________________________________________
 
-% COMMENT: The below makes the colorized column headers
+\newif\ifLandScape                 % establish a boolean variable
+\def\WorPTfolder{[INSERTFILENAME]} % set the folder name where WorPT files are contained
+
+% ___________________________________________
+%       Default formatting preferences
+% ___________________________________________
+\LandScapefalse                  % default is that the landscape mode is OFF
+
+%---- column widths and table orientation controls
+\def\TaskWidth{3.7in}            % width of leftmost ("Tasks") column
+\def\LeadWidth{1.1in}            % width of middle ("Lead") column
+\def\ExpertiseWidth{1.7in}       % width of rightmost ("Expertise") column
+
+%---- fix the Table Number in the caption
+\def\TaskAddCounter{-1}          % corrects table number messed up by table,longtable combination)
+
+%---- table compactness controls
+\def\SpaceBetweenRows{1}         % vertical compactness of rows
+\def\SpaceBetweenColumns{1pt}    % spacing between columns
+
+%--- control to nudge table to the left or right
+\def\NudgeTable{1.2\textwidth}   % adjust to help center table
+
+%--- aesthetic preferences
+\def\HeaderColor{Blue}           % column heading color
+\def\HeaderFontColor{White}           % column heading font color
+\def\HeaderBoldface#1{\textbf{#1}}% boldface column labels
+\def\SectionColor{gray!40}       % category label colors
+\def\SectionFontColor{Black}            % category label font color
+\def\SectionBoldface#1{\textbf{#1}} % boldface category labels
+\def\VerticalLineColor{gray!40}  % color of line between "Lead" and "Expertise"
+
+%--- table preamble definition bundled into the "T" variable
+\newcolumntype{T}{
+  |p{\TaskWidth}||                                % title column
+  p{\LeadWidth}!{\color{\VerticalLineColor}\vrule}% line bet Lead/Expertise
+  p{\ExpertiseWidth}|                             % Expertise column
+}
+
+\newenvironment{[INSERTFILENAME]}{%
+\ifLandScape
+  \begin{sidewaystable}
+\else
+  \begin{table}[h]
+\fi
+\centerline{
+\addtocounter{table}{\TaskAddCounter}
+\renewcommand{\arraystretch}{\SpaceBetweenRows}  % changes vertical space bet/ rows
+\setlength{\tabcolsep}{\SpaceBetweenColumns}     % changes horizontal spacing bet/ columns
+\begin{minipage}{\NudgeTable}     % increase to allow wide table spill into margin
+\begin{longtable}{T}
+%--- make colorized top banner labels, the column headers
 \hline
-\LabelBoldface{\cellcolor{\HeaderColor}\color{\LabelColor}Tasks} & \LabelBoldface{\cellcolor{\HeaderColor}\color{\LabelColor}Lead} & \LabelBoldface{\cellcolor{\HeaderColor}\color{\LabelColor}Expertise}\\
+\HeaderBoldface{\cellcolor{\HeaderColor}\color{\HeaderFontColor}Tasks} & 
+\HeaderBoldface{\cellcolor{\HeaderColor}\color{\HeaderFontColor}Lead} & 
+\HeaderBoldface{\cellcolor{\HeaderColor}\color{\HeaderFontColor}Expertise}\\
 \hline
 
 [INSERTTABLECONTENTS]
@@ -14,7 +68,7 @@
 % COMMENT: Below this row, all the related tasks will be listed (the template for those
 % COMMENT: tasks is the template following this one)
 [STARTCATEGORYENTRYTEMPLATE]
-\multicolumn{3}{|c|}{\cellcolor{\SectionColor}\color{\TaskColor}\TaskBoldface{Task [INSERTID]: [INSERTTITLE]}}\\ \hline
+\multicolumn{3}{|c|}{\cellcolor{\SectionColor}\color{\SectionFontColor}\SectionBoldface{Task [INSERTID]: [INSERTTITLE]}}\\ \hline
 [ENDCATEGORYENTRYTEMPLATE]
 
 % COMMENT: The below is a template for a task row in the table that falls under a 
@@ -22,3 +76,15 @@
 [STARTTASKENTRYTEMPLATE]
 [INSERTID]: {[INSERTTITLE]} & [INSERTLEAD] & [INSERTEXPERTS]\\ \hline
 [ENDTASKENTRYTEMPLATE]
+
+\end{longtable}
+\end{minipage}
+}
+}
+{%
+\ifLandScape
+ \end{sidewaystable}
+\else
+ \end{table}
+\fi
+}
