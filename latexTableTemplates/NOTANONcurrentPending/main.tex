@@ -13,10 +13,14 @@
 %       Default formatting preferences
 % ___________________________________________
 
+%---- controls width of the left and right columns
+\dev\LeftSideWidth{1.5in}          % width of left side column
+\dev\RightSideWidth{5.0in}         % width of right side column
+
 %---- appearance of top of each current/pending report showing colorized name banner 
-\def\NameBannerColor{Blue}             % Current/Pending top banner color
-\def\NameBannerFontColor{White}              % Current/Pending top banner font color
-\def\NameBannerBoldface#1{\textbf{#1}}   % boldface banner text
+\def\NameBannerColor{Blue}         % Current/Pending top banner color
+\def\NameBannerFontColor{White}    % Current/Pending top banner font color
+\def\NameBannerBoldface#1{\textbf{#1}} % boldface banner text
 
 %---- appearance of section dividers, eg "Current Support", "Pending Grant Support", etc
 \def\SectionColor{lightgray}       % "Current Support" & "Pending Grant Support" color
@@ -33,12 +37,12 @@
 
 %--- table preamble definition bundled into the "T" variable
 \newcolumntype{T}{
-  |l        % grant descriptors, e.g. "Title", "Source of Support", etc.
-  |p{5in}|  % right side, giving details for each descriptor
+  |p{\LeftSideWidth}   % grant descriptors, e.g. "Title", "Source of Support", etc.
+  |p{\RightSideWidth}| % right side, giving details for each descriptor
 }
 
 \newenvironment{[INSERTFILENAME]}{%
-\begin{longtable}{T}  % adjust width and centering
+\begin{longtable}{T}   % adjust width and centering
 
 %---- make colorized top name banner
 \hline
