@@ -2,7 +2,7 @@
 
 The information for the report is taken from that person's individual WorPT biosketch google sheet. The last page in that google sheet
 is where the list of grants, and their statuses, are written.  The WorPT script will copy every grant that is still either active or has a status
-indicating that no information regarding selection has yet been obtained, and will format those grants into this current/pending form. The NOTANONcurrenPending WorPT file can serve as the "Current & Pending Funding" section of your proposal.  
+indicating that no information regarding selection has yet been obtained, and will format those grants into this current/pending form. The NOTANONcurrentPending WorPT file can serve as the "Current & Pending Funding" section of your proposal.  
 
 NOTE: WorPT biosketch spreadsheet files should be kept up-to-date so that the information that is extracted for both the current/pending and bio-sketch sections of a proposal have valid and current information.
 
@@ -37,30 +37,59 @@ The default settings produce a nice-looking file, so you probably won't have to 
 <li>EDIT the pasted lines in your document, as desired. Some examples are given at the bottom of this page.</li>
 NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; you do not have to copy/paste all of the below lines!
 </ol>
-<b>The below lines are what you will most likely need to copy/paste, to get your column widths just right. Highlights indicate what can be edited:</b>    
+<b>The below lines will help you change column widths. Highlights indicate what can be edited:</b>    
 <pre><code>
-\def\NameColor{<mark>Blue</mark>}                          % font color of name/role appearing at top of biosketch
-\def\NameSize{<mark>\large</mark>}                         % font size of name/role
-\def\NameBoldface#1{<mark>\textbf</mark>{#1}}              % boldface name/role
-\def\LabelBoldface#1{<mark>\textbf</mark>{#1}}             % boldface "Education",... labels
+\dev\LeftSideWidth{<mark>1.5in</mark>}             % width of left side column
+\dev\RightSideWidth{<mark>5.0in</mark>}            % width of right side column
 </code></pre>
-<b>Use the following to compress or make more vertical space between the "Education", "Appointments", etc sections:</b>
+
+<b>The below lines will help you change color scheme, font style, if desired. Highlights indicate what can be edited:</b>    
 <pre><code>
-\def\SectionSpacing{\par \vspace{<mark>-0.5em</mark>}}     % vertical spacing bet/ categories
+\def\NameBannerColor{<mark>Blue</mark>}            % Current/Pending top banner color
+\def\NameBannerColor{<mark>White</mark>}           % Current/Pending top banner font color
+\def\NameBannerBoldface#1{<mark>\textbf</mark>{#1}} % boldface banner text
 </code></pre>
-<b>Use the below to change the symbol that marks the beginning of each entry in the publication list:</b>
+   
+<b>The below change the appearance of section dividers (e.g., "Current Support", "Pending Grant Support"):</b>
 <pre><code>
-\def\PublicationBullet{<mark>\scriptsize{$\bullet$}{\hspace{-0.3em}}</mark>}
+\def\SectionColor{<mark>lightgray</mark>}          % "Current Support" & "Pending Grant Support" section divider color
+\def\SectionFontColor{<mark>Black</mark>}          % "Current Support" & "Pending Grant Support" section divider font color
+\def\SectionBoldface#1{<mark>\textbf</mark>{#1}}   % "Current Support" & "Pending Grant Support" section divider font style
 </code></pre>
+   
+<b>The below changes the font color of the "(this proposal)" note that appears by the proposal to be submitted</b>, where it is listed in the "PENDING" list, if that proposal is instructed to be included in the PENDING list. If the box is checked for "Include this proposal in funding status?" on the GENERAL INFO page in the WorPT spreadsheet, then the proposal of interest will be included in the PENDING list with this tag attached. 
+<pre><code>
+\def\ThisProposalColor{<mark>NavyBlue</mark>}      % "this proposal" font color in "pending" section
+</code></pre>
+
+<b>The below changes the font style of the left column, lists of grant descriptors like "TItle", "Source of Support", etc.</b>
+<pre><code>
+\def\LeftBoldface#1{<mark>\textbf</mark>{#1}}      % boldface left column text
+</code></pre>
+
+<b>The below table preamble gives you considerably MORE control over table layout than just changing parameter values.</b>
+Copy/paste the below if you want to do things like remove or add vertical lines or change a column from left-alignment to center-aligned, for example. You can replace the \LeftSideWidth and other parameters with hard-coded numbers if desired, and change the "p" to other alignment modes. You can change anything that is in highlight. Things that should NOT be changed (otherwise, the LaTeX will break) are the "T" variable and number of columns. 
+<pre><code>
+\newcolumntype{T}{
+  <mark>|p</mark>{<mark>\LeftSideWidth</mark>}     % grant descriptors, e.g. "Title", "Source of Support", etc.
+  <mark>|p</mark>{<mark>\RightSideWidth</mark>}|   % right side, giving details for each descriptor
+}
+</code></pre> 
+
 </li>
 
 <li><b>Examples</b>
-The below is an example of how one can change the appearance of the contents within a LaTeX document. After copy/pasting the code to incorporate the file contents into my document, I decided to change the color of the names from the default blue color, to Black and also to italicize the names. I copy/pasted the 2 formatting lines that control these items and then edited my preferences. Here is a peek at what my LaTeX document looks like:  
+The below is an example of how one can change the appearance of the contents within a LaTeX document. After copy/pasting the code to incorporate the file contents into my document, I decided to change the color of the name banners from blue to black, the font color to yellow, and to italicize the font in the name banner.  I also needed to make the right column a bit wider. To accomplish these tasks, I copy/pasted the relevant formatting lines that control these items and then edited my preferences. Here is a peek at what my LaTeX document looks like:  
 <pre><code>
-\include{\WorPTfolder/NOTANONcurrentPending}
+\newpage       % You can comment out or use \clearpage instead
+\include{\WorPTfolder/table_NOTANONcurrentPending}
+
+% Put customizations for NOTANONcurrentPending HERE
     
-\def\NameBoldface#1{\emph{#1}}              % boldface name/role
-\def\NameColor{Black}                          % font color of name/role
+\def\NameBannerColor{Black}            % Current/Pending top banner color
+\def\NameBannerColor{Yellow}           % Current/Pending top banner font color
+\def\NameBannerBoldface#1{\emph{#1}}   % boldface banner text
+\dev\RightSideWidth{5.3in}             % width of right side column
 
 \begin{NOTANONcurrentPending}
 \end{NOTANONcurrentPending}
