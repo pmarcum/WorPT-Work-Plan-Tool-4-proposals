@@ -77,7 +77,7 @@ Copy/paste the below if you want to do things like remove or add vertical lines 
 </li>
 
 <li><b>Examples</b>
-The below is an example of how one can change the appearance of the table within a LaTeX document. After copy/pasting the code to incorporate the table into my document, and then deciding that my task titles were too long to fit with the table in portrait mode, I decided I needed to use landscape mode.  I copy/pasted the landscape fla and the 2 formatting lines that control the "Tasks" and "Expertise" column widths. (My team members have long last names, requiring a wider column than the default). I also slightly altered the caption to be appropriate to my proposal. The result?  A landscape-mode table that allows each task to appear in a single table row without spilling over into the next line, which is my preferred way to present these tables for easiest viewing. I also decided I wanted the banners that separate the tasks into groups to just be plain text instead of boldfaced. I also wanted to left-align the Start and Finish columns. Here is a peek at what my LaTeX document looks like:  
+The below is an example of how one can change the appearance of the table within a LaTeX document. After copy/pasting the code to incorporate the table into my document, and then deciding that my task titles were too long to fit with the table in portrait mode, I decided I needed to use landscape mode.  I copy/pasted the landscape fla and the 2 formatting lines that control the "Tasks" and "Expertise" column widths. (My team members have long last names, requiring a wider column than the default). I also altered the caption to be appropriate to my proposal (e.g., changed the red font that signaled words that needed to be adapted). The result?  A landscape-mode table that allows each task to appear in a single table row without spilling over into the next line, which is my preferred way to present these tables for easiest viewing. I also decided I wanted the banners that separate the tasks into groups to just be plain text instead of boldfaced. I also wanted to left-align the Start and Finish columns. Here is a peek at what my LaTeX document looks like:  
 <pre><code>
 \include{do_NOT_manually_edit/isANONtasks}
 % Put customizations for isANONtasks HERE
@@ -95,6 +95,8 @@ The below is an example of how one can change the appearance of the table within
   p{\ExpertiseWidth}|        % Expertise column 
 }
 \begin{isANONtasks}
+\caption{\textbf{Task Timeline:} Team member roles, rightmost column, are cross-referenced with corresponding names in the non-anonymized personnel and work effort table. \textbf{Paper~1:} Description of database and pipeline software. \textbf{Paper~2:} Galaxy catalogue.} 
+    
 \caption{\normalsize\textbf{Task Management and Team Responsibilities}:\\
 The tasks ({\color{red}gray} headers) and sub-tasks (left), with specific assignments for the roles of task lead (middle) and expertise / analysis assistance (right). See a more detailed description of these roles in the Project Management section.}
 \label{tab:isANONtasks}
