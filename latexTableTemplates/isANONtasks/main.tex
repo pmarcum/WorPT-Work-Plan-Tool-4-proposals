@@ -1,3 +1,58 @@
+%___________________________________________________________________________________________________________________
+% Refer to:
+%   https://github.com/pmarcum/WorPT-Work-Plan-Tool-4-proposals/blob/main/latexTableTemplates/[INSERTFILENAME]/readme.md
+% for instructions and LaTeX code to copy/paste into your document, to incorporate this file. 
+%___________________________________________________________________________________________________________________
+
+\newif\ifLandScape                 % establish a boolean variable
+\def\WorPTfolder{[INSERTFILENAME]} % set the folder name where WorPT files are contained
+
+% ___________________________________________
+%       Default formatting preferences
+% ___________________________________________
+\LandScapefalse                  % default is that the landscape mode is OFF
+
+%---- column widths and table orientation controls
+\def\TaskWidth{3.7in}            % width of leftmost ("Tasks") column
+\def\LeadWidth{1.1in}            % width of middle ("Lead") column
+\def\ExpertiseWidth{1.7in}       % width of rightmost ("Expertise") column
+
+%---- fix the Table Number in the caption
+\def\TaskAddCounter{-1}          % corrects table number messed up by table,longtable combination)
+
+%---- table compactness controls
+\def\SpaceBetweenRows{1}         % vertical compactness of rows
+\def\SpaceBetweenColumns{1pt}    % spacing between columns
+
+%--- control to nudge table to the left or right
+\def\NudgeTable{1.2\textwidth}   % adjust to help center table
+
+%--- aesthetic preferences
+\def\HeaderColor{Blue}           % column heading color
+\def\HeaderFontColor{White}           % column heading font color
+\def\HeaderBoldface#1{\textbf{#1}}% boldface column labels
+\def\SectionColor{gray!40}       % category label colors
+\def\SectionFontColor{Black}            % category label font color
+\def\SectionBoldface#1{\textbf{#1}} % boldface category labels
+\def\VerticalLineColor{gray!40}  % color of line between "Lead" and "Expertise"
+
+%--- table preamble definition bundled into the "T" variable
+\newcolumntype{T}{
+  |p{\TaskWidth}||                                % title column
+  p{\LeadWidth}!{\color{\VerticalLineColor}\vrule}% line bet Lead/Expertise
+  p{\ExpertiseWidth}|                             % Expertise column
+}
+
+\newenvironment{[INSERTFILENAME]}{%
+\ifLandScape
+  \begin{sidewaystable}
+\else
+  \begin{table}[h]
+\fi
+
+
+
+
 %=================== FORMAT PREFERENCES ===============
 \def\ColumnLabelBoldface#1{\textbf{#1}} % boldface column header font
 \def\YearQuarterLineColor{lightgray}    % vertical line color in year/quarter Start Finish timeline columns
