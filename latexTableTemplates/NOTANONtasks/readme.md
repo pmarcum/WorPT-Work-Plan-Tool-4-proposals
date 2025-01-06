@@ -16,7 +16,7 @@ level-of-effort information is given in this table, only tasks and assignments t
 <li>MODIFY the editable lines you just pasted in your document as needed. The lines that may be edited (or even deleted altogether if not wanted) are indicated by highlight below. </li>
 </ol>
 <pre><code>
-\include{\WorPTfolder/mainBody}
+\include{do_NOT_manually_edit/mainBody}  % replace do_NOT_manually_edit if not correct folder name
 <mark>% Put customizations for NOTANONtasks HERE</mark>
 \begin{NOTANONtasks}
 <mark>\caption{\normalsize\textbf{Task Management and Team Responsibilities}:\\
@@ -28,7 +28,7 @@ The tasks ({\color{red}gray} headers) and sub-tasks (left), with specific assign
 You can change column widths, column alignment, colors, font style using additional lines that are copy/pasted into your document. Specifically: 
 <ol>
 <li>COPY any or all lines in the code block below that are related to the formatting parameter that you want to edit. The lines below show default values. You will edit those values to make desired changes.</li>
-<li>PASTE the copied lines into your document at the "% Put customizations for NOTANONtasks HERE" line in the code that you copy/pasted in Step 2. Most importantly, the desired formatting lines should be pasted somewhere <b>between</b> the \include{\WorPTfolder/mainBody} and \begin{NOTANONtasks} lines. </li>
+<li>PASTE the copied lines into your document at the "% Put customizations for NOTANONtasks HERE" line in the code that you copy/pasted in Step 2. Most importantly, the desired formatting lines should be pasted somewhere <b>between</b> the \include{do_NOT_manually_edit/mainBody} and \begin{NOTANONtasks} lines. </li>
 <li>EDIT the pasted lines in your document, as desired. Some examples are given at the bottom of this page.</li>
 NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; you do not have to copy/paste all of the beow lines!
 </ol>
@@ -79,7 +79,7 @@ Copy/paste the below if you want to do things like remove or add vertical lines 
 <li><b>Examples</b>
 The below is an example of how one can change the appearance of the table within a LaTeX document. After copy/pasting the code to incorporate the table into my document, and then deciding that my task titles were too long to fit with the table in portrait mode, I decided I needed to use landscape mode.  I copy/pasted the landscape fla and the 2 formatting lines that control the "Tasks" and "Expertise" column widths. (My team members have long last names, requiring a wider column than the default). I also slightly altered the caption to be appropriate to my proposal. The result?  A landscape-mode table that allows each task to appear in a single table row without spilling over into the next line, which is my preferred way to present these tables for easiest viewing. Here is a peek at what my LaTeX document looks like:  
 <pre><code>
-\include{\WorPTfolder/NOTANONtasks}
+\include{do_NOT_manually_edit/NOTANONtasks}
     
 \LandScapetrue                 % puts table in landscape mode
 \def\TaskWidth{5.4in}          % width of leftmost ("Tasks") column
