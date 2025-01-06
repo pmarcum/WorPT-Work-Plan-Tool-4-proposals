@@ -1,34 +1,45 @@
-<b>NOTANONbiosketch</b> is a table of project tasks, organized under task categories, as specified by the TASKS page in the
-WorPT spreadsheet. The task lead and team members assisting with each task are specified as well. No
-level-of-effort information is given in this table, only tasks and assignments to illustrate team member involvement. 
+<b>NOTANONbiosketches</b> is a file containing a short (1-page) CV for each team member who is indicated as needing to have a biosketch on the PERSONNEL & FTE page. If the box is checked under "bio sketch?" column for a person, then that person's bio sketch will be generated and included as part of this file. All biosketches are formatted to have a consistant appearance. 
 
-<font size="3">WorPT table example: <b>NOTANONbiosketch</b></font>
+A bio sketch for a person is generated from that person's individual WorPT biosketch google sheet. Checked boxes in that sheet indicate what publications and awards to mention, etc., customizing for this particular proposal. The NOTANONbiosketches WorPT file can serve as the "bio sketches" section of your proposal.  
+
+NOTE: Biosketch files should be kept up-to-date so that the information that is extracted for both the current/pending and bio-sketch
+sections of a proposal have valid and current information.
+
+<font size="3">WorPT table example: <b>NOTANONbiosketches</b></font>
 <br>
 <img src="https://lh3.googleusercontent.com/d/1f3XxoAT5680nxNbcwWk4uifOvXdytuUh" width=30%>
 <hr>
 <b>HOW TO USE:</b>
 <ol>
-<li><b>Special WorPT Packages</b> [<i>one-time-only task</i>]Copy/paste the special packages in preamble of your document, if you haven't done so previously. (see https://github.com/pmarcum/WorPT-Work-Plan-Tool-4-proposals/blob/main/WorPTpackages for more info).</li>
+<li><b>Special WorPT Packages</b> [<i>one-time-only task</i>] Copy/paste the special packages in preamble of your document, if you haven't done so previously. (see https://github.com/pmarcum/WorPT-Work-Plan-Tool-4-proposals/blob/main/WorPTpackages for more info).</li>
 <li><mark><b>How To Put File Contents Into Your Document</b></mark> [<i>do once for inclusion of this file</i>] 
 <ol>
 <li>COPY the lines in the code block below, then</li>
 <li>PASTE into your document WHERE you want the content to appear, then</li>
 <li>MODIFY the editable lines you just pasted in your document as needed. The lines that may be edited (or even deleted altogether if not wanted) are indicated by highlight below. </li>
 </ol>
+
+
+
+
+
+
+
+    
 <pre><code>
 \include{\WorPTfolder/mainBody}
-<mark>% Put customizations for NOTANONbiosketch HERE</mark>
-\begin{NOTANONbiosketch}
+<mark>% Put customizations for NOTANONbiosketches HERE</mark>
+\begin{NOTANONbiosketches}
 <mark>\caption{\normalsize\textbf{Task Management and Team Responsibilities}:\\
-The tasks ({\color{red}gray} headers) and sub-tasks (left), with specific assignments for the roles of task lead (middle) and expertise / analysis assistance (right).} \label{tab:NOTANONbiosketch}</mark>
-\end{NOTANONbiosketch}
+The tasks ({\color{red}gray} headers) and sub-tasks (left), with specific assignments for the roles of task lead (middle) and expertise / analysis assistance (right).} \label{tab:NOTANONbiosketches}</mark>
+\end{NOTANONbiosketches}
 </code></pre>
 </li>
 <li><b>Customize appearance</b> [<i>do as many times as needed</i>]
 You can change column widths, column alignment, colors, font style using additional lines that are copy/pasted into your document. Specifically: 
 <ol>
 <li>COPY any or all lines in the code block below that are related to the formatting parameter that you want to edit. The lines below show default values. You will edit those values to make desired changes.</li>
-<li>PASTE the copied lines into your document at the "% Put customizations for NOTANONbiosketch HERE" line in the code that you copy/pasted in Step 2. Most importantly, the desired formatting lines should be pasted somewhere <b>between</b> the \include{\WorPTfolder/mainBody} and \begin{NOTANONbiosketch} lines. </li>
+<li>PASTE the copied lines into your document at the "% Put customizations for NOTANONbiosketches HERE" line in the code that you copy/pasted in Step 2. Most importantly, the desired formatting lines should be pasted somewhere <b>between</b> the \include{\WorPTfolder/mainBody} and \begin{NOTANONbiosketches} lines. </li>
 <li>EDIT the pasted lines in your document, as desired. Some examples are given at the bottom of this page.</li>
 NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; you do not have to copy/paste all of the beow lines!
 </ol>
@@ -79,22 +90,22 @@ Copy/paste the below if you want to do things like remove or add vertical lines 
 <li><b>Examples</b>
 The below is an example of how one can change the appearance of the table within a LaTeX document. After copy/pasting the code to incorporate the table into my document, and then deciding that my task titles were too long to fit with the table in portrait mode, I decided I needed to use landscape mode.  I copy/pasted the landscape fla and the 2 formatting lines that control the "Tasks" and "Expertise" column widths. (My team members have long last names, requiring a wider column than the default). I also slightly altered the caption to be appropriate to my proposal. The result?  A landscape-mode table that allows each task to appear in a single table row without spilling over into the next line, which is my preferred way to present these tables for easiest viewing. Here is a peek at what my LaTeX document looks like:  
 <pre><code>
-\include{\WorPTfolder/NOTANONbiosketch}
+\include{\WorPTfolder/NOTANONbiosketches}
     
 \LandScapetrue                 % puts table in landscape mode
 \def\TaskWidth{5.4in}          % width of leftmost ("Tasks") column
 \def\ExpertiseWidth{1.8in}     % width of rightmost ("Expertise") column
 
-\begin{NOTANONbiosketch}
+\begin{NOTANONbiosketches}
 \caption{\normalsize\textbf{Task Management and Team Responsibilities}:\\\\
 The tasks ({\color{red}gray} headers) and sub-tasks (left), with specific assignments for the roles of task lead (middle) and expertise / analysis assistance (right). See a more detailed description of these roles in the Project Management section.}
-\label{tab:NOTANONbiosketch}
-\end{NOTANONbiosketch}
+\label{tab:NOTANONbiosketches}
+\end{NOTANONbiosketches}
 </code></pre>
 NOTE: To return to default values, all I have to do is comment-out (put a "%" at the line's beginning) the "\def" formatting lines that I pasted. 
 </li>
 
 <li><b>NUCLEAR OPTION:</b>
-If you just cannot get the table to look like you want it to look, you can always copy/paste the entire table_NOTANONbiosketch file that appears in the WorPT subfolder, into your document, and then edit at-will.  Some of the WorPT files involve complicated LaTeX code, so be sure that you have a good mastery of LaTeX and know what you are doing before implementing this option!
+If you just cannot get the table to look like you want it to look, you can always copy/paste the entire table_NOTANONbiosketches file that appears in the WorPT subfolder, into your document, and then edit at-will.  Some of the WorPT files involve complicated LaTeX code, so be sure that you have a good mastery of LaTeX and know what you are doing before implementing this option!
 </li>
 </ol>
