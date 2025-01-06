@@ -95,7 +95,7 @@ The below is an example of how one can change the appearance of the table within
   p{\ExpertiseWidth}|        % Expertise column 
 }
 \begin{isANONtasks}
-\caption{\normalsize\textbf{Task Management and Team Responsibilities}:\\\\
+\caption{\normalsize\textbf{Task Management and Team Responsibilities}:\\
 The tasks ({\color{red}gray} headers) and sub-tasks (left), with specific assignments for the roles of task lead (middle) and expertise / analysis assistance (right). See a more detailed description of these roles in the Project Management section.}
 \label{tab:isANONtasks}
 \end{isANONtasks}
