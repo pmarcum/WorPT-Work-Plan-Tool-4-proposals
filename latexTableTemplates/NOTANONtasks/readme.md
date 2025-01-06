@@ -51,16 +51,16 @@ The default typically works well because the table + longtable combination cause
 </code></pre>
 <b>The below can nudge the table to the left (increase value) or right (decrease value)</b>
 <pre><code>
-\def\NudgeTable{<mark>1.2\textwidth</mark>}    % bigger values nudge table to left
+\def\NudgeTable{<mark>1.2\textwidth</mark>}   % bigger values nudge table to left
 </code></pre>
     
 <b>The below are aesthetic preferences only, like color and font style</b>
 <pre><code>
 \def\HeaderColor{<mark>Blue</mark>}           % column heading color
-\def\HeaderFontColor{<mark>White</mark>}           % column heading font color
+\def\HeaderFontColor{<mark>White</mark>}      % column heading font color
 \def\HeaderBoldface#1{<mark>\textbf</mark>{#1}}% boldface column heading labels; change "\textbf" to "\emph" or whatever
 \def\SectionColor{<mark>gray!40</mark>}       % category dection label colors
-\def\SectionFontColor{<mark>Black</mark>}            % category section label font color
+\def\SectionFontColor{<mark>Black</mark>}     % category section label font color
 \def\SectionBoldface#1{<mark>\textbf</mark>{#1}} % boldface category section labels; change "\textbf" to "\emph" or whatever
 \def\VerticalLineColor{<mark>gray!40</mark>}  % color of line between "Lead" and "Expertise"
 </code></pre>
@@ -70,8 +70,8 @@ Copy/paste the below if you want to do things like remove or add vertical lines 
 <pre><code>
 \newcolumntype{T}{
   <mark>|p</mark>{<mark>\TaskWidth</mark>}<mark>||</mark>                                 % title column
-  <mark>p</mark>{<mark>\LeadWidth</mark>}<mark>!{\color{\VerticalLineColor}\vrule}</mark> % line bet Lead/Expertise
-  <mark>p</mark>{<mark>\ExpertiseWidth</mark>}<mark>|</mark>                              % Expertise column
+  <mark>p</mark>{<mark>\LeadWidth</mark>}<mark>!{\color{\VerticalLineColor}\vrule}</mark> % task lead column
+  <mark>p</mark>{<mark>\ExpertiseWidth</mark>}<mark>|</mark>                              % expertise column
 }
 </code></pre> 
 </li>
