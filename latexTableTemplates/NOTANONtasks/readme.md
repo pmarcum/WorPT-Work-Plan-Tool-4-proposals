@@ -74,7 +74,7 @@ Copy/paste the below if you want to do things like remove or add vertical lines 
 <li><b>Examples</b>
 The below is an example of how one can change the appearance of the table within a LaTeX document. After copy/pasting the code to incorporate the table into my document, and then deciding that my task titles were too long to fit with the table in portrait mode, I decided I needed to use landscape mode.  I copy/pasted the landscape fla and the 2 formatting lines that control the "Tasks" and "Expertise" column widths. (My team members have long last names, requiring a wider column than the default). I also slightly altered the caption to be appropriate to my proposal. The result?  A landscape-mode table that allows each task to appear in a single table row without spilling over into the next line, which is my preferred way to present these tables for easiest viewing. Here is a peek at what my LaTeX document looks like:  
 <pre><code>
-\include{do_NOT_manually_edit/NOTANONtasks}
+\include{\WorPTfolder/NOTANONtasks}
     
 \LandScapetrue                 % puts table in landscape mode
 \def\TaskWidth{5.4in}          % width of leftmost ("Tasks") column
@@ -90,6 +90,6 @@ NOTE: To return to default values, all I have to do is comment-out (put a "%" at
 </li>
 
 <li><b>NUCLEAR OPTION:</b>
-If you just cannot get the table to look like you want it to look, you can always copy/paste the entire table_NOTANONtasks.tex file that appears in the do_NOT_manually_edit folder, into your document, and then edit at-will.  Some of the WorPT files involve complicated LaTeX code, so be sure that you have a good mastery of LaTeX and know what you are doing before implementing this option!
+If you just cannot get the table to look like you want it to look, you can always copy/paste the entire table_NOTANONtasks.tex file that appears in the WorPT subfolder, into your document, and then edit at-will.  Some of the WorPT files involve complicated LaTeX code, so be sure that you have a good mastery of LaTeX and know what you are doing before implementing this option!
 </li>
 </ol>
