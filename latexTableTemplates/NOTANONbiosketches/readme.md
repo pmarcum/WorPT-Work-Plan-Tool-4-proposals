@@ -20,6 +20,7 @@ sections of a proposal have valid and current information.
 </ol>
    
 <pre><code>
+\newpage       % You can comment out or use \clearpage instead
 \include{\WorPTfolder/table_NOTANONbiosketches}
 <mark>% Put customizations for NOTANONbiosketches HERE</mark>
 \begin{NOTANONbiosketches}
