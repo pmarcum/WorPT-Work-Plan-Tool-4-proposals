@@ -5,7 +5,7 @@ level-of-effort information is given in this table, only tasks and assignments t
 <font size="3">WorPT table example: <b>NOTANONtasks</b></font>
 <br>
 <img src="https://lh3.googleusercontent.com/d/12BO4XZpEwodyHwtDSvcrKBhmCwkxysLS" width=60%>
-
+<hline>
 <b>HOW TO USE:</b>
 <ol>
   <li><b>Special WorPT Packages</b> [<i>one-time-only task</i>] Copy/paste the special packages in preamble of your document, if you haven't done so previously. (see https://github.com/pmarcum/WorPT-Work-Plan-Tool-4-proposals/blob/main/WorPTpackages for more info).</li>
