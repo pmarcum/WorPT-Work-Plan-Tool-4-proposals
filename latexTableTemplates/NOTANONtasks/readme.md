@@ -91,5 +91,5 @@ The tasks ({\color{red}gray} headers) and sub-tasks (left), with specific assign
 
 <li><b>NUCLEAR OPTION:</b>
 If you just cannot get the table to look like you want it to look, you can always copy/paste the entire table_NOTANONtasks.tex file that appears in the do_NOT_manually_edit folder, into your document, and then edit at-will.  Some of the WorPT files involve complicated LaTeX code, so be sure that you have a good mastery of LaTeX and know what you are doing before implementing this option!
-</li>li>
+</li>
 </ol>
