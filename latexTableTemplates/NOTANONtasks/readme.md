@@ -16,7 +16,8 @@ level-of-effort information is given in this table, only tasks and assignments t
 <li>MODIFY the editable lines you just pasted in your document as needed. The lines that may be edited (or even deleted altogether if not wanted) are indicated by highlight below. </li>
 </ol>
 <pre><code>
-\include{do_NOT_manually_edit/table_NOTANONtasks}  % replace do_NOT_manually_edit if not correct folder name
+\include{do_NOT_manually_edit/table_NOTANONtasks}   % reset/define parameters used for this file
+% NOTE: replace do_NOT_manually_edit if not correct folder name
 <mark>% Put customizations for NOTANONtasks HERE</mark>
 \begin{NOTANONtasks}
 <mark>\caption{\normalsize\textbf{Task Management and Team Responsibilities}:\\
