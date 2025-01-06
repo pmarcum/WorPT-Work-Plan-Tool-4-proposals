@@ -1,40 +1,7 @@
-==================================
-==     NOTANONteamSummaries     ==
-==================================
-DESCRIPTION:
-Is a series of paragraphs (not in tabular form) describing
-the role of each team member, that will create the "Team Member Roles" 
-narrative section in your proposal. 
+___________________________________________________________________________________________________________________
+Refer to:
 
-HOW TO USE: 
-Follow Step 1 (if never done previously for this proposal),
-and Step 2, to include the contents of this file into your proposal. 
-______________________________________________________________________
-|  (1)  (if not already done for previous installation of WorPT file) | 
-|   Put some customized package files in the preamble of your document|
-|   that are used by WorPT tables:                                    |
-______________________________________________________________________    
-* Download or connect to https://github.com/pmarcum/LaTex-Formatting and 
-  select the set of files (AAS-style or general) that meet your situation. 
-* You can either download the files or link Overleaf to the needed files 
-  in the GitHub repository through URL, and then add the following to the 
-  preamble of your main paper. 
-* IF YOU HAVE ALREADY PUT THE BELOW LINES INTO YOUR PREAMBLE WHEN 
-  PREVIOUSLY INSERTING ANOTHER WorPT TABLE, YOU CAN SKIP THIS STEP!
+https://github.com/pmarcum/WorPT-Work-Plan-Tool-4-proposals/blob/main/latexTableTemplates/NOTANONteamSummaries/readme.md
 
-\usepackage{FUpackages}
-\usepackage{FUformatting}
-\usepackage{FUnewCommands} % not needed by WorPT files but maybe useful
-
-______________________________________________________________________
-|  (2) copy/paste the below, where you want the file to be inserted   | 
-|_____________________________________________________________________|
-* COPY the lines following "copy below here" line all the way down to
-  bottom of this file and COPY into place within your document where you
-  want the table contents to appear.
-
---------------------- COPY BELOW HERE ------------------
-% The below boldfaces names and roles at the beginning of each paragraph
-\def\NameBoldface#1{\textbf{#1}} 
-\clearpage
-\input{[INSERTLATEXFILESUBDIRECTORY]/table_NOTANONteamSummaries}
+for instructions and LaTeX code to copy/paste into your document, to incorporate this file. 
+___________________________________________________________________________________________________________________
