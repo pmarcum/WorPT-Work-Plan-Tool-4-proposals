@@ -15,8 +15,7 @@ level-of-effort information is given in this table, only tasks and assignments t
       <li>PASTE into your document WHERE you want the content to appear, then</li>
       <li>EDIT the pasted lines WITHIN your document as needed, such as the table caption.</li>
     </ol>
-    <pre>
-    <code>
+    <pre><code>
 \include{\WorPTfolder/mainBody}
 %\LandScapetrue                        % uncomment for landscape table
 % Put customizations for NOTANONtasks HERE
@@ -24,8 +23,7 @@ level-of-effort information is given in this table, only tasks and assignments t
 \caption{\normalsize\textbf{Task Management and Team Responsibilities}:\\
 The tasks ({\color{red}gray} headers) and sub-tasks (left), with specific assignments for the roles of task lead (middle) and expertise / analysis assistance (right).} \label{tab:NOTANONtasks}
 \end{NOTANONtasks}
-    </code>
-    </pre>
+    </code></pre>
   </li>
   <li><b>Customize appearance</b> [<i>do as many times as needed</i>]
     You can change column widths, column alignment, colors, font style using additional lines that are copy/pasted into your document. Specifically: 
