@@ -17,7 +17,6 @@ level-of-effort information is given in this table, only tasks and assignments t
 </ol>
 <pre><code>
 \include{\WorPTfolder/mainBody}
-%\LandScapetrue                        % uncomment for landscape table
 % Put customizations for NOTANONtasks HERE
 \begin{NOTANONtasks}
 \caption{\normalsize\textbf{Task Management and Team Responsibilities}:\\
@@ -36,10 +35,10 @@ NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; yo
 </ol>
 <b>The below lines are what you will most likely need to copy/paste, to get your column widths just right:</b>
 <pre><code>
+\LandScapetrue                   % puts table in landscape mode
 \def\TaskWidth{3.9in}            % width of leftmost ("Tasks") column
 \def\LeadWidth{1.2in}            % width of middle ("Lead") column
 \def\ExpertiseWidth{1.8in}       % width of rightmost ("Expertise") column
-\LandScapefalse                  % uncomment for landscape table
 </code></pre>
 <b>The below lines might be useful - they adjust the table compactness:</b>
 <pre><code>
@@ -74,11 +73,11 @@ Copy/paste the below if you want to do things like remove or add vertical lines 
 </li>
 
 <li><b>Examples</b>
-The below is an example of how one can change the appearance of the table within a LaTeX document. After copy/pasting the code to incorporate the table into my document, and then deciding that my task titles were too long to fit with the table in portrait mode, I uncommented the landscape flag and copy/pasted the 2 formatting lines that let me make the "Tasks" and "Expertise" columns wider (My team members have long last names, requiring a wider column than the default). I also slightly altered the caption to be appropriate to my proposal. The result?  A landscape-mode table that allows each task to appear in a single table row without spilling over into the next line, which is my preferred way to present these tables for easiest viewing. Here is a peek at what my LaTeX document looks like:  
+The below is an example of how one can change the appearance of the table within a LaTeX document. After copy/pasting the code to incorporate the table into my document, and then deciding that my task titles were too long to fit with the table in portrait mode, I decided I needed to use landscape mode.  I copy/pasted the landscape fla and the 2 formatting lines that control the "Tasks" and "Expertise" column widths. (My team members have long last names, requiring a wider column than the default). I also slightly altered the caption to be appropriate to my proposal. The result?  A landscape-mode table that allows each task to appear in a single table row without spilling over into the next line, which is my preferred way to present these tables for easiest viewing. Here is a peek at what my LaTeX document looks like:  
 <pre><code>
 \include{do_NOT_manually_edit/NOTANONtasks}
-\LandScapetrue                % uncomment for landscape table
-
+    
+\LandScapetrue                 % puts table in landscape mode
 \def\TaskWidth{5.4in}          % width of leftmost ("Tasks") column
 \def\ExpertiseWidth{1.8in}     % width of rightmost ("Expertise") column
 
