@@ -34,10 +34,14 @@ NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; yo
 </ol>
 <b>The below lines are what you will most likely need to copy/paste, to get your column widths just right. Highlights indicate what can be edited:</b>
 <pre><code>
-\LandScapetrue                   % appearance in your document will put the table in landscape mode
+\LandScapetrue                   % uncommented-out appearance in your document will put the table in landscape mode
 \def\TaskWidth{<mark>3.9in</mark>}            % width of leftmost ("Tasks") column
 \def\LeadWidth{<mark>1.2in</mark>}            % width of middle ("Lead") column
 \def\ExpertiseWidth{<mark>1.8in</mark>}       % width of rightmost ("Expertise") column
+</code></pre>
+<b>Fix the table number if it is showing a wrong number, by adding or subtracting whatever correction is needed:</b>
+<pre><code>
+\def\TaskAddCounter{<mark>-1</mark>}          % corrects table number messed up by table,longtable combination)
 </code></pre>
 <b>The below lines might be useful - they adjust the table compactness:</b>
 <pre><code>
@@ -49,7 +53,7 @@ NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; yo
 \def\NudgeTable{<mark>1.2\textwidth</mark>}    % bigger values nudge table to left
 </code></pre>
     
-<b>The below are asethetic preferences only, like color and font style</b>
+<b>The below are aesthetic preferences only, like color and font style</b>
 <pre><code>
 \def\HeaderColor{<mark>Blue</mark>}           % column heading color
 \def\LabelColor{<mark>White</mark>}           % column heading font color
