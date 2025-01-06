@@ -14,9 +14,9 @@
 % ___________________________________________
 
 %---- appearance of top of each current/pending report showing colorized name banner 
-\def\BannerColor{Blue}             % Current/Pending top banner color
-\def\NameColor{White}              % Current/Pending top banner font color
-\def\NameBoldface#1{\textbf{#1}}   % boldface banner text
+\def\NameBannerColor{Blue}             % Current/Pending top banner color
+\def\NameBannerFontColor{White}              % Current/Pending top banner font color
+\def\NameBannerBoldface#1{\textbf{#1}}   % boldface banner text
 
 %---- appearance of section dividers, eg "Current Support", "Pending Grant Support", etc
 \def\SectionColor{lightgray}       % "Current Support" & "Pending Grant Support" color
@@ -42,7 +42,7 @@
 
 %---- make colorized top name banner
 \hline
-\multicolumn{2}{|c|}{\cellcolor{\BannerColor}\color{\NameColor}\NameBoldface{[INSERTNAME] ([INSERTROLE])}}\\ 
+\multicolumn{2}{|c|}{\cellcolor{\NameBannerColor}\color{\NameBannerFontColor}\NameBannerBoldface{[INSERTNAME] ([INSERTROLE])}}\\ 
 \hline
 
 %---- start "CURRENT SUPPORT" section
