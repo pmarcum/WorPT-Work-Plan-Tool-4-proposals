@@ -95,7 +95,10 @@ The below is an example of how one can change the appearance of the table within
   p{\ExpertiseWidth}|        % Expertise column 
 }
 \begin{isANONtasks}
-\caption{\textbf{Task Timeline:} Team member roles, rightmost column, are cross-referenced with corresponding names in the non-anonymized personnel and work effort table. \textbf{Paper~1:} Description of database and pipeline software. \textbf{Paper~2:} Galaxy catalogue.} 
+\caption{\textbf{Task Timeline:} Team member roles, rightmost column, are cross-referenced with 
+corresponding names in the non-anonymized personnel and work effort table. 
+\textbf{Paper~1:} Description of database and pipeline software. 
+\textbf{Paper~2:} Galaxy catalogue.} 
 \label{tab:isANONtasks}
 \end{isANONtasks}
 </code></pre>
