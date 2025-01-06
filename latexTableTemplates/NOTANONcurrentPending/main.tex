@@ -1,21 +1,51 @@
-%  ______________________________________________________________________________________
-% | Refer to  instructions_NOTANONcurrentPending.tex                                     |
-% | for guidance regarding how to include the NOTANONcurrentPending file in your document|
-% |______________________________________________________________________________________|
-% COMMENT: this file produces a current/pending funding section in your latex document.
-% COMMENT: the below produces a colorful banner with the persons name and project role
+%___________________________________________________________________________________________________________________
+% Refer to:
+%   https://github.com/pmarcum/WorPT-Work-Plan-Tool-4-proposals/blob/main/latexTableTemplates/[INSERTFILENAME]/readme.md
+% for instructions and LaTeX code to copy/paste into your document, to incorporate this file. 
+%___________________________________________________________________________________________________________________
 % COMMENT: note that the script will strip out any lines that start with "% COMMENT", so 
 % COMMENT: these lines will not appear in the final latex files, and are meant primarily 
 % COMMENT: to help those who want to alter the github files themselves. 
 
-% COMMENT: the below generates the banner at the top of the current/pending section for 
-% COMMENT: a person, with the background in one color and font of person's name in a 
-% COMMENT: contrasting color. 
+\def\WorPTfolder{[INSERTFILENAME]} % set the folder name where WorPT files are contained
+
+% ___________________________________________
+%       Default formatting preferences
+% ___________________________________________
+
+%---- appearance of top of each current/pending report showing colorized name banner 
+\def\BannerColor{Blue}             % Current/Pending top banner color
+\def\NameColor{White}              % Current/Pending top banner font color
+\def\NameBoldface#1{\textbf{#1}}   % boldface banner text
+
+%---- appearance of section dividers, eg "Current Support", "Pending Grant Support", etc
+\def\SectionColor{lightgray}       % "Current Support" & "Pending Grant Support" color
+\def\SectionFontColor{Black}       % "Current Support" and "Pending Grant Support" font color
+\def\SectionBoldface#1{\textbf{#1}}% boldface Current Support, Pending Grant Support font
+
+%---- if the WorPT spreadsheet file indicates to do so, a "(this proposal)" appears by
+%     the proposal in the "PENDING" list that is the proposal being submitted.  The below
+%     controls the font color of that tag
+\def\ThisProposalColor{NavyBlue}   % "this proposal" font color in "pending"
+
+%---- controls the font style of the text in the left side of table
+\def\LeftBoldface#1{\textbf{#1}}   % boldface left column text
+
+%--- table preamble definition bundled into the "T" variable
+\newcolumntype{T}{
+  |l        % grant descriptors, e.g. "Title", "Source of Support", etc.
+  |p{5in}|  % right side, giving details for each descriptor
+}
+
+\newenvironment{[INSERTFILENAME]}{%
+\begin{longtable}{T}  % adjust width and centering
+
+%---- make colorized top name banner
 \hline
 \multicolumn{2}{|c|}{\cellcolor{\BannerColor}\color{\NameColor}\NameBoldface{[INSERTNAME] ([INSERTROLE])}}\\ 
 \hline
 
-% COMMENT: start the current support section
+%---- start "CURRENT SUPPORT" section
 \multicolumn{2}{|c|}{\cellcolor{\SectionColor}\color{\SectionFontColor}\SectionBoldface{Current Support}}\\
 \hline
 
@@ -26,6 +56,7 @@
 % COMMENT: everything between STARTCURRENT and ENDCURRENT will be used as the formatting 
 % COMMENT: template for entries in this section
 [STARTCURRENT]
+%---- next CURRENT SUPPORT entry
 \LeftBoldface{Title}&[INSERTCURRENTTITLE]\\ 
 \LeftBoldface{Source of Support}&[INSERTCURRENTSOURCE]\\ 
 \LeftBoldface{Program POC}&[INSERTCURRENTPOC]\\ 
@@ -41,11 +72,13 @@
 % COMMENT: everything between STARTNOCURRENT and ENDNOCURRENT will be used as the 
 % COMMENT: single entry under this section
 [STARTNOCURRENT]
+%---- placehold if no current support exists
 \LeftBoldface{Title}&\multirow{2}{*}{No grant funding currently}\\
 \LeftBoldface{Source of Support}&{}\\
 [ENDNOCURRENT]
 
 % COMMENT: below is the banner delineating the Pending Grant section
+%---- start "PENDING SUPPORT" section
 \hline
 \multicolumn{2}{|c|}{\cellcolor{\SectionColor}\color{\SectionFontColor}\SectionBoldface{Pending Grant Support} [INSERTINCLUSIONOPTION]}\\ \hline
 
@@ -75,6 +108,7 @@
 % COMMENT: review. Everything between STARTPENDING and ENDPENDING will be used
 % COMMENT: as the template for entries under this section
 [STARTPENDING]
+%---- next PENDING SUPPORT entry
 \LeftBoldface{Title}&[INSERTTHISPROPOSALMARKER][INSERTPENDINGTITLE]\\
 \LeftBoldface{Source of Support}&[INSERTPENDINGSOURCE]\\
 \LeftBoldface{Program POC}&[INSERTPENDINGPOC]\\
@@ -90,6 +124,7 @@
 % COMMENT: everything between STARTNOPENDING and ENDNOPENDING will be used as
 % COMMENT: single entry under this section
 [STARTNOPENDING]
+%---- placehold if no pending support exists
 \LeftBoldface{Title}&\multirow{2}{*}{No pending grant funding}\\
 \LeftBoldface{Source of Support}&{}\\
 [ENDNOPENDING]
@@ -110,3 +145,8 @@
 [ENDNONEWPAGEOPTION]
 
 \hline
+\end{longtable}
+}
+{%
+}
+
