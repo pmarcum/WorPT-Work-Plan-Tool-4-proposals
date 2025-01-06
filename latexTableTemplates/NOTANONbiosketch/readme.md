@@ -4,7 +4,7 @@ level-of-effort information is given in this table, only tasks and assignments t
 
 <font size="3">WorPT table example: <b>NOTANONbiosketch</b></font>
 <br>
-<img src="https://lh3.googleusercontent.com/d/12BO4XZpEwodyHwtDSvcrKBhmCwkxysLS" width=60%>
+<img src="https://lh3.googleusercontent.com/d/1f3XxoAT5680nxNbcwWk4uifOvXdytuUh" width=60%>
 <hr>
 <b>HOW TO USE:</b>
 <ol>
