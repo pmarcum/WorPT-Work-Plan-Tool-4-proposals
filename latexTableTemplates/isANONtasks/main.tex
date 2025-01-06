@@ -12,105 +12,62 @@
 % ___________________________________________
 \LandScapefalse                  % default is that the landscape mode is OFF
 
-%---- column widths and table orientation controls
-\def\TaskWidth{3.7in}            % width of leftmost ("Tasks") column
-\def\LeadWidth{1.1in}            % width of middle ("Lead") column
-\def\ExpertiseWidth{1.7in}       % width of rightmost ("Expertise") column
-
-%---- fix the Table Number in the caption
-\def\TaskAddCounter{-1}          % corrects table number messed up by table,longtable combination)
+%---- column width controls
+\def\TaskWidth{3.3in}            % width of "Task" column (leftmost column)
+\def\LeadWidth{0.45in}           % width of "Task Lead" column
+\def\ExpertiseWidth{1.2in}       % width of "Team Expertise" column (rightmost column)
 
 %---- table compactness controls
-\def\SpaceBetweenRows{1}         % vertical compactness of rows
-\def\SpaceBetweenColumns{1pt}    % spacing between columns
+\def\SpaceBetweenRows{0.7}       % vertical compactness of rows
+\def\SpaceBetweenColumns{5pt}    % spacing between columns
 
 %--- control to nudge table to the left or right
 \def\NudgeTable{1.2\textwidth}   % adjust to help center table
 
+%---- fix the Table Number in the caption
+\def\TaskAddCounter{-1}          % corrects table number messed up by table,longtable combination)
+
 %--- aesthetic preferences
-\def\HeaderColor{Blue}           % column heading color
-\def\HeaderFontColor{White}           % column heading font color
-\def\HeaderBoldface#1{\textbf{#1}}% boldface column labels
-\def\SectionColor{gray!40}       % category label colors
-\def\SectionFontColor{Black}            % category label font color
-\def\SectionBoldface#1{\textbf{#1}} % boldface category labels
-\def\VerticalLineColor{gray!40}  % color of line between "Lead" and "Expertise"
+\def\TaskCategoryColor{Blue}              % task grouping banner color
+\def\TaskCategoryFontColor{White}         % task grouping title font color
+\def\YearFontColor{Red}                   % font color under "Y" (year) columns in Start/Finish
+\def\YearQuarterLineColor{lightgray}      % vertical line color in year/quarter Start/Finish columns
+\def\TaskCategoryFontstyle#1{\textbf{#1}} % boldface task grouping title
+\def\ColumnLabelFontstyle#1{\textbf{#1}}  % boldface all the column headers
 
 %--- table preamble definition bundled into the "T" variable
 \newcolumntype{T}{
-  |p{\TaskWidth}||                                % title column
-  p{\LeadWidth}!{\color{\VerticalLineColor}\vrule}% line bet Lead/Expertise
-  p{\ExpertiseWidth}|                             % Expertise column
+  |p{\TaskWidth}||                        % title column
+  c!{\color{\YearQuarterLineColor}\vrule} % Start/year
+  c!{\color{\YearQuarterLineColor}\vrule}!{\color{\YearQuarterLineColor}\vrule} % Start/quarter
+  c!{\color{\YearQuarterLineColor}\vrule} % Finish/year
+  c||                                     % Finish/quarter
+  p{\LeadWidth}!{\color{\YearQuarterLineColor}\vrule} % Task Lead column
+  p{\ExpertiseWidth}|                     % Expertise column
 }
 
 \newenvironment{[INSERTFILENAME]}{%
 \ifLandScape
-  \begin{sidewaystable}
+  \begin{sidewaystable*}
 \else
-  \begin{table}[h]
+  \begin{table*}[h!]     % \begin{table} needed to make bottom table caption have same width as table
 \fi
+\centerline{
+\addtocounter{table}{\TaskAddCounter}           % corrects double-counting of longtable and table combination
+\renewcommand{\arraystretch}{\SpaceBetweenRows} % controls vertical row separation/spacing
+\setlength{\tabcolsep}{\SpaceBetweenColumns}    % controls horizontal column separation/spacing
+\begin{minipage}{\NudgeTable}                   % increase to allow a wide table to spill into margin
+\begin{longtable}{T}
 
-
-
-
-%=================== FORMAT PREFERENCES ===============
-\def\ColumnLabelBoldface#1{\textbf{#1}} % boldface column header font
-\def\YearQuarterLineColor{lightgray}    % vertical line color in year/quarter Start Finish timeline columns
-\def\YearFontColor{Red}                 % year numbers font color under "Y" columns in Start Finish timeline
-\def\TaskCategoryColor{Blue}            % task category banners color
-\def\TaskCategoryFontColor{White}       % task category title font color
-\def\TaskCategoryBoldface#1{\textbf{#1}}% boldface task category title
-
-\def\SpaceBetweenRows{0.7}
-\def\SpaceBetweenColumns{5pt}
-\def\TaskAddCounter{-1}          % corrects table number messed up by table,longtable combination)
-\def\TaskWidth{3.3in}
-\def\LeadWidth{0.45in}
-\def\ExpertiseWidth{1.2in}
-
-
-
-\addtocounter{table}{\TaskAddCounter}                % corrects double-counting of longtable and table combination
-\begin{table*}[h!]                      % \begin{table} needed to make bottom table caption have same width as table
-   \renewcommand{\arraystretch}{\SpaceBetweenRows}    % controls vertical row separation/spacing
-   \setlength{\tabcolsep}{\SpaceBetweenColumns}          % controls horizontal column separation/spacing
-   \begin{longtable}{
-     |p{\TaskWidth}||
-     c!{\color{\YearQuarterLineColor}\vrule}
-     c!{\color{\YearQuarterLineColor}\vrule}!{\color{\YearQuarterLineColor}\vrule}
-     c!{\color{\YearQuarterLineColor}\vrule}
-     c||
-     p{\LeadWidth}!{\color{\YearQuarterLineColor}\vrule}
-     p{\ExpertiseWidth}|}
-   \expinput{[INSERTLATEXFILESUBDIRECTORY]/table_isANONtasks}
-   \end{longtable}
-   \caption{
-     \label{tab:isANONtasks} \textbf{Task Timeline:} Team member roles, rightmost column, are 
-     cross-referenced with corresponding names in the non-anonymized personnel and work effort table.  
-     {\color{red} \textbf{Paper~1:} Sample and methods for enhancing detectability of  low SB X-ray emission, 
-     presentation of emission maps, description of database and pipeline software (which will be released in 
-     a public repository at the time of paper submission). \textbf{Paper~2:} Methodologies for measuring the 
-     gas halo size and other gas properties, analyisis of the diffuse hot gas halos as functions of galaxy 
-     properties (environment, galaxy morphology, stellar mass, and SFR based on \Chandra, \Hubble, and \Spitzer\ 
-     observations, and the SED models from the GSWLC; application of multivariate mthods to ``baseline'' the 
-     gas halo sizes (Sect.\,\ref{Sec:Baseline}). \textbf{Note~1:} See Sec.\,\ref{Sec:Sample}.}
-  }
-\end{table*}
-
-
-
-%  ________________________________________________________________________________
-% | Refer to instructions_isANONtasks.tex                                         |
-% | for guidance regarding how to include the isANONtasks table in your document  |
-% |________________________________________________________________________________|
+%--- make colorized top banner labels, the column headers
 \hline
-\multirow{2}{*}{\ColumnLabelBoldface{Task Description}} & \multicolumn{2}{c}{\ColumnLabelBoldface{Start}} & \multicolumn{2}{!{\color{\YearQuarterLineColor}\vrule}c||}{\ColumnLabelBoldface{Finish}} & \ColumnLabelBoldface{Task} & \ColumnLabelBoldface{Team}\\
+\multirow{2}{*}{\ColumnLabelFontstyle{Task Description}} & \multicolumn{2}{c}{\ColumnLabelFontstyle{Start}} & \multicolumn{2}{!{\color{\YearQuarterLineColor}\vrule}c||}{\ColumnLabelFontstyle{Finish}} & \ColumnLabelFontstyle{Task} & \ColumnLabelFontstyle{Team}\\
 \cline{2-5}
-\rule{0pt}{12pt} & {\color{\YearFontColor}Y} & Q & {\color{\YearFontColor}Y} & Q & \ColumnLabelBoldface{Lead} & \ColumnLabelBoldface{Expertise}\\
+\rule{0pt}{12pt} & {\color{\YearFontColor}Y} & Q & {\color{\YearFontColor}Y} & Q & \ColumnLabelFontstyle{Lead} & \ColumnLabelFontstyle{Expertise}\\
 
 % COMMENT: the below template creates a colorized banner with the task category identification and title, for each task category
 [STARTBANNER]
-\multicolumn{7}{|c|}{\cellcolor{\TaskCategoryColor}\color{\TaskCategoryFontColor}\TaskCategoryBoldface{Task [INSERTCATEGORYID]: [INSERTCATEGORYTITLE]}}\\
+\multicolumn{7}{|c|}{\cellcolor{\TaskCategoryColor}\color{\TaskCategoryFontColor}\TaskCategoryFontstyle{Task [INSERTCATEGORYID]: [INSERTCATEGORYTITLE]}}\\
 [ENDBANNER]
 
 % COMMENT: the below template generates a table row for each task under the given task category
@@ -119,3 +76,14 @@
 [ENDTASK]
 
 \hline
+\end{longtable}
+\end{minipage}
+}
+}
+{%
+\ifLandScape
+  \end{sidewaystable*}
+\else
+  \end{table*}
+\fi
+}
