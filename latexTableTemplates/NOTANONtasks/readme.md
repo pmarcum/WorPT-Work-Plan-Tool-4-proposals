@@ -3,7 +3,7 @@
        width=300
        style="display:inline-block;padding-right:10px"
        alt="WorPT-NOTANONtasks">
-      <font size="3">WorPT table example: <b>NOTANONtasks</b>b></font>
+      <font size="3">WorPT table example: <b>NOTANONtasks</b></font>
 </p>
 
 <b>DESCRIPTION:</b>
