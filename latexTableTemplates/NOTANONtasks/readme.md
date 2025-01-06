@@ -1,11 +1,10 @@
 <p style="position: relative; overflow:auto">
-  <img src="https://drive.google.com/file/d/1vMbFkGfVBKm8u945KF9NNuScu6TBofBzview?usp=sharing" 
+  <img src="https://drive.google.com/file/d/12BO4XZpEwodyHwtDSvcrKBhmCwkxysLS/view?usp=drive_link" 
        width=300
        style="display:inline-block;padding-right:10px"
        alt="WorPT-NOTANONtasks">
       <font size="3">WorPT NOTANONtasks table</font>
 </p>
-https://drive.google.com/uc?id=1m-uOoFzHn4oUGlEsDSEfPBbJ2QhBJzlM
 
 <b>DESCRIPTION:</b>
 
