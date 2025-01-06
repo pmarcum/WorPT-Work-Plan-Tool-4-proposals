@@ -1,62 +1,47 @@
-==================================
-==         NOTANONtasks         ==
-==================================
+__________________________________________________
 DESCRIPTION:
-Is a table of project tasks, organized under task categories, as
-specified by the TASKS page in the WorPT spreadsheet. The task lead and
-team members assisting with each task are specified as well. No
-level-of-effort information is given in this table, only tasks and 
-assignments to illustrate team member involvement. 
+NOTANONtasks is a table of project tasks, organized under task categories, as specified by the TASKS page in the WorPT spreadsheet. The task lead and team members assisting with each task are specified as well. No
+level-of-effort information is given in this table, only tasks and assignments to illustrate team member involvement. 
+__________________________________________________
 
 HOW TO USE: 
-Follow Step 1 (if never done previously for this proposal),
-and Step 2, to include the contents of this file into your proposal. 
-______________________________________________________________________
-|  STEP (1)  [ if needed ]                                            |
-| can skip if already done for previous installation of a WorPT file  |
-|                                                                     |
-|   Put some customized package files in the preamble of your document|
-|   that are used by WorPT tables:                                    |
-|                                                                     |
-| * Download or connect to https://github.com/pmarcum/LaTex-Formatting|
-|   and select the set of files (AAS-style or general) that meet your |
-|   situation.                                                        | 
-| * You can either download the files or link Overleaf to the needed  | 
-|   files in the GitHub repository through URL, and then add the      |
-|   following to the preamble of your main paper.                     |
-| * IF YOU HAVE ALREADY PUT THE BELOW LINES INTO YOUR PREAMBLE WHEN   |
-|   PREVIOUSLY INSERTING ANOTHER WorPT TABLE, YOU CAN SKIP THIS STEP! |
-|_____________________________________________________________________|   
+(1) Install the special packages in preamble of your document, if you haven't done so previously (see instructions_specialPackages.tex file for more info).
+(2) Copy the lines between "COPY FROM HERE" to "COPY TO HERE" and then PASTE into your document where you want the content to appear.  
 
------- COPY below 3 lines and PASTE in preamble of your document ------
-\usepackage{FUpackages}
-\usepackage{FUformatting}
-\usepackage{FUnewCommands} % not needed by WorPT files but maybe useful
+% --------------------- COPY FROM HERE ------------------
+\include{[INSERTLATEXFILESUBDIRECTORY]/mainBody}
+%\LandScapetrue                        % uncomment for landscape table
 
-______________________________________________________________________
-|  STEP (2)                                                           |
-| copy the lines following "COPY BELOW HERE" line all the way down to |
-| bottom of this file and PASTE into place within your document where |
-| you want the table contents to appear.                              |
-|_____________________________________________________________________|
+\begin{tasktable}
+\caption{\normalsize\textbf{Task Management and Team Responsibilities}:\\The tasks ({\color{red}gray} headers) and sub-tasks (left), with specific assignments for the roles of task lead (middle) and expertise / analysis assistance (right).}
+\label{tab:NOTANONtasks}
+\end{tasktable}
+% --------------------- COPY TO HERE --------------------
 
---------------------- COPY BELOW HERE ------------------
-% ___________________________NOTANONtasks______________________________
-% Formatting preferences for the tasks section are below
-% Defaults can be changed after lines are copied into your latex file
-% _____________________________________________________________________
-\def\HeaderColor{Blue}      % column heading color
-\def\LabelColor{White}      % column heading font color
+(3) IF you want to customize the appearance (change column widths/alignment, cell/colors, font style):
+* COPY/PASTE the appropriate lines in the "Formatting Preferences" section near the top of table_NOTANONtasks.tex
+* 
+
+
+
+\def\HeaderColor{Blue}           % column heading color
+\def\LabelColor{White}           % column heading font color
 \def\LabelBoldface#1{\textbf{#1}}% boldface column labels
-\def\SectionColor{gray!40}  % category label colors
-\def\TaskColor{Black}       % category label font color
+\def\SectionColor{gray!40}       % category label colors
+\def\TaskColor{Black}            % category label font color
 \def\TaskBoldface#1{\textbf{#1}} % boldface task category labels
-% create a shortcut for defining the table column formating
-\newcolumntype{T}[4]{
-  |p{#1}||                  % title column
-  c!{\color{#3!#4}\vrule}   % faint vertical line bet Lead/Expertise
-  c|                        % Lead column
-  p{#2}|                    % Expertise column
+\def\SpaceBetweenRows{1}         % vertical compactness of rows
+\def\SpaceBetweenColumns{1pt}    % spacing between columns
+\def\NudgeLeft{1.2\textwidth}    % increase to move table to left
+\def\TaskWidth{3.9in}            % width of leftmost ("Tasks") column
+\def\LeadWidth{0.3in}            % width of middle ("Lead") column
+\def\ExpertiseWidth{1.2in}       % width of rightmost ("Expertise") column
+\def\VerticalLineColor{gray!40}  % color of line between "Lead" and "Expertise"
+
+\newcolumntype{T}{
+  |p{\TaskWidth}||               % title column
+  c!{\color{\VerticalLineColor}\vrule} % line bet Lead/Expertise% timeline columns
+  p{\ExpertiseWidth}|            % Expertise column
 }
 
 \addtocounter{table}{-1}    % corrects double-counting by table and longtable combination
