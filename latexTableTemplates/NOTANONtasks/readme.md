@@ -55,10 +55,10 @@ NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; yo
 <pre><code>
 \def\HeaderColor{Blue}           % column heading color
 \def\LabelColor{White}           % column heading font color
-\def\LabelBoldface#1{\textbf{#1}}% boldface column labels
+\def\LabelBoldface#1{\textbf{#1}}% boldface column labels; change "\textbf" to "\emph" or whatever
 \def\SectionColor{gray!40}       % category label colors
 \def\TaskColor{Black}            % category label font color
-\def\TaskBoldface#1{\textbf{#1}} % boldface task category labels
+\def\TaskBoldface#1{\textbf{#1}} % boldface task category labels; change "\textbf" to "\emph" or whatever
 \def\VerticalLineColor{gray!40}  % color of line between "Lead" and "Expertise"
 </code></pre>
 
