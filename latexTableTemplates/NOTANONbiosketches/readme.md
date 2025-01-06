@@ -21,7 +21,7 @@ sections of a proposal have valid and current information.
    
 <pre><code>
 \newpage       % You can comment out or use \clearpage instead
-\include{\WorPTfolder/table_NOTANONbiosketches}
+\include{do_NOT_manually_edit/table_NOTANONbiosketches}  % replace do_NOT_manually_edit with correct folder name if something different
 <mark>% Put customizations for NOTANONbiosketches HERE</mark>
 \begin{NOTANONbiosketches}
 \end{NOTANONbiosketches}  
@@ -32,7 +32,7 @@ sections of a proposal have valid and current information.
 The default settings produce a nice-looking file, so you probably won't have to do any customization for this file. But if desired, you can change colors, font style and spacing using additional lines that are copy/pasted into your document. Specifically: 
 <ol>
 <li>COPY any or all lines in the code block below that are related to the formatting parameter that you want to edit. The lines below show default values. You will edit those values to make desired changes.</li>
-<li>PASTE the copied lines into your document at the "% Put customizations for NOTANONbiosketches HERE" line in the code that you copy/pasted in Step 2. Most importantly, the desired formatting lines should be pasted somewhere <b>between</b> the \include{\WorPTfolder/table_NOTANONbiosketches} and \begin{NOTANONbiosketches} lines. </li>
+<li>PASTE the copied lines into your document at the "% Put customizations for NOTANONbiosketches HERE" line in the code that you copy/pasted in Step 2. Most importantly, the desired formatting lines should be pasted somewhere <b>between</b> the \include{do_NOT_manually_edit/table_NOTANONbiosketches} and \begin{NOTANONbiosketches} lines. </li>
 <li>EDIT the pasted lines in your document, as desired. Some examples are given at the bottom of this page.</li>
 NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; you do not have to copy/paste all of the below lines!
 </ol>
@@ -56,7 +56,7 @@ NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; yo
 <li><b>Examples</b>
 The below is an example of how one can change the appearance of the contents within a LaTeX document. After copy/pasting the code to incorporate the file contents into my document, I decided to change the color of the names from the default blue color, to Black and also to italicize the names. I copy/pasted the 2 formatting lines that control these items and then edited my preferences. Here is a peek at what my LaTeX document looks like:  
 <pre><code>
-\include{\WorPTfolder/NOTANONbiosketches}
+\include{do_NOT_manually_edit/NOTANONbiosketches}
     
 \def\NameBoldface#1{\emph{#1}}              % boldface name/role
 \def\NameColor{Black}                          % font color of name/role
