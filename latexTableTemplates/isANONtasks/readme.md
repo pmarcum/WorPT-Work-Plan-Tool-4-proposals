@@ -31,7 +31,7 @@ NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; yo
 </ol>
 <b>The below lines are what you will most likely need to copy/paste, to get your column widths just right. Highlights indicate what can be edited:</b>
 <pre><code>
-\LandScapetrue                  % uncommented-out appearance in your document will put the table in landscape mode
+\LandScapetrue                 % uncommented-out appearance in your document will put the table in landscape mode
 \def\TaskWidth{<mark>3.7in</mark>}          % width of leftmost ("Tasks") column
 \def\LeadWidth{<mark>1.1in</mark>}          % width of middle ("Lead") column
 \def\ExpertiseWidth{<mark>1.7in</mark>}     % width of rightmost ("Expertise") column
