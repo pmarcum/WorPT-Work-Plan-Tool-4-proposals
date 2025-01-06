@@ -96,9 +96,6 @@ The below is an example of how one can change the appearance of the table within
 }
 \begin{isANONtasks}
 \caption{\textbf{Task Timeline:} Team member roles, rightmost column, are cross-referenced with corresponding names in the non-anonymized personnel and work effort table. \textbf{Paper~1:} Description of database and pipeline software. \textbf{Paper~2:} Galaxy catalogue.} 
-    
-\caption{\normalsize\textbf{Task Management and Team Responsibilities}:\\
-The tasks ({\color{red}gray} headers) and sub-tasks (left), with specific assignments for the roles of task lead (middle) and expertise / analysis assistance (right). See a more detailed description of these roles in the Project Management section.}
 \label{tab:isANONtasks}
 \end{isANONtasks}
 </code></pre>
