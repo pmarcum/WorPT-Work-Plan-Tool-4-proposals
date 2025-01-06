@@ -1,10 +1,5 @@
-<p style="position: relative; overflow:auto">
-  <img src="https://lh3.googleusercontent.com/d/12BO4XZpEwodyHwtDSvcrKBhmCwkxysLS" 
-       width=300
-       style="display:inline-block;padding-right:10px"
-       alt="WorPT-NOTANONtasks">
-      <font size="3">WorPT table example: <b>NOTANONtasks</b></font>
-</p>
+<img src="https://lh3.googleusercontent.com/d/12BO4XZpEwodyHwtDSvcrKBhmCwkxysLS">
+<font size="3">WorPT table example: <b>NOTANONtasks</b></font>
 
 <b>DESCRIPTION:</b>
 
