@@ -41,7 +41,7 @@ NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; yo
 The below is an example of how one can change the appearance of the contents within a LaTeX document. I copy/pasted the only formatting line that controls font style and edited so that the name is both boldfaced and italicized. Here is a peek at what my LaTeX document looks like:  
 <pre><code>
 \newpage       % You can comment out or use \clearpage instead
-\include{do_NOT_manually_edit/NOTANONteamSummaries}  % replace do_NOT_manually_edit with correct folder name if something different
+\include{do_NOT_manually_edit/table_NOTANONteamSummaries}  % replace do_NOT_manually_edit with correct folder name if something different
 % Put customizations for NOTANONteamSummaries HERE
   
 \def\NameBoldface#1{\textbf{\emph{#1}}}              % boldface name/role
