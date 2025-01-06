@@ -56,7 +56,7 @@ NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; yo
 <li><b>Examples</b>
 The below is an example of how one can change the appearance of the contents within a LaTeX document. After copy/pasting the code to incorporate the file contents into my document, I decided to change the color of the names from the default blue color, to Black and also to italicize the names. I copy/pasted the 2 formatting lines that control these items and then edited my preferences. Here is a peek at what my LaTeX document looks like:  
 <pre><code>
-\include{do_NOT_manually_edit/NOTANONbiosketches}
+\include{do_NOT_manually_edit/table_NOTANONbiosketches}
     
 \def\NameBoldface#1{\emph{#1}}              % boldface name/role
 \def\NameColor{Black}                          % font color of name/role
