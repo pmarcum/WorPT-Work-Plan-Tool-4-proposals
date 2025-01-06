@@ -11,9 +11,9 @@ level-of-effort information is given in this table, only tasks and assignments t
 <li><b>Special WorPT Packages</b> [<i>one-time-only task</i>]Copy/paste the special packages in preamble of your document, if you haven't done so previously. (see https://github.com/pmarcum/WorPT-Work-Plan-Tool-4-proposals/blob/main/WorPTpackages for more info).</li>
 <li><mark><b>How To Put File Contents Into Your Document</b></mark> [<i>do once for inclusion of this file</i>] 
 <ol>
-<li><mark>COPY the lines in the code block below</mark>, then</li>
-<li><mark>PASTE into your document WHERE you want the content to appear</mark>, then</li>
-<li><mark>MODIFY the editable lines you just pasted in your document as needed.</mark> The lines that may be edited (or even deleted altogether if not wanted) are indicated by highlight below. </li>
+<li>COPY the lines in the code block below</mark>, then</li>
+<li>PASTE into your document WHERE you want the content to appear, then</li>
+<li>MODIFY the editable lines you just pasted in your document as needed. The lines that may be edited (or even deleted altogether if not wanted) are indicated by highlight below. </li>
 </ol>
 <pre><code>
 \include{\WorPTfolder/mainBody}
