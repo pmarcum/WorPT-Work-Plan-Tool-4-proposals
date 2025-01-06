@@ -39,7 +39,8 @@ NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; yo
 \def\LeadWidth{<mark>1.2in</mark>}            % width of middle ("Lead") column
 \def\ExpertiseWidth{<mark>1.8in</mark>}       % width of rightmost ("Expertise") column
 </code></pre>
-<b>Fix the table number if it is showing a wrong number, by adding or subtracting whatever correction is needed:</b>
+<b>Fix the table number if it is showing a wrong number, by adding or subtracting whatever correction is needed.</b>
+The default typically works well because the table + longtable combination causes the counter to overcount by one, so -1 performs the appropriate correction.  But ocassionally, the counter gets screwed up and needs manual intervention, so here's how to apply a correction:
 <pre><code>
 \def\TaskAddCounter{<mark>-1</mark>}          % corrects table number messed up by table,longtable combination)
 </code></pre>
