@@ -1,11 +1,12 @@
-<b>NOTANONbiosketches</b> is a file containing a short (1-page) CV for each team member who is indicated as needing to have a biosketch on the PERSONNEL & FTE page. If the box is checked under "bio sketch?" column for a person, then that person's bio sketch will be generated and included as part of this file. All biosketches are formatted to have a consistant appearance. 
+<b>NOTANONcurrentPending</b> is a file containing a short (1-few page) report for each team member, describing their current and pending (still under review) research grants, a section typically required by most grant solicitations. If the box is checked under "funding status?" column for a person on the PERSONNEL & FTE page, then that person's current/pending form will be generated and included as part of this file. All current/pending reports are formatted to have a consistant appearance. 
 
-A bio sketch for a person is generated from that person's individual WorPT biosketch google sheet. Checked boxes in that sheet indicate what publications and awards to mention, etc., customizing for this particular proposal. The NOTANONbiosketches WorPT file can serve as the "bio sketches" section of your proposal.  
+The information for the report is taken from that person's individual WorPT biosketch google sheet. The last page in that google sheet
+is where the list of grants, and their statuses, are written.  The WorPT script will copy every grant that is still either active or has a status
+indicating that no information regarding selection has yet been obtained, and will format those grants into this current/pending form. The NOTANONcurrenPending WorPT file can serve as the "Current & Pending Funding" section of your proposal.  
 
-NOTE: Biosketch files should be kept up-to-date so that the information that is extracted for both the current/pending and bio-sketch
-sections of a proposal have valid and current information.
+NOTE: WorPT biosketch spreadsheet files should be kept up-to-date so that the information that is extracted for both the current/pending and bio-sketch sections of a proposal have valid and current information.
 
-<font size="3">WorPT table example: <b>NOTANONbiosketches</b></font>
+<font size="3">WorPT table example: <b>NOTANONcurrentPending</b></font>
 <br>
 <img src="https://lh3.googleusercontent.com/d/1hQWaFzw0-oolj-ZgvmulSnWuO5ptYoTM" width=40%>
 <hr>
@@ -21,10 +22,10 @@ sections of a proposal have valid and current information.
    
 <pre><code>
 \newpage       % You can comment out or use \clearpage instead
-\include{\WorPTfolder/table_NOTANONbiosketches}
-<mark>% Put customizations for NOTANONbiosketches HERE</mark>
-\begin{NOTANONbiosketches}
-\end{NOTANONbiosketches}  
+\include{\WorPTfolder/table_NOTANONcurrentPending}
+<mark>% Put customizations for NOTANONcurrentPending HERE</mark>
+\begin{NOTANONcurrentPending}
+\end{NOTANONcurrentPending}  
 </code></pre>
 </li>
 
@@ -32,7 +33,7 @@ sections of a proposal have valid and current information.
 The default settings produce a nice-looking file, so you probably won't have to do any customization for this file. But if desired, you can change colors, font style and spacing using additional lines that are copy/pasted into your document. Specifically: 
 <ol>
 <li>COPY any or all lines in the code block below that are related to the formatting parameter that you want to edit. The lines below show default values. You will edit those values to make desired changes.</li>
-<li>PASTE the copied lines into your document at the "% Put customizations for NOTANONbiosketches HERE" line in the code that you copy/pasted in Step 2. Most importantly, the desired formatting lines should be pasted somewhere <b>between</b> the \include{\WorPTfolder/table_NOTANONbiosketches} and \begin{NOTANONbiosketches} lines. </li>
+<li>PASTE the copied lines into your document at the "% Put customizations for NOTANONcurrentPending HERE" line in the code that you copy/pasted in Step 2. Most importantly, the desired formatting lines should be pasted somewhere <b>between</b> the \include{\WorPTfolder/table_NOTANONcurrentPending} and \begin{NOTANONcurrentPending} lines. </li>
 <li>EDIT the pasted lines in your document, as desired. Some examples are given at the bottom of this page.</li>
 NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; you do not have to copy/paste all of the below lines!
 </ol>
@@ -56,18 +57,18 @@ NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; yo
 <li><b>Examples</b>
 The below is an example of how one can change the appearance of the contents within a LaTeX document. After copy/pasting the code to incorporate the file contents into my document, I decided to change the color of the names from the default blue color, to Black and also to italicize the names. I copy/pasted the 2 formatting lines that control these items and then edited my preferences. Here is a peek at what my LaTeX document looks like:  
 <pre><code>
-\include{\WorPTfolder/NOTANONbiosketches}
+\include{\WorPTfolder/NOTANONcurrentPending}
     
 \def\NameBoldface#1{\emph{#1}}              % boldface name/role
 \def\NameColor{Black}                          % font color of name/role
 
-\begin{NOTANONbiosketches}
-\end{NOTANONbiosketches}
+\begin{NOTANONcurrentPending}
+\end{NOTANONcurrentPending}
 </code></pre>
 NOTE: To return to default values, all I have to do is comment-out (put a "%" at the line's beginning) the "\def" formatting lines that I pasted. 
 </li>
 
 <li><b>NUCLEAR OPTION:</b>
-If you just cannot get the content to look like you want it to look, you can always copy/paste the entire table_NOTANONbiosketches file that appears in the WorPT subfolder, into your document, and then edit at-will.  Some of the WorPT files involve complicated LaTeX code, so be sure that you have a good mastery of LaTeX and know what you are doing before implementing this option!
+If you just cannot get the content to look like you want it to look, you can always copy/paste the entire table_NOTANONcurrentPending file that appears in the WorPT subfolder, into your document, and then edit at-will.  Some of the WorPT files involve complicated LaTeX code, so be sure that you have a good mastery of LaTeX and know what you are doing before implementing this option!
 </li>
 </ol>
