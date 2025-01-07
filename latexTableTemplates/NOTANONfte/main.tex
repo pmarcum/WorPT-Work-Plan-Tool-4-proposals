@@ -59,9 +59,9 @@
 \multicolumn{[INSERTLASTYEARPLUSTHREE]}{|c|}{\cellcolor{\SectionBannerColor}\color{\SectionBannerFontColor}\TaskCategoryBoldface{Work Efforts To Be Funded By This Proposal}}\\
 
 % COMMENT: template below generates the rows to go under Work Efforts Funded By Proposal section
-[STARTFUNDEDABOVETHRESHOLD]
+[STARTFUNDEDTEMPLATE]
 [INSERTNAME] & [INSERTROLE] & [INSERTY1] & [INSERTY2] & [INSERTY3] & [INSERTY4] & [INSERTY5] & [INSERTY6] & [INSERTY7] & INSERTY8] & [INSERTY9] & [INSERTY10] & [INSERTTOTAL]\\
-[ENDFUNDEDABOVETHRESHOLD]
+[ENDFUNDEDTEMPLATE]
 
 % COMMENT: the below is the colorized last line of the section providing annual totals for the funded category
 \arrayrulecolor{lightgray!60}\hline\arrayrulecolor{black}
@@ -72,14 +72,14 @@
 
 % COMMENT: 2 different template below generate the rows to go under Work Efforts NOT Funded By Proposal section
 % COMMENT: if the sum exceeds 0.01 FTE, this template is used
-[STARTUNFUNDEDABOVETHRESHOLD]
+[STARTUNFUNDEDABOVETHRESHOLDTEMPLATE]
 [INSERTNAME] & [INSERTROLE] & [INSERTY1] & [INSERTY2] & [INSERTY3] & [INSERTY4] & [INSERTY5] & [INSERTY6] & [INSERTY7] & INSERTY8] & [INSERTY9] & [INSERTY10] & [INSERTTOTAL]\\
-[ENDUNFUNDEDABOVETHRESHOLD]
+[ENDUNFUNDEDABOVETHRESHOLDTEMPLATE]
 
 % COMMENT: if the work effor is less than 0.01 FTE, this template is used instead
-[STARTUNFUNDEDBELOWTHRESHOLD]
+[STARTUNFUNDEDBELOWTHRESHOLDTEMPLATE]
 [INSERTNAME] & [INSERTROLE] & \multicolumn{[INSERTLASTYEAR]}{c|}{minor} & {$\leq$0.01}\\
-[ENDUNFUNDEDBELOWTHRESHOLD]
+[ENDUNFUNDEDBELOWTHRESHOLDTEMPLATE]
 
 % COMMENT: the below is the colorized last line of the section providing annual totals for the funded category
 \arrayrulecolor{lightgray!60}\hline\arrayrulecolor{black}
@@ -90,14 +90,14 @@
 
 % COMMENT: the 2 below templates generate a row for each team member under the Funded + UNfunded category
 % COMMENT: use this template if the sum effort exceeds 0.01 FTE
-[STARTBOTHABOVETHRESHOLD]
+[STARTBOTHABOVETHRESHOLDTEMPLATE]
 [INSERTNAME] & [INSERTROLE] & [INSERTY1] & [INSERTY2] & [INSERTY3] & [INSERTY4] & [INSERTY5] & [INSERTY6] & [INSERTY7] & [INSERTY8] & [INSERTY9] & [INSERTY10] & [INSERTTOTAL]\\
-[ENDBOTHABOVETHRESHOLD]
+[ENDBOTHABOVETHRESHOLDTEMPLATE]
 
 % COMMENT: or use this template if work effort is less than 0.01 FTE
-[STARTBOTHBELOWTHRESHOLD]
+[STARTBOTHBELOWTHRESHOLDTEMPLATE]
 [INSERTNAME] & [INSERTROLE] & \multicolumn{[INSERTLASTYEAR]}{c|}{minor} & {$\leq$0.01}\\
-[ENDBOTHBELOWTHRESHOLD]
+[ENDBOTHBELOWTHRESHOLDTEMPLATE]
 
 % COMMENT: the below is the colorized last line of the section providing sums per year for the TOTAL WORK EFFORT category
 \arrayrulecolor{lightgray!60}\hline\arrayrulecolor{black}
