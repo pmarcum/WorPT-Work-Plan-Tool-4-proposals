@@ -1,48 +1,7 @@
-========= HOW TO INSERT WorPT's NOTANONfte FILE ==========
+___________________________________________________________________________________________________________________
+Refer to:
 
-(1) Put some customized package files in the preamble of your document that are used by WorPT tables:
-     
-    Download or connect to https://github.com/pmarcum/LaTex-Formatting and select the set of files
-    (AAS-style or general) that meet your situation. 
-    
-    You can either download the files or link Overleaf to the needed files in the GitHub repository
-    through URL, and then add the following to the preamble of your main paper. 
+https://github.com/pmarcum/WorPT-Work-Plan-Tool-4-proposals/blob/main/latexTableTemplates/NOTANONfte/readme.md
 
-    IF YOU HAVE ALREADY PUT THE BELOW LINES INTO YOUR PREAMBLE WHEN PREVIOUSLY INSERTING ANOTHER 
-    WorPT TABLE, YOU DON'T HAVE TO REPEAT!  JUST SKIP THIS STEP!
-
-\usepackage{FUpackages}
-\usepackage{FUformatting}
-\usepackage{FUnewCommands} % not needed by WorPT files but generally useful
-______________________________________________________
-______________________________________________________
-
-(2) In the place within your LaTeX document that you want to insert the WorPT table, 
-
-    COPY/PASTE the following lines (starting with the NEXT line) into that place within your document: 
-
-%====================== FORMAT PREFERENCES ===================
-\clearpage
-\def\NameLabelBoldface#1{\textbf{#1}}      % boldface "Name" column label
-\def\RoleLabelBoldface#1{\textbf{#1}}      % boldface "Role" column label
-\def\CommitmentLabelBoldface#1{\textbf{#1}}% boldface "Commitment (FTE)" column label
-\def\YearLabelBoldface#1{\textbf{#1}}      % boldface "Y1", "Y2", ...  column labels
-\def\TotalLabelBoldface#1{\textbf{#1}}     % boldface "Total" column label
-\def\SectionBannerColor{Blue}              % color of banners separating the 3 sections 
-\def\SectionBannerFontColor{White}         % font color of banners separating the 3 sections 
-\def\SectionBannerBoldface#1{\textbf{#1}}  % boldface text in banners separating the 3
-\def\TotalWorkEffortBoldface#1{\textbf{#1}}% boldface text in "Total .... Work Effort" line at section end
-\def\TotalWorkEffortFontColor{Blue}        % font color of "Total ... Work Effort" line at section end
-
-\addtocounter{table}{-1}            % corrects double-counting of longtable and table combination
-\begin{table*}[h!]                  % \begin{table} makes caption have same width as table
-  \renewcommand{\arraystretch}{1.0} % control vertical row separation/spacing
-  \setlength{\tabcolsep}{5pt}       % control horizontal column separation/spacing
-  \begin{longtable}{|l|*{[INSERTLASTYEARPLUSTWO]}{c|}}
-    \expinput{[INSERTLATEXFILESUBDIRECTORY]/table_NOTANONfte}
-  \end{longtable}
-  \caption{
-    \label{tab:NOTANONfte} Details of work efforts per member to be funded for the present proposal; 
-    {\color{red}Detailed responsibilities, tied to tasks and science goals, are provided in Sec.\,\ref{Subsec:tmeline}.}
-  }
-\end{table*}
+for instructions and LaTeX code to copy/paste into your document, to incorporate this file. 
+___________________________________________________________________________________________________________________
