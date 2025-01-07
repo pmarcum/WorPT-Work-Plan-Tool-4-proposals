@@ -32,7 +32,7 @@ level-of-effort information is given in this table, only tasks and assignments t
 {\color{red} \underline{\scshape{Publication Costs}}: Our work plan includes the publication of four key manuscripts: (see Table \ref{tab:NOTANONschedule} for details),  but given the student projects, we have budgeted for 8 papers. We request a total of \\$2K for publication costs,  using the assumption that the papers will fall between "Tier 1" and "Tier 2" categories as defined in ApJ/AJ guidelines. These fees are included in proposed budget.}
 \newline \newline
 {\color{red}\underline{\scshape{ Materials and Supplies}}: We request an annually-averaged budget of \\$1,125 to cover purchase of disk space to back up our data products and miscellaneous office and IT supplies at PI and Science\~PI home institution. The distribution of these funds is top-heavy at the beginning of the grant period, when such supplies will be needed most. The disk size of the data products will be approximately 39\~Gb per exposure: four \\texttt{float32} 
-extensions per CCD, corresponding to the \textbf{(1)} Zodiacal-CIB background, \\textbf{(2)} in-field, and \\textbf{(3)} out-field stray-light, and \textbf{(4)} thermal emission layers, plus one \texttt{binary} extension for the Solar System object trails (\emph{streak / no streak}), for a total of 18\~4096$\times$4096 detector focal plane. Storage of these products will not be required, as they will be immediately produced by the pipeline on a exposure-by-exposure basis. End-to-end simulations shall not exceed 100\~Gb, and they will be accessible to the community through a public internet server. Publication~IV will require the analysis of an area equivalent to 32 adjacent field of views, the equivalent of a sector of the \RST/WFI High Latitude Wide Area Survey, which corresponds to 128 exposures. Assuming an average exposure size of 9\~Gb, plus $\sim$40\~Gb for the background products, we project that we will require $\sim$10--15\~Tb of disk space (including backups).}}
+extensions per CCD, corresponding to the \textbf{(1)} Zodiacal-CIB background, \\textbf{(2)} in-field, and \\textbf{(3)} out-field stray-light, and \textbf{(4)} thermal emission layers, plus one \texttt{binary} extension for the Solar System object trails (\emph{streak / no streak}), for a total of 18\~4096$\times$4096 detector focal plane. Storage of these products will not be required, as they will be immediately produced by the pipeline on a exposure-by-exposure basis. End-to-end simulations shall not exceed 100\~Gb, and they will be accessible to the community through a public internet server. Publication\~IV will require the analysis of an area equivalent to 32 adjacent field of views, the equivalent of a sector of the \RST/WFI High Latitude Wide Area Survey, which corresponds to 128 exposures. Assuming an average exposure size of 9\~Gb, plus $\sim$40\~Gb for the background products, we project that we will require $\sim$10--15\~Tb of disk space (including backups).}}
 \label{tab:isANONnonlabor}</mark>
 \end{isANONnonlabor}
 </code></pre>
@@ -52,65 +52,50 @@ NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; yo
 </code></pre>
 <b>The below are aesthetic preferences only, like color and font style.</b> Highlights indicate what can be edited:
 <pre><code>
-\def\BannerFontstyle#1{<mark>\textbf</mark>{#1}}      % Bold-face for top banner "Travel Cost Details
-\def\BannerColor{<mark>Blue</mark>}                   % Color of the top "Travel Cost Details" banner
-\def\BannerFontColor{<mark>White</mark>}              % Font color for top "Travel Cost Details" banner
-\def\PerTripShadingColor{<mark>gray</mark>}           % Shading color of "per trip" columns
-\def\PerTripShadingTransparency{<mark>0.85</mark>}    % Shading transparency for "per trip" colunns; transparent(1.0) - opaque(0.0)
-\def\PerTripShadingMargin{<mark>7pt</mark>}           % Margin width to right of each shaded "per trip" column (prevents white vertical line)
-\def\YearTripsDestLabelFontColor{<mark>Blue</mark>}   % Font color for "Year", "#TRips" and "Dest." column labels
-\def\TotalLabelFontColor{<mark>Blue</mark>}           % Font color "Total" column label
-\def\PerTripLabelFontColor{<mark>Blue</mark>}         % Font color of column labels for "per trip" section
-\def\YearTripsDestFontstyle#1{<mark>\textbf</mark>{#1}}% Bold-face "Year", "#Trips", "Dest." labels
-\def\PerTripFontstyle#1{<mark>\textbf</mark>{#1}}     % Bold-face column labels for "per trip" section
-\def\TotalFontstyle#1{<mark>\textbf</mark>{#1}}       % Bold-face column label "Total"
-\def\YearFontstyle#1{<mark>\textbf</mark>{#1}}        % Bold-face "Yr1", "YR2", etc labels
+\def\BannerColor{<mark>Blue</mark>}            % "Equipment, Travel, Supplies, Page Charges" banner color
+\def\BannerFontColor{<mark>White</mark>}       % "Equipment, Travel, Supplies, Page Charges" banner font color
+\def\BannerFontstyle#1{<mark>\textbf</mark>{#1}}% boldface "Equipment, Travel, Supplies, Page Charges" banner
+\def\CostLabelColor{<mark>Blue</mark>}         % "Cost Category" column label color
+\def\YearLabelColor{<mark>Blue</mark>}         % "Y1", "Y2", etc  column label color
+\def\TotalLabelColor{<mark>Blue</mark>}        % "Total" column label color
+\def\ColumnFontstyle#1{<mark>\textbf</mark>{#1}}% boldface "Cost Category", "Y1, Y2, ..." column labels 
+\def\TotalFontstyle#1{<mark>\textbf</mark>{#1}} % boldface "Total ..." column label 
+\def\fmtA#1{<mark>\textbf</mark>{#1}}          % boldface listed budget items (except "domestic" and "international" Travel lines) 
+\def\fmtB#1{<mark>\textit</mark>{#1}}          % italicize "domestic" and "international" lines 
+\def\fmtC#1{<mark>\textbf</mark>{#1}}          % boldface budget amounts except "Total" and "domestic" and "international" Travel lines 
+\def\fmtD#1{<mark>\textit</mark>{#1}}          % italicize "domestic" and "international" Travel budget values 
+\def\fmtE#1{<mark>\textbf</mark>{#1}}          % boldface Total budget values except those in "Domestic" and "International" Travel lines 
+\def\fmtF#1{<mark>\textit</mark>{#1}}          % italicize budget amounts under Total, and "Domestic" / "International" Travel lines 
 </code></pre>
 <b>The below table preamble gives you considerably MORE control over table layout than just changing parameter values.</b>
 Copy/paste the below if you want to do things like remove or add vertical lines or change a column from left-alignment to center-aligned, for example. You can replace the \TaskWidth and other parameters with hard-coded numbers if desired, and change the "l" (left-align) to other alignment modes. You can change anything that is in highlight. Things that should NOT be changed (otherwise, the LaTeX will break) are the "T" variable and number of columns. 
 <pre><code>
 \newcolumntype{T}{
- <mark>|lcl</mark> >{\columncolor[\PerTripShadingColor]{\PerTripShadingTransparency}[\tabcolsep][\PerTripShadingMargin]}
- <mark>l</mark>>{\columncolor[\PerTripShadingColor]{\PerTripShadingTransparency}[\tabcolsep][\PerTripShadingMargin]}
- <mark>l</mark>>{\columncolor[\PerTripShadingColor]{\PerTripShadingTransparency}[\tabcolsep][\PerTripShadingMargin]}
- <mark>l</mark>>{\columncolor[\PerTripShadingColor]{\PerTripShadingTransparency}[\tabcolsep][\PerTripShadingMargin]}
- <mark>l</mark>>{\columncolor[\PerTripShadingColor]{\PerTripShadingTransparency}[\tabcolsep][\PerTripShadingMargin]}
- <mark>ll|</mark>
+  <mark>|l|</mark>*{\LastYearPlusOne}{<mark>l|</mark>}}
 }   
 </code></pre> 
 </li>
 <li><b>Examples</b>
-The below is an example of how one can change the appearance of the table within a LaTeX document. After copy/pasting the code to incorporate the table into my document, I decided I wanted to turn the top blue header to green, and the gray shading to yellow shading (resulting in a hideous color scheme, by the way!). I copy/pasted the lines relevant to these formats. Here's what my LaTeX document looks like:  
+The below is an example of how one can change the appearance of the table within a LaTeX document. After copy/pasting the code to incorporate the table into my document, I decided I wanted to turn the top blue header to green, and the font to black. I copy/pasted the lines relevant to these formats. Here's what my LaTeX document looks like:  
 <pre><code>
 \include{do_NOT_manually_edit/isANONnonlabor}
 % Put customizations for isANONnonlabor HERE
                                               
 \def\BannerColor{Green}                   % Color of the top "Travel Cost Details" banner
-\def\PerTripShadingColor{yellow}           % Shading color of "per trip" columns
-\def\PerTripShadingTransparency{0.65}    % Shading transparency for "per trip" colunns; transparent(1.0) - opaque(0.0)
+\def\BannerFontColor{Yellow}       % "Equipment, Travel, Supplies, Page Charges" banner font color
 
 \begin{isANONnonlabor}
-\caption{\normalsize \newline \newline
+\caption{
+\normalsize \newline \newline
 \textbf{Notes and assumptions}:
 \newline \newline
-While final destinations are not known at this time, domestic and international costs are estimated 
-based on values taken from NASA Travel Guidebook using historical averages for a \daysPerDomesticTrip-- and \daysPerInternationalTrip--day 
-conference for U.S. and European cities, resp., likely to host topical meetings aligned with the science of the proposed work. 
-Domestic lodging and per diem rates are set by the GSA; international lodging and per diem are set by the Dept. of State (note 
-that M\&IE is included in the per diem values shown here).
-\newline \newline \noindent Yrs~1-2 funds will be used to present findings at science conferences and potentially to fund 
-trips for collaboration with team members (i.e., NASA/GSFC).}
-\newline \newline \underline{\scshape{domestic}}: 
-per diem$+$M\&IE, car rental/day at \$\domesticPerDiemDollars and \$\internationalPerDiemDollars, resp.
-\newline \newline \underline{\scshape{international}}: 
-per diem$+$M\&IE, public transport/day estimated at \$\domesticGroundTravelDollars and \$\internationalGroundTravelDollars, resp.
-\newline \newline \underline{\scshape{Travel Per Team Member}} 
-(summed over \grantYears-year grant):
-\newline
-\perPersonNumberTripList
-\newline All travel will be to present science results of this project at conferences and/or visits to home 
-institutions of the team members for in-person collaboration. Note that above values above do not include 
-institutional overhead.}
+{\color{red} \underline{\scshape{Equipment Costs}}: In Yrs\~1-2, we request a total of \\$11K for the purchase of a laptop and associated IT equipment to replace the PI's aging laptop (purchased in 2018, well past nominal 4-year refresh cycle at the time of the proposed budget period), ``NASA-tized'' computer equipment (laptops, monitors) for use by the summer interns, and as an ``emergency'' fund, should the Science\~PI's $\sim$3-yr old laptop fail or need repair.} 
+\newline \newline
+\underline{\scshape{Travel}}: refer to Table\,\ref{tab:isANONtravel}. \newline \newline
+{\color{red} \underline{\scshape{Publication Costs}}: Our work plan includes the publication of four key manuscripts: (see Table \ref{tab:NOTANONschedule} for details),  but given the student projects, we have budgeted for 8 papers. We request a total of \\$2K for publication costs,  using the assumption that the papers will fall between "Tier 1" and "Tier 2" categories as defined in ApJ/AJ guidelines. These fees are included in proposed budget.}
+\newline \newline
+{\color{red}\underline{\scshape{ Materials and Supplies}}: We request an annually-averaged budget of \\$1,125 to cover purchase of disk space to back up our data products and miscellaneous office and IT supplies at PI and Science\~PI home institution. The distribution of these funds is top-heavy at the beginning of the grant period, when such supplies will be needed most. The disk size of the data products will be approximately 39\~Gb per exposure: four \\texttt{float32} 
+extensions per CCD, corresponding to the \textbf{(1)} Zodiacal-CIB background, \\textbf{(2)} in-field, and \\textbf{(3)} out-field stray-light, and \textbf{(4)} thermal emission layers, plus one \texttt{binary} extension for the Solar System object trails (\emph{streak / no streak}), for a total of 18\~4096$\times$4096 detector focal plane. Storage of these products will not be required, as they will be immediately produced by the pipeline on a exposure-by-exposure basis. End-to-end simulations shall not exceed 100\~Gb, and they will be accessible to the community through a public internet server. Publication\~IV will require the analysis of an area equivalent to 32 adjacent field of views, the equivalent of a sector of the \RST/WFI High Latitude Wide Area Survey, which corresponds to 128 exposures. Assuming an average exposure size of 9\~Gb, plus $\sim$40\~Gb for the background products, we project that we will require $\sim$10--15\~Tb of disk space (including backups).}}
 \label{tab:isANONnonlabor}
 
 \end{isANONnonlabor}
