@@ -41,104 +41,81 @@ per diem$+$M\&IE, public transport/day estimated at \$[INSERTINTERNATIONALPERDIE
 </code></pre>
 </li>
 <li><b>Customize appearance</b> [<i>do as many times as needed</i>]
-The default table appearance is optimized, minimizing the need to change table properties such as column widths. However, if you do find the need to make such changes, as well as changes to other properties such as column alignment, colors, font styles, you will need to copy/paste and then edit some additional formatting lines into your document. Specifically: 
+The default table appearance is already optimized, minimizing the need to change table properties such as column widths. However, if you do find the need to make such changes, as well as changes to other properties such as column alignment, colors, font styles, you will need to copy/paste and then edit some additional formatting lines into your document. Specifically: 
 <ol>
 <li>COPY any or all lines in the code block below that are related to the formatting parameter that you want to edit. The lines below show default values. You will edit those values to make desired changes.</li>
 <li>PASTE the copied lines into your document at the "% Put customizations for isANONtravel HERE" line in the code that you copy/pasted in Step 2. Most importantly, the desired formatting lines should be pasted somewhere <b>between</b> the \include{do_NOT_manually_edit/table_isANONtravel} and \begin{isANONtravel} lines. </li>
 <li>EDIT the pasted lines in your document, as desired. Some examples are given at the bottom of this page.</li>
 NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; you do not have to copy/paste all of the beow lines!
 </ol>
-    
-<b>Below control column widths. Highlights indicate what can be edited:</b>
+<b>The most likely table property that you might want to control is compactness, which can be adjusted by one or more of the following.</b> Highlights indicate what can be edited:
 <pre><code>
-
-\def\BannerBoldface#1{\textbf{#1}}       % Bold-face for top banner "Travel Cost Details
-\def\BannerColor{Blue}                   % Color of the top "Travel Cost Details" banner
-\def\BannerFontColor{White}              % Font color for top "Travel Cost Details" banner
-\def\PerTripShadingColor{gray}           % Shading color of "per trip" columns
-\def\PerTripShadingTransparency{0.85}    % Shading transparency for "per trip" colunns; transparent(1.0) - opaque(0.0)
-\def\PerTripShadingMargin{7pt}           % Margin width to right of each shaded "per trip" column (prevents white vertical line)
-\def\YearTripsDestLabelFontColor{Blue}   % Font color for "Year", "#TRips" and "Dest." column labels
-\def\TotalLabelFontColor{Blue}           % Font color "Total" column label
-\def\PerTripLabelFontColor{Blue}         % Font color of column labels for "per trip" section
-\def\YearTripsDestBoldface#1{\textbf{#1}}% Bold-face "Year", "#Trips", "Dest." labels
-\def\PerTripBoldface#1{\textbf{#1}}      % Bold-face column labels for "per trip" section
-\def\TotalBoldface#1{\textbf{#1}}        % Bold-face column label "Total"
-\def\YearBoldface#1{\textbf{#1}}         % Bold-face "Yr1", "YR2", etc labels
-
-
-
-
-
-
-
-
-    
-\def\TaskWidth{<mark>3.9in</mark>}            % width of leftmost ("Tasks") column
-\def\LeadWidth{<mark>1.2in</mark>}            % width of middle ("Lead") column
-\def\ExpertiseWidth{<mark>1.8in</mark>}       % width of rightmost ("Expertise") column
+\def\SpaceBetweenRows{<mark>1.0</mark>}               % vertical compactness of rows
+\def\SpaceBetweenColumns{<mark>5pt</mark>}            % spacing between columns
 </code></pre>
-<b>Fix the table number if it is showing a wrong number, by adding or subtracting whatever correction is needed.</b>
-The default typically works well because the table + longtable combination causes the counter to overcount by one, so -1 performs the appropriate correction.  But ocassionally, the counter gets screwed up and needs manual intervention, so here's how to apply a correction:
+<b>The below are aesthetic preferences only, like color and font style.</b> Highlights indicate what can be edited:
 <pre><code>
-\def\TaskAddCounter{<mark>-1</mark>}          % corrects table number messed up by table,longtable combination)
+\def\BannerFontstyle#1{<mark>\textbf</mark>{#1}}      % Bold-face for top banner "Travel Cost Details
+\def\BannerColor{<mark>Blue</mark>}                   % Color of the top "Travel Cost Details" banner
+\def\BannerFontColor{<mark>White</mark>}              % Font color for top "Travel Cost Details" banner
+\def\PerTripShadingColor{<mark>gray</mark>}           % Shading color of "per trip" columns
+\def\PerTripShadingTransparency{<mark>0.85</mark>}    % Shading transparency for "per trip" colunns; transparent(1.0) - opaque(0.0)
+\def\PerTripShadingMargin{<mark>7pt</mark>}           % Margin width to right of each shaded "per trip" column (prevents white vertical line)
+\def\YearTripsDestLabelFontColor{<mark>Blue</mark>}   % Font color for "Year", "#TRips" and "Dest." column labels
+\def\TotalLabelFontColor{<mark>Blue</mark>}           % Font color "Total" column label
+\def\PerTripLabelFontColor{<mark>Blue</mark>}         % Font color of column labels for "per trip" section
+\def\YearTripsDestFontstyle#1{<mark>\textbf</mark>{#1}}% Bold-face "Year", "#Trips", "Dest." labels
+\def\PerTripFontstyle#1{<mark>\textbf</mark>{#1}}     % Bold-face column labels for "per trip" section
+\def\TotalFontstyle#1{<mark>\textbf</mark>{#1}}       % Bold-face column label "Total"
+\def\YearFontstyle#1{<mark>\textbf</mark>{#1}}        % Bold-face "Yr1", "YR2", etc labels
 </code></pre>
-<b>The below lines might be useful - they adjust the table compactness:</b>
-<pre><code>
-\def\SpaceBetweenRows{<mark>1</mark>}         % vertical compactness of rows
-\def\SpaceBetweenColumns{<mark>1pt</mark>}    % spacing between columns (bigger value=wider column margin)
-</code></pre>
-<b>The below can nudge the table to the left (increase value) or right (decrease value)</b>
-<pre><code>
-\def\NudgeTable{<mark>1.2\textwidth</mark>}   % bigger values nudge table to left
-</code></pre>
-    
-<b>The below are aesthetic preferences only, like color and font style</b>
-<pre><code>
-\def\HeaderColor{<mark>Blue</mark>}           % column heading color
-\def\HeaderFontColor{<mark>White</mark>}      % column heading font color
-\def\HeaderBoldface#1{<mark>\textbf</mark>{#1}}% boldface column heading labels; change "\textbf" to "\emph" or whatever
-\def\SectionColor{<mark>gray!40</mark>}       % category dection label colors
-\def\SectionFontColor{<mark>Black</mark>}     % category section label font color
-\def\SectionBoldface#1{<mark>\textbf</mark>{#1}} % boldface category section labels; change "\textbf" to "\emph" or whatever
-\def\VerticalLineColor{<mark>gray!40</mark>}  % color of line between "Lead" and "Expertise"
-</code></pre>
-
 <b>The below table preamble gives you considerably MORE control over table layout than just changing parameter values.</b>
-Copy/paste the below if you want to do things like remove or add vertical lines or change a column from left-alignment to center-aligned, for example. You can replace the \TaskWidth and other parameters with hard-coded numbers if desired, and change the "p" to other alignment modes. You can change anything that is in highlight. Things that should NOT be changed (otherwise, the LaTeX will break) are the "T" variable and number of columns. 
+Copy/paste the below if you want to do things like remove or add vertical lines or change a column from left-alignment to center-aligned, for example. You can replace the \TaskWidth and other parameters with hard-coded numbers if desired, and change the "l" (left-align) to other alignment modes. You can change anything that is in highlight. Things that should NOT be changed (otherwise, the LaTeX will break) are the "T" variable and number of columns. 
 <pre><code>
 \newcolumntype{T}{
-  <mark>|p</mark>{<mark>\TaskWidth</mark>}<mark>||</mark>                                 % title column
-  <mark>p</mark>{<mark>\LeadWidth</mark>}<mark>!{\color{\VerticalLineColor}\vrule}</mark> % task lead column
-  <mark>p</mark>{<mark>\ExpertiseWidth</mark>}<mark>|</mark>                              % expertise column
-}
-
-
-     |lcl >{\columncolor[\PerTripShadingColor]{\PerTripShadingTransparency}[\tabcolsep][\PerTripShadingMargin]}
- l>{\columncolor[\PerTripShadingColor]{\PerTripShadingTransparency}[\tabcolsep][\PerTripShadingMargin]}
- l>{\columncolor[\PerTripShadingColor]{\PerTripShadingTransparency}[\tabcolsep][\PerTripShadingMargin]}
- l>{\columncolor[\PerTripShadingColor]{\PerTripShadingTransparency}[\tabcolsep][\PerTripShadingMargin]}
- l>{\columncolor[\PerTripShadingColor]{\PerTripShadingTransparency}[\tabcolsep][\PerTripShadingMargin]}
- ll|
-
-
-    
+ <mark>|lcl</mark> >{\columncolor[\PerTripShadingColor]{\PerTripShadingTransparency}[\tabcolsep][\PerTripShadingMargin]}
+ <mark>l</mark>>{\columncolor[\PerTripShadingColor]{\PerTripShadingTransparency}[\tabcolsep][\PerTripShadingMargin]}
+ <mark>l</mark>>{\columncolor[\PerTripShadingColor]{\PerTripShadingTransparency}[\tabcolsep][\PerTripShadingMargin]}
+ <mark>l</mark>>{\columncolor[\PerTripShadingColor]{\PerTripShadingTransparency}[\tabcolsep][\PerTripShadingMargin]}
+ <mark>l</mark>>{\columncolor[\PerTripShadingColor]{\PerTripShadingTransparency}[\tabcolsep][\PerTripShadingMargin]}
+ <mark>ll|</mark>
+}   
 </code></pre> 
 </li>
-
 <li><b>Examples</b>
-The below is an example of how one can change the appearance of the table within a LaTeX document. After copy/pasting the code to incorporate the table into my document, and then deciding that my task titles were too long to fit with the table in portrait mode, I decided I needed to use landscape mode.  I copy/pasted the landscape fla and the 2 formatting lines that control the "Tasks" and "Expertise" column widths. (My team members have long last names, requiring a wider column than the default). I also slightly altered the caption to be appropriate to my proposal. The result?  A landscape-mode table that allows each task to appear in a single table row without spilling over into the next line, which is my preferred way to present these tables for easiest viewing. Here is a peek at what my LaTeX document looks like:  
+The below is an example of how one can change the appearance of the table within a LaTeX document. After copy/pasting the code to incorporate the table into my document, I decided I wanted to turn the top blue header to green, and the gray shading to yellow shading (resulting in a hideous color scheme, by the way!). I copy/pasted the lines relevant to these formats. Here's what my LaTeX document looks like:  
 <pre><code>
 \include{do_NOT_manually_edit/isANONtravel}
-    
-\LandScapetrue                 % puts table in landscape mode
-\def\TaskWidth{5.4in}          % width of leftmost ("Tasks") column
-\def\ExpertiseWidth{1.8in}     % width of rightmost ("Expertise") column
+% Put customizations for isANONtravel HERE
+                                              
+\def\BannerColor{Green}                   % Color of the top "Travel Cost Details" banner
+\def\PerTripShadingColor{yellow}           % Shading color of "per trip" columns
+\def\PerTripShadingTransparency{0.65}    % Shading transparency for "per trip" colunns; transparent(1.0) - opaque(0.0)
 
 \begin{isANONtravel}
-\caption{\normalsize\textbf{Task Management and Team Responsibilities}:\\\\
-The tasks ({\color{red}gray} headers) and sub-tasks (left), with specific assignments for the roles of task lead (middle) and expertise / analysis assistance (right). See a more detailed description of these roles in the Project Management section.}
+\caption{\normalsize \newline \newline
+\textbf{Notes and assumptions}:
+\newline \newline
+While final destinations are not known at this time, domestic and international costs are estimated 
+based on values taken from NASA Travel Guidebook using historical averages for a \daysPerDomesticTrip-- and \daysPerInternationalTrip--day 
+conference for U.S. and European cities, resp., likely to host topical meetings aligned with the science of the proposed work. 
+Domestic lodging and per diem rates are set by the GSA; international lodging and per diem are set by the Dept. of State (note 
+that M\&IE is included in the per diem values shown here).
+\newline \newline \noindent Yrs~1-2 funds will be used to present findings at science conferences and potentially to fund 
+trips for collaboration with team members (i.e., NASA/GSFC).}
+\newline \newline \underline{\scshape{domestic}}: 
+per diem$+$M\&IE, car rental/day at \$\domesticPerDiemDollars and \$\internationalPerDiemDollars, resp.
+\newline \newline \underline{\scshape{international}}: 
+per diem$+$M\&IE, public transport/day estimated at \$\domesticGroundTravelDollars and \$\internationalGroundTravelDollars, resp.
+\newline \newline \underline{\scshape{Travel Per Team Member}} 
+(summed over \grantYears-year grant):
+\newline
+\perPersonNumberTripList
+\newline All travel will be to present science results of this project at conferences and/or visits to home 
+institutions of the team members for in-person collaboration. Note that above values above do not include 
+institutional overhead.}
 \label{tab:isANONtravel}
+
 \end{isANONtravel}
 </code></pre>
 NOTE: To return to default values, all I have to do is comment-out (put a "%" at the line's beginning) the "\def" formatting lines that I pasted. 
