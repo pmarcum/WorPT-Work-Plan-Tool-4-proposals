@@ -2,7 +2,7 @@
 
 <font size="3">WorPT table example: <b>isANONtasks</b></font>
 <br>
-<img src="https://lh3.googleusercontent.com/d/1gfMagfSDmX0lDqzAmel2LCGZTuZUGQ5O" width=60%>
+<img src="https://lh3.googleusercontent.com/d/1gfMagfSDmX0lDqzAmel2LCGZTuZUGQ5O" width=40%>
 <hr>
 <b>HOW TO USE:</b>
 <ol>
