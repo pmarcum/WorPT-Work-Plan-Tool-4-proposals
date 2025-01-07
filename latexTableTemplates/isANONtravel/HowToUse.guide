@@ -36,6 +36,11 @@ ______________________________________________________
 \def\TotalBoldface#1{\textbf{#1}}        % Bold-face column label "Total"
 \def\YearBoldface#1{\textbf{#1}}         % Bold-face "Yr1", "YR2", etc labels
 
+%---- fix the Table Number in the caption
+\def\TaskAddCounter{-1}          % corrects table number messed up by table,longtable combination)
+
+%--- aesthetic preferences
+
 The below table provides travel costs:
 \begin{table*}[h!]
 % ---- adjust to control vertical row separation/spacing, comment-out if not needed
