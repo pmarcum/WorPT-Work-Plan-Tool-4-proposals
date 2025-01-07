@@ -8,7 +8,7 @@ NOTE: WorPT biosketch spreadsheet files should be kept up-to-date so that the in
 
 <font size="3">WorPT table example: <b>NOTANONcurrentPending</b></font>
 <br>
-<img src="https://lh3.googleusercontent.com/d/1hQWaFzw0-oolj-ZgvmulSnWuO5ptYoTM" width=40%>
+<img src="https://lh3.googleusercontent.com/d/1hQWaFzw0-oolj-ZgvmulSnWuO5ptYoTM" width=30%>
 <hr>
 <b>HOW TO USE:</b>
 <ol>
