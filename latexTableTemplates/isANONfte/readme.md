@@ -68,7 +68,7 @@ The default typically works well because the table + longtable combination cause
 Copy/paste the below if you want to do things like remove or add vertical lines or change a column from left-alignment to center-aligned, for example. You can replace the \TaskWidth and other parameters with hard-coded numbers if desired, and change the "l" (left-align) to other alignment modes. You can change anything that is in highlight. Things that should NOT be changed (otherwise, the LaTeX will break) are the "T" variable and number of columns. 
 <pre><code>
 \newcolumntype{T}{
-  {<mark>|l|</mark>*{\\LastYearPlusTwo}{<mark>c|</mark>}}
+  {<mark>|l|</mark>*{\\LastYearPlusOne}{<mark>c|</mark>}}
 }
 </code></pre> 
 </li>
