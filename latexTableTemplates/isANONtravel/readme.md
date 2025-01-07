@@ -18,7 +18,9 @@ level-of-effort information is given in this table, only tasks and assignments t
 <pre><code>
 \include{do_NOT_manually_edit/table_isANONtravel}   % reset/define parameters used for this file
 % NOTE: replace do_NOT_manually_edit if not correct folder name
+    
 <mark>% Put customizations for isANONtravel HERE</mark>
+
 \begin{isANONtravel}
 <mark>\caption{\normalsize \newline \newline
 \textbf{Notes and assumptions}:
