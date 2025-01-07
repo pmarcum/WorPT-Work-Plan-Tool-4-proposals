@@ -34,22 +34,44 @@ per diem$+$M\&IE, public transport/day estimated at \$[INSERTINTERNATIONALPERDIE
 \newline
 [ROWTEMPLATE]\smallIndent \textbf{[TEAMROLE]}: [NUMDOMTRIPS] domestic trip[DOMPLURALITY]; [NUMINTTRIPS] intern'l trip[INTPLURALITY];\newline
 \newline All travel will be to present science results of this project at conferences and/or visits to home institutions of the team members for in-person collaboration. Note that above values above do not include institutional overhead.}
-\label{tab:isANONtravel}
-</mark>
+\label{tab:isANONtravel}</mark>
 \end{isANONtravel}
 </code></pre>
 </li>
 <li><b>Customize appearance</b> [<i>do as many times as needed</i>]
-You can change column widths, column alignment, colors, font style using additional lines that are copy/pasted into your document. Specifically: 
+The default table appearance is optimized, minimizing the need to change table properties such as column widths. However, if you do find the need to make such changes, as well as changes to other properties such as column alignment, colors, font styles, you will need to copy/paste and then edit some additional formatting lines into your document. Specifically: 
 <ol>
 <li>COPY any or all lines in the code block below that are related to the formatting parameter that you want to edit. The lines below show default values. You will edit those values to make desired changes.</li>
 <li>PASTE the copied lines into your document at the "% Put customizations for isANONtravel HERE" line in the code that you copy/pasted in Step 2. Most importantly, the desired formatting lines should be pasted somewhere <b>between</b> the \include{do_NOT_manually_edit/table_isANONtravel} and \begin{isANONtravel} lines. </li>
 <li>EDIT the pasted lines in your document, as desired. Some examples are given at the bottom of this page.</li>
 NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; you do not have to copy/paste all of the beow lines!
 </ol>
-<b>The below lines are what you will most likely need to copy/paste, to get your column widths just right. Highlights indicate what can be edited:</b>
+    
+<b>Below control column widths. Highlights indicate what can be edited:</b>
 <pre><code>
-\LandScapetrue                   % uncommented-out appearance in your document will put the table in landscape mode
+
+\def\BannerBoldface#1{\textbf{#1}}       % Bold-face for top banner "Travel Cost Details
+\def\BannerColor{Blue}                   % Color of the top "Travel Cost Details" banner
+\def\BannerFontColor{White}              % Font color for top "Travel Cost Details" banner
+\def\PerTripShadingColor{gray}           % Shading color of "per trip" columns
+\def\PerTripShadingTransparency{0.85}    % Shading transparency for "per trip" colunns; transparent(1.0) - opaque(0.0)
+\def\PerTripShadingMargin{7pt}           % Margin width to right of each shaded "per trip" column (prevents white vertical line)
+\def\YearTripsDestLabelFontColor{Blue}   % Font color for "Year", "#TRips" and "Dest." column labels
+\def\TotalLabelFontColor{Blue}           % Font color "Total" column label
+\def\PerTripLabelFontColor{Blue}         % Font color of column labels for "per trip" section
+\def\YearTripsDestBoldface#1{\textbf{#1}}% Bold-face "Year", "#Trips", "Dest." labels
+\def\PerTripBoldface#1{\textbf{#1}}      % Bold-face column labels for "per trip" section
+\def\TotalBoldface#1{\textbf{#1}}        % Bold-face column label "Total"
+\def\YearBoldface#1{\textbf{#1}}         % Bold-face "Yr1", "YR2", etc labels
+
+
+
+
+
+
+
+
+    
 \def\TaskWidth{<mark>3.9in</mark>}            % width of leftmost ("Tasks") column
 \def\LeadWidth{<mark>1.2in</mark>}            % width of middle ("Lead") column
 \def\ExpertiseWidth{<mark>1.8in</mark>}       % width of rightmost ("Expertise") column
@@ -88,6 +110,17 @@ Copy/paste the below if you want to do things like remove or add vertical lines 
   <mark>p</mark>{<mark>\LeadWidth</mark>}<mark>!{\color{\VerticalLineColor}\vrule}</mark> % task lead column
   <mark>p</mark>{<mark>\ExpertiseWidth</mark>}<mark>|</mark>                              % expertise column
 }
+
+
+     |lcl >{\columncolor[\PerTripShadingColor]{\PerTripShadingTransparency}[\tabcolsep][\PerTripShadingMargin]}
+ l>{\columncolor[\PerTripShadingColor]{\PerTripShadingTransparency}[\tabcolsep][\PerTripShadingMargin]}
+ l>{\columncolor[\PerTripShadingColor]{\PerTripShadingTransparency}[\tabcolsep][\PerTripShadingMargin]}
+ l>{\columncolor[\PerTripShadingColor]{\PerTripShadingTransparency}[\tabcolsep][\PerTripShadingMargin]}
+ l>{\columncolor[\PerTripShadingColor]{\PerTripShadingTransparency}[\tabcolsep][\PerTripShadingMargin]}
+ ll|
+
+
+    
 </code></pre> 
 </li>
 
