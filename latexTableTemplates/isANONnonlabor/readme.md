@@ -50,25 +50,35 @@ NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; yo
 \def\SpaceBetweenRows{<mark>1.0</mark>}               % vertical compactness of rows
 \def\SpaceBetweenColumns{<mark>5pt</mark>}            % spacing between columns
 </code></pre>
-<b>The below are aesthetic preferences only, like color and font style.</b> Highlights indicate what can be edited:
+<b>The below are aesthetic preferences for the top row banner (color, font style).</b> Highlights indicate what can be edited:
 <pre><code>
 \def\BannerColor{<mark>Blue</mark>}            % "Equipment, Travel, Supplies, Page Charges" banner color
 \def\BannerFontColor{<mark>White</mark>}       % "Equipment, Travel, Supplies, Page Charges" banner font color
 \def\BannerFontstyle#1{<mark>\textbf</mark>{#1}}% boldface "Equipment, Travel, Supplies, Page Charges" banner
+</code></pre>
+<b>The below are aesthetic preferences for column headings under the top banner (color, font style).</b> Highlights indicate what can be edited:
+<pre><code>
 \def\CostLabelColor{<mark>Blue</mark>}         % "Cost Category" column label color
+\def\ColumnFontstyle#1{<mark>\textbf</mark>{#1}}% boldface "Cost Category", "Y1, Y2, ..." column labels 
 \def\YearLabelColor{<mark>Blue</mark>}         % "Y1", "Y2", etc  column label color
 \def\TotalLabelColor{<mark>Blue</mark>}        % "Total" column label color
-\def\ColumnFontstyle#1{<mark>\textbf</mark>{#1}}% boldface "Cost Category", "Y1, Y2, ..." column labels 
-\def\TotalFontstyle#1{<mark>\textbf</mark>{#1}} % boldface "Total ..." column label 
-\def\fmtA#1{<mark>\textbf</mark>{#1}}          % boldface listed budget items (except "domestic" and "international" Travel lines) 
-\def\fmtB#1{<mark>\textit</mark>{#1}}          % italicize "domestic" and "international" lines 
-\def\fmtC#1{<mark>\textbf</mark>{#1}}          % boldface budget amounts except "Total" and "domestic" and "international" Travel lines 
-\def\fmtD#1{<mark>\textit</mark>{#1}}          % italicize "domestic" and "international" Travel budget values 
-\def\fmtE#1{<mark>\textbf</mark>{#1}}          % boldface Total budget values except those in "Domestic" and "International" Travel lines 
-\def\fmtF#1{<mark>\textit</mark>{#1}}          % italicize budget amounts under Total, and "Domestic" / "International" Travel lines 
+\def\TotalFontstyle#1{<mark>\textbf</mark>{#1}}% boldface "Total ..." column label
 </code></pre>
-<b>The below table preamble gives you considerably MORE control over table layout than just changing parameter values.</b>
-Copy/paste the below if you want to do things like remove or add vertical lines or change a column from left-alignment to center-aligned, for example. You can replace the \TaskWidth and other parameters with hard-coded numbers if desired, and change the "l" (left-align) to other alignment modes. You can change anything that is in highlight. Things that should NOT be changed (otherwise, the LaTeX will break) are the "T" variable and number of columns. 
+<b>The below are aesthetic preferences for rows associated with the Major budget items.</b> Highlights indicate what can be edited:
+<pre><code>
+\def\MajorCatFontstyle#1{<mark>\textbf</mark>{#1}}      % boldface listed budget items (except "domestic" and "international" Travel lines) 
+\def\MajorAmountFontstyle#1{<mark>\textbf</mark>{#1}}   % boldface budget amounts except "Total" and "domestic" and "international" Travel lines 
+\def\MajorCatTotalFontstyle#1{<mark>\textbf</mark>{#1}} % boldface Total budget values except those in "Domestic" and "International" Travel lines 
+</code></pre>
+<b>The below are aesthetic preferences dealing only with the travel sub-category rows.</b> Highlights indicate what can be edited:
+<pre><code>
+\def\fmtE#1{<mark>\textbf</mark>{#1}}                       % boldface Total budget values except those in "Domestic" and "International" Travel lines 
+\def\TravelSubcatFontstyle#1{<mark>\textit</mark>{#1}}      % italicize "domestic" and "international" lines 
+\def\TravelSubcatAmountFontstyle#1{<mark>\textit</mark>{#1}}% italicize "domestic" and "international" Travel budget values 
+\def\TravelSubcatTotalFontstyle#1{<mark>\textit{#1}}        % italicize budget amounts under Total, and "Domestic" / "International" Travel lines 
+</code></pre>
+<b>The below table preamble gives you additional control over table layout.</b>
+Copy/paste the below if you want to do things like remove or add vertical lines or change a column from left-alignment to center-aligned, for example. For example, you can change "l" (left-align) to other alignment modes, or anything else that is highlighted. Things that should NOT be changed (otherwise, the LaTeX will break) are the "T" variable and number of columns. 
 <pre><code>
 \newcolumntype{T}{
   <mark>|l|</mark>*{\LastYearPlusOne}{<mark>l|</mark>}}
