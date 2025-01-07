@@ -1,35 +1,84 @@
-%  ________________________________________________________________________________
-% | Refer to instructions_isANONtravel.tex                                         |
-% | for guidance regarding how to include the isANONtravel table in your document  |
-% |________________________________________________________________________________|
+%___________________________________________________________________________________________________________________
+% Refer to:
+%   https://github.com/pmarcum/WorPT-Work-Plan-Tool-4-proposals/blob/main/latexTableTemplates/[INSERTFILENAME]/readme.md
+% for instructions and LaTeX code to copy/paste into your document, to incorporate this file. 
+%___________________________________________________________________________________________________________________
+
+\def\WorPTfolder{[INSERTFILENAME]} % set the folder name where WorPT files are contained
+
+% ___________________________________________
+%       Default formatting preferences
+% ___________________________________________
+
+%---- table compactness controls
+\def\SpaceBetweenRows{1.0}               % vertical compactness of rows
+\def\SpaceBetweenColumns{5pt}            % spacing between columns
+
+%--- aesthetic preferences
+\def\BannerFontstyle#1{\textbf{#1}}      % Bold-face for top banner "Travel Cost Details
+\def\BannerColor{Blue}                   % Color of the top "Travel Cost Details" banner
+\def\BannerFontColor{White}              % Font color for top "Travel Cost Details" banner
+\def\PerTripShadingColor{gray}           % Shading color of "per trip" columns
+\def\PerTripShadingTransparency{0.85}    % Shading transparency for "per trip" colunns; transparent(1.0) - opaque(0.0)
+\def\PerTripShadingMargin{7pt}           % Margin width to right of each shaded "per trip" column (prevents white vertical line)
+\def\YearTripsDestLabelFontColor{Blue}   % Font color for "Year", "#TRips" and "Dest." column labels
+\def\TotalLabelFontColor{Blue}           % Font color "Total" column label
+\def\PerTripLabelFontColor{Blue}         % Font color of column labels for "per trip" section
+\def\YearTripsDestFontstyle#1{\textbf{#1}}% Bold-face "Year", "#Trips", "Dest." labels
+\def\PerTripFontstyle#1{\textbf{#1}}     % Bold-face column labels for "per trip" section
+\def\TotalFontstyle#1{\textbf{#1}}       % Bold-face column label "Total"
+\def\YearFontstyle#1{\textbf{#1}}        % Bold-face "Yr1", "YR2", etc labels
+
+%--- table preamble definition bundled into the "T" variable
+\newcolumntype{T}{
+ |lcl >{\columncolor[\PerTripShadingColor]{\PerTripShadingTransparency}[\tabcolsep][\PerTripShadingMargin]}
+ l>{\columncolor[\PerTripShadingColor]{\PerTripShadingTransparency}[\tabcolsep][\PerTripShadingMargin]}
+ l>{\columncolor[\PerTripShadingColor]{\PerTripShadingTransparency}[\tabcolsep][\PerTripShadingMargin]}
+ l>{\columncolor[\PerTripShadingColor]{\PerTripShadingTransparency}[\tabcolsep][\PerTripShadingMargin]}
+ l>{\columncolor[\PerTripShadingColor]{\PerTripShadingTransparency}[\tabcolsep][\PerTripShadingMargin]}
+ ll|
+}
+
+\newenvironment{[INSERTFILENAME]}{%
+\begin{table*}[h!]
+% ---- adjust to control vertical row separation/spacing, comment-out if not needed
+\renewcommand{\arraystretch}{\SpaceBetweenRows} % controls vertical row separation/spacing
+% ---- adjust to control horizontal column separation/spacing, comment-out if not needed
+\setlength{\tabcolsep}{\SpaceBetweenColumns}    % controls horizontal column separation/spacing
+\begin{tabular}{T}
 %---- top header line
-\multicolumn{9}{|@{}c@{}|}{\cellcolor{\BannerColor}\color{\BannerFontColor}\BannerBoldface{Travel Cost Details}}\\
+\multicolumn{9}{|@{}c@{}|}{\cellcolor{\BannerColor}\color{\BannerFontColor}\BannerFontstyle{Travel Cost Details}}\\
 \multicolumn{3}{|c}{} & \multicolumn{5}{>{\columncolor[\PerTripShadingColor]{\PerTripShadingTransparency}[\tabcolsep][\PerTripShadingMargin]}c}{\color{\PerTripLabelFontColor}\emph{\textbf{per trip}}} & \\
 \cline{4-8}
 %---- middle header line
-\YearTripsDestLabelBoldface{\color{\YearTripsDestLabelFontColor}{Year}} & \YearTripsDestLabelBoldface{\color{\YearTripsDestLabelFontColor}{\#Trips}} & \YearTripsDestLabelBoldface{\color{\YearTripsDestLabelFontColor}{Dest.}} & \PerTripLabelBoldface{\color{\PerTripLabelFontColor}{Airfare}} & {\PerTripLabelBoldface{\color{\PerTripLabelFontColor}{per}}} & {\PerTripLabelBoldface{\color{\PerTripLabelFontColor}{Conf.}}} & {\PerTripLabelBoldface{ \color{\PerTripLabelFontColor}{Ground}}} & {\PerTripLabelBoldface{\color{\PerTripLabelFontColor}{per}}} & \TotalLabelBoldface{\color{\TotalLabelFontColor}{Total}}\\ 
+\YearTripsDestLabelFontstyle{\color{\YearTripsDestLabelFontColor}{Year}} & \YearTripsDestLabelFontstyle{\color{\YearTripsDestLabelFontColor}{\#Trips}} & \YearTripsDestLabelFontstyle{\color{\YearTripsDestLabelFontColor}{Dest.}} & \PerTripLabelFontstyle{\color{\PerTripLabelFontColor}{Airfare}} & {\PerTripLabelFontstyle{\color{\PerTripLabelFontColor}{per}}} & {\PerTripLabelFontstyle{\color{\PerTripLabelFontColor}{Conf.}}} & {\PerTripLabelFontstyle{ \color{\PerTripLabelFontColor}{Ground}}} & {\PerTripLabelFontstyle{\color{\PerTripLabelFontColor}{per}}} & \TotalLabelFontstyle{\color{\TotalLabelFontColor}{Total}}\\ 
 %---- bottom header line
-\YearTripsDestLabelBoldface{} & \YearTripsDestLabelBoldface{} & \YearTripsDestLabelBoldface{} & {\PerTripLabelBoldface{}} & \PerTripLabelBoldface{\color{\PerTripLabelFontColor}{diem}}} & {\PerTripLabelBoldface{\color{\PerTripLabelFontColor}{Fee}}} & {\PerTripLabelBoldface{ \color{\PerTripLabelFontColor}{Transp.}}} & {\PerTripLabelBoldface{\color{\PerTripLabelFontColor}{trip}}} & \\
+\YearTripsDestLabelFontstyle{} & \YearTripsDestLabelFontstyle{} & \YearTripsDestLabelFontstyle{} & {\PerTripLabelFontstyle{}} & \PerTripLabelFontstyle{\color{\PerTripLabelFontColor}{diem}}} & {\PerTripLabelFontstyle{\color{\PerTripLabelFontColor}{Fee}}} & {\PerTripLabelFontstyle{ \color{\PerTripLabelFontColor}{Transp.}}} & {\PerTripLabelFontstyle{\color{\PerTripLabelFontColor}{trip}}} & \\
 %---- lines at bottom of column labels
 \hline \hline
 %---- table data inserted below
-\YearBoldface{Yr1} & [NUMBERDOMTRIPS] & domestic & \$[DOMAIRFARE] & \$[DOMPERDIEM] & \$[DOMCONFERENCE] & \$[DOMGROUND] & \$[DOMPERTRIP] & \$[DOMALLTRIPS]\\
+\YearFontstyle{Yr1} & [NUMBERDOMTRIPS] & domestic & \$[DOMAIRFARE] & \$[DOMPERDIEM] & \$[DOMCONFERENCE] & \$[DOMGROUND] & \$[DOMPERTRIP] & \$[DOMALLTRIPS]\\
                    & [NUMBERINTTRIPS] & intern'l & \$[INTAIRFARE] & \$[INTPERDIEM] & \$[INTCONFERENCE] & \$[INTGROUND] & \$[INTPERTRIP] & \$[INTALLTRIPS]\\ \hline
-\YearBoldface{Yr2} & [NUMBERDOMTRIPS] & domestic & \$[DOMAIRFARE] & \$[DOMPERDIEM] & \$[DOMCONFERENCE] & \$[DOMGROUND] & \$[DOMPERTRIP] & \$[DOMALLTRIPS]\\
+\YearFontstyle{Yr2} & [NUMBERDOMTRIPS] & domestic & \$[DOMAIRFARE] & \$[DOMPERDIEM] & \$[DOMCONFERENCE] & \$[DOMGROUND] & \$[DOMPERTRIP] & \$[DOMALLTRIPS]\\
                    & [NUMBERINTTRIPS] & intern'l & \$[INTAIRFARE] & \$[INTPERDIEM] & \$[INTCONFERENCE] & \$[INTGROUND] & \$[INTPERTRIP] & \$[INTALLTRIPS]\\ \hline
-\YearBoldface{Yr3} & [NUMBERDOMTRIPS] & domestic & \$[DOMAIRFARE] & \$[DOMPERDIEM] & \$[DOMCONFERENCE] & \$[DOMGROUND] & \$[DOMPERTRIP] & \$[DOMALLTRIPS]\\
+\YearFontstyle{Yr3} & [NUMBERDOMTRIPS] & domestic & \$[DOMAIRFARE] & \$[DOMPERDIEM] & \$[DOMCONFERENCE] & \$[DOMGROUND] & \$[DOMPERTRIP] & \$[DOMALLTRIPS]\\
                    & [NUMBERINTTRIPS] & intern'l & \$[INTAIRFARE] & \$[INTPERDIEM] & \$[INTCONFERENCE] & \$[INTGROUND] & \$[INTPERTRIP] & \$[INTALLTRIPS]\\ \hline
-\YearBoldface{Yr4} & [NUMBERDOMTRIPS] & domestic & \$[DOMAIRFARE] & \$[DOMPERDIEM] & \$[DOMCONFERENCE] & \$[DOMGROUND] & \$[DOMPERTRIP] & \$[DOMALLTRIPS]\\
+\YearFontstyle{Yr4} & [NUMBERDOMTRIPS] & domestic & \$[DOMAIRFARE] & \$[DOMPERDIEM] & \$[DOMCONFERENCE] & \$[DOMGROUND] & \$[DOMPERTRIP] & \$[DOMALLTRIPS]\\
                    & [NUMBERINTTRIPS] & intern'l & \$[INTAIRFARE] & \$[INTPERDIEM] & \$[INTCONFERENCE] & \$[INTGROUND] & \$[INTPERTRIP] & \$[INTALLTRIPS]\\ \hline
-\YearBoldface{Yr5} & [NUMBERDOMTRIPS] & domestic & \$[DOMAIRFARE] & \$[DOMPERDIEM] & \$[DOMCONFERENCE] & \$[DOMGROUND] & \$[DOMPERTRIP] & \$[DOMALLTRIPS]\\
+\YearFontstyle{Yr5} & [NUMBERDOMTRIPS] & domestic & \$[DOMAIRFARE] & \$[DOMPERDIEM] & \$[DOMCONFERENCE] & \$[DOMGROUND] & \$[DOMPERTRIP] & \$[DOMALLTRIPS]\\
                    & [NUMBERINTTRIPS] & intern'l & \$[INTAIRFARE] & \$[INTPERDIEM] & \$[INTCONFERENCE] & \$[INTGROUND] & \$[INTPERTRIP] & \$[INTALLTRIPS]\\ \hline
-\YearBoldface{Yr6} & [NUMBERDOMTRIPS] & domestic & \$[DOMAIRFARE] & \$[DOMPERDIEM] & \$[DOMCONFERENCE] & \$[DOMGROUND] & \$[DOMPERTRIP] & \$[DOMALLTRIPS]\\
+\YearFontstyle{Yr6} & [NUMBERDOMTRIPS] & domestic & \$[DOMAIRFARE] & \$[DOMPERDIEM] & \$[DOMCONFERENCE] & \$[DOMGROUND] & \$[DOMPERTRIP] & \$[DOMALLTRIPS]\\
                    & [NUMBERINTTRIPS] & intern'l & \$[INTAIRFARE] & \$[INTPERDIEM] & \$[INTCONFERENCE] & \$[INTGROUND] & \$[INTPERTRIP] & \$[INTALLTRIPS]\\ \hline
-\YearBoldface{Yr7} & [NUMBERDOMTRIPS] & domestic & \$[DOMAIRFARE] & \$[DOMPERDIEM] & \$[DOMCONFERENCE] & \$[DOMGROUND] & \$[DOMPERTRIP] & \$[DOMALLTRIPS]\\
+\YearFontstyle{Yr7} & [NUMBERDOMTRIPS] & domestic & \$[DOMAIRFARE] & \$[DOMPERDIEM] & \$[DOMCONFERENCE] & \$[DOMGROUND] & \$[DOMPERTRIP] & \$[DOMALLTRIPS]\\
                    & [NUMBERINTTRIPS] & intern'l & \$[INTAIRFARE] & \$[INTPERDIEM] & \$[INTCONFERENCE] & \$[INTGROUND] & \$[INTPERTRIP] & \$[INTALLTRIPS]\\ \hline
-\YearBoldface{Yr8} & [NUMBERDOMTRIPS] & domestic & \$[DOMAIRFARE] & \$[DOMPERDIEM] & \$[DOMCONFERENCE] & \$[DOMGROUND] & \$[DOMPERTRIP] & \$[DOMALLTRIPS]\\
+\YearFontstyle{Yr8} & [NUMBERDOMTRIPS] & domestic & \$[DOMAIRFARE] & \$[DOMPERDIEM] & \$[DOMCONFERENCE] & \$[DOMGROUND] & \$[DOMPERTRIP] & \$[DOMALLTRIPS]\\
                    & [NUMBERINTTRIPS] & intern'l & \$[INTAIRFARE] & \$[INTPERDIEM] & \$[INTCONFERENCE] & \$[INTGROUND] & \$[INTPERTRIP] & \$[INTALLTRIPS]\\ \hline
-\YearBoldface{Yr9} & [NUMBERDOMTRIPS] & domestic & \$[DOMAIRFARE] & \$[DOMPERDIEM] & \$[DOMCONFERENCE] & \$[DOMGROUND] & \$[DOMPERTRIP] & \$[DOMALLTRIPS]\\
+\YearFontstyle{Yr9} & [NUMBERDOMTRIPS] & domestic & \$[DOMAIRFARE] & \$[DOMPERDIEM] & \$[DOMCONFERENCE] & \$[DOMGROUND] & \$[DOMPERTRIP] & \$[DOMALLTRIPS]\\
                    & [NUMBERINTTRIPS] & intern'l & \$[INTAIRFARE] & \$[INTPERDIEM] & \$[INTCONFERENCE] & \$[INTGROUND] & \$[INTPERTRIP] & \$[INTALLTRIPS]\\ \hline
-\YearBoldface{Yr10} & [NUMBERDOMTRIPS] & domestic & \$[DOMAIRFARE] & \$[DOMPERDIEM] & \$[DOMCONFERENCE] & \$[DOMGROUND] & \$[DOMPERTRIP] & \$[DOMALLTRIPS]\\
+\YearFontstyle{Yr10} & [NUMBERDOMTRIPS] & domestic & \$[DOMAIRFARE] & \$[DOMPERDIEM] & \$[DOMCONFERENCE] & \$[DOMGROUND] & \$[DOMPERTRIP] & \$[DOMALLTRIPS]\\
                    & [NUMBERINTTRIPS] & intern'l & \$[INTAIRFARE] & \$[INTPERDIEM] & \$[INTCONFERENCE] & \$[INTGROUND] & \$[INTPERTRIP] & \$[INTALLTRIPS]\\ \hline
+\end{tabular}
+\end{table*}
+}
+{%
+}
