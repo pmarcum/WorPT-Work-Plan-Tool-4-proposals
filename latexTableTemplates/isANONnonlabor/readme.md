@@ -26,7 +26,7 @@ level-of-effort information is given in this table, only tasks and assignments t
 \normalsize \newline \newline
 \textbf{Notes and assumptions}:
 \newline \newline
-{\color{red} \underline{\scshape{Equipment Costs}}: In Yrs~1-2, we request a total of \\$11K for the purchase of a laptop and associated IT equipment to replace the PI's aging laptop (purchased in 2018, well past nominal 4-year refresh cycle at the time of the proposed budget period), ``NASA-tized'' computer equipment (laptops, monitors) for use by the summer interns, and as an ``emergency'' fund, should the Science~PI's $\sim$3-yr old laptop fail or need repair.} 
+{\color{red} \underline{\scshape{Equipment Costs}}: In Yrs 1-2, we request a total of \\$11K for the purchase of a laptop and associated IT equipment to replace the PI's aging laptop (purchased in 2018, well past nominal 4-year refresh cycle at the time of the proposed budget period), ``NASA-tized'' computer equipment (laptops, monitors) for use by the summer interns, and as an ``emergency'' fund, should the Science~PI's $\sim$3-yr old laptop fail or need repair.} 
 \newline \newline
 \underline{\scshape{Travel}}: refer to Table\,\ref{tab:isANONtravel}. \newline \newline
 {\color{red} \underline{\scshape{Publication Costs}}: Our work plan includes the publication of four key manuscripts: (see Table \ref{tab:NOTANONschedule} for details),  but given the student projects, we have budgeted for 8 papers. We request a total of \\$2K for publication costs,  using the assumption that the papers will fall between "Tier 1" and "Tier 2" categories as defined in ApJ/AJ guidelines. These fees are included in proposed budget.}
