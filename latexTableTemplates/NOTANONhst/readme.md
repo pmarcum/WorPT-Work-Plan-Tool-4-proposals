@@ -48,8 +48,7 @@ Copy/paste the special packages in preamble of your document, if you haven't don
 \include{do_NOT_manually_edit/table_NOTANONhst} 
 % reset file parameters
 % NOTE: replace do_NOT_manually_edit if not correct folder name
-\def\ProgramID{<mark>HST-xx-xxxxx (Cycle XX)</mark>} 
-% <mark><b>fill in details</b></mark>
+\def\ProgramID{<mark>HST-xx-xxxxx (Cycle XX)</mark>} % <mark><b>fill in details</b></mark>
 <mark>% Put OPTIONAL customizations for NOTANONhst HERE</mark>
 \begin{NOTANONhst}
 <mark>\begin{tablenotes}[flushleft] 
