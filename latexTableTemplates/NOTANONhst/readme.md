@@ -142,8 +142,9 @@ be turned into plain test by removing the "\textbf", eg {{#1}}
 <tr>
 <td><b>Table preamble - full control!</b></td>
 <td>
-Edit table preamble for more control over table layout (removing/adding vertical lines, changing<br>
-column alignment, etc). Copy/paste the ENTIRE below code in order to change default table preamble.<br>
+Use table preamble for more control over table layout (removing/adding vertical lines, changing<br>
+column alignment, etc).<br>
+Copy/paste the ENTIRE below code in order to change default table preamble.<br>
 <u>IMPORTANT</u> Most of table preamble can be changed EXCEPT <i>do <b>NOT</b> change "T" variable<br>
 and implied number of columns.</i>
 <pre><code>
