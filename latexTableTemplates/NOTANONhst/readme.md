@@ -144,7 +144,7 @@ be turned into plain test by removing the "\textbf", eg {{#1}}
 <td>
 Use table preamble for more control over table layout (removing/adding vertical lines, changing column alignment, etc).<br>
 Copy/paste the ENTIRE below code in order to change default table preamble.<br>
-<u>IMPORTANT</u> Most of table preamble can be changed EXCEPT <i>do <b>NOT</b> change "T" variable and implied number of columns.</i>
+<u>IMPORTANT</u> Most of table preamble can be changed EXCEPT <i>do <b>NOT</b> change "T" and "L" variables, and preserve the number of columns.</i>
 <pre><code>
 \newcolumntype{T}{
   <mark>|</mark>L{\ContributorWidth}<mark>!{\color{\VerticalLineColor}\vrule}</mark> % Contributor column
@@ -168,7 +168,6 @@ The below is an example of how one can change the appearance of the table within
 <pre><code>
 \include{do_NOT_manually_edit/NOTANONhst}
     
-\LandScapetrue                 % puts table in landscape mode
 \def\TaskWidth{5.4in}          % width of leftmost ("Tasks") column
 \def\ExpertiseWidth{1.8in}     % width of rightmost ("Expertise") column
 
