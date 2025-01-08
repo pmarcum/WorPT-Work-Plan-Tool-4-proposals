@@ -1,7 +1,16 @@
 <!--         SCREEN SHOT    -->
+<table>
+<tr>
+<td>
 <font size="3">WorPT table example: <b>NOTANONhst</b></font>
 <br>
 <img src="https://lh3.googleusercontent.com/d/1OpijauwkFzgEorqyUsArZlkZz6ZcB__d" width=40%>
+</td>
+<td>
+The description goes here
+</td>
+</tr>
+</table>
 <hr>
 
 <!--         DESCRIPTION   -->
