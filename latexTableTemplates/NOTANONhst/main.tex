@@ -1,1 +1,53 @@
 
+
+
+
+
+
+\def\HeaderColor{Blue}            % column heading color
+\def\LabelColor{White}            % column heading font color
+\def\LabelBoldface#1{\textbf{#1}} % boldface column labels
+
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+\begin{table}
+{
+ \renewcommand{\arraystretch}{1.0}% controls vertical row separation/spacing
+ \setlength{\tabcolsep}{5pt}      % controls horizontal column separation/spacing
+ \begin{longtable}{
+  |L{1.8in}!{\color{lightgray}\vrule}
+  L{1.3in}!{\color{lightgray}\vrule}
+  L{2.5in}!{\color{lightgray}\vrule}
+  p{0.10in}!{\color{lightgray}\vrule}
+  p{0.28in}|
+ }
+ \caption{Work Effort for All Team Members \label{tab:NOTANONhst}}\\
+ \multicolumn{5}{l}{\textbf{Program \#:} HST-xx-xxxxx (Cycle XX)}\\
+ \multicolumn{5}{l}{\textbf{Program Admin PI:} [INSERTADMINPINAME]}\\
+ \multicolumn{5}{l}{\textbf{Science PI:} [INSERTSCIENCEPINAME]}\\
+ \expinput{[INSERTLATEXFILESUBDIRECTORY]/table_NOTANONhst}
+ \end{longtable}
+ \begin{tablenotes}[flushleft] Team members, identified by their name and role in the proposed project, are listed 
+ with their institutional affiliation and position, with a "F" or "US" indicating foriegn or U.S. institution.  A 
+ brief narrative of their role in the project is given.  A 'Y' or 'N' indicates if the person is funded by the proposed 
+ budget or not, respectively.  The total work-effort of the team member, summed over full life of the proposed 
+ project, is in the rightmost column (multiply shown FTE value by 12 to get work effort in number of months). 
+\end{tablenotes}
+}
+
+
+
+
+% COMMENT: below makes the column header labels
+\LabelBoldface{\cellcolor{\HeaderColor}\color{\LabelColor}Contributor} & \LabelBoldface{\cellcolor{\HeaderColor}\color{\LabelColor}Position} 
+\newline{
+  \LabelBoldface{\cellcolor{\HeaderColor}\color{\LabelColor}Institution}
+  \newline{\LabelBoldface{\cellcolor{\HeaderColor}\color{\LabelColor}US/Foreign}}
+} &
+\LabelBoldface{\cellcolor{\HeaderColor}\color{\LabelColor}Role} & 
+\LabelBoldface{\cellcolor{\HeaderColor}\color{\LabelColor}\$?} & 
+\LabelBoldface{\cellcolor{\HeaderColor}\color{\LabelColor}FTE}\\
+\hline\hline
+% Create the table content
+[STARTROWTEMPLATE]
+[INSERTNAME] & [INSERTJOB] & [INSERTDESC] & [INSERTFUNDING] & [INSERTFTE]\hline
+[ENDROWTEMPLATE]
