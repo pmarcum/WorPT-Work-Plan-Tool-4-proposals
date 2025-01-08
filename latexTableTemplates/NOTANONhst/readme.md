@@ -131,10 +131,10 @@ But if counter gets screwed up and needs manual intervention, use below to apply
 For fontstyle changes, the "\textbf" can be changed to "\emph" for italics, or can<br>
 be turned into plain test by removing the "\textbf", eg {{#1}}
 <pre><code>
-\def\HeaderColor{<mark>Blue</mark>}            % column heading color
-\def\LabelColor{<mark>White</mark>}            % column heading font color
+\def\HeaderColor{<mark>Blue</mark>}             % column heading color
+\def\LabelColor{<mark>White</mark>}             % column heading font color
 \def\LabelFontstyle#1{<mark>\textbf</mark>{#1}} % boldface column label
-\def\VerticalLineColor{<mark>lightgray</mark>} % color of vertical lines
+\def\VerticalLineColor{<mark>lightgray</mark>}  % color of vertical lines
 </code></pre>
 </td>
 </tr>
