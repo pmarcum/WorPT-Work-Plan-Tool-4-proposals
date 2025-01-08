@@ -65,22 +65,21 @@ You can just comment out your added lines and recompile the document, if you wan
   <td><b>Column width adjustments</b></td>
   <td>
   <pre><code>
-  \LandScapetrue                   % appearance in your document will put the table in landscape mode
-  \def\TaskWidth{<mark>3.9in</mark>}            % width of leftmost ("Tasks") column
-  \def\LeadWidth{<mark>1.2in</mark>}            % width of middle ("Lead") column
-  \def\ExpertiseWidth{<mark>1.8in</mark>}       % width of rightmost ("Expertise") column
+  \LandScapetrue                   % appearance in document makes landscape table
+  \def\TaskWidth{<mark>3.9in</mark>}      % width of leftmost ("Tasks") column
+  \def\LeadWidth{<mark>1.2in</mark>}      % width of middle ("Lead") column
+  \def\ExpertiseWidth{<mark>1.8in</mark>} % width of rightmost ("Expertise") column
   </code></pre>
   </td>
   </tr>
     
   <tr>
-  <td><b>Table number correction</b></td>
+  <td><b>Table number additive correction</b></td>
   <td>
-  The default typically works well because the table + longtable combination causes the counter to<br>
-  overcount by one, so -1 performs the appropriate   correction.  But ocassionally, the counter gets<br>
-  screwed up and needs manual intervention, so here's how to apply a correction:
+  The default typically works well (an overcount is caused by table + longtable combination).<br>
+  But if counter gets screwed up and needs manual intervention, use below to apply a correction:
   <pre><code>
-  \def\TaskAddCounter{<mark>-1</mark>}      % additive correction to table number
+  \def\TaskAddCounter{<mark>-1</mark>}    % additive correction to table number
   </code></pre>
   </td>
   </tr>
@@ -90,7 +89,7 @@ You can just comment out your added lines and recompile the document, if you wan
   <td>
   <pre><code>
   \def\SpaceBetweenRows{<mark>1</mark>}      % vertical compactness of rows
-  \def\SpaceBetweenColumns{<mark>1pt</mark>} % spacing between columns (bigger value=wider column margin)
+  \def\SpaceBetweenColumns{<mark>1pt</mark>} % bigger = wider spacing between columns
   </code></pre>
   </td>
   </tr>
@@ -99,7 +98,7 @@ You can just comment out your added lines and recompile the document, if you wan
   <td><b>Nudge table to left or right</b></td>
   <td>
   <pre><code>
-  \def\NudgeTable{<mark>1.2\textwidth</mark>}   % bigger values nudge table to left
+  \def\NudgeTable{<mark>1.2\textwidth</mark>} % bigger values nudge table to left
   </code></pre>
   </td>
   </tr>
@@ -116,7 +115,7 @@ You can just comment out your added lines and recompile the document, if you wan
   \def\SectionColor{<mark>gray!40</mark>}       % category dection label colors
   \def\SectionFontColor{<mark>Black</mark>}     % category section label font color
   \def\SectionBoldface#1{<mark>\textbf</mark>{#1}} % boldface category section labels;
-  \def\VerticalLineColor{<mark>gray!40</mark>}  % color of line between "Lead" and "Expertise"
+  \def\VerticalLineColor{<mark>gray!40</mark>}  % color of line bet/ "Lead" and "Expertise"
   </code></pre>
   </td>
   </tr>
@@ -124,11 +123,10 @@ You can just comment out your added lines and recompile the document, if you wan
   <tr>
   <td><b>Table preamble - full control!</b></td>
   <td>
-  Edit the table preamble for more control over table layout, such as removing/adding vertical lines,<br>
-  changing column alignment, etc. You need to copy/paste the ENTIRE below code if you want to edit the<br>
-  table preamble.<br>
-  <u>IMPORTANT</u> Most of the items in the table preamble can be changed EXCEPT <i>do <b>NOT</b> change<br>
-  the "T" variable and the implicit number of columns.</i>
+  Edit table preamble for more control over table layout (removing/adding vertical lines, changing<br>
+  column alignment, etc). Copy/paste the ENTIRE below code in order to change default table preamble.<br>
+  <u>IMPORTANT</u> Most of table preamble can be changed EXCEPT <i>do <b>NOT</b> change "T" variable<br>
+  and implied number of columns.</i>
   <pre><code>
   \newcolumntype{T}{
   <mark>|p</mark>{<mark>\TaskWidth</mark>}<mark>||</mark>                                 % title column
