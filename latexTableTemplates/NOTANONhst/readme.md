@@ -55,7 +55,8 @@ You can change column widths, column alignment, colors, font style using additio
 <li>PASTE the copied lines into your document at the "% Put customizations for NOTANONhst HERE" line in the code that you copy/pasted in Step 2. Most importantly, the desired formatting lines should be pasted somewhere <b>between</b> the \include{do_NOT_manually_edit/table_NOTANONhst} and \begin{NOTANONhst} lines. </li>
 <li>EDIT the pasted lines in your document, as desired. Some examples are given at the bottom of this page.</li>
 NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; you do not have to copy/paste all of the beow lines!<br>
-<i>Highlights indicate what parts of the commands can be edited without breaking your LaTeX code.</i>
+<i>Highlights indicate what parts of the commands can be edited without breaking your LaTeX code.</i><br>
+You can just comment out your added lines and recompile the document, if you want to return to default values.
 </ol>
 
 <!--                                                       Options   -->
@@ -63,7 +64,6 @@ NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; yo
   <tr>
   <td><b>Column width adjustments</b></td>
   <td>
-  <b>The below lines are what you will most likely need to copy/paste, to get your column widths just right.</b>
   <pre><code>
   \LandScapetrue                   % uncommented-out appearance in your document will put the table in landscape mode
   \def\TaskWidth{<mark>3.9in</mark>}            % width of leftmost ("Tasks") column
@@ -76,7 +76,6 @@ NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; yo
   <tr>
   <td><b>Table number correction</b></td>
   <td>
-  <b>Fix the table number if it is showing a wrong number, by adding or subtracting whatever correction is needed.</b><br>
   The default typically works well because the table + longtable combination causes the counter to overcount by one, so -1 performs the appropriate   correction.  But ocassionally, the counter gets screwed up and needs manual intervention, so here's how to apply a correction:
   <pre><code>
   \def\TaskAddCounter{<mark>-1</mark>}          % corrects table number messed up by table,longtable combination)
@@ -87,7 +86,6 @@ NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; yo
   <tr>
   <td><b>Table compactness</b></td>
   <td>
-  <b>The below lines might be useful - they adjust the table compactness:</b>
   <pre><code>
   \def\SpaceBetweenRows{<mark>1</mark>}         % vertical compactness of rows
   \def\SpaceBetweenColumns{<mark>1pt</mark>}    % spacing between columns (bigger value=wider column margin)
@@ -98,7 +96,6 @@ NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; yo
   <tr>
   <td><b>Nudge table to left or right</b></td>
   <td>
-  <b>The below can nudge the table to the left (increase value) or right (decrease value)</b>
   <pre><code>
   \def\NudgeTable{<mark>1.2\textwidth</mark>}   % bigger values nudge table to left
   </code></pre>
@@ -108,7 +105,6 @@ NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; yo
   <tr>
   <td><b>Column and section label color and font style</b></td>
   <td>
-  <b>The below are aesthetic preferences only, like color and font style</b>
   <pre><code>
   \def\HeaderColor{<mark>Blue</mark>}           % column heading color
   \def\HeaderFontColor{<mark>White</mark>}      % column heading font color
@@ -124,8 +120,8 @@ NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; yo
   <tr>
   <td><b>Table preamble - full control!</b></td>
   <td>
-  <b>The below table preamble gives you considerably MORE control over table layout than just changing parameter values.</b>
-  Copy/paste the below if you want to do things like remove or add vertical lines or change a column from left-alignment to center-aligned, for example. You   can replace the \TaskWidth and other parameters with hard-coded numbers if desired, and change the "p" to other alignment modes. You can change anything   that is in highlight. Things that should NOT be changed (otherwise, the LaTeX will break) are the "T" variable and number of columns. 
+  If you are comfortable with LaTeX coding of table preambles to have more control over table layout, then copy/paste the ENTIRE code below into your document, and edit to remove/add vertical lines or change column alignment. Even the placeholder parameters that might appear here (the items beginning with "\") can be replaced with hard-coded numbers if desired.<br>
+  <i><u>IMPORTANT</u> Do NOT change the "T" variable and the implicit number of columns.</i>
   <pre><code>
   \newcolumntype{T}{
   <mark>|p</mark>{<mark>\TaskWidth</mark>}<mark>||</mark>                                 % title column
