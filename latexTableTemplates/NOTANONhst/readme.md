@@ -44,19 +44,20 @@ Copy/paste the special packages in preamble of your document, if you haven't don
 <li>MODIFY the editable lines you just pasted in your document as needed. The lines that may be edited (or even deleted altogether if not wanted) are indicated by highlight below. </li>
 </ol>
 <pre><code>
-\include{do_NOT_manually_edit/table_NOTANONhst}   % reset/define parameters used for this file
+\include{do_NOT_manually_edit/table_NOTANONhst} % reset parameters used in file
 % NOTE: replace do_NOT_manually_edit if not correct folder name
-\def\ProgramID{<mark>HST-xx-xxxxx (Cycle XX)</mark>} % <mark><b>user needs to fill in details</b></mark>
+\def\ProgramID{<mark>HST-xx-xxxxx (Cycle XX)</mark>} % <mark><b>need to fill in details</b></mark>
 
 <mark>% Put OPTIONAL customizations for NOTANONhst HERE</mark>
 \begin{NOTANONhst}
 <mark>\begin{tablenotes}[flushleft] 
-Team members, identified by their name and role in the proposed project, are listed with their<br>
-institutional affiliation and position, with a "F" or "US" indicating foriegn or U.S. institution.<br>
-A brief narrative of their role in the project is given.  A 'Y' or 'N' indicates if the person<br>
-is funded by the proposed budget or not, respectively.  The total work-effort of the team member,<br>
-summed over full life of the proposed  project, is in the rightmost column (multiply shown FTE<br>
-value by 12 to get work effort in number of months).
+Team members, identified by their name and role in the proposed project, are<br>
+listed with their institutional affiliation and position, with a "F" or "US"<br>
+indicating foriegn or U.S. institution. A brief narrative of their role in the<br>
+project is given.  A 'Y' or 'N' indicates if the person is funded by the<br>
+proposed budget or not, respectively.  The total work-effort of the team member,<br>
+summed over full life of the proposed  project, is in the rightmost column<br>
+(multiply shown FTE value by 12 to get work effort in number of months).
 \end{tablenotes}</mark>
 \end{NOTANONhst}
 </code></pre>
@@ -86,7 +87,7 @@ You can just comment out your added lines and recompile the document, if you wan
 <td>
 <pre><code>
 \def\TableTitle{<mark>Work Effort for All</mark>} % table title at the top
-\def\TableLabel{<mark>tab:\WorPTfolder</mark>}    % put preference between the curly brackets
+\def\TableLabel{<mark>tab:\WorPTfolder</mark>}    % put preference between " {}"
 </code></pre>
 </td>
 </tr>
