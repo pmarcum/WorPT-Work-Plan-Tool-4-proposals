@@ -58,8 +58,10 @@ NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; yo
 </ol>
 
 <!--                                                       Options   -->
-  <details>
-  <summary><b>Column width adjustments</b></summary>
+  <table>
+  <tr>
+  <td><b>Column width adjustments</b></td>
+  <td>
   <b>The below lines are what you will most likely need to copy/paste, to get your column widths just right. Highlights indicate what can be edited:</b>
   <pre><code>
   \LandScapetrue                   % uncommented-out appearance in your document will put the table in landscape mode
@@ -67,16 +69,20 @@ NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; yo
   \def\LeadWidth{<mark>1.2in</mark>}            % width of middle ("Lead") column
   \def\ExpertiseWidth{<mark>1.8in</mark>}       % width of rightmost ("Expertise") column
   </code></pre>
-  </details>
-
-  <details>
-  <summary><b>Table number correction</b></summary>
+  </td>
+  </tr>
+    
+  <tr>
+  <td><b>Table number correction</b></td>
+  <td>
   <b>Fix the table number if it is showing a wrong number, by adding or subtracting whatever correction is needed.</b>
   The default typically works well because the table + longtable combination causes the counter to overcount by one, so -1 performs the appropriate   correction.  But ocassionally, the counter gets screwed up and needs manual intervention, so here's how to apply a correction:
   <pre><code>
   \def\TaskAddCounter{<mark>-1</mark>}          % corrects table number messed up by table,longtable combination)
   </code></pre>
-  </details>
+  </td>
+  </tr>
+  </table>
 
   <details>
   <summary><b>Table compactness</b></summary>
