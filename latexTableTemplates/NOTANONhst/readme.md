@@ -54,7 +54,8 @@ You can change column widths, column alignment, colors, font style using additio
 <li>COPY any or all lines in the code block below that are related to the formatting parameter that you want to edit. The lines below show default values. You will edit those values to make desired changes.</li>
 <li>PASTE the copied lines into your document at the "% Put customizations for NOTANONhst HERE" line in the code that you copy/pasted in Step 2. Most importantly, the desired formatting lines should be pasted somewhere <b>between</b> the \include{do_NOT_manually_edit/table_NOTANONhst} and \begin{NOTANONhst} lines. </li>
 <li>EDIT the pasted lines in your document, as desired. Some examples are given at the bottom of this page.</li>
-NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; you do not have to copy/paste all of the beow lines!
+NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; you do not have to copy/paste all of the beow lines!<br>
+<i>Highlights indicate what parts of the commands can be edited without breaking your LaTeX code.</i>
 </ol>
 
 <!--                                                       Options   -->
@@ -63,7 +64,6 @@ NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; yo
   <td><b>Column width adjustments</b></td>
   <td>
   <b>The below lines are what you will most likely need to copy/paste, to get your column widths just right.</b>
-  <i>Highlights indicate what can be edited:</i>
   <pre><code>
   \LandScapetrue                   % uncommented-out appearance in your document will put the table in landscape mode
   \def\TaskWidth{<mark>3.9in</mark>}            % width of leftmost ("Tasks") column
@@ -76,34 +76,38 @@ NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; yo
   <tr>
   <td><b>Table number correction</b></td>
   <td>
-  <b>Fix the table number if it is showing a wrong number, by adding or subtracting whatever correction is needed.</b>
+  <b>Fix the table number if it is showing a wrong number, by adding or subtracting whatever correction is needed.</b><br>
   The default typically works well because the table + longtable combination causes the counter to overcount by one, so -1 performs the appropriate   correction.  But ocassionally, the counter gets screwed up and needs manual intervention, so here's how to apply a correction:
   <pre><code>
   \def\TaskAddCounter{<mark>-1</mark>}          % corrects table number messed up by table,longtable combination)
   </code></pre>
   </td>
   </tr>
-  </table>
 
-  <details>
-  <summary><b>Table compactness</b></summary>
+  <tr>
+  <td><b>Table compactness</b></td>
+  <td>
   <b>The below lines might be useful - they adjust the table compactness:</b>
   <pre><code>
   \def\SpaceBetweenRows{<mark>1</mark>}         % vertical compactness of rows
   \def\SpaceBetweenColumns{<mark>1pt</mark>}    % spacing between columns (bigger value=wider column margin)
   </code></pre>
-  </details>
+  </td>
+  </tr>
 
-  <details>
-  <summary><b>Nudge table to left or right</b></summary>
+  <tr>
+  <td><b>Nudge table to left or right</b></td>
+  <td>
   <b>The below can nudge the table to the left (increase value) or right (decrease value)</b>
   <pre><code>
   \def\NudgeTable{<mark>1.2\textwidth</mark>}   % bigger values nudge table to left
   </code></pre>
-  </details>
+  </td>
+  </tr>
 
-  <details>
-  <summary><b>Column and section label color and font style</b></summary>
+  <tr>
+  <td><b>Column and section label color and font style</b></td>
+  <td>
   <b>The below are aesthetic preferences only, like color and font style</b>
   <pre><code>
   \def\HeaderColor{<mark>Blue</mark>}           % column heading color
@@ -114,10 +118,12 @@ NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; yo
   \def\SectionBoldface#1{<mark>\textbf</mark>{#1}} % boldface category section labels; change "\textbf" to "\emph" or whatever
   \def\VerticalLineColor{<mark>gray!40</mark>}  % color of line between "Lead" and "Expertise"
   </code></pre>
-  </details>
+  </td>
+  </tr>
 
-  <details>
-  <summary><b>Table preamble - full control!</b></summary>
+  <tr>
+  <td><b>Table preamble - full control!</b></td>
+  <td>
   <b>The below table preamble gives you considerably MORE control over table layout than just changing parameter values.</b>
   Copy/paste the below if you want to do things like remove or add vertical lines or change a column from left-alignment to center-aligned, for example. You   can replace the \TaskWidth and other parameters with hard-coded numbers if desired, and change the "p" to other alignment modes. You can change anything   that is in highlight. Things that should NOT be changed (otherwise, the LaTeX will break) are the "T" variable and number of columns. 
   <pre><code>
@@ -127,7 +133,9 @@ NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; yo
   <mark>p</mark>{<mark>\ExpertiseWidth</mark>}<mark>|</mark>                              % expertise column
   }
   </code></pre>
-  </details>
+  </td>
+  </tr>
+  </table>
 </details>
 
 <!--         EXAMPLES   -->
