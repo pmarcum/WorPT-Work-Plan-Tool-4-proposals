@@ -105,13 +105,15 @@ You can just comment out your added lines and recompile the document, if you wan
   <tr>
   <td><b>Column and section label color and font style</b></td>
   <td>
+  For fontstyle changes, the "\textbf" can be changed to "\emph" for italics, or can<br>
+  be turned into plain test by removing the "\textbf", eg {{#1}}
   <pre><code>
   \def\HeaderColor{<mark>Blue</mark>}           % column heading color
   \def\HeaderFontColor{<mark>White</mark>}      % column heading font color
-  \def\HeaderBoldface#1{<mark>\textbf</mark>{#1}}% boldface column heading labels; change to "\emph" or whatever
+  \def\HeaderBoldface#1{<mark>\textbf</mark>{#1}}% boldface column heading labels;
   \def\SectionColor{<mark>gray!40</mark>}       % category dection label colors
   \def\SectionFontColor{<mark>Black</mark>}     % category section label font color
-  \def\SectionBoldface#1{<mark>\textbf</mark>{#1}} % boldface category section labels; change to "\emph" or whatever
+  \def\SectionBoldface#1{<mark>\textbf</mark>{#1}} % boldface category section labels;
   \def\VerticalLineColor{<mark>gray!40</mark>}  % color of line between "Lead" and "Expertise"
   </code></pre>
   </td>
@@ -120,9 +122,9 @@ You can just comment out your added lines and recompile the document, if you wan
   <tr>
   <td><b>Table preamble - full control!</b></td>
   <td>
-  Edit the table preamble for more control over table layout, such as removing/adding vertical
-  lines, changing column alignment, etc. You need to copy/paste the ENTIRE below code if you 
-  want to edit the table preamble.<br>
+  Edit the table preamble for more control over table layout, such as removing/adding vertical lines,<br>
+  changing column alignment, etc. You need to copy/paste the ENTIRE below code if you want to edit the<br>
+  table preamble.<br>
   <u>IMPORTANT</u> Most of the items in the table preamble can be changed EXCEPT <i>do <b>NOT</b>
   change the "T" variable and the implicit number of columns.</i>
   <pre><code>
