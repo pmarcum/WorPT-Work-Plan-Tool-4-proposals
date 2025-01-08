@@ -34,7 +34,7 @@
 %--- aesthetic preferences
 \def\HeaderColor{Blue}            % column heading color
 \def\LabelColor{White}            % column heading font color
-\def\LabelBoldface#1{\textbf{#1}} % boldface column label
+\def\LabelFontstyle#1{\textbf{#1}} % boldface column label
 \def\VerticalLineColor{lightgray} % color of vertical lines
 
 %--- (internal definition) multiline format for the Contributor, Position, and Role cells
@@ -66,11 +66,11 @@
 \multicolumn{5}{l}{\textbf{Science PI:} \SciencePIname}\\
 
 %--- make colorized top banner labels, the column headers
-\LabelBoldface{\cellcolor{\HeaderColor}\color{\LabelColor}Contributor} & 
-\LabelBoldface{\cellcolor{\HeaderColor}\color{\LabelColor}Position} \newline{\LabelBoldface{\cellcolor{\HeaderColor}\color{\LabelColor}Institution} \newline{\LabelBoldface{\cellcolor{\HeaderColor}\color{\LabelColor}US/Foreign}}} &
-\LabelBoldface{\cellcolor{\HeaderColor}\color{\LabelColor}Role} & 
-\LabelBoldface{\cellcolor{\HeaderColor}\color{\LabelColor}\$?} & 
-\LabelBoldface{\cellcolor{\HeaderColor}\color{\LabelColor}FTE}\\
+\LabelFontstyle{\cellcolor{\HeaderColor}\color{\LabelColor}Contributor} & 
+\LabelFontstyle{\cellcolor{\HeaderColor}\color{\LabelColor}Position} \newline{\LabelFontstyle{\cellcolor{\HeaderColor}\color{\LabelColor}Institution} \newline{\LabelFontstyle{\cellcolor{\HeaderColor}\color{\LabelColor}US/Foreign}}} &
+\LabelFontstyle{\cellcolor{\HeaderColor}\color{\LabelColor}Role} & 
+\LabelFontstyle{\cellcolor{\HeaderColor}\color{\LabelColor}\$?} & 
+\LabelFontstyle{\cellcolor{\HeaderColor}\color{\LabelColor}FTE}\\
 \hline\hline
 %---- start the rows in the table
 [INSERTTABLECONTENT]
