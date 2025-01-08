@@ -52,7 +52,7 @@ NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; yo
 </ol>
 
 <!--                                                       Options   -->
-<details>
+  <details>
 <summary><b>Column width adjustments</b></summary>
 <b>The below lines are what you will most likely need to copy/paste, to get your column widths just right. Highlights indicate what can be edited:</b>
 <pre><code>
@@ -63,7 +63,7 @@ NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; yo
 </code></pre>
 </details>
 
-<details>
+  <details>
 <summary><b>Table number correction</b></summary>
 <b>Fix the table number if it is showing a wrong number, by adding or subtracting whatever correction is needed.</b>
 The default typically works well because the table + longtable combination causes the counter to overcount by one, so -1 performs the appropriate correction.  But ocassionally, the counter gets screwed up and needs manual intervention, so here's how to apply a correction:
@@ -72,7 +72,7 @@ The default typically works well because the table + longtable combination cause
 </code></pre>
 </details>
 
-<details>
+  <details>
 <summary><b>Table compactness</b></summary>
 <b>The below lines might be useful - they adjust the table compactness:</b>
 <pre><code>
@@ -81,7 +81,7 @@ The default typically works well because the table + longtable combination cause
 </code></pre>
 </details>
 
-<details>
+  <details>
 <summary><b>Nudge table to left or right</b></summary>
 <b>The below can nudge the table to the left (increase value) or right (decrease value)</b>
 <pre><code>
@@ -89,7 +89,7 @@ The default typically works well because the table + longtable combination cause
 </code></pre>
 </details>
 
-<details>
+  <details>
 <summary><b>Column and section label color and font style</b></summary>
 <b>The below are aesthetic preferences only, like color and font style</b>
 <pre><code>
@@ -103,7 +103,7 @@ The default typically works well because the table + longtable combination cause
 </code></pre>
 </details>
 
-<details>
+  <details>
 <summary><b>Table preamble - full control!</b></summary>
 <b>The below table preamble gives you considerably MORE control over table layout than just changing parameter values.</b>
 Copy/paste the below if you want to do things like remove or add vertical lines or change a column from left-alignment to center-aligned, for example. You can replace the \TaskWidth and other parameters with hard-coded numbers if desired, and change the "p" to other alignment modes. You can change anything that is in highlight. Things that should NOT be changed (otherwise, the LaTeX will break) are the "T" variable and number of columns. 
