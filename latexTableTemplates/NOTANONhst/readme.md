@@ -6,12 +6,11 @@
 
 <!--         DESCRIPTION   -->
 <details>
-<summary><b>Description of this file</b></summary>
+<summary><b>DESCRIPTION</b></summary>
 <b>NOTANONhst</b> is a table of project tasks, organized under task categories, as specified by the TASKS page in the
 WorPT spreadsheet. The task lead and team members assisting with each task are specified as well. No
 level-of-effort information is given in this table, only tasks and assignments to illustrate team member involvement. 
 </details>
-<hr>
 
 <!--         HOW TO USE   -->
 <b>HOW TO USE:</b>
@@ -53,6 +52,8 @@ NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; yo
 </ol>
 
 <!--                                                       Options   -->
+<details>
+<summary><b>Column width adjustments</b></summary>
 <b>The below lines are what you will most likely need to copy/paste, to get your column widths just right. Highlights indicate what can be edited:</b>
 <pre><code>
 \LandScapetrue                   % uncommented-out appearance in your document will put the table in landscape mode
@@ -60,24 +61,36 @@ NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; yo
 \def\LeadWidth{<mark>1.2in</mark>}            % width of middle ("Lead") column
 \def\ExpertiseWidth{<mark>1.8in</mark>}       % width of rightmost ("Expertise") column
 </code></pre>
+</details>
 
+<details>
+<summary><b>Table number correction</b></summary>
 <b>Fix the table number if it is showing a wrong number, by adding or subtracting whatever correction is needed.</b>
 The default typically works well because the table + longtable combination causes the counter to overcount by one, so -1 performs the appropriate correction.  But ocassionally, the counter gets screwed up and needs manual intervention, so here's how to apply a correction:
 <pre><code>
 \def\TaskAddCounter{<mark>-1</mark>}          % corrects table number messed up by table,longtable combination)
 </code></pre>
+</details>
 
+<details>
+<summary><b>Table compactness</b></summary>
 <b>The below lines might be useful - they adjust the table compactness:</b>
 <pre><code>
 \def\SpaceBetweenRows{<mark>1</mark>}         % vertical compactness of rows
 \def\SpaceBetweenColumns{<mark>1pt</mark>}    % spacing between columns (bigger value=wider column margin)
 </code></pre>
+</details>
 
+<details>
+<summary><b>Nudge table to left or right</b></summary>
 <b>The below can nudge the table to the left (increase value) or right (decrease value)</b>
 <pre><code>
 \def\NudgeTable{<mark>1.2\textwidth</mark>}   % bigger values nudge table to left
 </code></pre>
-    
+</details>
+
+<details>
+<summary><b>Column and section label color and font style</b></summary>
 <b>The below are aesthetic preferences only, like color and font style</b>
 <pre><code>
 \def\HeaderColor{<mark>Blue</mark>}           % column heading color
@@ -88,7 +101,10 @@ The default typically works well because the table + longtable combination cause
 \def\SectionBoldface#1{<mark>\textbf</mark>{#1}} % boldface category section labels; change "\textbf" to "\emph" or whatever
 \def\VerticalLineColor{<mark>gray!40</mark>}  % color of line between "Lead" and "Expertise"
 </code></pre>
+</details>
 
+<details>
+<summary><b>Table preamble - full control!</b></summary>
 <b>The below table preamble gives you considerably MORE control over table layout than just changing parameter values.</b>
 Copy/paste the below if you want to do things like remove or add vertical lines or change a column from left-alignment to center-aligned, for example. You can replace the \TaskWidth and other parameters with hard-coded numbers if desired, and change the "p" to other alignment modes. You can change anything that is in highlight. Things that should NOT be changed (otherwise, the LaTeX will break) are the "T" variable and number of columns. 
 <pre><code>
@@ -97,7 +113,8 @@ Copy/paste the below if you want to do things like remove or add vertical lines 
   <mark>p</mark>{<mark>\LeadWidth</mark>}<mark>!{\color{\VerticalLineColor}\vrule}</mark> % task lead column
   <mark>p</mark>{<mark>\ExpertiseWidth</mark>}<mark>|</mark>                              % expertise column
 }
-</code></pre> 
+</code></pre>
+</details>
 </details>
 
 <li><b>Examples</b>
