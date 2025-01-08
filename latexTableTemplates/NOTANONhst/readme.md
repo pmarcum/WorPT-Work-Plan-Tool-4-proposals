@@ -120,8 +120,11 @@ You can just comment out your added lines and recompile the document, if you wan
   <tr>
   <td><b>Table preamble - full control!</b></td>
   <td>
-  If you are comfortable with LaTeX coding of table preambles to have more control over table layout, then copy/paste the ENTIRE code below into your document, and edit to remove/add vertical lines or change column alignment. Even the placeholder parameters that might appear here (the items beginning with "\") can be replaced with hard-coded numbers if desired.<br>
-  <i><u>IMPORTANT</u> Do NOT change the "T" variable and the implicit number of columns.</i>
+  Edit the table preamble for more control over table layout, such as removing/adding vertical
+  lines, changing column alignment, etc. You need to copy/paste the ENTIRE below code if you 
+  want to edit the table preamble.<br>
+  <u>IMPORTANT</u> Most of the items in the table preamble can be changed EXCEPT <i>do <b>NOT</b>
+  change the "T" variable and the implicit number of columns.</i>
   <pre><code>
   \newcolumntype{T}{
   <mark>|p</mark>{<mark>\TaskWidth</mark>}<mark>||</mark>                                 % title column
