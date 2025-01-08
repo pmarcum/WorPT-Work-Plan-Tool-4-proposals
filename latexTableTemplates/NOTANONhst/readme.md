@@ -150,8 +150,8 @@ Copy/paste the ENTIRE below code in order to change default table preamble.<br>
   <mark>|</mark>L{\ContributorWidth}<mark>!{\color{\VerticalLineColor}\vrule}</mark> % Contributor column
   L{\PositionWidth}<mark>!{\color{\VerticalLineColor}\vrule}</mark>     % Position column
   L{\RoleWidth}<mark>!{\color{\VerticalLineColor}\vrule}</mark>         % Role column
-  <mark>p</mark>{FundedMember}<mark>!{\color{\VerticalLineColor}\vrule}</mark>       % Funded(?) column
-  <mark>p</mark>{FteWidth}<mark>|</mark>                                             % FTE column
+  <mark>p</mark>{\FundedMemberWidth}<mark>!{\color{\VerticalLineColor}\vrule}</mark>       % Funded(?) column
+  <mark>p</mark>{\FteWidth}<mark>|</mark>                                             % FTE column
 }
 </code></pre>
 </td>
