@@ -1,4 +1,6 @@
-<!--         SCREEN SHOT    -->
+<!--------------------------------------
+   SCREEN SHOT
+--------------------------------------->
 <table>
 <tr>
 <td>
@@ -18,16 +20,22 @@ level-of-effort information is given in this table, only tasks and assignments t
 </table>
 <hr>
 
-<!--         HOW TO USE   -->
+<!--------------------------------------
+   HOW TO USE
+--------------------------------------->
 <b>HOW TO USE:</b>
 
-<!--                               Special Packages   -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+             Special Packages
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 <details>
 <summary><b>Special WorPT Packages</b> [<i>one-time-only task</i> for inclusion of any/all WorPT files]</summary>
 Copy/paste the special packages in preamble of your document, if you haven't done so previously. (see https://github.com/pmarcum/WorPT-Work-Plan-Tool-4-proposals/blob/main/WorPTpackages for more info).
 </details>
 
-<!--                               Putting File Contents Into Document   -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+             Putting File Contents Into Document
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 <details>
 <summary><mark><b>How To Put File Contents Into Your Document</b></mark> [<i>one-time-only task for inclusion of this file</i>]</summary> 
 <ol>
@@ -38,15 +46,20 @@ Copy/paste the special packages in preamble of your document, if you haven't don
 <pre><code>
 \include{do_NOT_manually_edit/table_NOTANONhst}   % reset/define parameters used for this file
 % NOTE: replace do_NOT_manually_edit if not correct folder name
+\def\ProgramID{<mark>HST-xx-xxxxx (Cycle XX)</mark>} % <mark><b>user needs to fill in details</b></mark>
+
 <mark>% Put customizations for NOTANONhst HERE</mark>
 \begin{NOTANONhst}
-<mark>\caption{\normalsize\textbf{Task Management and Team Responsibilities}:\\
-The tasks ({\color{red}gray} headers) and sub-tasks (left), with specific assignments for the roles of task lead (middle) and expertise / analysis assistance (right).} \label{tab:NOTANONhst}</mark>
+<mark>\begin{tablenotes}[flushleft] 
+Team members, identified by their name and role in the proposed project, are listed with their institutional affiliation and position, with a "F" or "US" indicating foriegn or U.S. institution.  A brief narrative of their role in the project is given.  A 'Y' or 'N' indicates if the person is funded by the proposed budget or not, respectively.  The total work-effort of the team member, summed over full life of the proposed  project, is in the rightmost column (multiply shown FTE value by 12 to get work effort in number of months).
+\end{tablenotes}</mark>
 \end{NOTANONhst}
 </code></pre>
 </details>
 
-<!--                              Customizations   -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+             Customizations
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 <details>
 <summary><b>Customize appearance</b> [<i>do as many times as needed</i>]</summary>
 You can change column widths, column alignment, colors, font style using additional lines that are copy/pasted into your document. Specifically: 
@@ -59,87 +72,92 @@ NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; yo
 You can just comment out your added lines and recompile the document, if you want to return to default values.
 </ol>
 
-<!--                                                       Options   -->
-  <table>
-  <tr>
-  <td><b>Column width adjustments</b></td>
-  <td>
-  <pre><code>
-  \LandScapetrue             % appearance in document makes landscape table
-  \def\TaskWidth{<mark>3.9in</mark>}      % width of leftmost ("Tasks") column
-  \def\LeadWidth{<mark>1.2in</mark>}      % width of middle ("Lead") column
-  \def\ExpertiseWidth{<mark>1.8in</mark>} % width of rightmost ("Expertise") column
-  </code></pre>
-  </td>
-  </tr>
+<!-- . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                              Options   
+<!-- . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . -->
+<table>
+<tr>
+<td><b>Table title and reference label</b></td>
+<td>
+<pre><code>
+\def\TableTitle{<mark>Work Effort for All</mark>} % table title at the top
+\def\TableLabel{<mark>tab:\WorPTfolder</mark>}    % put preference between the curly brackets
+</code></pre>
+</td>
+</tr>
+
+<tr>
+<td><b>Column width adjustments</b></td>
+<td>
+<pre><code>
+\def\ContributorWidth{1.8in}      % Contributor column width
+\def\PositionWidth{1.3in}         % Position column width
+\def\RoleWidth{2.5in}             % Role column width
+\def\FundedMemberWidth{0.10in}    % Funded(?) column width
+\def\FteWidth{0.28in}             % FTE column width
+</code></pre>
+</td>
+</tr>
     
-  <tr>
-  <td><b>Table number additive correction</b></td>
-  <td>
-  The default typically works well (an overcount is caused by table + longtable combination).<br>
-  But if counter gets screwed up and needs manual intervention, use below to apply a correction:
-  <pre><code>
-  \def\TaskAddCounter{<mark>-1</mark>}    % additive correction to table number
-  </code></pre>
-  </td>
-  </tr>
+<tr>
+<td><b>Table number additive correction</b></td>
+<td>
+The default typically works well (an overcount is caused by table + longtable combination).<br>
+But if counter gets screwed up and needs manual intervention, use below to apply a correction:
+<pre><code>
+\def\TaskAddCounter{<mark>-1</mark>}    % additive correction to table number
+</code></pre>
+</td>
+</tr>
 
-  <tr>
-  <td><b>Table compactness</b></td>
-  <td>
-  <pre><code>
-  \def\SpaceBetweenRows{<mark>1</mark>}      % vertical compactness of rows
-  \def\SpaceBetweenColumns{<mark>1pt</mark>} % bigger = wider spacing between columns
-  </code></pre>
-  </td>
-  </tr>
+<tr>
+<td><b>Table compactness</b></td>
+<td>
+<pre><code>
+\def\SpaceBetweenRows{<mark>1</mark>}      % vertical compactness of rows
+\def\SpaceBetweenColumns{<mark>1pt</mark>} % bigger = wider spacing between columns
+</code></pre>
+</td>
+</tr>
 
-  <tr>
-  <td><b>Nudge table to left or right</b></td>
-  <td>
-  <pre><code>
-  \def\NudgeTable{<mark>1.2\textwidth</mark>} % bigger values nudge table to left
-  </code></pre>
-  </td>
-  </tr>
+<tr>
+<td><b>Column label color and font style</b></td>
+<td>
+For fontstyle changes, the "\textbf" can be changed to "\emph" for italics, or can<br>
+be turned into plain test by removing the "\textbf", eg {{#1}}
+<pre><code>
+\def\HeaderColor{<mark>Blue</mark>}            % column heading color
+\def\LabelColor{<mark>White</mark>}            % column heading font color
+\def\LabelFontstyle#1{<mark>\textbf</mark>{#1}} % boldface column label
+\def\VerticalLineColor{<mark>lightgray</mark>} % color of vertical lines
+</code></pre>
+</td>
+</tr>
 
-  <tr>
-  <td><b>Column and section label color and font style</b></td>
-  <td>
-  For fontstyle changes, the "\textbf" can be changed to "\emph" for italics, or can<br>
-  be turned into plain test by removing the "\textbf", eg {{#1}}
-  <pre><code>
-  \def\HeaderColor{<mark>Blue</mark>}           % column heading color
-  \def\HeaderFontColor{<mark>White</mark>}      % column heading font color
-  \def\HeaderBoldface#1{<mark>\textbf</mark>{#1}}% boldface column heading labels;
-  \def\SectionColor{<mark>gray!40</mark>}       % category dection label colors
-  \def\SectionFontColor{<mark>Black</mark>}     % category section label font color
-  \def\SectionBoldface#1{<mark>\textbf</mark>{#1}} % boldface category section labels;
-  \def\VerticalLineColor{<mark>gray!40</mark>}  % color of line bet/ "Lead" and "Expertise"
-  </code></pre>
-  </td>
-  </tr>
-
-  <tr>
-  <td><b>Table preamble - full control!</b></td>
-  <td>
-  Edit table preamble for more control over table layout (removing/adding vertical lines, changing<br>
-  column alignment, etc). Copy/paste the ENTIRE below code in order to change default table preamble.<br>
-  <u>IMPORTANT</u> Most of table preamble can be changed EXCEPT <i>do <b>NOT</b> change "T" variable<br>
-  and implied number of columns.</i>
-  <pre><code>
-  \newcolumntype{T}{
-  <mark>|p</mark>{<mark>\TaskWidth</mark>}<mark>||</mark>                                 % title column
-  <mark>p</mark>{<mark>\LeadWidth</mark>}<mark>!{\color{\VerticalLineColor}\vrule}</mark> % task lead column
-  <mark>p</mark>{<mark>\ExpertiseWidth</mark>}<mark>|</mark>                              % expertise column
-  }
-  </code></pre>
-  </td>
-  </tr>
-  </table>
+<tr>
+<td><b>Table preamble - full control!</b></td>
+<td>
+Edit table preamble for more control over table layout (removing/adding vertical lines, changing<br>
+column alignment, etc). Copy/paste the ENTIRE below code in order to change default table preamble.<br>
+<u>IMPORTANT</u> Most of table preamble can be changed EXCEPT <i>do <b>NOT</b> change "T" variable<br>
+and implied number of columns.</i>
+<pre><code>
+\newcolumntype{T}{
+  <mark>|</mark>L{\ContributorWidth}<mark>!{\color{\VerticalLineColor}\vrule}</mark> % Contributor column
+  L{\PositionWidth}<mark>!{\color{\VerticalLineColor}\vrule}</mark>     % Position column
+  L{\RoleWidth}<mark>!{\color{\VerticalLineColor}\vrule}</mark>         % Role column
+  <mark>p</mark>{FundedMember}<mark>!{\color{\VerticalLineColor}\vrule}</mark>       % Funded(?) column
+  <mark>p</mark>{FteWidth}<mark>|</mark>                                             % FTE column
+}
+</code></pre>
+</td>
+</tr>
+</table>
 </details>
 
-<!--         EXAMPLES   -->
+<!--------------------------------------
+   EXAMPLES 
+--------------------------------------->
 <details>
 <summary><b>Examples</b></summary>
 The below is an example of how one can change the appearance of the table within a LaTeX document. After copy/pasting the code to incorporate the table into my document, and then deciding that my task titles were too long to fit with the table in portrait mode, I decided I needed to use landscape mode.  I copy/pasted the landscape fla and the 2 formatting lines that control the "Tasks" and "Expertise" column widths. (My team members have long last names, requiring a wider column than the default). I also slightly altered the caption to be appropriate to my proposal. The result?  A landscape-mode table that allows each task to appear in a single table row without spilling over into the next line, which is my preferred way to present these tables for easiest viewing. Here is a peek at what my LaTeX document looks like:  
@@ -160,6 +178,9 @@ The tasks ({\color{red}gray} headers) and sub-tasks (left), with specific assign
 NOTE: To return to default values, all I have to do is comment-out (put a "%" at the line's beginning) the "\def" formatting lines that I pasted. 
 </details>
 
+<!--------------------------------------
+   NUCLEAR OPTION 
+--------------------------------------->
 <details>
 <summary><b>NUCLEAR OPTION</b> <i>[when nothing else works]</i></summary>
 If you just cannot get the table to look like you want it to look, you can always copy/paste the entire table_NOTANONhst.tex file that appears in the WorPT subfolder, into your document, and then edit at-will.  Some of the WorPT files involve complicated LaTeX code, so be sure that you have a good mastery of LaTeX and know what you are doing before implementing this option!
