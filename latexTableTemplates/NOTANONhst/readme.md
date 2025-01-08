@@ -7,19 +7,16 @@
 <img src="https://lh3.googleusercontent.com/d/1OpijauwkFzgEorqyUsArZlkZz6ZcB__d" width=40%>
 </td>
 <td>
-The description goes here
-</td>
-</tr>
-</table>
-<hr>
-
-<!--         DESCRIPTION   -->
-<b>DESCRIPTION</b>
-<details><summary></summary>
+<details>
+<summary><b>DESCRIPTION</b></summary>
 <b>NOTANONhst</b> is a table of project tasks, organized under task categories, as specified by the TASKS page in the
 WorPT spreadsheet. The task lead and team members assisting with each task are specified as well. No
 level-of-effort information is given in this table, only tasks and assignments to illustrate team member involvement. 
 </details>
+</td>
+</tr>
+</table>
+<hr>
 
 <!--         HOW TO USE   -->
 <b>HOW TO USE:</b>
