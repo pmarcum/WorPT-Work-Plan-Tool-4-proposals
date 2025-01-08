@@ -1,20 +1,28 @@
-<!--          DETAILS SECTION    -->
+<!--         SCREEN SHOT    -->
+<font size="3">WorPT table example: <b>NOTANONhst</b></font>
+<br>
+<img src="https://lh3.googleusercontent.com/d/1OpijauwkFzgEorqyUsArZlkZz6ZcB__d" width=40%>
+<hr>
+
+<!--         DESCRIPTION   -->
 <details>
 <summary><b>Description of this file</b></summary>
 <b>NOTANONhst</b> is a table of project tasks, organized under task categories, as specified by the TASKS page in the
 WorPT spreadsheet. The task lead and team members assisting with each task are specified as well. No
 level-of-effort information is given in this table, only tasks and assignments to illustrate team member involvement. 
 </details>
-
-<font size="3">WorPT table example: <b>NOTANONhst</b></font>
-<br>
-<img src="https://lh3.googleusercontent.com/d/1OpijauwkFzgEorqyUsArZlkZz6ZcB__d" width=40%>
 <hr>
+
+<!--         HOW TO USE   -->
 <b>HOW TO USE:</b>
+
+<!--                               Special Packages   -->
 <details>
 <summary><b>Special WorPT Packages</b> [<i>one-time-only task</i> for inclusion of any/all WorPT files]</summary>
 Copy/paste the special packages in preamble of your document, if you haven't done so previously. (see https://github.com/pmarcum/WorPT-Work-Plan-Tool-4-proposals/blob/main/WorPTpackages for more info).
 </details>
+
+<!--                               Putting File Contents Into Document   -->
 <details>
 <summary><mark><b>How To Put File Contents Into Your Document</b></mark> [<i>one-time-only task for inclusion of this file</i>]</summary> 
 <ol>
@@ -32,7 +40,10 @@ The tasks ({\color{red}gray} headers) and sub-tasks (left), with specific assign
 \end{NOTANONhst}
 </code></pre>
 </details>
-<li><b>Customize appearance</b> [<i>do as many times as needed</i>]
+
+<!--                              Customizations   -->
+<details>
+<summary><b>Customize appearance</b> [<i>do as many times as needed</i>]</summary>
 You can change column widths, column alignment, colors, font style using additional lines that are copy/pasted into your document. Specifically: 
 <ol>
 <li>COPY any or all lines in the code block below that are related to the formatting parameter that you want to edit. The lines below show default values. You will edit those values to make desired changes.</li>
@@ -40,6 +51,8 @@ You can change column widths, column alignment, colors, font style using additio
 <li>EDIT the pasted lines in your document, as desired. Some examples are given at the bottom of this page.</li>
 NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; you do not have to copy/paste all of the beow lines!
 </ol>
+
+<!--                                                       Options   -->
 <b>The below lines are what you will most likely need to copy/paste, to get your column widths just right. Highlights indicate what can be edited:</b>
 <pre><code>
 \LandScapetrue                   % uncommented-out appearance in your document will put the table in landscape mode
@@ -47,16 +60,19 @@ NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; yo
 \def\LeadWidth{<mark>1.2in</mark>}            % width of middle ("Lead") column
 \def\ExpertiseWidth{<mark>1.8in</mark>}       % width of rightmost ("Expertise") column
 </code></pre>
+
 <b>Fix the table number if it is showing a wrong number, by adding or subtracting whatever correction is needed.</b>
 The default typically works well because the table + longtable combination causes the counter to overcount by one, so -1 performs the appropriate correction.  But ocassionally, the counter gets screwed up and needs manual intervention, so here's how to apply a correction:
 <pre><code>
 \def\TaskAddCounter{<mark>-1</mark>}          % corrects table number messed up by table,longtable combination)
 </code></pre>
+
 <b>The below lines might be useful - they adjust the table compactness:</b>
 <pre><code>
 \def\SpaceBetweenRows{<mark>1</mark>}         % vertical compactness of rows
 \def\SpaceBetweenColumns{<mark>1pt</mark>}    % spacing between columns (bigger value=wider column margin)
 </code></pre>
+
 <b>The below can nudge the table to the left (increase value) or right (decrease value)</b>
 <pre><code>
 \def\NudgeTable{<mark>1.2\textwidth</mark>}   % bigger values nudge table to left
@@ -82,7 +98,7 @@ Copy/paste the below if you want to do things like remove or add vertical lines 
   <mark>p</mark>{<mark>\ExpertiseWidth</mark>}<mark>|</mark>                              % expertise column
 }
 </code></pre> 
-</li>
+</details>
 
 <li><b>Examples</b>
 The below is an example of how one can change the appearance of the table within a LaTeX document. After copy/pasting the code to incorporate the table into my document, and then deciding that my task titles were too long to fit with the table in portrait mode, I decided I needed to use landscape mode.  I copy/pasted the landscape fla and the 2 formatting lines that control the "Tasks" and "Expertise" column widths. (My team members have long last names, requiring a wider column than the default). I also slightly altered the caption to be appropriate to my proposal. The result?  A landscape-mode table that allows each task to appear in a single table row without spilling over into the next line, which is my preferred way to present these tables for easiest viewing. Here is a peek at what my LaTeX document looks like:  
