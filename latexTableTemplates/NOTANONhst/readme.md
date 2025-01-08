@@ -65,7 +65,7 @@ You can just comment out your added lines and recompile the document, if you wan
   <td><b>Column width adjustments</b></td>
   <td>
   <pre><code>
-  \LandScapetrue                   % uncommented-out appearance in your document will put the table in landscape mode
+  \LandScapetrue                   % appearance in your document will put the table in landscape mode
   \def\TaskWidth{<mark>3.9in</mark>}            % width of leftmost ("Tasks") column
   \def\LeadWidth{<mark>1.2in</mark>}            % width of middle ("Lead") column
   \def\ExpertiseWidth{<mark>1.8in</mark>}       % width of rightmost ("Expertise") column
@@ -76,9 +76,11 @@ You can just comment out your added lines and recompile the document, if you wan
   <tr>
   <td><b>Table number correction</b></td>
   <td>
-  The default typically works well because the table + longtable combination causes the counter to overcount by one, so -1 performs the appropriate   correction.  But ocassionally, the counter gets screwed up and needs manual intervention, so here's how to apply a correction:
+  The default typically works well because the table + longtable combination causes the counter to<br>
+  overcount by one, so -1 performs the appropriate   correction.  But ocassionally, the counter gets<br>
+  screwed up and needs manual intervention, so here's how to apply a correction:
   <pre><code>
-  \def\TaskAddCounter{<mark>-1</mark>}          % corrects table number messed up by table,longtable combination)
+  \def\TaskAddCounter{<mark>-1</mark>}      % additive correction to table number
   </code></pre>
   </td>
   </tr>
@@ -87,8 +89,8 @@ You can just comment out your added lines and recompile the document, if you wan
   <td><b>Table compactness</b></td>
   <td>
   <pre><code>
-  \def\SpaceBetweenRows{<mark>1</mark>}         % vertical compactness of rows
-  \def\SpaceBetweenColumns{<mark>1pt</mark>}    % spacing between columns (bigger value=wider column margin)
+  \def\SpaceBetweenRows{<mark>1</mark>}      % vertical compactness of rows
+  \def\SpaceBetweenColumns{<mark>1pt</mark>} % spacing between columns (bigger value=wider column margin)
   </code></pre>
   </td>
   </tr>
@@ -125,8 +127,8 @@ You can just comment out your added lines and recompile the document, if you wan
   Edit the table preamble for more control over table layout, such as removing/adding vertical lines,<br>
   changing column alignment, etc. You need to copy/paste the ENTIRE below code if you want to edit the<br>
   table preamble.<br>
-  <u>IMPORTANT</u> Most of the items in the table preamble can be changed EXCEPT <i>do <b>NOT</b>
-  change the "T" variable and the implicit number of columns.</i>
+  <u>IMPORTANT</u> Most of the items in the table preamble can be changed EXCEPT <i>do <b>NOT</b> change<br>
+  the "T" variable and the implicit number of columns.</i>
   <pre><code>
   \newcolumntype{T}{
   <mark>|p</mark>{<mark>\TaskWidth</mark>}<mark>||</mark>                                 % title column
