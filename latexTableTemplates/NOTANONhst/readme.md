@@ -44,7 +44,8 @@ Copy/paste the special packages in preamble of your document, if you haven't don
 <li>MODIFY the editable lines you just pasted in your document as needed. The lines that may be edited (or even deleted altogether if not wanted) are indicated by highlight below. </li>
 </ol>
 <pre><code>
-\include{do_NOT_manually_edit/table_NOTANONhst} % reset file parameters
+\include{do_NOT_manually_edit/table_NOTANONhst} 
+% reset file parameters
 % NOTE: replace do_NOT_manually_edit if not correct folder name
 \def\ProgramID{<mark>HST-xx-xxxxx (Cycle XX)</mark>} 
 % <mark><b>fill in details</b></mark>
