@@ -1,3 +1,73 @@
+------------------------- original how to use guide ------------------------
+\def\TaskTimelineColumnSize{\scriptsize}        % Task Timeline label text size
+\def\TaskAssignmentsColumnSize{\scriptsize}     % Task Assignments label text size
+\def\TotalFteColumnSize{\scriptsize}            % Totaled FTEs label text size
+\def\YearColumnSize{\scriptsize}                % "YEAR1", "YEAR2"... label text size
+\def\TaskTitleColumnSize{\normalsize}           % "TASK TITLES" column label text size
+\def\QuarterColumnSize{\scriptsize}             % "1", "2"... year-quarter label text size
+\def\IdWksColumnSize{\scriptsize}               % "id wks" text size
+\def\SigmaColumnIcon{\textbf{\large{$\Sigma$}}} % sigma symbol label size
+\def\NoDollarColumnIcon{\noDollarIcon{-0.4}{0.4mm}{0.2}{0.15}} % "no dollar" symbol label size
+\def\DollarColumnIcon{\dollarIcon{-0.4}{0.2}{0.015}}% green "dollar" symbol label size
+\def\TaskCategoryLabel#1#2{                     % Task Category label format
+  {\normalsize\textbf\scshape{#1}}~{\normalsize\textbf{#2}}}
+\def\TaskTitleLabel#1#2{                        % Task title format
+  ~{\scriptsize{\textbf{\scshape{#1}}}}~{
+  \color{mediumelectricblue}{\footnotesize\textbf{#2}}}}
+\def\FteTotalFormat#1{\small{#1}}               % Sigma column format
+\def\FteUnfundedFormat#1{\small{#1}}            % no-dollar column format
+\def\FteFundedFormat#1{\small \color{blue}{#1}} % "funded" column format
+\def\TimelineColor{mediumelectricblue}          % TASK TIMELINE cell color
+\def\TimelineSize{\tiny}                        % width control of TASK TIMELINE cells
+\def\FundedUsTeam#1{\small \color{blue}{#1}}    % funded US team members ID, \#weeks format
+\def\UnfundedUsTeam#1{\small \color{black}{#1}} % UNfunded US team members ID, \#weeks fomat
+\def\InternationalTeam#1{\small \color{red}{#1}}% international team members ID, \#weeks format
+\newcolumntype{T}[5]{
+  |>{\raggedright\arraybackslash}p{#1} % title column
+  *{2}{|p{#2}!{\color{#5}\vrule}*{2}{p{#2}!{\color{#5}\vrule}}p{#2}} % timeline columns
+  |>{\raggedright\arraybackslash}p{#3} % task assignment column
+  |p{#4}!{\color{#5}\vrule}            % total fte, sum column
+  p{#4}!{\color{#5}\vrule}             % total fte, unfunded column
+  c|                                   % total fte, funded column
+}
+
+\addtocounter{table}{-1}          % corrects double-counting of sidewaystable/longtable use
+\begin{table*}[h!]                % \begin{table} makes caption have same width as table
+%\begin{sidewaystable}            % comment-out begin{table}, uncomment this line for landscape mode
+\setlength{\tabcolsep}{1pt}       % changes horizontal spacing between columns
+\renewcommand{\arraystretch}{0.8} % changes vertical space between rows
+\centerline{
+\begin{minipage}{1.5\textwidth}   % change margin for wide table
+\begin{longtable} {T{3.4in}{1ex}{20ex}{5ex}{lightgray}}
+% You will likely need to adjust the widths to accomodate your title, task assignments columns
+% The table looks best if the titles appear on single lines that do not wrap to next line
+% You can shorten the titles in WorPT and regenerate the latex files and/or go to landscape mode to 
+% make the table look good (one line per task looks best)       
+% Above 5 entries are widths of title,timeline,faint line color,assignments,total FTE
+% and color of faint vertical lines, respectively  
+\expinput{do_NOT_manually_edit/table_NOTANONschedule}
+\end{longtable}
+\end{minipage}
+}
+\caption{
+\label{tab:NOTANONschedule} Resource-loaded project schedule, where: 
+{\NoDollarColumnIcon\hspace{-0.3em}$=$\hspace{-0.3em}}Not funded by this grant,  
+{\DollarColumnIcon\hspace{-0.3em}$=$\hspace{-0.3em}}funded by this grant, 
+{\SigmaColumnIcon\hspace{-0.3em}$=$\hspace{-0.3em}}funded $+$ unfunded; 
+Tasks are listed (left side), with duration of task activity indicated in blue-colored timelines that 
+measure quarter-years (1,2,3,4). Task assignments identify specific team members responsible for 
+implementation with associated work weeks, where color indicates institutional affiliation 
+(blue$=$funded/U.S., black$=$not funded/U.S., red=international). "Total FTE" (right side) are integrated 
+work-weeks converted into FTE per task (1~FTE$=$12~months), displayed as "total",  "unfunded by this grant", 
+and "funded by this grant", resp.  Assignment identities: \input{[INSERTLATEXFILESUBDIRECTORY]/idsToNames_NOTANONschedule.tex}.
+}
+\end{table*}          % comment out and uncomment end{sidewaystable} if using landscape mode
+%\end{sidewaystable}  % uncomment if used
+
+
+
+
+
 
 -------------------------  original main.tex ---------------------------
 %  __________________________________________________________________________________
