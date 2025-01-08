@@ -1,53 +1,91 @@
+%___________________________________________________________________________________________________________________
+% Refer to:
+%   https://github.com/pmarcum/WorPT-Work-Plan-Tool-4-proposals/blob/main/latexTableTemplates/[INSERTFILENAME]/readme.md
+% for instructions and LaTeX code to copy/paste into your document, to incorporate this file. 
+%___________________________________________________________________________________________________________________
 
+\def\WorPTfolder{[INSERTFILENAME]} % set the folder name where WorPT files are contained
 
+% ___________________________________________
+%       Default formatting preferences
+% ___________________________________________
 
+%---- required input from user
+\def\ProgramID{HST-xx-xxxxx (Cycle XX)} % user needs to fill in details
 
+%--- table title and table reference label
+\def\TableTitle{Work Effort for All}
+\def\TableLabel{tab:[INSERTFILENAME]}
 
+%---- column widths and table orientation controls
+\def\ContributorWidth{1.8in}      % Contributor column width
+\def\PositionWidth{1.3in}         % Position column width
+\def\RoleWidth{2.5in}             % Role column width
+\def\FundedMemberWidth{0.10in}    % Funded(?) column width
+\def\FteWidth{0.28in}             % FTE column width
 
+%---- fix the Table Number in the caption
+\def\TaskAddCounter{-1}          % corrects table number messed up by table,longtable combination)
+
+%---- table compactness controls
+\def\SpaceBetweenRows{1}         % vertical compactness of rows
+\def\SpaceBetweenColumns{1pt}    % spacing between columns
+
+%--- aesthetic preferences
 \def\HeaderColor{Blue}            % column heading color
 \def\LabelColor{White}            % column heading font color
-\def\LabelBoldface#1{\textbf{#1}} % boldface column labels
+\def\LabelBoldface#1{\textbf{#1}} % boldface column label
+\def\VerticalLineColor{lightgray} % color of vertical lines
 
+%--- (internal definition) multiline format for the Contributor, Position, and Role cells
 \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
-\begin{table}
-{
- \renewcommand{\arraystretch}{1.0}% controls vertical row separation/spacing
- \setlength{\tabcolsep}{5pt}      % controls horizontal column separation/spacing
- \begin{longtable}{
-  |L{1.8in}!{\color{lightgray}\vrule}
-  L{1.3in}!{\color{lightgray}\vrule}
-  L{2.5in}!{\color{lightgray}\vrule}
-  p{0.10in}!{\color{lightgray}\vrule}
-  p{0.28in}|
- }
- \caption{Work Effort for All Team Members \label{tab:NOTANONhst}}\\
- \multicolumn{5}{l}{\textbf{Program \#:} HST-xx-xxxxx (Cycle XX)}\\
- \multicolumn{5}{l}{\textbf{Program Admin PI:} [INSERTADMINPINAME]}\\
- \multicolumn{5}{l}{\textbf{Science PI:} [INSERTSCIENCEPINAME]}\\
- \expinput{[INSERTLATEXFILESUBDIRECTORY]/table_NOTANONhst}
- \end{longtable}
- \begin{tablenotes}[flushleft] Team members, identified by their name and role in the proposed project, are listed 
- with their institutional affiliation and position, with a "F" or "US" indicating foriegn or U.S. institution.  A 
- brief narrative of their role in the project is given.  A 'Y' or 'N' indicates if the person is funded by the proposed 
- budget or not, respectively.  The total work-effort of the team member, summed over full life of the proposed 
- project, is in the rightmost column (multiply shown FTE value by 12 to get work effort in number of months). 
-\end{tablenotes}
+
+%--- internal definitions not to be used as user parameters
+\def\AdminPIname{[INSERTADMINPINAME]}
+\def\SciencePIname{[INSERTSCIENCEPINAME]}
+
+%--- table preamble definition bundled into the "T" variable
+\newcolumntype{T}{
+  |L{\ContributorWidth}!{\color{\VerticalLineColor}\vrule} % Contributor column
+  L{\PositionWidth}!{\color{\VerticalLineColor}\vrule}     % Position column
+  L{\RoleWidth}!{\color{\VerticalLineColor}\vrule}         % Role column
+  p{FundedMember}!{\color{\VerticalLineColor}\vrule}       % Funded(?) column
+  p{FteWidth}|                                             % FTE column
 }
 
+\newenvironment{[INSERTFILENAME]}{%
+\addtocounter{table}{\TaskAddCounter}
+\renewcommand{\arraystretch}{\SpaceBetweenRows}  % changes vertical space bet/ rows
+\setlength{\tabcolsep}{\SpaceBetweenColumns}     % changes horizontal spacing bet/ columns
+\begin{longtable}{T}
 
+%--- put the required program number and PI(s) at the top
+\caption{\TableTitle \label{\TableLabel}}
+\multicolumn{5}{l}{\textbf{Program \#:} \ProgramId}\\
+\multicolumn{5}{l}{\textbf{Program Admin PI:} \AdminPIname}\\
+\multicolumn{5}{l}{\textbf{Science PI:} \SciencePIname}\\
 
-
-% COMMENT: below makes the column header labels
-\LabelBoldface{\cellcolor{\HeaderColor}\color{\LabelColor}Contributor} & \LabelBoldface{\cellcolor{\HeaderColor}\color{\LabelColor}Position} 
-\newline{
-  \LabelBoldface{\cellcolor{\HeaderColor}\color{\LabelColor}Institution}
-  \newline{\LabelBoldface{\cellcolor{\HeaderColor}\color{\LabelColor}US/Foreign}}
-} &
+%--- make colorized top banner labels, the column headers
+\LabelBoldface{\cellcolor{\HeaderColor}\color{\LabelColor}Contributor} & 
+\LabelBoldface{\cellcolor{\HeaderColor}\color{\LabelColor}Position} \newline{\LabelBoldface{\cellcolor{\HeaderColor}\color{\LabelColor}Institution} \newline{\LabelBoldface{\cellcolor{\HeaderColor}\color{\LabelColor}US/Foreign}}} &
 \LabelBoldface{\cellcolor{\HeaderColor}\color{\LabelColor}Role} & 
 \LabelBoldface{\cellcolor{\HeaderColor}\color{\LabelColor}\$?} & 
 \LabelBoldface{\cellcolor{\HeaderColor}\color{\LabelColor}FTE}\\
 \hline\hline
-% Create the table content
+%---- start the rows in the table
+[INSERTTABLECONTENT]
+\hline
+
+% COMMENT: The below template defines the layout of the rows
 [STARTROWTEMPLATE]
 [INSERTNAME] & [INSERTJOB] & [INSERTDESC] & [INSERTFUNDING] & [INSERTFTE]\hline
 [ENDROWTEMPLATE]
+
+}
+{%
+\end{longtable}
+}
+
+
+\begin{tablenotes}[flushleft] Team members, identified by their name and role in the proposed project, are listed with their institutional affiliation and position, with a "F" or "US" indicating foriegn or U.S. institution.  A brief narrative of their role in the project is given.  A 'Y' or 'N' indicates if the person is funded by the proposed budget or not, respectively.  The total work-effort of the team member, summed over full life of the proposed  project, is in the rightmost column (multiply shown FTE value by 12 to get work effort in number of months). 
+\end{tablenotes}
