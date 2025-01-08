@@ -62,11 +62,14 @@ NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; yo
   <tr>
   <td><b>Column width adjustments</b></td>
   <td>
-  <b>The below lines are what you will most likely need to copy/paste, to get your column widths just right. Highlights indicate what can be edited:</b>
-  <pre><code>\LandScapetrue                   % uncommented-out appearance in your document will put the table in landscape mode</code></pre>
-  <pre><code>\def\TaskWidth{<mark>3.9in</mark>}            % width of leftmost ("Tasks") column</code></pre>
-  <pre><code>\def\LeadWidth{<mark>1.2in</mark>}            % width of middle ("Lead") column</code></pre>
-  <pre><code>\def\ExpertiseWidth{<mark>1.8in</mark>}       % width of rightmost ("Expertise") column</code></pre>
+  <b>The below lines are what you will most likely need to copy/paste, to get your column widths just right.</b>
+  <i>Highlights indicate what can be edited:</i>
+  <pre><code>
+  \LandScapetrue                   % uncommented-out appearance in your document will put the table in landscape mode
+  \def\TaskWidth{<mark>3.9in</mark>}            % width of leftmost ("Tasks") column
+  \def\LeadWidth{<mark>1.2in</mark>}            % width of middle ("Lead") column
+  \def\ExpertiseWidth{<mark>1.8in</mark>}       % width of rightmost ("Expertise") column
+  </code></pre>
   </td>
   </tr>
     
