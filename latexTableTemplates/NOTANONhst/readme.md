@@ -43,8 +43,8 @@ Copy/paste the special packages in preamble of your document, if you haven't don
 <li>PASTE into your document WHERE you want the content to appear, then</li>
 <li>MODIFY the editable lines you just pasted in your document as needed. The lines that may be edited (or even deleted altogether if not wanted) are indicated by highlight below. </li>
 </ol>
-##
-      \include{do_NOT_manually_edit/table_NOTANONhst} 
+```latex
+\include{do_NOT_manually_edit/table_NOTANONhst} 
 % reset file parameters
 % NOTE: replace do_NOT_manually_edit if not correct folder name
 \def\ProgramID{<mark>HST-xx-xxxxx (Cycle XX)</mark>} 
@@ -53,23 +53,16 @@ Copy/paste the special packages in preamble of your document, if you haven't don
 <mark>% Put OPTIONAL customizations for NOTANONhst HERE</mark>
 \begin{NOTANONhst}
 <mark>\begin{tablenotes}[flushleft] 
-Team members, identified by their name and role in the<br>
-proposed project, are<br>
-listed with their institutional affiliation and position,<br>
-with a "F" or "US"<br>
-indicating foriegn or U.S. institution. A brief narrative of<br>
-their role in the<br>
-project is given.  A 'Y' or 'N' indicates if the person is<br>
-funded by the<br>
-proposed budget or not, respectively.  The total work-effort<br>
-of the team member,<br>
-summed over full life of the proposed  project, is in the<br>
-rightmost column<br>
-(multiply shown FTE value by 12 to get work effort in number<br>
-of months).
+Team members, identified by their name and role in the proposed project, are<br>
+listed with their institutional affiliation and position, with a "F" or "US"<br>
+indicating foriegn or U.S. institution. A brief narrative of their role in the<br>
+project is given.  A 'Y' or 'N' indicates if the person is funded by the<br>
+proposed budget or not, respectively.  The total work-effort of the team member,<br>
+summed over full life of the proposed  project, is in the rightmost column<br>
+(multiply shown FTE value by 12 to get work effort in number of months).
 \end{tablenotes}</mark>
 \end{NOTANONhst}
-
+```
 </details>
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - 
