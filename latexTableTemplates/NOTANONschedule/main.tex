@@ -25,27 +25,45 @@
 \def\SpaceBetweenColumns{5pt}    % spacing between columns
 
 %--- aesthetic preferences of column headers
-\def\NameLabelBoldface#1{\textbf{#1}}      % boldface "Name" column label
-\def\RoleLabelBoldface#1{\textbf{#1}}      % boldface "Role" column label
-\def\CommitmentLabelBoldface#1{\textbf{#1}}% boldface "Commitment (FTE)" column label
-\def\YearLabelBoldface#1{\textbf{#1}}      % boldface "Y1", "Y2", ...  column labels
-\def\TotalLabelBoldface#1{\textbf{#1}}     % boldface "Total" column label
+\def\TaskTimelineColumnSize{\scriptsize}        % Task Timeline label text size
+\def\TaskAssignmentsColumnSize{\scriptsize}     % Task Assignments label text size
+\def\TotalFteColumnSize{\scriptsize}            % Totaled FTEs label text size
+\def\YearColumnSize{\scriptsize}                % "YEAR1", "YEAR2"... label text size
+\def\TaskTitleColumnSize{\normalsize}           % "TASK TITLES" column label text size
+\def\QuarterColumnSize{\scriptsize}             % "1", "2"... year-quarter label text size
+\def\IdWksColumnSize{\scriptsize}               % "id wks" text size
+\def\SigmaColumnIcon{\textbf{\large{$\Sigma$}}} % sigma symbol label size
+\def\NoDollarColumnIcon{\noDollarIcon{-0.4}{0.4mm}{0.2}{0.15}} % "no dollar" symbol label size
+\def\DollarColumnIcon{\dollarIcon{-0.4}{0.2}{0.015}}% green "dollar" symbol label size
+\def\TaskCategoryLabel#1#2{                     % Task Category label format
+  {\normalsize\textbf\scshape{#1}}~{\normalsize\textbf{#2}}}
+\def\TaskTitleLabel#1#2{                        % Task title format
+  ~{\scriptsize{\textbf{\scshape{#1}}}}~{
+  \color{mediumelectricblue}{\footnotesize\textbf{#2}}}}
+\def\FteTotalFormat#1{\small{#1}}               % Sigma column format
+\def\FteUnfundedFormat#1{\small{#1}}            % no-dollar column format
+\def\FteFundedFormat#1{\small \color{blue}{#1}} % "funded" column format
+\def\TimelineColor{mediumelectricblue}          % TASK TIMELINE cell color
+\def\TimelineSize{\tiny}                        % width control of TASK TIMELINE cells
+\def\FundedUsTeam#1{\small \color{blue}{#1}}    % funded US team members ID, \#weeks format
+\def\UnfundedUsTeam#1{\small \color{black}{#1}} % UNfunded US team members ID, \#weeks fomat
+\def\InternationalTeam#1{\small \color{red}{#1}}% international team members ID, \#weeks format
 
 %--- aethetic preferences of colorized banners separating the categories
-\def\SectionBannerColor{Blue}              % color of banners separating the 3 sections 
-\def\SectionBannerFontColor{White}         % font color of banners separating the 3 sections 
-\def\SectionBannerBoldface#1{\textbf{#1}}  % boldface text in banners separating the 3 sections
 
 %--- aethetic preferences of totals at bottom of each section
-\def\TotalWorkEffortBoldface#1{\textbf{#1}}% boldface text in "Total .... Work Effort" line at section end
-\def\TotalWorkEffortFontColor{Blue}        % font color of "Total ... Work Effort" line at section end
 
 %--- internal parameters used by script but not for user
 \def\LastYearPlusTwo{[INSERTLASTYEARPLUSTWO]}
 
 %--- table preamble definition bundled into the "T" variable
 \newcolumntype{T}{
-  {|l|*{\LastYearPlusTwo}{c|}}
+  |>{\raggedright\arraybackslash}p{#1} % title column
+  *{2}{|p{#2}!{\color{#5}\vrule}*{2}{p{#2}!{\color{#5}\vrule}}p{#2}} % timeline columns
+  |>{\raggedright\arraybackslash}p{#3} % task assignment column
+  |p{#4}!{\color{#5}\vrule}            % total fte, sum column
+  p{#4}!{\color{#5}\vrule}             % total fte, unfunded column
+  c|                                   % total fte, funded column
 }
 
 \newenvironment{[INSERTFILENAME]}{%
@@ -55,64 +73,9 @@
 \setlength{\tabcolsep}{\SpaceBetweenColumns}    % controls horizontal column separation/spacing
 \begin{longtable}{T}
 %--- generate the top column headers
-\hline
-\multirow{2}{*}{\NameLabelBoldface{Name}} & \multirow{2}{*}{\RoleLabelBoldface{Role}} & \multicolumn{[INSERTLASTYEARPLUSONE]}{c|}{\CommitmentLabelBoldface{Commitment (FTE)}}\\
 
 %--- generate the lower column headers
-\cline{3-[INSERTLASTYEARPLUSTHREE]}
-{} & {} & \YearLabelBoldface{Y1} & \YearLabelBoldface{Y2} & \YearLabelBoldface{Y3} & \YearLabelBoldface{Y4} & \YearLabelBoldface{Y5} & \YearLabelBoldface{Y6} & \YearLabelBoldface{Y7} & \YearLabelBoldface{Y8} & \YearLabelBoldface{Y9} & \YearLabelBoldface{Y10} & \YearTotalBoldface{Total}\\
 
-%--- banner for the Work Efforts Funded By This Proposal
-\multicolumn{[INSERTLASTYEARPLUSTHREE]}{|c|}{\cellcolor{\SectionBannerColor}\color{\SectionBannerFontColor}\TaskCategoryBoldface{Work Efforts To Be Funded By This Proposal}}\\
-[INSERTFUNDEDWORKEFFORTLIST]
-
-% COMMENT: template below generates the rows to go under Work Efforts Funded By Proposal section
-[STARTFUNDEDTEMPLATE]
-[INSERTNAME] & [INSERTROLE] & [INSERTY1] & [INSERTY2] & [INSERTY3] & [INSERTY4] & [INSERTY5] & [INSERTY6] & [INSERTY7] & INSERTY8] & [INSERTY9] & [INSERTY10] & [INSERTTOTAL]\\
-[ENDFUNDEDTEMPLATE]
-
-% COMMENT: the below is the colorized last line of the section providing annual totals for the funded category
-\arrayrulecolor{lightgray!60}\hline\arrayrulecolor{black}
-\multicolumn{2}{|l}{\TotalWorkEffortBoldface{\color{\TotalWorkEffortFontColor}Total Funded Work Effort}} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTFUNDY1]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTFUNDY2]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTFUNDY3]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTFUNDY4]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}INSERTFUNDY5]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTFUNDY6]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTFUNDY7]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTFUNDY8]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTFUNDY9]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTFUNDY10]} & \multicolumn{1}{c|}{\color{\TotalWorkEffortFontColor}[INSERTFUNDTOTAL]}\\
-
-%---- banner for the Work Effort NOT Funded By This Proposal section 
-\multicolumn{[INSERTLASTYEARPLUSTHREE]}{|c|}{\cellcolor{\SectionBannerColor}\color{\SectionBannerFontColor}\SectionBannerBoldface{Work Efforts Proposed but NOT Funded By This Proposal}}\\
-[INSERTUNFUNDEDWORKEFFORTLIST]
-
-% COMMENT: 2 different template below generate the rows to go under Work Efforts NOT Funded By Proposal section
-% COMMENT: if the sum exceeds 0.01 FTE, this template is used
-[STARTUNFUNDEDABOVETHRESHOLDTEMPLATE]
-[INSERTNAME] & [INSERTROLE] & [INSERTY1] & [INSERTY2] & [INSERTY3] & [INSERTY4] & [INSERTY5] & [INSERTY6] & [INSERTY7] & INSERTY8] & [INSERTY9] & [INSERTY10] & [INSERTTOTAL]\\
-[ENDUNFUNDEDABOVETHRESHOLDTEMPLATE]
-
-% COMMENT: if the work effor is less than 0.01 FTE, this template is used instead
-[STARTUNFUNDEDBELOWTHRESHOLDTEMPLATE]
-[INSERTNAME] & [INSERTROLE] & \multicolumn{[INSERTLASTYEAR]}{c|}{minor} & {$\leq$0.01}\\
-[ENDUNFUNDEDBELOWTHRESHOLDTEMPLATE]
-
-% COMMENT: the below is the colorized last line of the section providing annual totals for the funded category
-\arrayrulecolor{lightgray!60}\hline\arrayrulecolor{black}
-\multicolumn{2}{|l}{\TotalWorkEffortBoldface{\color{\TotalWorkEffortFontColor}Total Unfunded Work Effort}} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTUNFUNDY1]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTUNFUNDY2]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTUNFUNDY3]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTUNFUNDY4]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}INSERTUNFUNDY5]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTUNFUNDY6]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTUNFUNDY7]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTUNFUNDY8]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTUNFUNDY9]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTUNFUNDY10]} & \multicolumn{1}{c|}{\color{\TotalWorkEffortFontColor}[INSERTUNFUNDTOTAL]}\\
-
-%--- both FUNDED and UNFUNDED work efforts
-\multicolumn{[INSERTLASTYEARPLUSTHREE]}{|c|}{\cellcolor{\SectionBannerColor}\color{\SectionBannerFontColor}\SectionBannerBoldface{Total Work Efforts Proposed (Funded $+$ Unfunded)}}\\
-[INSERTBOTHWORKEFFORTLIST]
-
-% COMMENT: the 2 below templates generate a row for each team member under the Funded + UNfunded category
-% COMMENT: use this template if the sum effort exceeds 0.01 FTE
-[STARTBOTHABOVETHRESHOLDTEMPLATE]
-[INSERTNAME] & [INSERTROLE] & [INSERTY1] & [INSERTY2] & [INSERTY3] & [INSERTY4] & [INSERTY5] & [INSERTY6] & [INSERTY7] & [INSERTY8] & [INSERTY9] & [INSERTY10] & [INSERTTOTAL]\\
-[ENDBOTHABOVETHRESHOLDTEMPLATE]
-
-% COMMENT: or use this template if work effort is less than 0.01 FTE
-[STARTBOTHBELOWTHRESHOLDTEMPLATE]
-[INSERTNAME] & [INSERTROLE] & \multicolumn{[INSERTLASTYEAR]}{c|}{minor} & {$\leq$0.01}\\
-[ENDBOTHBELOWTHRESHOLDTEMPLATE]
-
-% COMMENT: the below is the colorized last line of the section providing sums per year for the TOTAL WORK EFFORT category
-\arrayrulecolor{lightgray!60}\hline\arrayrulecolor{black}
-\multicolumn{2}{|l}{\TotalWorkEffortBoldface{\color{\TotalWorkEffortFontColor}Total Funded $+$ Unfunded Work Effort}} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTBOTHY1]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTBOTHY2]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTBOTHY3]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTBOTHY4]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTBOTHY5]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTBOTHY6]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTBOTHY7]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTBOTHY8]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTBOTHY9]} & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTBOTHY10]} & \multicolumn{1}{c|}{\color{\TotalWorkEffortFontColor}[INSERTBOTHTOTAL]}\\
-\hline
 \end{longtable}
 }
 {%
@@ -139,37 +102,6 @@
 
 
 ------------------------- original how to use guide ------------------------
-\def\TaskTimelineColumnSize{\scriptsize}        % Task Timeline label text size
-\def\TaskAssignmentsColumnSize{\scriptsize}     % Task Assignments label text size
-\def\TotalFteColumnSize{\scriptsize}            % Totaled FTEs label text size
-\def\YearColumnSize{\scriptsize}                % "YEAR1", "YEAR2"... label text size
-\def\TaskTitleColumnSize{\normalsize}           % "TASK TITLES" column label text size
-\def\QuarterColumnSize{\scriptsize}             % "1", "2"... year-quarter label text size
-\def\IdWksColumnSize{\scriptsize}               % "id wks" text size
-\def\SigmaColumnIcon{\textbf{\large{$\Sigma$}}} % sigma symbol label size
-\def\NoDollarColumnIcon{\noDollarIcon{-0.4}{0.4mm}{0.2}{0.15}} % "no dollar" symbol label size
-\def\DollarColumnIcon{\dollarIcon{-0.4}{0.2}{0.015}}% green "dollar" symbol label size
-\def\TaskCategoryLabel#1#2{                     % Task Category label format
-  {\normalsize\textbf\scshape{#1}}~{\normalsize\textbf{#2}}}
-\def\TaskTitleLabel#1#2{                        % Task title format
-  ~{\scriptsize{\textbf{\scshape{#1}}}}~{
-  \color{mediumelectricblue}{\footnotesize\textbf{#2}}}}
-\def\FteTotalFormat#1{\small{#1}}               % Sigma column format
-\def\FteUnfundedFormat#1{\small{#1}}            % no-dollar column format
-\def\FteFundedFormat#1{\small \color{blue}{#1}} % "funded" column format
-\def\TimelineColor{mediumelectricblue}          % TASK TIMELINE cell color
-\def\TimelineSize{\tiny}                        % width control of TASK TIMELINE cells
-\def\FundedUsTeam#1{\small \color{blue}{#1}}    % funded US team members ID, \#weeks format
-\def\UnfundedUsTeam#1{\small \color{black}{#1}} % UNfunded US team members ID, \#weeks fomat
-\def\InternationalTeam#1{\small \color{red}{#1}}% international team members ID, \#weeks format
-\newcolumntype{T}[5]{
-  |>{\raggedright\arraybackslash}p{#1} % title column
-  *{2}{|p{#2}!{\color{#5}\vrule}*{2}{p{#2}!{\color{#5}\vrule}}p{#2}} % timeline columns
-  |>{\raggedright\arraybackslash}p{#3} % task assignment column
-  |p{#4}!{\color{#5}\vrule}            % total fte, sum column
-  p{#4}!{\color{#5}\vrule}             % total fte, unfunded column
-  c|                                   % total fte, funded column
-}
 
 \addtocounter{table}{-1}          % corrects double-counting of sidewaystable/longtable use
 \begin{table*}[h!]                % \begin{table} makes caption have same width as table
