@@ -65,7 +65,7 @@ You can just comment out your added lines and recompile the document, if you wan
   <td><b>Column width adjustments</b></td>
   <td>
   <pre><code>
-  \LandScapetrue                   % appearance in document makes landscape table
+  \LandScapetrue             % appearance in document makes landscape table
   \def\TaskWidth{<mark>3.9in</mark>}      % width of leftmost ("Tasks") column
   \def\LeadWidth{<mark>1.2in</mark>}      % width of middle ("Lead") column
   \def\ExpertiseWidth{<mark>1.8in</mark>} % width of rightmost ("Expertise") column
