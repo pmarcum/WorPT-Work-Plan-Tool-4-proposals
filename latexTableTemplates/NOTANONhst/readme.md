@@ -51,7 +51,11 @@ Copy/paste the special packages in preamble of your document, if you haven't don
 <mark>% Put OPTIONAL customizations for NOTANONhst HERE</mark>
 \begin{NOTANONhst}
 <mark>\begin{tablenotes}[flushleft] 
-Team members, identified by their name and role in the proposed project, are listed with their institutional affiliation and position, with a "F" or "US" indicating foriegn or U.S. institution.  A brief narrative of their role in the project is given.  A 'Y' or 'N' indicates if the person is funded by the proposed budget or not, respectively.  The total work-effort of the team member, summed over full life of the proposed  project, is in the rightmost column (multiply shown FTE value by 12 to get work effort in number of months).
+Team members, identified by their name and role in the proposed project, are listed with their institutional<br>
+affiliation and position, with a "F" or "US" indicating foriegn or U.S. institution.  A brief narrative of their<br>
+role in the project is given.  A 'Y' or 'N' indicates if the person is funded by the proposed budget or not,<br>
+respectively.  The total work-effort of the team member, summed over full life of the proposed  project, is in the,br>
+rightmost column (multiply shown FTE value by 12 to get work effort in number of months).
 \end{tablenotes}</mark>
 \end{NOTANONhst}
 </code></pre>
