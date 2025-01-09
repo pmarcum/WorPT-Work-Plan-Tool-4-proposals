@@ -6,7 +6,7 @@
 <td>
 <font size="3"><b>isANONfte</b></font>
 <br>
-<img src="https://lh3.googleusercontent.com/d/1RcQEyCVExdw0WQEikF9MGwOT_K0MQ9CR" width=30%>
+<img src="https://lh3.googleusercontent.com/d/1RcQEyCVExdw0WQEikF9MGwOT_K0MQ9CR" width=70%>
 </td>
 <td>
 <details>
@@ -137,7 +137,7 @@ Copy/paste the ENTIRE below code in order to change default table preamble.<br>
 <u>IMPORTANT</u> Most of table preamble can be changed EXCEPT <i>do <b>NOT</b> change "T" variable, and preserve the number of columns.</i>
 <pre><code>
 \newcolumntype{T}{
-  {<mark>|l|*{\LastYearPlusOne}{c|</mark>}}
+  <mark>{|l|*{\LastYearPlusOne}{c|}}</mark>
 }
 </code></pre></td>
 </table>
