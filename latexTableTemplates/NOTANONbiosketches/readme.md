@@ -4,7 +4,7 @@
 <table>
 <tr>
 <td>
-<font size="3">WorPT table example: <b>NOTANONschedule</b></font>
+<font size="3"><b>NOTANONbiosketches</b></font>
 <br>
 <img src="https://lh3.googleusercontent.com/d/1f3XxoAT5680nxNbcwWk4uifOvXdytuUh" width=60%>
 </td>
@@ -49,7 +49,7 @@ Copy/paste the special packages in preamble of your document, if you haven't don
 \include{<mark>do_NOT_manually_edit</mark>/NOTANONbiosketches} % reset file parameters
 %            ^^^^ replace do_NOT_manually_edit if not correct folder name
 
-<mark>% Put <u>OPTIONAL</u> customizations for NOTANONschedule HERE</mark>
+<mark>% Put <u>OPTIONAL</u> customizations for NOTANONbiosketches HERE</mark>
 
 \begin{NOTANONbiosketches}
 \end{NOTANONbiosketches}  
