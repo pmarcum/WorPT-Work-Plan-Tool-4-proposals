@@ -81,8 +81,8 @@ You can just comment out your added lines and recompile the document, if you wan
 <td><pre><code>
 \def\NameColor{<mark>Blue</mark>}              % font color of name/role appearing at top of biosketch
 \def\NameSize{<mark>\large</mark>}             % font size of name/role
-\def\NameBoldface#1{<mark>\textbf</mark>{#1}}  % boldface name/role
-\def\LabelBoldface#1{<mark>\textbf</mark>{#1}} % boldface "Education",... labels
+\def\NameFontstyle#1{<mark>\textbf</mark>{#1}}  % boldface name/role
+\def\LabelFontstyle#1{<mark>\textbf</mark>{#1}} % boldface "Education",... labels
 </code></pre></td>
 </tr>
    
