@@ -142,14 +142,14 @@ be turned into plain test by removing the "\textbf", eg {{#1}}
 <td>
 Use table preamble for more control over table layout (removing/adding vertical lines, changing column alignment, etc).<br>
 Copy/paste the ENTIRE below code in order to change default table preamble.<br>
-<u>IMPORTANT</u> Most of table preamble can be changed EXCEPT <i>do <b>NOT</b> change "T" and "L" variables, and preserve the number of columns.</i>
+<u>IMPORTANT</u> Most of table preamble can be changed EXCEPT <i>do <b>NOT</b> change "T" variable, and preserve the number of columns.</i>
 <pre><code>
 \newcolumntype{T}{
-  <mark>|</mark>L{\ContributorWidth}<mark>!{\color{\VerticalLineColor}\vrule}</mark> % Contributor column
-  L{\PositionWidth}<mark>!{\color{\VerticalLineColor}\vrule}</mark>     % Position column
-  L{\RoleWidth}<mark>!{\color{\VerticalLineColor}\vrule}</mark>         % Role column
-  <mark>p</mark>{\FundedMemberWidth}<mark>!{\color{\VerticalLineColor}\vrule}</mark>       % Funded(?) column
-  <mark>p</mark>{\FteWidth}<mark>|</mark>                                             % FTE column
+  <mark>|{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{\ContributorWidth}!{\color{\VerticalLineColor}\vrule}</mark> % Contributor column
+  <mark>{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{\PositionWidth}}!{\color{\VerticalLineColor}\vrule}</mark>     % Position column
+  <mark>{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{\RoleWidth}}!{\color{\VerticalLineColor}\vrule}</mark>         % Role column
+  <mark>p{\FundedMemberWidth}!{\color{\VerticalLineColor}\vrule}</mark>       % Funded(?) column
+  <mark>p{\FteWidth}|</mark>                                             % FTE column
 }
 </code></pre>
 </td>
