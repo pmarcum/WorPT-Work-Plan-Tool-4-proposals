@@ -1,31 +1,69 @@
+<!--------------------------------------
+   SCREEN SHOT
+--------------------------------------->
+<table>
+<tr>
+<td>
+<font size="3">WorPT table example: <b>NOTANONschedule</b></font>
+<br>
+<img src="https://lh3.googleusercontent.com/d/12BO4XZpEwodyHwtDSvcrKBhmCwkxysLS" width=40%>
+</td>
+<td>
+<details>
+<summary><b>NOTANONtasks</b> (description)</summary>
 <b>NOTANONtasks</b> is a table of project tasks, organized under task categories, as specified by the TASKS page in the
 WorPT spreadsheet. The task lead and team members assisting with each task are specified as well. No
 level-of-effort information is given in this table, only tasks and assignments to illustrate team member involvement. 
-
-<font size="3">WorPT table example: <b>NOTANONtasks</b></font>
-<br>
-<img src="https://lh3.googleusercontent.com/d/12BO4XZpEwodyHwtDSvcrKBhmCwkxysLS" width=40%>
+</details>
+</td>
+</tr>
+</table>
 <hr>
+
+<!--------------------------------------
+   HOW TO USE
+--------------------------------------->
 <b>HOW TO USE:</b>
-<ol>
-<li><b>Special WorPT Packages</b> [<i>one-time-only task</i>]Copy/paste the special packages in preamble of your document, if you haven't done so previously. (see https://github.com/pmarcum/WorPT-Work-Plan-Tool-4-proposals/blob/main/WorPTpackages for more info).</li>
-<li><mark><b>How To Put File Contents Into Your Document</b></mark> [<i>do once for inclusion of this file</i>] 
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+             Special Packages
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<details>
+<summary><b>Special WorPT Packages</b> [<i>one-time-only task</i> for inclusion of any/all WorPT files]</summary>
+Copy/paste the special packages in preamble of your document, if you haven't done so previously. (see https://github.com/pmarcum/WorPT-Work-Plan-Tool-4-proposals/blob/main/WorPTpackages for more info).
+</details>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+             Putting File Contents Into Document
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<details>
+<summary><mark><b>How To Put File Contents Into Your Document</b></mark> [<i>one-time-only task for inclusion of this file</i>]</summary> 
 <ol>
 <li>COPY the lines in the code block below, then</li>
 <li>PASTE into your document WHERE you want the content to appear, then</li>
 <li>MODIFY the editable lines you just pasted in your document as needed. The lines that may be edited (or even deleted altogether if not wanted) are indicated by highlight below. </li>
 </ol>
+    
 <pre><code>
-\include{do_NOT_manually_edit/table_NOTANONtasks}   % reset/define parameters used for this file
-% NOTE: replace do_NOT_manually_edit if not correct folder name
-<mark>% Put customizations for NOTANONtasks HERE</mark>
+\newpage                                          % [optional] (could instead use \clearpage, or comment out)
+\include{<mark>do_NOT_manually_edit</mark>/NOTANONbiosketches} % reset file parameters
+%            ^^^^ replace do_NOT_manually_edit if not correct folder name
+
+<mark>% Put <u>OPTIONAL</u> customizations for NOTANONschedule HERE</mark>
+
 \begin{NOTANONtasks}
 <mark>\caption{\normalsize\textbf{Task Management and Team Responsibilities}:\\
 The tasks ({\color{red}gray} headers) and sub-tasks (left), with specific assignments for the roles of task lead (middle) and expertise / analysis assistance (right).} \label{tab:NOTANONtasks}</mark>
 \end{NOTANONtasks}
 </code></pre>
-</li>
-<li><b>Customize appearance</b> [<i>do as many times as needed</i>]
+
+</details>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+             Customizations
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<details>
+<summary><b>Customize appearance</b> [<i>do as many times as needed</i>]</summary 
 You can change column widths, column alignment, colors, font style using additional lines that are copy/pasted into your document. Specifically: 
 <ol>
 <li>COPY any or all lines in the code block below that are related to the formatting parameter that you want to edit. The lines below show default values. You will edit those values to make desired changes.</li>
