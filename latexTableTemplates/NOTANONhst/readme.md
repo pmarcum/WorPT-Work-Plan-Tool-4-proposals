@@ -93,11 +93,11 @@ You can just comment out your added lines and recompile the document, if you wan
 <td><b>Column width adjustments</b></td>
 <td>
 <pre><code>
-\def\ContributorWidth{1.8in}      % Contributor column width
-\def\PositionWidth{1.3in}         % Position column width
-\def\RoleWidth{2.5in}             % Role column width
-\def\FundedMemberWidth{0.10in}    % Funded(?) column width
-\def\FteWidth{0.28in}             % FTE column width
+\def\ContributorWidth{<mark>1.8in</mark>}      % Contributor column width
+\def\PositionWidth{<mark>1.3in</mark>}         % Position column width
+\def\RoleWidth{<mark>2.5in</mark>}             % Role column width
+\def\FundedMemberWidth{<mark>0.10in</mark>}    % Funded(?) column width
+\def\FteWidth{<mark>0.28in</mark>}             % FTE column width
 </code></pre>
 </td>
 </tr>
