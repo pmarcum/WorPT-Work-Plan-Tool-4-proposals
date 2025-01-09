@@ -67,7 +67,7 @@ The default settings for this file produce a nice-looking bio-sketch section wit
 <li>COPY any or all lines in the code block below that are related to the formatting parameter that you want to edit. The lines below show default values. You will edit those values to make desired changes.</li>
 <li>PASTE the copied lines into your document at the "% Put customizations for NOTANONbiosketches HERE" line in the code that you copy/pasted in Step 2. Most importantly, the desired formatting lines should be pasted somewhere <b>between</b> the \include{do_NOT_manually_edit/NOTANONbiosketches} and \begin{NOTANONbiosketches} lines. </li>
 <li>EDIT the pasted lines in your document, as desired.</li>
-NOTE: THe lines are grouped into categories to help you locate what you need. You can PICK AND CHOOSE the lines you want to paste into your document; you do not have to copy/paste all of the lines below (unless noted) and do not have to copy all lines within a group.<br>
+NOTE: The lines are grouped into categories to help you locate what you need. You can PICK AND CHOOSE the lines you want to paste into your document; you do not have to copy/paste all of the lines below (unless noted) and do not have to copy all lines within a group.<br>
 <i>Highlights indicate what parts of the commands can be edited without breaking your LaTeX code.</i><br>
 You can just comment out your added lines and recompile the document, if you want to return to default values.
 </ol>
