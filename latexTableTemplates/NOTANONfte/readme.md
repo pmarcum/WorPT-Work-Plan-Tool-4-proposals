@@ -102,11 +102,11 @@ But if counter gets screwed up and needs manual intervention, use below to apply
 For fontstyle changes, the "\textbf" can be changed to "\emph" for italics, or can<br>
 be turned into plain test by removing the "\textbf", eg {{#1}}
 <pre><code>
-\def\NameLabelBoldface#1{<mark>\textbf</mark>{#1}}      % boldface "Name" column label
-\def\RoleLabelBoldface#1{<mark>\textbf</mark>{#1}}      % boldface "Role" column label
-\def\CommitmentLabelBoldface#1{<mark>\textbf</mark>{#1}}% boldface "Commitment (FTE)" column label
-\def\YearLabelBoldface#1{<mark>\textbf</mark>{#1}}      % boldface "Y1", "Y2", ...  column labels
-\def\TotalLabelBoldface#1{<mark>\textbf</mark>{#1}}     % boldface "Total" column label
+\def\NameLabelFontstyle#1{<mark>\textbf</mark>{#1}}      % boldface "Name" column label
+\def\RoleLabelFontstyle#1{<mark>\textbf</mark>{#1}}      % boldface "Role" column label
+\def\CommitmentLabelFontstyle#1{<mark>\textbf</mark>{#1}}% boldface "Commitment (FTE)" column label
+\def\YearLabelFontstyle#1{<mark>\textbf</mark>{#1}}      % boldface "Y1", "Y2", ...  column labels
+\def\TotalLabelFontstyle#1{<mark>\textbf</mark>{#1}}     % boldface "Total" column label
 </code></pre></td>
 </tr>
 
@@ -116,7 +116,7 @@ be turned into plain test by removing the "\textbf", eg {{#1}}
 <pre><code>
 \def\SectionBannerColor{<mark>Blue</mark>}              % color of banners separating the 3 sections 
 \def\SectionBannerFontColor{<mark>White</mark>}         % font color of banners separating the 3 sections 
-\def\SectionBannerBoldface#1{<mark>\textbf</mark>{#1}}  % boldface text in banners separating the 3 sections
+\def\SectionBannerFontstyle#1{<mark>\textbf</mark>{#1}}  % boldface text in banners separating the 3 sections
 </code></pre></td>
 </tr>
 
@@ -124,7 +124,7 @@ be turned into plain test by removing the "\textbf", eg {{#1}}
 <td><b>Color and font style of category totals</b></td>
 <td>
 <pre><code>
-\def\TotalWorkEffortBoldface#1{<mark>\textbf</mark>{#1}}% boldface text in "Total .... Work Effort" line at section end
+\def\TotalWorkEffortFontstyle#1{<mark>\textbf</mark>{#1}}% boldface text in "Total .... Work Effort" line at section end
 \def\TotalWorkEffortFontColor{<mark>Blue</mark>}        % font color of "Total ... Work Effort" line at section end
 </code></pre></td>
 </tr>
