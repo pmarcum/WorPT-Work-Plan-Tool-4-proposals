@@ -20,12 +20,12 @@
 %---- appearance of top of each current/pending report showing colorized name banner 
 \def\NameBannerColor{Blue}         % Current/Pending top banner color
 \def\NameBannerFontColor{White}    % Current/Pending top banner font color
-\def\NameBannerBoldface#1{\textbf{#1}} % boldface banner text
+\def\NameBannerFontstyle#1{\textbf{#1}} % boldface banner text
 
 %---- appearance of section dividers, eg "Current Support", "Pending Grant Support", etc
 \def\SectionColor{lightgray}       % "Current Support" & "Pending Grant Support" color
 \def\SectionFontColor{Black}       % "Current Support" and "Pending Grant Support" font color
-\def\SectionBoldface#1{\textbf{#1}}% boldface Current Support, Pending Grant Support font
+\def\SectionFontstyle#1{\textbf{#1}}% boldface Current Support, Pending Grant Support font
 
 %---- if the WorPT spreadsheet file indicates to do so, a "(this proposal)" appears by
 %     the proposal in the "PENDING" list that is the proposal being submitted.  The below
@@ -33,7 +33,7 @@
 \def\ThisProposalColor{NavyBlue}   % "this proposal" font color in "pending"
 
 %---- controls the font style of the text in the left side of table
-\def\LeftBoldface#1{\textbf{#1}}   % boldface left column text
+\def\LeftFontstyle#1{\textbf{#1}}   % boldface left column text
 
 %--- table preamble definition bundled into the "T" variable
 \newcolumntype{T}{
@@ -55,19 +55,19 @@
 
 %---- make colorized top name banner
 \hline
-\multicolumn{2}{|c|}{\cellcolor{\NameBannerColor}\color{\NameBannerFontColor}\NameBannerBoldface{[INSERTNAME] ([INSERTROLE])}}\\ 
+\multicolumn{2}{|c|}{\cellcolor{\NameBannerColor}\color{\NameBannerFontColor}\NameBannerFontstyle{[INSERTNAME] ([INSERTROLE])}}\\ 
 \hline
 
 % COMMENT: below is the banner delineating the Current Grant section
 %---- start "CURRENT SUPPORT" section
-\multicolumn{2}{|c|}{\cellcolor{\SectionColor}\color{\SectionFontColor}\SectionBoldface{Current Support}}\\
+\multicolumn{2}{|c|}{\cellcolor{\SectionColor}\color{\SectionFontColor}\SectionFontstyle{Current Support}}\\
 \hline
 [INSERTCURRENTFUNDINGLIST]
 
 % COMMENT: below is the banner delineating the Pending Grant section
 %---- start "PENDING SUPPORT" section
 \hline
-\multicolumn{2}{|c|}{\cellcolor{\SectionColor}\color{\SectionFontColor}\SectionBoldface{Pending Grant Support} [INSERTINCLUSIONOPTION]}\\ \hline
+\multicolumn{2}{|c|}{\cellcolor{\SectionColor}\color{\SectionFontColor}\SectionFontstyle{Pending Grant Support} [INSERTINCLUSIONOPTION]}\\ \hline
 [INSERTPENDINGFUNDINGLIST]
 
 % COMMENT: the script will use one of two formatting options, depending on if there are 
@@ -76,15 +76,15 @@
 % COMMENT: template for entries in this section
 [STARTCURRENT]
 %---- next CURRENT SUPPORT entry
-\LeftBoldface{Title}&[INSERTCURRENTTITLE]\\ 
-\LeftBoldface{Source of Support}&[INSERTCURRENTSOURCE]\\ 
-\LeftBoldface{Program POC}&[INSERTCURRENTPOC]\\ 
-\LeftBoldface{PI}&[INSERTCURRENTPI]\\
-\LeftBoldface{Sci PI}&[INSERTCURRENTSCIPI]\\
-\LeftBoldface{Admin PI}&[INSERTCURRENTADMINPI]\\
-\LeftBoldface{Award Period}&[INSERTCURRENTAWARDPERIOD]\\
-\LeftBoldface{Award Amount}&[INSERTCURRENTDOLLAR]\\
-\LeftBoldface{FTE}&[INSERTCURRENTFTES]\\
+\LeftFontstyle{Title}&[INSERTCURRENTTITLE]\\ 
+\LeftFontstyle{Source of Support}&[INSERTCURRENTSOURCE]\\ 
+\LeftFontstyle{Program POC}&[INSERTCURRENTPOC]\\ 
+\LeftFontstyle{PI}&[INSERTCURRENTPI]\\
+\LeftFontstyle{Sci PI}&[INSERTCURRENTSCIPI]\\
+\LeftFontstyle{Admin PI}&[INSERTCURRENTADMINPI]\\
+\LeftFontstyle{Award Period}&[INSERTCURRENTAWARDPERIOD]\\
+\LeftFontstyle{Award Amount}&[INSERTCURRENTDOLLAR]\\
+\LeftFontstyle{FTE}&[INSERTCURRENTFTES]\\
 [ENDCURRENT]
 
 % COMMENT: below is what gets written if there is NO current / ongoing grant support
@@ -92,8 +92,8 @@
 % COMMENT: single entry under this section
 [STARTNOCURRENT]
 %---- placehold if no current support exists
-\LeftBoldface{Title}&\multirow{2}{*}{No grant funding currently}\\
-\LeftBoldface{Source of Support}&{}\\
+\LeftFontstyle{Title}&\multirow{2}{*}{No grant funding currently}\\
+\LeftFontstyle{Source of Support}&{}\\
 [ENDNOCURRENT]
 
 % COMMENT: there are 2 optional text to appear in this banner. Below option if user
@@ -121,15 +121,15 @@
 % COMMENT: as the template for entries under this section
 [STARTPENDING]
 %---- next PENDING SUPPORT entry
-\LeftBoldface{Title}&[INSERTTHISPROPOSALMARKER][INSERTPENDINGTITLE]\\
-\LeftBoldface{Source of Support}&[INSERTPENDINGSOURCE]\\
-\LeftBoldface{Program POC}&[INSERTPENDINGPOC]\\
-\LeftBoldface{PI}&[INSERTPENDINGPI]\\
-\LeftBoldface{Sci PI}&[INSERTPENDINGSCIPI]\\
-\LeftBoldface{Admin PI}&[INSERTPENDINGADMINPI]\\
-\LeftBoldface{Award Period}&[INSERTPENDINGAWARDPERIOD]\\
-\LeftBoldface{Award Amount}&[INSERTPENDINGDOLLAR]\\
-\LeftBoldface{FTE}&[INSERTPENDINGFTES]\\
+\LeftFontstyle{Title}&[INSERTTHISPROPOSALMARKER][INSERTPENDINGTITLE]\\
+\LeftFontstyle{Source of Support}&[INSERTPENDINGSOURCE]\\
+\LeftFontstyle{Program POC}&[INSERTPENDINGPOC]\\
+\LeftFontstyle{PI}&[INSERTPENDINGPI]\\
+\LeftFontstyle{Sci PI}&[INSERTPENDINGSCIPI]\\
+\LeftFontstyle{Admin PI}&[INSERTPENDINGADMINPI]\\
+\LeftFontstyle{Award Period}&[INSERTPENDINGAWARDPERIOD]\\
+\LeftFontstyle{Award Amount}&[INSERTPENDINGDOLLAR]\\
+\LeftFontstyle{FTE}&[INSERTPENDINGFTES]\\
 [ENDPENDING]
 
 % COMMENT: below is used if there are NO pending proposals
@@ -137,8 +137,8 @@
 % COMMENT: single entry under this section
 [STARTNOPENDING]
 %---- placehold if no pending support exists
-\LeftBoldface{Title}&\multirow{2}{*}{No pending grant funding}\\
-\LeftBoldface{Source of Support}&{}\\
+\LeftFontstyle{Title}&\multirow{2}{*}{No pending grant funding}\\
+\LeftFontstyle{Source of Support}&{}\\
 [ENDNOPENDING]
 
 % COMMENT: the below are 2 options for how each current/pending report is 
