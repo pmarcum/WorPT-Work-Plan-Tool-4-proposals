@@ -11,11 +11,11 @@
 % ___________________________________________
 
 %--- boldfaces the name at the beginning of each paragraph associated with that name
-\def\NameBoldface#1{\textbf{#1}}            % boldface the name at top of paragraph for that person
+\def\NameFontstyle#1{\textbf{#1}}            % boldface the name at top of paragraph for that person
 
 % COMMENT: the below template formats the paragraph for each person
 [STARTSUMMARYTEMPLATE]
-[INSERTPREFIX] \NameBoldface{[INSERTNAME]}, \NameBoldface{[INSERTROLE]}, [INSERTBIOSUMMARY] \par
+[INSERTPREFIX] \NameFontstyle{[INSERTNAME]}, \NameFontstyle{[INSERTROLE]}, [INSERTBIOSUMMARY] \par
 [ENDSUMMARYTEMPLATE]
 
 \newenvironment{[INSERTFILENAME]}{%
