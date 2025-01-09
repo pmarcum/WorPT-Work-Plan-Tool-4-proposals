@@ -4,7 +4,7 @@
 <table>
 <tr>
 <td>
-<font size="3">WorPT table example: <b>NOTANONschedule</b></font>
+<font size="3"><b>NOTANONtasks</b></font>
 <br>
 <img src="https://lh3.googleusercontent.com/d/12BO4XZpEwodyHwtDSvcrKBhmCwkxysLS" width=40%>
 </td>
@@ -46,10 +46,10 @@ Copy/paste the special packages in preamble of your document, if you haven't don
     
 <pre><code>
 \newpage                                          % [optional] (could instead use \clearpage, or comment out)
-\include{<mark>do_NOT_manually_edit</mark>/NOTANONbiosketches} % reset file parameters
+\include{<mark>do_NOT_manually_edit</mark>/NOTANONtasks} % reset file parameters
 %            ^^^^ replace do_NOT_manually_edit if not correct folder name
 
-<mark>% Put <u>OPTIONAL</u> customizations for NOTANONschedule HERE</mark>
+<mark>% Put <u>OPTIONAL</u> customizations for NOTANONtasks HERE</mark>
 
 \begin{NOTANONtasks}
 <mark>\caption{\normalsize\textbf{Task Management and Team Responsibilities}:\\
@@ -67,73 +67,118 @@ The tasks ({\color{red}gray} headers) and sub-tasks (left), with specific assign
 You can change column widths, column alignment, colors, font style using additional lines that are copy/pasted into your document. Specifically: 
 <ol>
 <li>COPY any or all lines in the code block below that are related to the formatting parameter that you want to edit. The lines below show default values. You will edit those values to make desired changes.</li>
-<li>PASTE the copied lines into your document at the "% Put customizations for NOTANONtasks HERE" line in the code that you copy/pasted in Step 2. Most importantly, the desired formatting lines should be pasted somewhere <b>between</b> the \include{do_NOT_manually_edit/table_NOTANONtasks} and \begin{NOTANONtasks} lines. </li>
+<li>PASTE the copied lines into your document at the "% Put customizations for NOTANONtasks HERE" line in the code that you copy/pasted in Step 2. Most importantly, the desired formatting lines should be pasted somewhere <b>between</b> the \include{do_NOT_manually_edit/NOTANONtasks} and \begin{NOTANONtasks} lines. </li>
 <li>EDIT the pasted lines in your document, as desired. Some examples are given at the bottom of this page.</li>
 NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; you do not have to copy/paste all of the beow lines!
 </ol>
-<b>The below lines are what you will most likely need to copy/paste, to get your column widths just right. Highlights indicate what can be edited:</b>
-<pre><code>
-\LandScapetrue                   % uncommented-out appearance in your document will put the table in landscape mode
-\def\TaskWidth{<mark>3.9in</mark>}            % width of leftmost ("Tasks") column
-\def\LeadWidth{<mark>1.2in</mark>}            % width of middle ("Lead") column
-\def\ExpertiseWidth{<mark>1.8in</mark>}       % width of rightmost ("Expertise") column
-</code></pre>
-<b>Fix the table number if it is showing a wrong number, by adding or subtracting whatever correction is needed.</b>
-The default typically works well because the table + longtable combination causes the counter to overcount by one, so -1 performs the appropriate correction.  But ocassionally, the counter gets screwed up and needs manual intervention, so here's how to apply a correction:
-<pre><code>
-\def\TaskAddCounter{<mark>-1</mark>}          % corrects table number messed up by table,longtable combination)
-</code></pre>
-<b>The below lines might be useful - they adjust the table compactness:</b>
-<pre><code>
-\def\SpaceBetweenRows{<mark>1</mark>}         % vertical compactness of rows
-\def\SpaceBetweenColumns{<mark>1pt</mark>}    % spacing between columns (bigger value=wider column margin)
-</code></pre>
-<b>The below can nudge the table to the left (increase value) or right (decrease value)</b>
-<pre><code>
-\def\NudgeTable{<mark>1.2\textwidth</mark>}   % bigger values nudge table to left
-</code></pre>
-    
-<b>The below are aesthetic preferences only, like color and font style</b>
-<pre><code>
-\def\HeaderColor{<mark>Blue</mark>}           % column heading color
-\def\HeaderFontColor{<mark>White</mark>}      % column heading font color
-\def\HeaderBoldface#1{<mark>\textbf</mark>{#1}}% boldface column heading labels; change "\textbf" to "\emph" or whatever
-\def\SectionColor{<mark>gray!40</mark>}       % category dection label colors
-\def\SectionFontColor{<mark>Black</mark>}     % category section label font color
-\def\SectionBoldface#1{<mark>\textbf</mark>{#1}} % boldface category section labels; change "\textbf" to "\emph" or whatever
-\def\VerticalLineColor{<mark>gray!40</mark>}  % color of line between "Lead" and "Expertise"
-</code></pre>
 
-<b>The below table preamble gives you considerably MORE control over table layout than just changing parameter values.</b>
-Copy/paste the below if you want to do things like remove or add vertical lines or change a column from left-alignment to center-aligned, for example. You can replace the \TaskWidth and other parameters with hard-coded numbers if desired, and change the "p" to other alignment modes. You can change anything that is in highlight. Things that should NOT be changed (otherwise, the LaTeX will break) are the "T" variable and number of columns. 
+<!-- . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                              Options   
+<!-- . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . -->
+<table>
+
+<tr>
+<td><b>Table orientation</b></td>
+<td><pre><code>
+\LandScapetrue          % will put the table in landscape mode
+</code></pre></td>
+</tr>
+
+<tr>
+<td><b>Column width adjustments</b></td>
+<td><pre><code>
+\def\TaskWidth{<mark>3.9in</mark>}            % leftmost ("Tasks") column width
+\def\LeadWidth{<mark>1.2in</mark>}            % middle ("Lead") column width
+\def\ExpertiseWidth{<mark>1.8in</mark>}       % rightmost ("Expertise") column width
+</code></pre></td>
+</tr>
+
+<tr>
+<td><b>Table number additive correction</b></td>
+<td>
+The default typically works well (an overcount is caused by table + longtable combination).<br>
+But if counter gets screwed up and needs manual intervention, use below to apply a correction:
+<pre><code>
+\def\TaskAddCounter{<mark>-1</mark>}    % additive correction to table number
+</code></pre></td>
+</tr>
+
+<tr>
+<td><b>Table compactness</b></td>
+<td><pre><code>
+\def\SpaceBetweenRows{<mark>0.8</mark>}    % vertical compactness of rows
+\def\SpaceBetweenColumns{<mark>1pt</mark>} % bigger = wider spacing between columns
+</code></pre></td>
+</tr>
+
+<tr>
+<td><b>Nudge table to left or right</b></td>
+<td><pre><code>
+\def\NudgeTable{<mark>1.5\textwidth</mark>} % larger value nudges table to left
+</code></pre></td>
+</tr>
+   
+<tr>
+<td><b>Column label color and font style</b></td>
+<td>
+For fontstyle changes, the "\textbf" can be changed to "\emph" for italics, or can
+be turned into plain test by removing the "\textbf", eg {{#1}}
+<pre><code>
+\def\HeaderColor{<mark>Blue</mark>}            % column heading color
+\def\HeaderFontColor{<mark>White</mark>}       % column heading font color
+\def\HeaderBoldface#1{<mark>\textbf</mark>{#1}}% boldface column heading labels
+</code></pre></td>
+</tr>
+
+<tr>
+<td><b>Color and font style of category banners</b></td>
+<td><pre><code>
+\def\SectionColor{<mark>gray!40</mark>}       % category section label colors
+\def\SectionFontColor{<mark>Black</mark>}     % category section label font color
+\def\SectionBoldface#1{<mark>\textbf</mark>{#1}} % boldface category section labels
+</code></pre></td>
+</tr>
+
+<tr>
+<td><b>Color of faint vertical line</b></td>
+<td><pre><code>
+\def\VerticalLineColor{<mark>gray!40</mark>}  % color of line between "Lead" and "Expertise"
+</code></pre></td>
+</tr>
+
+<tr>
+<td><b>Table preamble - full control!</b></td>
+<td>
+Use table preamble for more control over table layout (removing/adding vertical lines, changing column alignment, etc).<br>
+Copy/paste the ENTIRE below code in order to change default table preamble.<br>
+<u>IMPORTANT</u> Most of table preamble can be changed EXCEPT <i>do <b>NOT</b> change "T" variable, and preserve the number of columns.</i>
 <pre><code>
 \newcolumntype{T}{
   <mark>|p</mark>{<mark>\TaskWidth</mark>}<mark>||</mark>                                 % title column
   <mark>p</mark>{<mark>\LeadWidth</mark>}<mark>!{\color{\VerticalLineColor}\vrule}</mark> % task lead column
   <mark>p</mark>{<mark>\ExpertiseWidth</mark>}<mark>|</mark>                              % expertise column
 }
-</code></pre> 
-</li>
+</code></pre></td>
+</tr>
+</table>
+</details>
 
-<li><b>Examples</b>
+<!--------------------------------------
+   EXAMPLES 
+--------------------------------------->
+<details>
+<summary><b>Examples</b></summary>
 The below is an example of how one can change the appearance of the table within a LaTeX document. After copy/pasting the code to incorporate the table into my document, and then deciding that my task titles were too long to fit with the table in portrait mode, I decided I needed to use landscape mode.  I copy/pasted the landscape fla and the 2 formatting lines that control the "Tasks" and "Expertise" column widths. (My team members have long last names, requiring a wider column than the default). I also slightly altered the caption to be appropriate to my proposal. The result?  A landscape-mode table that allows each task to appear in a single table row without spilling over into the next line, which is my preferred way to present these tables for easiest viewing. Here is a peek at what my LaTeX document looks like:  
-<pre><code>
-\include{do_NOT_manually_edit/NOTANONtasks}
-    
-\LandScapetrue                 % puts table in landscape mode
-\def\TaskWidth{5.4in}          % width of leftmost ("Tasks") column
-\def\ExpertiseWidth{1.8in}     % width of rightmost ("Expertise") column
 
-\begin{NOTANONtasks}
-\caption{\normalsize\textbf{Task Management and Team Responsibilities}:\\\\
-The tasks ({\color{red}gray} headers) and sub-tasks (left), with specific assignments for the roles of task lead (middle) and expertise / analysis assistance (right). See a more detailed description of these roles in the Project Management section.}
-\label{tab:NOTANONtasks}
-\end{NOTANONtasks}
-</code></pre>
+<!--     INSERT IMAGE -->
+
 NOTE: To return to default values, all I have to do is comment-out (put a "%" at the line's beginning) the "\def" formatting lines that I pasted. 
-</li>
+</details>
 
-<li><b>NUCLEAR OPTION:</b>
-If you just cannot get the table to look like you want it to look, you can always copy/paste the entire table_NOTANONtasks.tex file that appears in the WorPT subfolder, into your document, and then edit at-will.  Some of the WorPT files involve complicated LaTeX code, so be sure that you have a good mastery of LaTeX and know what you are doing before implementing this option!
-</li>
-</ol>
+<!--------------------------------------
+   NUCLEAR OPTION 
+--------------------------------------->
+<details>
+<summary><b>NUCLEAR OPTION</b> <i>[when nothing else works]</i></summary>
+If you just cannot get the table to look like you want it to look, you can always copy/paste the entire NOTANONfte.tex file that appears in the WorPT subfolder, into your document, and then edit at-will.  Some of the WorPT files involve complicated LaTeX code, so be sure that you have a good mastery of LaTeX and know what you are doing before implementing this option!
+</details>
