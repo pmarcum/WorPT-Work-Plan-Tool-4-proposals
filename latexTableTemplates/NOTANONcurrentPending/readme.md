@@ -6,7 +6,7 @@
 <td>
 <font size="3"><b>NOTANONcurrentPending</b></font>
 <br>
-<img src="https://lh3.googleusercontent.com/d/1hQWaFzw0-oolj-ZgvmulSnWuO5ptYoTM" width=50%>
+<img src="https://lh3.googleusercontent.com/d/1hQWaFzw0-oolj-ZgvmulSnWuO5ptYoTM" width=60%>
 </td>
 <td>
 <details>
