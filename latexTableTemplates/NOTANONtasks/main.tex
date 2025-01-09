@@ -30,10 +30,10 @@
 %--- aesthetic preferences
 \def\HeaderColor{Blue}           % column heading color
 \def\HeaderFontColor{White}           % column heading font color
-\def\HeaderBoldface#1{\textbf{#1}}% boldface column labels
+\def\HeaderFontstyle#1{\textbf{#1}}% boldface column labels
 \def\SectionColor{gray!40}       % category label colors
 \def\SectionFontColor{Black}            % category label font color
-\def\SectionBoldface#1{\textbf{#1}} % boldface category labels
+\def\SectionFontstyle#1{\textbf{#1}} % boldface category labels
 \def\VerticalLineColor{gray!40}  % color of line between "Lead" and "Expertise"
 
 %--- table preamble definition bundled into the "T" variable
@@ -57,9 +57,9 @@
 \begin{longtable}{T}
 %--- make colorized top banner labels, the column headers
 \hline
-\HeaderBoldface{\cellcolor{\HeaderColor}\color{\HeaderFontColor}Tasks} & 
-\HeaderBoldface{\cellcolor{\HeaderColor}\color{\HeaderFontColor}Lead} & 
-\HeaderBoldface{\cellcolor{\HeaderColor}\color{\HeaderFontColor}Expertise}\\
+\HeaderFontstyle{\cellcolor{\HeaderColor}\color{\HeaderFontColor}Tasks} & 
+\HeaderFontstyle{\cellcolor{\HeaderColor}\color{\HeaderFontColor}Lead} & 
+\HeaderFontstyle{\cellcolor{\HeaderColor}\color{\HeaderFontColor}Expertise}\\
 \hline
 
 [INSERTTABLECONTENTS]
@@ -68,7 +68,7 @@
 % COMMENT: Below this row, all the related tasks will be listed (the template for those
 % COMMENT: tasks is the template following this one)
 [STARTCATEGORYENTRYTEMPLATE]
-\multicolumn{3}{|c|}{\cellcolor{\SectionColor}\color{\SectionFontColor}\SectionBoldface{Task [INSERTID]: [INSERTTITLE]}}\\ \hline
+\multicolumn{3}{|c|}{\cellcolor{\SectionColor}\color{\SectionFontColor}\SectionFontstyle{Task [INSERTID]: [INSERTTITLE]}}\\ \hline
 [ENDCATEGORYENTRYTEMPLATE]
 
 % COMMENT: The below is a template for a task row in the table that falls under a 
