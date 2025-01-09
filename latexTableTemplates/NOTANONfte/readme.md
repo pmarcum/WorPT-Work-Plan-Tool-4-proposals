@@ -6,7 +6,7 @@
 <td>
 <font size="3"><b>NOTANONfte</b></font>
 <br>
-<img src="https://lh3.googleusercontent.com/d/163QyNKDRQjd-_BOMecd9XvQKzac7pI-U" width=50%>
+<img src="https://lh3.googleusercontent.com/d/163QyNKDRQjd-_BOMecd9XvQKzac7pI-U" width=70%>
 </td>
 <td>
 <details>
