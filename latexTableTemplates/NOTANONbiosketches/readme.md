@@ -6,7 +6,7 @@
 <td>
 <font size="3">WorPT table example: <b>NOTANONschedule</b></font>
 <br>
-<img src="https://lh3.googleusercontent.com/d/1f3XxoAT5680nxNbcwWk4uifOvXdytuUh" width=30%>
+<img src="https://lh3.googleusercontent.com/d/1f3XxoAT5680nxNbcwWk4uifOvXdytuUh" width=50%>
 </td>
 <td>
 <details>
