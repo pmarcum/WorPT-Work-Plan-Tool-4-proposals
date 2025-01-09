@@ -4,9 +4,9 @@
 <table>
 <tr>
 <td>
-<font size="3">WorPT table example: <b>NOTANONschedule</b></font>
+<font size="3"><b>NOTANONschedule</b></font>
 <br>
-<img src="https://lh3.googleusercontent.com/d/1rdPPWxa8nlGOFGYbZyQ6Frq9zj01w4Ww" width=50%>
+<img src="https://lh3.googleusercontent.com/d/1rdPPWxa8nlGOFGYbZyQ6Frq9zj01w4Ww" width=75%>
 </td>
 <td>
 <details>
