@@ -6,7 +6,7 @@
 <td>
 <font size="3"><b>NOTANONtasks</b></font>
 <br>
-<img src="https://lh3.googleusercontent.com/d/12BO4XZpEwodyHwtDSvcrKBhmCwkxysLS" width=40%>
+<img src="https://lh3.googleusercontent.com/d/12BO4XZpEwodyHwtDSvcrKBhmCwkxysLS" width=70%>
 </td>
 <td>
 <details>
