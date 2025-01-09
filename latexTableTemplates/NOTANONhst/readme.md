@@ -146,9 +146,9 @@ Copy/paste the ENTIRE below code in order to change default table preamble.<br>
 <pre><code>
 \newcolumntype{T}{
   <mark>|{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{\ContributorWidth}!{\color{\VerticalLineColor}\vrule}</mark> % Contributor column
-  <mark>{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{\PositionWidth}}!{\color{\VerticalLineColor}\vrule}</mark>     % Position column
-  <mark>{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{\RoleWidth}}!{\color{\VerticalLineColor}\vrule}</mark>         % Role column
-  <mark>p{\FundedMemberWidth}!{\color{\VerticalLineColor}\vrule}</mark>       % Funded(?) column
+  <mark>{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{\PositionWidth}}!{\color{\VerticalLineColor}\vrule}</mark>    % Position column
+  <mark>{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{\RoleWidth}}!{\color{\VerticalLineColor}\vrule}</mark>        % Role column
+  <mark>p{\FundedMemberWidth}!{\color{\VerticalLineColor}\vrule}</mark>  % Funded(?) column
   <mark>p{\FteWidth}|</mark>                                             % FTE column
 }
 </code></pre>
