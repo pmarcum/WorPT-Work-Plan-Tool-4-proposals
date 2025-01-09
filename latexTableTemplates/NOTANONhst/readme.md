@@ -4,7 +4,7 @@
 <table>
 <tr>
 <td>
-<font size="3">WorPT table example: <b>NOTANONhst</b></font>
+<font size="3"><b>NOTANONhst</b></font>
 <br>
 <img src="https://lh3.googleusercontent.com/d/1OpijauwkFzgEorqyUsArZlkZz6ZcB__d" width=50%>
 </td>
@@ -186,5 +186,5 @@ NOTE: To return to default values, all I have to do is comment-out (put a "%" at
 --------------------------------------->
 <details>
 <summary><b>NUCLEAR OPTION</b> <i>[when nothing else works]</i></summary>
-If you just cannot get the table to look like you want it to look, you can always copy/paste the entire table_NOTANONhst.tex file that appears in the WorPT subfolder, into your document, and then edit at-will.  Some of the WorPT files involve complicated LaTeX code, so be sure that you have a good mastery of LaTeX and know what you are doing before implementing this option!
+If you just cannot get the table to look like you want it to look, you can always copy/paste the entire NOTANONhst.tex file that appears in the WorPT subfolder, into your document, and then edit at-will.  Some of the WorPT files involve complicated LaTeX code, so be sure that you have a good mastery of LaTeX and know what you are doing before implementing this option!
 </details>
