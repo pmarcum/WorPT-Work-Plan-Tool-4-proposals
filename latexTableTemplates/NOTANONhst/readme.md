@@ -6,7 +6,7 @@
 <td>
 <font size="3"><b>NOTANONhst</b></font>
 <br>
-<img src="https://lh3.googleusercontent.com/d/1OpijauwkFzgEorqyUsArZlkZz6ZcB__d" width=50%>
+<img src="https://lh3.googleusercontent.com/d/1OpijauwkFzgEorqyUsArZlkZz6ZcB__d" width=70%>
 </td>
 <td>
 <details>
