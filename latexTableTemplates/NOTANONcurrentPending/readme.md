@@ -132,8 +132,8 @@ Copy/paste the ENTIRE below code in order to change default table preamble.<br>
 <u>IMPORTANT</u> Most of table preamble can be changed EXCEPT <i>do <b>NOT</b> change "T" variable, and preserve the number of columns.</i>
 <pre><code>
 \newcolumntype{T}{
-  <mark>|p{\LeftSideWidth}    % grant descriptors, e.g. "Title", "Source of Support", etc.
-  |p{\RightSideWidth}|</mark>  % right side, giving details for each descriptor
+  <mark>|p{\LeftSideWidth}</mark>    % grant descriptors, e.g. "Title", "Source of Support", etc.
+  <mark>|p{\RightSideWidth}|</mark>  % right side, giving details for each descriptor
 }
 </code></pre></td>
 </tr>
