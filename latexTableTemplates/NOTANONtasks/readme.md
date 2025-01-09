@@ -126,7 +126,7 @@ be turned into plain test by removing the "\textbf", eg {{#1}}
 <pre><code>
 \def\HeaderColor{<mark>Blue</mark>}            % column heading color
 \def\HeaderFontColor{<mark>White</mark>}       % column heading font color
-\def\HeaderBoldface#1{<mark>\textbf</mark>{#1}}% boldface column heading labels
+\def\HeaderFontstyle#1{<mark>\textbf</mark>{#1}}% boldface column heading labels
 </code></pre></td>
 </tr>
 
@@ -135,7 +135,7 @@ be turned into plain test by removing the "\textbf", eg {{#1}}
 <td><pre><code>
 \def\SectionColor{<mark>gray!40</mark>}       % category section label colors
 \def\SectionFontColor{<mark>Black</mark>}     % category section label font color
-\def\SectionBoldface#1{<mark>\textbf</mark>{#1}} % boldface category section labels
+\def\SectionFontstyle#1{<mark>\textbf</mark>{#1}} % boldface category section labels
 </code></pre></td>
 </tr>
 
