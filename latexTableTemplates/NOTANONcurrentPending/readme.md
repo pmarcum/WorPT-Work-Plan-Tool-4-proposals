@@ -92,8 +92,8 @@ You can just comment out your added lines and recompile the document, if you wan
 <tr>
 <td><b>Font color and fontstyle</b></td>
 <td><pre><code>
-\def\NameBannerColor{<mark>Blue</mark>}             % Current/Pending top banner color
-\def\NameBannerColor{<mark>White</mark>}            % Current/Pending top banner font color
+\def\NameBannerColor{<mark>Blue</mark>}              % Current/Pending top banner color
+\def\NameBannerColor{<mark>White</mark>}             % Current/Pending top banner font color
 \def\NameBannerFontstyle#1{<mark>\textbf</mark>{#1}} % boldface banner text
 </code></pre></td>
 </tr>
