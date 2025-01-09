@@ -4,7 +4,7 @@
 <table>
 <tr>
 <td>
-<font size="3">WorPT table example: <b>NOTANONschedule</b></font>
+<font size="3"><b>NOTANONcurrentPending</b></font>
 <br>
 <img src="https://lh3.googleusercontent.com/d/1hQWaFzw0-oolj-ZgvmulSnWuO5ptYoTM" width=30%>
 </td>
@@ -48,10 +48,10 @@ Copy/paste the special packages in preamble of your document, if you haven't don
    
 <pre><code>
 \newpage                                          % [optional] (could instead use \clearpage, or comment out)
-\include{<mark>do_NOT_manually_edit</mark>/NOTANONbiosketches} % reset file parameters
+\include{<mark>do_NOT_manually_edit</mark>/NOTANONcurrentPending} % reset file parameters
 %            ^^^^ replace do_NOT_manually_edit if not correct folder name
 
-<mark>% Put <u>OPTIONAL</u> customizations for NOTANONschedule HERE</mark>
+<mark>% Put <u>OPTIONAL</u> customizations for NOTANONcurrentPending HERE</mark>
 
 \begin{NOTANONcurrentPending}
 \end{NOTANONcurrentPending}  
@@ -67,7 +67,7 @@ Copy/paste the special packages in preamble of your document, if you haven't don
 The default settings for this file produce a nice-looking bio-sketch section without any additional manual manipulation, so you probably won't have to do any customization for this file. But if desired, you can change colors, font style and spacing using additional lines that are copy/pasted into your document. Specifically: 
 <ol>
 <li>COPY any or all lines in the code block below that are related to the formatting parameter that you want to edit. The lines below show default values. You will edit those values to make desired changes.</li>
-<li>PASTE the copied lines into your document at the "% Put customizations for NOTANONbiosketches HERE" line in the code that you copy/pasted in Step 2. Most importantly, the desired formatting lines should be pasted somewhere <b>between</b> the \include{do_NOT_manually_edit/NOTANONbiosketches} and \begin{NOTANONbiosketches} lines. </li>
+<li>PASTE the copied lines into your document at the "% Put customizations for NOTANONcurrentPending HERE" line in the code that you copy/pasted in Step 2. Most importantly, the desired formatting lines should be pasted somewhere <b>between</b> the \include{do_NOT_manually_edit/NOTANONcurrentPending} and \begin{NOTANONcurrentPending} lines. </li>
 <li>EDIT the pasted lines in your document, as desired.</li>
 NOTE: The lines are grouped into categories to help you locate what you need. You can PICK AND CHOOSE the lines you want to paste into your document; you do not have to copy/paste all of the lines below (unless noted) and do not have to copy all lines within a group.<br>
 <i>Highlights indicate what parts of the commands can be edited without breaking your LaTeX code.</i><br>
