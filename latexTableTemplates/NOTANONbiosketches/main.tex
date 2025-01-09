@@ -11,12 +11,12 @@
 % ___________________________________________
 
 %---- appearance of top of each biosketch showing colorized name and title underneath 
-\def\NameBoldface#1{\textbf{#1}}              % boldface name/role
+\def\NameFontstyle#1{\textbf{#1}}              % boldface name/role
 \def\NameColor{Blue}                          % font color of name/role
 \def\NameSize{\large }                        % font size of name/role
 
 %---- formatting of the font in the labels such as "Education", "Appointments", etc.
-\def\LabelBoldface#1{\textbf{#1}}             % boldface "Education",... labels
+\def\LabelFontstyle#1{\textbf{#1}}             % boldface "Education",... labels
 
 %---- vertical spacing between the "Education", "Appointments", etc. categories
 \def\SectionSpacing{\par \vspace{-0.5em}}     % vertical spacing bet/ categories
@@ -36,27 +36,27 @@
 [STARTPERPERSONTEMPLATE]
 
 % generate the name label at the top using the defined formatting, put affiliation below
-\NameBoldface{\color{\NameColor}{\NameSize [INSERTNAME] ([INSERTROLE]):}}\\
+\NameFontstyle{\color{\NameColor}{\NameSize [INSERTNAME] ([INSERTROLE]):}}\\
 [INSERTAFFILIATION]
 
 % make EDUCATION section
 \SectionSpacing
-\LabelBoldface{Education}\\
+\LabelFontstyle{Education}\\
 [INSERTEDUCATIONLIST]
 
 % make the APPOINTMENTS section
 \SectionSpacing
-\LabelBoldface{Appointments}\\
+\LabelFontstyle{Appointments}\\
 [INSERTAPPOINTMENTSLIST]
 
 % make the AWARDS section
 \SectionSpacing
-\LabelBoldface{Additional Awards, Positions, Fellowships and Proposals}\\
+\LabelFontstyle{Additional Awards, Positions, Fellowships and Proposals}\\
 [INSERTAWARDSLIST]
 
 % make the PUBLICATIONS section
 \SectionSpacing
-\LabelBoldface{Publications relevant for the proposal:}\\
+\LabelFontstyle{Publications relevant for the proposal:}\\
 [INSERTPUBLICATIONSLIST]
 
 [ENDPERPERSONTEMPLATE]
