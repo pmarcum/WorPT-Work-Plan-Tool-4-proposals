@@ -94,16 +94,16 @@ You can just comment out your added lines and recompile the document, if you wan
 <td><pre><code>
 \def\NameBannerColor{<mark>Blue</mark>}             % Current/Pending top banner color
 \def\NameBannerColor{<mark>White</mark>}            % Current/Pending top banner font color
-\def\NameBannerBoldface#1{<mark>\textbf</mark>{#1}} % boldface banner text
+\def\NameBannerFontstyle#1{<mark>\textbf</mark>{#1}} % boldface banner text
 </code></pre></td>
 </tr>
    
 <tr>
 <td><b>Color and font style of section dividers</b></td>
 <td><pre><code>
-\def\SectionColor{<mark>lightgray</mark>}        % "Current Support","Pending Grant Support" section divider color
-\def\SectionFontColor{<mark>Black</mark>}        % "Current Support","Pending Grant Support" section divider font color
-\def\SectionBoldface#1{<mark>\textbf</mark>{#1}} % "Current Support","Pending Grant Support" section divider font style
+\def\SectionColor{<mark>lightgray</mark>}         % "Current Support","Pending Grant Support" section divider color
+\def\SectionFontColor{<mark>Black</mark>}         % "Current Support","Pending Grant Support" section divider font color
+\def\SectionFontstyle#1{<mark>\textbf</mark>{#1}} % "Current Support","Pending Grant Support" section divider font style
 </code></pre></td>
 </tr>
    
@@ -120,7 +120,7 @@ If box is checked for "Include this proposal in funding status?" on the GENERAL 
 <td><b>Font style of grant descriptors in left colum (eg, "Title", "Source of Support",etc)</b></td>
 <td>
 <pre><code>
-\def\LeftBoldface#1{<mark>\textbf</mark>{#1}}      % boldface left column text
+\def\LeftFontstyle#1{<mark>\textbf</mark>{#1}} % boldface left column text
 </code></pre></td>
 </tr>
 
@@ -132,8 +132,8 @@ Copy/paste the ENTIRE below code in order to change default table preamble.<br>
 <u>IMPORTANT</u> Most of table preamble can be changed EXCEPT <i>do <b>NOT</b> change "T" variable, and preserve the number of columns.</i>
 <pre><code>
 \newcolumntype{T}{
-  <mark>|p</mark>{<mark>\LeftSideWidth</mark>}     % grant descriptors, e.g. "Title", "Source of Support", etc.
-  <mark>|p</mark>{<mark>\RightSideWidth</mark>}|   % right side, giving details for each descriptor
+  <mark>|p{\LeftSideWidth}     % grant descriptors, e.g. "Title", "Source of Support", etc.
+  |p{\RightSideWidth}|</mark>  % right side, giving details for each descriptor
 }
 </code></pre></td>
 </tr>
