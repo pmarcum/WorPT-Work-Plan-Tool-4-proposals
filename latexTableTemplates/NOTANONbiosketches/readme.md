@@ -99,6 +99,8 @@ You can just comment out your added lines and recompile the document, if you wan
 \def\PublicationBullet{<mark>\scriptsize{$\bullet$}{\hspace{-0.3em}}</mark>} % symbol at beginning of each publication item
 </code></pre></td>
 </tr>
+</table>
+</details>
 
 <!--------------------------------------
    EXAMPLES 
