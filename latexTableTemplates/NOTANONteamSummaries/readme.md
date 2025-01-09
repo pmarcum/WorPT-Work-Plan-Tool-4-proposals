@@ -6,7 +6,7 @@
 <td>
 <font size="3"><b>NOTANONteamSummaries</b></font>
 <br>
-<img src="https://lh3.googleusercontent.com/d/1ElfTFpZPTL4-SBHa9G2IzOQ0GBVEouUf" width=30%>
+<img src="https://lh3.googleusercontent.com/d/1ElfTFpZPTL4-SBHa9G2IzOQ0GBVEouUf" width=70%>
 </td>
 <td>
 <details>
