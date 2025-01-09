@@ -11,9 +11,7 @@
 <td>
 <details>
 <summary><b>isANONfte</b> (description)</summary>
-<b>isANONfte</b> is a table of project tasks, organized under task categories, as specified by the TASKS page in the
-WorPT spreadsheet. The task lead and team members assisting with each task are specified as well. No
-level-of-effort information is given in this table, only tasks and assignments to illustrate team member involvement. 
+<b>isANONfte</b> shows the involved work effort, split out by year and by team member, and including work effort that is both covered by this proposal's budget as well as efforts unfunded by this proposal. The team members are identified only through their roles (PI, co-I, etc.) on the project. 
 </details>
 </td>
 </tr>
