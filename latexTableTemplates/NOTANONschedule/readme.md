@@ -200,12 +200,12 @@ Copy/paste the ENTIRE below code in order to change default table preamble.<br>
 <u>IMPORTANT</u> Most of table preamble can be changed EXCEPT <i>do <b>NOT</b> change "T" and "L" variables, and preserve the number of columns.</i>
 <pre><code>
 \newcolumntype{T}{
-  <mark>|>{\raggedright\arraybackslash}p{\TitleWidth}                  % title column
-  *{\NumberYears}{|p{\TimelineWidth}!{\color{\TimelineVerticalLineColor}\vrule}*{\SlicesPerYearMinusTwo}{p{\TimelineWidth}!{\color{\TimelineVerticalLineColor}\vrule}}p{\TimelineWidth}}    % timeline columns
-  |>{\raggedright\arraybackslash}p{\AssignmentsWidth}            % task assignment column
-  |p{\SumFteWidth}!{\color{\TotalFteVerticalLineColor}\vrule}    % total fte, sum column
-  p{\UnfundedFteWidth}!{\color{\TotalFteVerticalLineColor}\vrule}% total fte, unfunded column
-  p{\FundedFteWidth}|</mark>                                            % total fte, funded column
+  <mark>|>{\raggedright\arraybackslash}p{\TitleWidth}</mark>                  % title column
+  <mark>*{\NumberYears}{|p{\TimelineWidth}!{\color{\TimelineVerticalLineColor}\vrule}*{\SlicesPerYearMinusTwo}{p{\TimelineWidth}!{\color{\TimelineVerticalLineColor}\vrule}}p{\TimelineWidth}}</mark>    % timeline columns
+  <mark>|>{\raggedright\arraybackslash}p{\AssignmentsWidth}</mark>            % task assignment column
+  <mark>|p{\SumFteWidth}!{\color{\TotalFteVerticalLineColor}\vrule}</mark>    % total fte, sum column
+  <mark>p{\UnfundedFteWidth}!{\color{\TotalFteVerticalLineColor}\vrule}</mark>% total fte, unfunded column
+  <mark>p{\FundedFteWidth}|</mark>                                            % total fte, funded column
 }
 </code></pre></td>
 </tr>
