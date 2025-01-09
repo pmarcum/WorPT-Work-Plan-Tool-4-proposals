@@ -11,9 +11,8 @@
 <td>
 <details>
 <summary><b>NOTANONfte</b> (description)</summary>
-<b>NOTANONfte</b> is a table of project tasks, organized under task categories, as specified by the TASKS page in the
-WorPT spreadsheet. The task lead and team members assisting with each task are specified as well. No
-level-of-effort information is given in this table, only tasks and assignments to illustrate team member involvement. 
+<b>NOTANONfte</b> shows the involved work effort, split out by year and by team member, and including work effort
+that is both covered by this proposal's budget as well as efforts unfunded by this proposal.   
 </details>
 </td>
 </tr>
