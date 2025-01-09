@@ -49,13 +49,13 @@ Copy/paste the special packages in preamble of your document, if you haven't don
 %            ^^^^ replace do_NOT_manually_edit if not correct folder name
 
  
-<mark>% Put OPTIONAL customizations for NOTANONschedule HERE</mark>
+<mark>% Put <u>OPTIONAL</u> customizations for NOTANONschedule HERE</mark>
 
 \begin{NOTANONschedule}
 <mark>\caption{Resource-loaded project schedule, where: 
 {\TotalFteUnfundedHeaderIcon\hspace{-0.3em}$=$\hspace{-0.3em}}Not funded by this grant, {\TotalFteFundedHeaderIcon\hspace{-0.3em}$=$\hspace{-0.3em}}funded by this grant, {\TotalFteSumHeaderIcon\hspace{-0.3em}$=$\hspace{-0.3em}}funded $+$ unfunded; Tasks are listed (left side), with duration of task activity indicated in blue-colored timelines that measure quarter-years (1,2,3,4). Task assignments identify specific team members responsible for implementation with associated work weeks, where color indicates institutional affiliation (blue$=$funded/U.S., black$=$not funded/U.S., red=international). "Total FTE" (right side) are integrated work-weeks converted into FTE per task (1~FTE$=$12~months), displayed as "total",  "unfunded by this grant", and "funded by this grant", resp.  Assignment identities: \RevealIdentities.}
 \label{tab:NOTANONschedule}</mark>
-\end{NOTANONhst}
+\end{NOTANONschedule}
 </code></pre>
 
 </details>
@@ -68,7 +68,7 @@ Copy/paste the special packages in preamble of your document, if you haven't don
 You can change column widths, column alignment, colors, font style using additional lines that are copy/pasted into your document. Specifically: 
 <ol>
 <li>COPY any or all lines in the code block below that are related to the formatting parameter that you want to edit. The lines below show default values. You will edit those values to make desired changes.</li>
-<li>PASTE the copied lines into your document at the "% Put OPTIONAL customizations for NOTANONschedule HERE" line in the code that you copy/pasted in Step 2. Most importantly, the desired formatting lines should be pasted somewhere <b>between</b> the \include{do_NOT_manually_edit/table_NOTANONhst} and \begin{NOTANONhst} lines. </li>
+<li>PASTE the copied lines into your document at the "% Put OPTIONAL customizations for NOTANONschedule HERE" line in the code that you copy/pasted in Step 2. Most importantly, the desired formatting lines should be pasted somewhere <b>between</b> the \include{do_NOT_manually_edit/NOTANONschedule} and \begin{NOTANONschedule} lines. </li>
 <li>EDIT the pasted lines in your document, as desired.</li>
 NOTE: THe lines are grouped into categories to help you locate what you need. You can PICK AND CHOOSE the lines you want to paste into your document; you do not have to copy/paste all of the lines below (unless noted) and do not have to copy all lines within a group.<br>
 <i>Highlights indicate what parts of the commands can be edited without breaking your LaTeX code.</i><br>
@@ -131,7 +131,7 @@ But if counter gets screwed up and needs manual intervention, use below to apply
 </tr>
 
 <tr>
-<td><b>Format preferences for task CATEGORY labels</b></td>
+<td><b>CATEGORY, TASK label row entry formatting</b></td>
 <td>
 For fontstyle changes, the "\textbf" can be changed to "\emph" for italics, or can<br>
 be turned into plain test by removing the "\textbf" or other formatting. You do 
@@ -139,45 +139,59 @@ need to keep the #1 and #2 references. For example, if you just want plain text,
 redefine as:<br>
 \def\TaskCategoryLabel#1#2{{#1}~{#2}}
 <pre><code>
-\def\TaskCategoryLabel#1#2{          % Task Category label format for row item
-  {\normalsize\textbf\scshape{#1}}~{\normalsize\textbf{#2}}}
+\def\TaskCategoryLabel#1#2{{<mark>\normalsize\textbf\scshape</mark>{#1}}~{<mark>\normalsize\textbf</mark>{#2}}} % Category label
+\def\TaskTitleLabel#1#2{~{<mark>\scriptsize{\textbf{\scshape</mark>{#1}}}}~{<mark>\color{mediumelectricblue}{\footnotesize\textbf</mark>{#2}}}} % Task title format for row item
 </code></pre></td>
 </tr>
 
-%---- symbol preferences for FTE types (sum, funded, unfunded)
-\def\TotalFteSumHeaderIcon{\textbf{\large{$\Sigma$}}} % sigma symbol label size
-\def\TotalFteUnfundedHeaderIcon{\noDollarIcon{-0.4}{0.4mm}{0.2}{0.15}} % "no dollar" symbol label size
-\def\TotalFteFundedHeaderIcon{\dollarIcon{-0.4}{0.2}{0.015}}% green "dollar" symbol label size
+<tr>
+<td><b>Vertical line colors</b></td>
+<td><pre><code>
+\def\TimelineVerticalLineColor{<mark>lightgray</mark>} % vertical line in timeline section
+\def\TotalFteVerticalLineColor{<mark>lightgray</mark>} % vertical line in total fte section
+</code></pre></td>
+</tr>
 
+<tr>
+<td><b>Color of task timelines</b></td>
+<td><pre><code>
+\def\TimelineColor{<mark>mediumelectricblue</mark>} % Task Timeline cell color
+</code></pre></td>
+</tr>
 
-%---- vertical line colors
-\def\TimelineVerticalLineColor{lightgray}
-\def\TotalFteVerticalLineColor{lightgray}
+<tr>
+<td><b>Institutional affiliation and funded vs unfunded formatting</b></td>
+<td><pre><code>
+\def\FundedUsTeam#1{<mark>\small \color{blue}</mark>{#1}}    % funded US team members ID, \#weeks format
+\def\UnfundedUsTeam#1{<mark>\small \color{black}</mark>{#1}} % UNfunded US team members ID, \#weeks fomat
+\def\InternationalTeam#1{<mark>\small \color{red}</mark>{#1}}% international team members ID, \#weeks format
+</code></pre></td>
+</tr>
 
+<tr>
+<td><b>FTE values in rightmost columns</b></td>
+<td><pre><code>
+\def\FteTotalFormat#1{<mark>\small</mark>{#1}}               % Total FTE/sum value format
+\def\FteUnfundedFormat#1{<mark>\small</mark>{#1}}            % Total FTE/unfunded value format
+\def\FteFundedFormat#1{<mark>\small \color{blue}</mark>{#1}} % Total FTE/funded value format
+</code></pre></td>
+</tr>
 
-%--- aesthetic preferences of task CATEGORY label
+<tr>
+<td><b>Team member identify table caption formatting</b></td>
+<td><pre><code>
+\def\RevealIdentityFormat#1#2{<mark>\textbf</mark>{#1}<mark>: </mark>#2} % \#1=ID, \#2=Name
+</code></pre></td>
+</tr>
 
-%--- aesthetic preferences of TASK label
-\def\TaskTitleLabel#1#2{                       % Task title format for row item
-  ~{\scriptsize{\textbf{\scshape{#1}}}}~{
-  \color{mediumelectricblue}{\footnotesize\textbf{#2}}}}
-
-%--- aesthetic preferences of timeline color
-\def\TimelineColor{mediumelectricblue}          % Task Timeline cell color
-
-%--- preferences for indicating US vs non-US instutional affiliations and funded vs unfunded team members
-\def\FundedUsTeam#1{\small \color{blue}{#1}}    % funded US team members ID, \#weeks format
-\def\UnfundedUsTeam#1{\small \color{black}{#1}} % UNfunded US team members ID, \#weeks fomat
-\def\InternationalTeam#1{\small \color{red}{#1}}% international team members ID, \#weeks format
-
-%--- preferences for formatting the FTE values in far right columns
-\def\FteTotalFormat#1{\small{#1}}               % Total FTE/sum value format
-\def\FteUnfundedFormat#1{\small{#1}}            % Total FTE/unfunded value format
-\def\FteFundedFormat#1{\small \color{blue}{#1}} % Total FTE/funded value format
-
-%--- Format the identity reveals in the table caption
-\def\RevealIdentityFormat#1#2{\textbf{#1}: #2}
-
+<tr>
+<td><b>Symbol preferences for FTE types</b></td>
+<td><pre><code>
+\def\TotalFteSumHeaderIcon{<mark>\textbf{\large{$\Sigma$}}</mark>}       % FTE sum symbol
+\def\TotalFteUnfundedHeaderIcon{<mark>\noDollarIcon{-0.4}{0.4mm}{0.2}{0.15}</mark>} % "FTE unfunded symbol
+\def\TotalFteFundedHeaderIcon{<mark>\dollarIcon{-0.4}{0.2}{0.015}</mark>}% FTE funded symbol
+</code></pre></td>
+</tr>
 
 <tr>
 <td><b>Table preamble - full control!</b></td>
@@ -187,15 +201,14 @@ Copy/paste the ENTIRE below code in order to change default table preamble.<br>
 <u>IMPORTANT</u> Most of table preamble can be changed EXCEPT <i>do <b>NOT</b> change "T" and "L" variables, and preserve the number of columns.</i>
 <pre><code>
 \newcolumntype{T}{
-  |>{\raggedright\arraybackslash}p{\TitleWidth}                  % title column
+  <mark>|>{\raggedright\arraybackslash}p{\TitleWidth}                  % title column
   *{\NumberYears}{|p{\TimelineWidth}!{\color{\TimelineVerticalLineColor}\vrule}*{\SlicesPerYearMinusTwo}{p{\TimelineWidth}!{\color{\TimelineVerticalLineColor}\vrule}}p{\TimelineWidth}}    % timeline columns
   |>{\raggedright\arraybackslash}p{\AssignmentsWidth}            % task assignment column
   |p{\SumFteWidth}!{\color{\TotalFteVerticalLineColor}\vrule}    % total fte, sum column
   p{\UnfundedFteWidth}!{\color{\TotalFteVerticalLineColor}\vrule}% total fte, unfunded column
-  p{\FundedFteWidth}|                                            % total fte, funded column
+  p{\FundedFteWidth}|</mark>                                            % total fte, funded column
 }
-</code></pre>
-</td>
+</code></pre></td>
 </tr>
 </table>
 </details>
@@ -206,27 +219,9 @@ Copy/paste the ENTIRE below code in order to change default table preamble.<br>
 <details>
 <summary><b>Examples</b></summary>
 The below is an example of how one can change the appearance of the table within a LaTeX document. After copy/pasting the code to incorporate the table into my document, and then deciding that my task titles were too long to fit with the table in portrait mode, I decided I needed to use landscape mode.  I copy/pasted the landscape fla and the 2 formatting lines that control the "Tasks" and "Expertise" column widths. (My team members have long last names, requiring a wider column than the default). I also slightly altered the caption to be appropriate to my proposal. The result?  A landscape-mode table that allows each task to appear in a single table row without spilling over into the next line, which is my preferred way to present these tables for easiest viewing. Here is a peek at what my LaTeX document looks like:  
-<pre><code>
-\include{do_NOT_manually_edit/NOTANONhst}
-    
-\def\TaskWidth{5.4in}          % width of leftmost ("Tasks") column
-\def\ExpertiseWidth{1.8in}     % width of rightmost ("Expertise") column
 
-\begin{NOTANONhst}
-\caption{Resource-loaded project schedule, where: 
-{\TotalFteUnfundedHeaderIcon\hspace{-0.3em}$=$\hspace{-0.3em}}Not funded by this grant,  
-{\TotalFteFundedHeaderIcon\hspace{-0.3em}$=$\hspace{-0.3em}}funded by this grant, 
-{\TotalFteSumHeaderIcon\hspace{-0.3em}$=$\hspace{-0.3em}}funded $+$ unfunded; 
-Tasks are listed (left side), with duration of task activity indicated in blue-colored timelines that 
-measure quarter-years (1,2,3,4). Task assignments identify specific team members responsible for 
-implementation with associated work weeks, where color indicates institutional affiliation 
-(blue$=$funded/U.S., black$=$not funded/U.S., red=international). "Total FTE" (right side) are integrated 
-work-weeks converted into FTE per task (1~FTE$=$12~months), displayed as "total",  "unfunded by this grant", 
-and "funded by this grant", resp.  Assignment identities: \RevealIdentities.}
-\label{tab:NOTANONschedule} 
+<!--     INSERT IMAGE -->
 
-\end{NOTANONhst}
-</code></pre>
 NOTE: To return to default values, all I have to do is comment-out (put a "%" at the line's beginning) the "\def" formatting lines that I pasted. 
 </details>
 
@@ -235,5 +230,5 @@ NOTE: To return to default values, all I have to do is comment-out (put a "%" at
 --------------------------------------->
 <details>
 <summary><b>NUCLEAR OPTION</b> <i>[when nothing else works]</i></summary>
-If you just cannot get the table to look like you want it to look, you can always copy/paste the entire table_NOTANONhst.tex file that appears in the WorPT subfolder, into your document, and then edit at-will.  Some of the WorPT files involve complicated LaTeX code, so be sure that you have a good mastery of LaTeX and know what you are doing before implementing this option!
+If you just cannot get the table to look like you want it to look, you can always copy/paste the entire NOTANONschedule.tex file that appears in the WorPT subfolder, into your document, and then edit at-will.  Some of the WorPT files involve complicated LaTeX code, so be sure that you have a good mastery of LaTeX and know what you are doing before implementing this option!
 </details>
