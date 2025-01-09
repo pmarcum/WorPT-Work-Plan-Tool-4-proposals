@@ -108,7 +108,7 @@ You can just comment out your added lines and recompile the document, if you wan
 </tr>
    
 <tr>
-<td><b>Font color of the "this proposal" note appearing by this proposal in the PENDING list</b></td>
+<td><b>Font color of "this proposal" tag</b></td>
 <td>
 If box is checked for "Include this proposal in funding status?" on the GENERAL INFO page in the WorPT spreadsheet, then this proposal will be included in PENDING list with this "this proposal" tag attached. 
 <pre><code>
@@ -117,7 +117,7 @@ If box is checked for "Include this proposal in funding status?" on the GENERAL 
 </tr>
 
 <tr>
-<td><b>Font style of grant descriptors in left colum (eg, "Title", "Source of Support",etc)</b></td>
+<td><b>Font style of grant descriptors in left colum</b></td>
 <td>
 <pre><code>
 \def\LeftFontstyle#1{<mark>\textbf</mark>{#1}} % boldface left column text
