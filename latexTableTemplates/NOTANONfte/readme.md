@@ -133,10 +133,11 @@ be turned into plain test by removing the "\textbf", eg {{#1}}
 <td>
 Use table preamble for more control over table layout (removing/adding vertical lines, changing column alignment, etc).<br>
 Copy/paste the ENTIRE below code in order to change default table preamble.<br>
-<u>IMPORTANT</u> Most of table preamble can be changed EXCEPT <i>do <b>NOT</b> change "T" variable, and preserve the number of columns.</i>
+<u>IMPORTANT</u> Most of table preamble can be changed EXCEPT <i>do <b>NOT</b> change "T" and \LastYearPlusTwo variables, and preserve the number of columns</i>
+(eg, make sure that any 'l' or 'c' that is removed is replaced by another alignment code).
 <pre><code>
 \newcolumntype{T}{
- <mark>{|l|*{\\LastYearPlusTwo}{c|}}</mark>
+ <mark>{|l|</mark>*{\\LastYearPlusTwo}<mark>{c|}}</mark>
 }
 </code></pre></td>
 </tr>
