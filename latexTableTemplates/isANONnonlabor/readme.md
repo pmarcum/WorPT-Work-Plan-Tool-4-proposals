@@ -153,7 +153,7 @@ Copy/paste the ENTIRE below code in order to change default table preamble.<br>
 <u>IMPORTANT</u> Most of table preamble can be changed EXCEPT <i>do <b>NOT</b> change "T" variable, and preserve the number of columns.</i>
 <pre><code>
 \newcolumntype{T}{
-  <mark>{|l|*{\LastYearPlusOne}{l|}}</mark>
+  <mark>{|l|</mark>*{\LastYearPlusOne}<mark>{l|}}</mark>
 }
 </code></pre></td>
 </tr>
