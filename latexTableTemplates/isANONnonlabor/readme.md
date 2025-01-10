@@ -12,7 +12,7 @@
 <details>
 <summary><b>isANONnonlabor</b> (description)</summary>
 <b>isANONnonlabor</b> is a table of budget items that include everything except work-effort.  Items such as publication costs, equipment, computers, etc. are included in this table.  Also, rolled-up lines for domestic and international travel are included in the table automatically through the script. (A detailed break-out of travel expenses is provided in the isANONtravel.tex file).<br>
-<i>Red font in WorPT file captions flags words that need to be replaced with valid proposal information.</i>
+<i>Red font in WorPT file captions flag words that need to be replaced with valid proposal information.</i>
 </details>
 </td>
 </tr>
