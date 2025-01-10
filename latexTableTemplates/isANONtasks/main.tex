@@ -66,14 +66,14 @@
 \rule{0pt}{12pt} & {\color{\YearFontColor}Y} & Q & {\color{\YearFontColor}Y} & Q & \ColumnLabelFontstyle{Lead} & \ColumnLabelFontstyle{Expertise}\\
 
 % COMMENT: the below template creates a colorized banner with the task category identification and title, for each task category
-[STARTBANNER]
+[STARTBANNERTEMPLATE]
 \multicolumn{7}{|c|}{\cellcolor{\SectionColor}\color{\SectionFontColor}\SectionFontstyle{Task [INSERTCATEGORYID]: [INSERTCATEGORYTITLE]}}\\
-[ENDBANNER]
+[ENDBANNERTEMPLATE]
 
 % COMMENT: the below template generates a table row for each task under the given task category
-[STARTTASK]
+[STARTTASKTEMPLATE]
 [INSERTTASKID]: {[INSERTTASKTITLE]}  & {\color{\YearFontColor}[INSERTSTARTYEAR]} & [INSERTSTARTQTR] & {\color{\YearFontColor}[INSERTFINISHYEAR]} & [INSERTFINISHQTR] & [INSERTLEADROLE] & [INSERTEXPERTISEROLE]\\
-[ENDTASK]
+[ENDTASKTEMPLATE]
 
 [INSERTTABLECONTENTS]
 
