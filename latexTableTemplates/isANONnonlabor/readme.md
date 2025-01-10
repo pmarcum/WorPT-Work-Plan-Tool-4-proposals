@@ -49,8 +49,6 @@ Copy/paste the special packages in preamble of your document, if you haven't don
 
 <mark>% Put OPTIONAL customizations for isANONnonlabor HERE</mark>
 
-<mark>% Put customizations for isANONnonlabor HERE</mark>
-
 \begin{isANONnonlabor}
 <mark>\caption{
 \normalsize \newline \newline
