@@ -28,11 +28,11 @@
 \def\TaskAddCounter{-1}          % corrects table number messed up by table,longtable combination)
 
 %--- aesthetic preferences
-\def\TaskCategoryColor{Blue}              % task grouping banner color
-\def\TaskCategoryFontColor{White}         % task grouping title font color
+\def\SectionColor{Blue}              % task grouping banner color
+\def\SectionFontColor{White}         % task grouping title font color
 \def\YearFontColor{Red}                   % font color under "Y" (year) columns in Start/Finish
 \def\YearQuarterLineColor{lightgray}      % vertical line color in year/quarter Start/Finish columns
-\def\TaskCategoryFontstyle#1{\textbf{#1}} % boldface task grouping title
+\def\SectionFontstyle#1{\textbf{#1}} % boldface task grouping title
 \def\ColumnLabelFontstyle#1{\textbf{#1}}  % boldface all the column headers
 
 %--- table preamble definition bundled into the "T" variable
@@ -67,7 +67,7 @@
 
 % COMMENT: the below template creates a colorized banner with the task category identification and title, for each task category
 [STARTBANNER]
-\multicolumn{7}{|c|}{\cellcolor{\TaskCategoryColor}\color{\TaskCategoryFontColor}\TaskCategoryFontstyle{Task [INSERTCATEGORYID]: [INSERTCATEGORYTITLE]}}\\
+\multicolumn{7}{|c|}{\cellcolor{\SectionColor}\color{\SectionFontColor}\SectionFontstyle{Task [INSERTCATEGORYID]: [INSERTCATEGORYTITLE]}}\\
 [ENDBANNER]
 
 % COMMENT: the below template generates a table row for each task under the given task category
