@@ -74,9 +74,6 @@ You can just comment out your added lines and recompile the document, if you wan
                               Options   
 <!-- . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . -->
 <table>
-<tr>
-<td><b>Table title and reference label</b></td>
-<li><b>Customize appearance</b> [<i>do as many times as needed</i>]
  
 <tr>
 <td><b>Table number additive correction</b></td>
