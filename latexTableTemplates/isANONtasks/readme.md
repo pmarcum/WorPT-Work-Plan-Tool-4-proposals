@@ -142,51 +142,46 @@ But if counter gets screwed up and needs manual intervention, use below to apply
 </code></pre></td>
 </tr>
 
-<b>The below table preamble gives you considerably MORE control over table layout than just changing parameter values.</b>
-Copy/paste the below if you want to do things like remove or add vertical lines or change a column from left-alignment to center-aligned, for example. You can replace the \TaskWidth and other parameters with hard-coded numbers if desired, and change the "p" to other alignment modes. You can change anything that is in highlight. Things that should NOT be changed (otherwise, the LaTeX will break) are the "T" variable and number of columns. 
+<tr>
+<td><b>Table preamble - full control!</b></td>
+<td>
+Use table preamble for more control over table layout (removing/adding vertical lines, changing column alignment, etc).<br>
+Copy/paste the ENTIRE below code in order to change default table preamble.<br>
+<u>IMPORTANT</u> Most of table preamble can be changed EXCEPT <i>do <b>NOT</b> change "T" variable, and preserve the number of columns</i>
+(eg, make sure that any 'p' that is removed is replaced by another alignment code). You may retain the parameters below (like \TaskWidth) and
+define them separately as the above customization options show, or replace them entirely with hard-coded numbers. 
+   
 <pre><code>
 \newcolumntype{T}{
-  <mark>|p</mark>{<mark>\TaskWidth</mark>}<mark>||</mark>                        % title column
-  <mark>c</mark>!{<mark>\color{\YearQuarterLineColor}\vrule</mark>} % Start/year
-  <mark>c</mark>!{<mark>\color{\YearQuarterLineColor}\vrule</mark>}!{<mark>\color{\YearQuarterLineColor}\vrule</mark>} % Start/quarter
-  <mark>c</mark>!<mark>{\color{\YearQuarterLineColor}\vrule</mark>} % Finish/year
+  <mark>|p{\TaskWidth}||</mark>                        % title column
+  <mark>c!{\color{\YearQuarterLineColor}\vrule}</mark> % Start/year
+  <mark>c!{\color{\YearQuarterLineColor}\vrule}!{\color{\YearQuarterLineColor}\vrule}</mark> % Start/quarter
+  <mark>c!{\color{\YearQuarterLineColor}\vrule}</mark> % Finish/year
   <mark>c||</mark>                                     % Finish/quarter
-  <mark>p</mark>{<mark>\LeadWidth</mark>}<mark>!{\color{\YearQuarterLineColor}\vrule}</mark> % Task Lead column
-  <mark>p</mark>{<mark>\ExpertiseWidth</mark>}<mark>|</mark>                     % Expertise column 
+  <mark>p{\LeadWidth}!{\color{\YearQuarterLineColor}\vrule}</mark> % Task Lead column
+  <mark>p{\ExpertiseWidth}|</mark>                     % Expertise column 
 }
-</code></pre> 
-</li>
+</code></pre></td>
+</tr>
+</table>
+</details>
 
-<li><b>Examples</b>
+<!--------------------------------------
+   EXAMPLES 
+--------------------------------------->
+<details>
+<summary><b>Examples</b></summary>
 The below is an example of how one can change the appearance of the table within a LaTeX document. After copy/pasting the code to incorporate the table into my document, and then deciding that my task titles were too long to fit with the table in portrait mode, I decided I needed to use landscape mode.  I copy/pasted the landscape fla and the 2 formatting lines that control the "Tasks" and "Expertise" column widths. (My team members have long last names, requiring a wider column than the default). I also altered the caption to be appropriate to my proposal (e.g., changed the red font that signaled words that needed to be adapted). The result?  A landscape-mode table that allows each task to appear in a single table row without spilling over into the next line, which is my preferred way to present these tables for easiest viewing. I also decided I wanted the banners that separate the tasks into groups to just be plain text instead of boldfaced. I also wanted to left-align the Start and Finish columns. Here is a peek at what my LaTeX document looks like:  
-<pre><code>
-\include{do_NOT_manually_edit/isANONtasks}
-% Put customizations for isANONtasks HERE
-\LandScapetrue                 % puts table in landscape mode
-\def\TaskWidth{5.4in}          % width of leftmost ("Tasks") column
-\def\ExpertiseWidth{1.8in}     % width of rightmost ("Expertise") column
-\def\TaskCategoryFontstyle#1{{#1}} % boldface task grouping title
-\newcolumntype{T}{
-  |p{\TaskWidth}||           % title column
-  l!{\color{\YearQuarterLineColor}\vrule} % Start/year
-  l!{\color{\YearQuarterLineColor}\vrule}!{\color{\YearQuarterLineColor}\vrule} % Start/quarter
-  l!{\color{\YearQuarterLineColor}\vrule} % Finish/year
-  l||                        % Finish/quarter
-  p{\LeadWidth}!{\color{\YearQuarterLineColor}\vrule} % Task Lead column
-  p{\ExpertiseWidth}|        % Expertise column 
-}
-\begin{isANONtasks}
-\caption{\textbf{Task Timeline:} Team member roles, rightmost column, are cross-referenced with 
-corresponding names in the non-anonymized personnel and work effort table. 
-\textbf{Paper~1:} Description of database and pipeline software. 
-\textbf{Paper~2:} Galaxy catalogue.} 
-\label{tab:isANONtasks}
-\end{isANONtasks}
-</code></pre>
-NOTE: To return to default values, all I have to do is comment-out (put a "%" at the line's beginning) the "\def" formatting lines that I pasted. 
-</li>
 
-<li><b>NUCLEAR OPTION:</b>
-If you just cannot get the table to look like you want it to look, you can always copy/paste the entire table_isANONtasks.tex file that appears in the WorPT subfolder, into your document, and then edit at-will.  Some of the WorPT files involve complicated LaTeX code, so be sure that you have a good mastery of LaTeX and know what you are doing before implementing this option!
-</li>
-</ol>
+<!--     INSERT IMAGE -->
+
+NOTE: To return to default values, all I have to do is comment-out (put a "%" at the line's beginning) the "\def" formatting lines that I pasted. 
+</details>
+
+<!--------------------------------------
+   NUCLEAR OPTION 
+--------------------------------------->
+<details>
+<summary><b>NUCLEAR OPTION</b> <i>[when nothing else works]</i></summary>
+If you just cannot get the table to look like you want it to look, you can always copy/paste the entire NOTANONfte.tex file that appears in the WorPT subfolder, into your document, and then edit at-will.  Some of the WorPT files involve complicated LaTeX code, so be sure that you have a good mastery of LaTeX and know what you are doing before implementing this option!
+</details>
