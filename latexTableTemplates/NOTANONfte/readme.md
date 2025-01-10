@@ -137,7 +137,7 @@ Copy/paste the ENTIRE below code in order to change default table preamble.<br>
 (eg, make sure that any 'l' or 'c' that is removed is replaced by another alignment code).
 <pre><code>
 \newcolumntype{T}{
- <mark>{|l|</mark>*{\\LastYearPlusTwo}<mark>{c|}}</mark>
+ <mark>{|l|</mark>*{\LastYearPlusTwo}<mark>{c|}}</mark>
 }
 </code></pre></td>
 </tr>
