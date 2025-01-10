@@ -142,7 +142,7 @@ be turned into plain test by removing the "\textbf", eg {{#1}}
 <td>
 Use table preamble for more control over table layout (removing/adding vertical lines, changing column alignment, etc).<br>
 Copy/paste the ENTIRE below code in order to change default table preamble.<br>
-<u>IMPORTANT</u> Most of table preamble can be changed EXCEPT <i>do <b>NOT</b> change "T" variable, and preserve the number of columns
+<u>IMPORTANT</u> Most of table preamble can be changed EXCEPT <i>do <b>NOT</b> change "T" variable, and preserve the number of columns</i>
 (eg, make sure that any 'p' that is removed is replaced by another alignment code). You may retain the parameters below (like \ContributorWidth) and
 define them separately as the above customization options show, or replace them entirely with hard-coded numbers. 
 <pre><code>
