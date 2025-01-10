@@ -67,26 +67,14 @@
 %---- lines at bottom of column labels
 \hline \hline
 %---- table data inserted below
-\YearFontstyle{Yr1} & [NUMBERDOMTRIPS] & domestic & \$[DOMAIRFARE] & \$[DOMPERDIEM] & \$[DOMCONFERENCE] & \$[DOMGROUND] & \$[DOMPERTRIP] & \$[DOMALLTRIPS]\\
+[INSERTLISTOFYEARS]
+
+% COMMENT: the following template generates each row in the table
+[STARTTRAVELYEARTEMPLATE]
+\YearFontstyle{Yr[INSERTYEARNUMBER]} & [NUMBERDOMTRIPS] & domestic & \$[DOMAIRFARE] & \$[DOMPERDIEM] & \$[DOMCONFERENCE] & \$[DOMGROUND] & \$[DOMPERTRIP] & \$[DOMALLTRIPS]\\
                    & [NUMBERINTTRIPS] & intern'l & \$[INTAIRFARE] & \$[INTPERDIEM] & \$[INTCONFERENCE] & \$[INTGROUND] & \$[INTPERTRIP] & \$[INTALLTRIPS]\\ \hline
-\YearFontstyle{Yr2} & [NUMBERDOMTRIPS] & domestic & \$[DOMAIRFARE] & \$[DOMPERDIEM] & \$[DOMCONFERENCE] & \$[DOMGROUND] & \$[DOMPERTRIP] & \$[DOMALLTRIPS]\\
-                   & [NUMBERINTTRIPS] & intern'l & \$[INTAIRFARE] & \$[INTPERDIEM] & \$[INTCONFERENCE] & \$[INTGROUND] & \$[INTPERTRIP] & \$[INTALLTRIPS]\\ \hline
-\YearFontstyle{Yr3} & [NUMBERDOMTRIPS] & domestic & \$[DOMAIRFARE] & \$[DOMPERDIEM] & \$[DOMCONFERENCE] & \$[DOMGROUND] & \$[DOMPERTRIP] & \$[DOMALLTRIPS]\\
-                   & [NUMBERINTTRIPS] & intern'l & \$[INTAIRFARE] & \$[INTPERDIEM] & \$[INTCONFERENCE] & \$[INTGROUND] & \$[INTPERTRIP] & \$[INTALLTRIPS]\\ \hline
-\YearFontstyle{Yr4} & [NUMBERDOMTRIPS] & domestic & \$[DOMAIRFARE] & \$[DOMPERDIEM] & \$[DOMCONFERENCE] & \$[DOMGROUND] & \$[DOMPERTRIP] & \$[DOMALLTRIPS]\\
-                   & [NUMBERINTTRIPS] & intern'l & \$[INTAIRFARE] & \$[INTPERDIEM] & \$[INTCONFERENCE] & \$[INTGROUND] & \$[INTPERTRIP] & \$[INTALLTRIPS]\\ \hline
-\YearFontstyle{Yr5} & [NUMBERDOMTRIPS] & domestic & \$[DOMAIRFARE] & \$[DOMPERDIEM] & \$[DOMCONFERENCE] & \$[DOMGROUND] & \$[DOMPERTRIP] & \$[DOMALLTRIPS]\\
-                   & [NUMBERINTTRIPS] & intern'l & \$[INTAIRFARE] & \$[INTPERDIEM] & \$[INTCONFERENCE] & \$[INTGROUND] & \$[INTPERTRIP] & \$[INTALLTRIPS]\\ \hline
-\YearFontstyle{Yr6} & [NUMBERDOMTRIPS] & domestic & \$[DOMAIRFARE] & \$[DOMPERDIEM] & \$[DOMCONFERENCE] & \$[DOMGROUND] & \$[DOMPERTRIP] & \$[DOMALLTRIPS]\\
-                   & [NUMBERINTTRIPS] & intern'l & \$[INTAIRFARE] & \$[INTPERDIEM] & \$[INTCONFERENCE] & \$[INTGROUND] & \$[INTPERTRIP] & \$[INTALLTRIPS]\\ \hline
-\YearFontstyle{Yr7} & [NUMBERDOMTRIPS] & domestic & \$[DOMAIRFARE] & \$[DOMPERDIEM] & \$[DOMCONFERENCE] & \$[DOMGROUND] & \$[DOMPERTRIP] & \$[DOMALLTRIPS]\\
-                   & [NUMBERINTTRIPS] & intern'l & \$[INTAIRFARE] & \$[INTPERDIEM] & \$[INTCONFERENCE] & \$[INTGROUND] & \$[INTPERTRIP] & \$[INTALLTRIPS]\\ \hline
-\YearFontstyle{Yr8} & [NUMBERDOMTRIPS] & domestic & \$[DOMAIRFARE] & \$[DOMPERDIEM] & \$[DOMCONFERENCE] & \$[DOMGROUND] & \$[DOMPERTRIP] & \$[DOMALLTRIPS]\\
-                   & [NUMBERINTTRIPS] & intern'l & \$[INTAIRFARE] & \$[INTPERDIEM] & \$[INTCONFERENCE] & \$[INTGROUND] & \$[INTPERTRIP] & \$[INTALLTRIPS]\\ \hline
-\YearFontstyle{Yr9} & [NUMBERDOMTRIPS] & domestic & \$[DOMAIRFARE] & \$[DOMPERDIEM] & \$[DOMCONFERENCE] & \$[DOMGROUND] & \$[DOMPERTRIP] & \$[DOMALLTRIPS]\\
-                   & [NUMBERINTTRIPS] & intern'l & \$[INTAIRFARE] & \$[INTPERDIEM] & \$[INTCONFERENCE] & \$[INTGROUND] & \$[INTPERTRIP] & \$[INTALLTRIPS]\\ \hline
-\YearFontstyle{Yr10} & [NUMBERDOMTRIPS] & domestic & \$[DOMAIRFARE] & \$[DOMPERDIEM] & \$[DOMCONFERENCE] & \$[DOMGROUND] & \$[DOMPERTRIP] & \$[DOMALLTRIPS]\\
-                   & [NUMBERINTTRIPS] & intern'l & \$[INTAIRFARE] & \$[INTPERDIEM] & \$[INTCONFERENCE] & \$[INTGROUND] & \$[INTPERTRIP] & \$[INTALLTRIPS]\\ \hline
+[ENDTRAVELYEARTEMPLATE]
+
 \end{tabular}
 }
 {%
