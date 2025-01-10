@@ -197,7 +197,7 @@ redefine as:<br>
 <td>
 Use table preamble for more control over table layout (removing/adding vertical lines, changing column alignment, etc).<br>
 Copy/paste the ENTIRE below code in order to change default table preamble.<br>
-<u>IMPORTANT</u> Most of table preamble can be changed EXCEPT <i>do <b>NOT</b> change "T", \\NumberYears and \\SlicesPerYearMinusTwo variables, and preserve the number of columns (eg, make sure that any 'p' that is removed is replaced by another alignment code).</i>
+<u>IMPORTANT</u> Most of table preamble can be changed EXCEPT <i>do <b>NOT</b> change "T", \NumberYears and \SlicesPerYearMinusTwo variables, and preserve the number of columns (eg, make sure that any 'p' that is removed is replaced by another alignment code).</i>
 <pre><code>
 \newcolumntype{T}{
   <mark>|>{\raggedright\arraybackslash}p{\TitleWidth}</mark>                  % title column
