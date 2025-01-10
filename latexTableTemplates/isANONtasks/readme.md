@@ -6,7 +6,7 @@
 <td>
 <font size="3"><b>isANONtasks</b></font>
 <br>
-<img src="https://lh3.googleusercontent.com/d/1gfMagfSDmX0lDqzAmel2LCGZTuZUGQ5O" width=70%>
+<img src="https://lh3.googleusercontent.com/d/1gfMagfSDmX0lDqzAmel2LCGZTuZUGQ5O" width=80%>
 </td>
 <td>
 <details>
