@@ -46,7 +46,7 @@ Copy/paste the special packages in preamble of your document, if you haven't don
 \include{do_NOT_manually_edit/isANONtasks}  % reset file parameters
 %            ^^^^ replace do_NOT_manually_edit if not correct folder name
    
-<mark>% Put OPTIONAL customizations for isANONfte HERE</mark>
+<mark>% Put OPTIONAL customizations for isANONtasks HERE</mark>
 
 \begin{isANONtasks}
 <mark>\caption{\textbf{Task Timeline:} Team member roles, rightmost column, are cross-referenced with corresponding names in the non-anonymized personnel and work effort table. {\color{red} \textbf{Paper~1:} Sample and methods for enhancing detectability of  low SB X-ray emission, presentation of emission maps, description of database and pipeline software (which will be released in a public repository at the time of paper submission). \textbf{Paper~2:} Methodologies for measuring the gas halo size and other gas properties, analyisis of the diffuse hot gas halos as functions of galaxy properties (environment, galaxy morphology, stellar mass, and SFR) based on \Chandra, \Hubble, and \Spitzer\ observations, and the SED models from the GSWLC; application of multivariate mthods to ``baseline'' the  gas halo sizes (Sect.\,\ref{Sec:Baseline}). \textbf{Note~1:} See Sec.\,\ref{Sec:Sample}.}}
@@ -65,7 +65,7 @@ Copy/paste the special packages in preamble of your document, if you haven't don
 The default table appearance is already optimized, minimizing the need to change table properties such as column widths. However, if you do find the need to make such changes, as well as changes to other properties such as column alignment, colors, font styles, you will need to copy/paste and then edit some additional formatting lines into your document. Specifically:
 <ol>
 <li>COPY any or all lines in the code block below that are related to the formatting parameter that you want to edit. The lines below show default values. You will edit those values to make desired changes.</li>
-<li>PASTE the copied lines into your document at the "% Put customizations for NOTANONhst HERE" line in the code that you copy/pasted in Step 2. Most importantly, the desired formatting lines should be pasted somewhere <b>between</b> the \include{do_NOT_manually_edit/NOTANONhst} and \begin{NOTANONhst} lines. </li>
+<li>PASTE the copied lines into your document at the "% Put customizations for isANONtasks HERE" line in the code that you copy/pasted in Step 2. Most importantly, the desired formatting lines should be pasted somewhere <b>between</b> the \include{do_NOT_manually_edit/isANONtasks} and \begin{isANONtasks} lines. </li>
 <li>EDIT the pasted lines in your document, as desired.</li>
 NOTE: THe lines are grouped into categories to help you locate what you need. You can PICK AND CHOOSE the lines you want to paste into your document; you do not have to copy/paste all of the lines below (unless noted) and do not have to copy all lines within a group.<br>
 <i>Highlights indicate what parts of the commands can be edited without breaking your LaTeX code.</i><br>
@@ -183,5 +183,5 @@ NOTE: To return to default values, all I have to do is comment-out (put a "%" at
 --------------------------------------->
 <details>
 <summary><b>NUCLEAR OPTION</b> <i>[when nothing else works]</i></summary>
-If you just cannot get the table to look like you want it to look, you can always copy/paste the entire NOTANONfte.tex file that appears in the WorPT subfolder, into your document, and then edit at-will.  Some of the WorPT files involve complicated LaTeX code, so be sure that you have a good mastery of LaTeX and know what you are doing before implementing this option!
+If you just cannot get the table to look like you want it to look, you can always copy/paste the entire isANONtasks.tex file that appears in the WorPT subfolder, into your document, and then edit at-will.  Some of the WorPT files involve complicated LaTeX code, so be sure that you have a good mastery of LaTeX and know what you are doing before implementing this option!
 </details>
