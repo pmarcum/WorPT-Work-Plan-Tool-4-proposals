@@ -108,91 +108,104 @@
 
 % ------------------------- First line of headers
 \cline{2-[INSERTNUMBERYEARSLICESPLUSONE]}                               
-\multicolumn{1}{c|}{} &                                                     % title column
+\multicolumn{1}{c|}{} &                                                  % title column
 \multicolumn{[INSERTNUMBERYEARSLICES]}{c|}{\TaskTimelineHeaderFontsize{TASK}} & % schedule columns
-\multicolumn{1}{c}{} &                                                      % task assignment column
-\multicolumn{[INSERTNUMBERFTETYPES]}{c}{}\\                                 % 3-column total fte
+\multicolumn{1}{c}{} &                                                   % task assignment column
+\multicolumn{[INSERTNUMBERFTETYPES]}{c}{}\\                              % 3-column total fte
 \cline{[INSERTNUMBERYEARSLICESPLUSTWO]-[INSERTNUMBERYEARSLICESPLUSFIVE]}
 
 % ------------------------- Second line of headers
-\multicolumn{1}{c|}{} &                                                     % title column
+\multicolumn{1}{c|}{} &                                                    % title column
 \multicolumn{[INSERTNUMBERYEARSLICES]}{c|}{\TaskTimelineHeaderFontsize{TIMELINE}} & % schedule columns
-\multicolumn{1}{c|}{\TaskAssignmentsHeaderFontsize{TASK}} &                     % task assignments column
-\multicolumn{[INSERTNUMBERFTETYPES]}{c|}{\TotalFteHeaderFontsize{TOTAL}}\\      % 3-column total fte
+\multicolumn{1}{c|}{\TaskAssignmentsHeaderFontsize{TASK}} &                % task assignments column
+\multicolumn{[INSERTNUMBERFTETYPES]}{c|}{\TotalFteHeaderFontsize{TOTAL}}\\ % 3-column total fte
 \cline{2-[INSERTNUMBERYEARSLICESPLUSONE]}
 
 % -------------------------  Third line of headers
-\multicolumn{1}{c|}{} &                                              % title column
-% COMMENT: accomodates year 1 thru year 10  (script will trim to needed number of years)
-\multicolumn{[INSERTNUMBERSLICESPERYEAR]}{c|}{\YearHeaderFontsize{YR1}} & \multicolumn{[INSERTNUMBERSLICESPERYEAR]}{c|}{\YearHeaderFontsize{YR2}} & \multicolumn{[INSERTNUMBERSLICESPERYEAR]}{c|}{\YearHeaderFontsize{YR3}} & \multicolumn{[INSERTNUMBERSLICESPERYEAR]}{c|}{\YearHeaderFontsize{YR4}} & \multicolumn{[INSERTNUMBERSLICESPERYEAR]}{c|}{\YearHeaderFontsize{YR5}} & \multicolumn{[INSERTNUMBERSLICESPERYEAR]}{c|}{\YearHeaderFontsize{YR6}} & \multicolumn{[INSERTNUMBERSLICESPERYEAR]}{c|}{\YearHeaderFontsize{YR7}} & \multicolumn{[INSERTNUMBERSLICESPERYEAR]}{c|}{\YearHeaderFontsize{YR8}} & \multicolumn{[INSERTNUMBERSLICESPERYEAR]}{c|}{\YearHeaderFontsize{YR9}} & \multicolumn{[INSERTNUMBERSLICESPERYEAR]}{c|}{\YearHeaderFontsize{YR10}} & 
-\multicolumn{1}{c|}{\TaskAssignmentsHeaderFontsize{ASSIGNMENTS}} &       % task assignments (ID, \#week)
-\multicolumn{[INSERTNUMBERFTETYPES]}{c|}{\TotalFteHeaderFontsize{FTE}}\\ % 3-column total fte
+\multicolumn{1}{c|}{}                                                 % title column
+[INSERTYEARLABELLIST] &                                               % year label list (YR1, YR2, ...)
+\multicolumn{1}{c|}{\TaskAssignmentsHeaderFontsize{ASSIGNMENTS}} &    % task assignments (ID, \#week)
+\multicolumn{[INSERTNUMBERFTETYPES]}{c|}{\TotalFteHeaderFontsize{FTE}}\\% 3-column total fte
 \cline{1-1}
 
+% COMMENT: below template generates a single year label.  The script glues them together in a single string
+% COMMENT: and replaces the INSERTYEARLABELLIST above. 
+[STARTYEARLABELTEMPLATE]
+ & \multicolumn{[INSERTNUMBERSLICESPERYEAR]}{c|}{\YearHeaderFontsize{YR[INSERTYEARNUMBER}}
+[ENDYEARLABELTEMPLATE]
+
 % -------------------------  Forth line of headers
-\multicolumn{1}{|l|}{\TaskTitleHeaderFontsize{TASK TITLES}} &           % title column 
-% COMMENT: year 1 thru year 10 calendar (script will trim to needed number of years_
-\YearSliceHeaderFontsize{[INSERTYEARSL1YR1]} & \YearSliceHeaderFontsize{[INSERTYEARSL2YR1]} & \YearSliceHeaderFontsize{[INSERTYEARSL3YR1]} & \YearSliceHeaderFontsize{[INSERTYEARSL4YR1]} & \YearSliceHeaderFontsize{[INSERTYEARSL5YR1]} & \YearSliceHeaderFontsize{[INSERTYEARSL6YR1]} & \YearSliceHeaderFontsize{[INSERTYEARSL7YR1]} & \YearSliceHeaderFontsize{[INSERTYEARSL8YR1]} & \YearSliceHeaderFontsize{[INSERTYEARSL9YR1]} &    \YearSliceHeaderFontsize{[INSERTYEARSL10YR1]} & \YearSliceHeaderFontsize{[INSERTYEARSL11YR1]} & \YearSliceHeaderFontsize{[INSERTYEARSL12YR1]} & \YearSliceHeaderFontsize{[INSERTYEARSL1YR2]} & \YearSliceHeaderFontsize{[INSERTYEARSL2YR2]} & \YearSliceHeaderFontsize{[INSERTYEARSL3YR2]} & \YearSliceHeaderFontsize{[INSERTYEARSL4YR2]} & \YearSliceHeaderFontsize{[INSERTYEARSL5YR2]} & \YearSliceHeaderFontsize{[INSERTYEARSL6YR2]} & \YearSliceHeaderFontsize{[INSERTYEARSL7YR2]} & \YearSliceHeaderFontsize{[INSERTYEARSL8YR2]} & \YearSliceHeaderFontsize{[INSERTYEARSL9YR2]} & \YearSliceHeaderFontsize{[INSERTYEARSL10YR2]} & \YearSliceHeaderFontsize{[INSERTYEARSL11YR2]} & \YearSliceHeaderFontsize{[INSERTYEARSL12YR2]} & \YearSliceHeaderFontsize{[INSERTYEARSL1YR3]} & \YearSliceHeaderFontsize{[INSERTYEARSL2YR3]} & \YearSliceHeaderFontsize{[INSERTYEARSL3YR3]} & \YearSliceHeaderFontsize{[INSERTYEARSL4YR3]} & \YearSliceHeaderFontsize{[INSERTYEARSL5YR3]} & \YearSliceHeaderFontsize{[INSERTYEARSL6YR3]} & \YearSliceHeaderFontsize{[INSERTYEARSL7YR3]} & \YearSliceHeaderFontsize{[INSERTYEARSL8YR3]} & \YearSliceHeaderFontsize{[INSERTYEARSL9YR3]} & \YearSliceHeaderFontsize{[INSERTYEARSL10YR3]} & \YearSliceHeaderFontsize{[INSERTYEARSL11YR3]} & \YearSliceHeaderFontsize{[INSERTYEARSL12YR3]} &  \YearSliceHeaderFontsize{[INSERTYEARSL1YR4]} & \YearSliceHeaderFontsize{[INSERTYEARSL2YR4]} & \YearSliceHeaderFontsize{[INSERTYEARSL3YR4]} & \YearSliceHeaderFontsize{[INSERTYEARSL4YR4]} & \YearSliceHeaderFontsize{[INSERTYEARSL5YR4]} & \YearSliceHeaderFontsize{[INSERTYEARSL6YR4]} & \YearSliceHeaderFontsize{[INSERTYEARSL7YR4]} & \YearSliceHeaderFontsize{[INSERTYEARSL8YR4]} & \YearSliceHeaderFontsize{[INSERTYEARSL9YR4]} &  \YearSliceHeaderFontsize{[INSERTYEARSL10YR4]} & \YearSliceHeaderFontsize{[INSERTYEARSL11YR4]} & \YearSliceHeaderFontsize{[INSERTYEARSL12YR4]} & \YearSliceHeaderFontsize{[INSERTYEARSL1YR5]} & \YearSliceHeaderFontsize{[INSERTYEARSL2YR5]} & \YearSliceHeaderFontsize{[INSERTYEARSL3YR5]} & \YearSliceHeaderFontsize{[INSERTYEARSL4YR5]} & \YearSliceHeaderFontsize{[INSERTYEARSL5YR5]} & \YearSliceHeaderFontsize{[INSERTYEARSL6YR5]} & \YearSliceHeaderFontsize{[INSERTYEARSL7YR5]} & \YearSliceHeaderFontsize{[INSERTYEARSL8YR5]} & \YearSliceHeaderFontsize{[INSERTYEARSL9YR5]} & \YearSliceHeaderFontsize{[INSERTYEARSL10YR5]} & \YearSliceHeaderFontsize{[INSERTYEARSL11YR5]} & \YearSliceHeaderFontsize{[INSERTYEARSL12YR5]}  & \YearSliceHeaderFontsize{[INSERTYEARSL1YR6]} & \YearSliceHeaderFontsize{[INSERTYEARSL2YR6]} & \YearSliceHeaderFontsize{[INSERTYEARSL3YR6]} & \YearSliceHeaderFontsize{[INSERTYEARSL4YR6]} & \YearSliceHeaderFontsize{[INSERTYEARSL5YR6]} & \YearSliceHeaderFontsize{[INSERTYEARSL6YR6]} & \YearSliceHeaderFontsize{[INSERTYEARSL7YR6]} & \YearSliceHeaderFontsize{[INSERTYEARSL8YR6]} & \YearSliceHeaderFontsize{[INSERTYEARSL9YR6]} & \YearSliceHeaderFontsize{[INSERTYEARSL10YR6]} & \YearSliceHeaderFontsize{[INSERTYEARSL11YR6]} & \YearSliceHeaderFontsize{[INSERTYEARSL12YR6]} & \YearSliceHeaderFontsize{[INSERTYEARSL1YR7]} & \YearSliceHeaderFontsize{[INSERTYEARSL2YR7]} & \YearSliceHeaderFontsize{[INSERTYEARSL3YR7]} & \YearSliceHeaderFontsize{[INSERTYEARSL4YR7]} & \YearSliceHeaderFontsize{[INSERTYEARSL5YR7]} & \YearSliceHeaderFontsize{[INSERTYEARSL6YR7]} & \YearSliceHeaderFontsize{[INSERTYEARSL7YR7]} & \YearSliceHeaderFontsize{[INSERTYEARSL8YR7]} & \YearSliceHeaderFontsize{[INSERTYEARSL9YR7]} & \YearSliceHeaderFontsize{[INSERTYEARSL10YR7]} & \YearSliceHeaderFontsize{[INSERTYEARSL11YR7]} & \YearSliceHeaderFontsize{[INSERTYEARSL12YR7]} & \YearSliceHeaderFontsize{[INSERTYEARSL1YR8]} & \YearSliceHeaderFontsize{[INSERTYEARSL2YR8]} & \YearSliceHeaderFontsize{[INSERTYEARSL3YR8]} & \YearSliceHeaderFontsize{[INSERTYEARSL4YR8]} & \YearSliceHeaderFontsize{[INSERTYEARSL5YR8]} & \YearSliceHeaderFontsize{[INSERTYEARSL6YR8]} & \YearSliceHeaderFontsize{[INSERTYEARSL7YR8]} & \YearSliceHeaderFontsize{[INSERTYEARSL8YR8]} & \YearSliceHeaderFontsize{[INSERTYEARSL9YR8]} & \YearSliceHeaderFontsize{[INSERTYEARSL10YR8]} & \YearSliceHeaderFontsize{[INSERTYEARSL11YR8]} & \YearSliceHeaderFontsize{[INSERTYEARSL12YR8]}  & \YearSliceHeaderFontsize{[INSERTYEARSL1YR9]} & \YearSliceHeaderFontsize{[INSERTYEARSL2YR9]} & \YearSliceHeaderFontsize{[INSERTYEARSL3YR9]} & \YearSliceHeaderFontsize{[INSERTYEARSL4YR9]} & \YearSliceHeaderFontsize{[INSERTYEARSL5YR9]} & \YearSliceHeaderFontsize{[INSERTYEARSL6YR9]} & \YearSliceHeaderFontsize{[INSERTYEARSL7YR9]} & \YearSliceHeaderFontsize{[INSERTYEARSL8YR9]} & \YearSliceHeaderFontsize{[INSERTYEARSL9YR9]} & \YearSliceHeaderFontsize{[INSERTYEARSL10YR9]} & \YearSliceHeaderFontsize{[INSERTYEARSL11YR9]} & \YearSliceHeaderFontsize{[INSERTYEARSL12YR9]} & \YearSliceHeaderFontsize{[INSERTYEARSL1YR10]} & \YearSliceHeaderFontsize{[INSERTYEARSL2YR10]} & \YearSliceHeaderFontsize{[INSERTYEARSL3YR10]} & \YearSliceHeaderFontsize{[INSERTYEARSL4YR10]} & \YearSliceHeaderFontsize{[INSERTYEARSL5YR10]} & \YearSliceHeaderFontsize{[INSERTYEARSL6YR10]} & \YearSliceHeaderFontsize{[INSERTYEARSL7YR10]} & \YearSliceHeaderFontsize{[INSERTYEARSL8YR10]} & \YearSliceHeaderFontsize{[INSERTYEARSL9YR10]} & \YearSliceHeaderFontsize{[INSERTYEARSL10YR10]} & \YearSliceHeaderFontsize{[INSERTYEARSL11YR10]} & \YearSliceHeaderFontsize{[INSERTYEARSL12YR10]} & 
+\multicolumn{1}{|l|}{\TaskTitleHeaderFontsize{TASK TITLES}} % title column
+[INSERTYEARSLICELABELLIST] &                                % year slice list (1,2,3,4 1,2,3,4...)
 \multicolumn{1}{c|}{\IdWksHeaderFontsize{id~\#wks}} &       % task assignments (ID,\#weeks)
-{\TotalFteSumHeaderIcon} &                                    % Col1 Total funded+unfunded FTE
-{\TotalFteUnfundedHeaderIcon} &                                 % Col2 Total unfunded FTE
-{\TotalFteFundedHeaderIcon}                                     % Col3 Total funded FTE
+{\TotalFteSumHeaderIcon} &                                  % Col1 Total funded+unfunded FTE
+{\TotalFteUnfundedHeaderIcon} &                             % Col2 Total unfunded FTE
+{\TotalFteFundedHeaderIcon}                                 % Col3 Total funded FTE
 \hline
 
+% COMMENT: below template generates a single year-slice label (for example, a quarter year label ranging from 1 through 4).
+% COMMENT: The script glues them together into single string and replaces the above INSERTYEARSLICELABELLIST
+[STARTYEARSLICELABELTEMPLATE]
+ & \YearSliceHeaderFontsize{[INSERTSLICENUMBER]}
+[ENDYEARSLICELABELTEMPLATE]
+
+% begin main contents of table
 [INSERTLISTOFCATEGORYSECTIONS]
 
 % COMMENT ****************************** CATEGORY TEMPLATE ***************************************
 % COMMENT: the below produces the row for a task category label
-% COMMENT: accomodates year 1 through year 10, script will trim down to needed number of years
 % COMMENT: The category sections are put together as a single string delimited by end of line character and then 
 % COMMENT: replace the INSERTLISTOFCATEGORYSECTIONS above, constructing the full table
 [STARTCATEGORYSECTIONTEMPLATE]
-% begin task category
-\TaskCategoryLabel{[INSERTCATEGORYLABEL]}{[INSERTCATEGORYTITLE]} & 
-{[SL1YR1]} & {[SL2YR1]} & {[SL3YR1]} & {[SL4YR1]} & {[SL5YR1]} & {[SL6YR1]} & {[SL7YR1]} & {[SL8YR1]} & {[SL9YR1]} & {[SL10YR1]} & {[SL11YR1]} & {[SL12YR1]} & {[SL1YR2]} & {[SL2YR2]} & {[SL3YR2]} & {[SL4YR2]} & {[SL5YR2]} & {[SL6YR2]} & {[SL7YR2]} & {[SL8YR2]} & {[SL9YR2]} & {[SL10YR2]} & {[SL11YR2]} & {[SL12YR2]} & {[SL1YR3]} & {[SL2YR3]} & {[SL3YR3]} & {[SL4YR3]} & {[SL5YR3]} & {[SL6YR3]} & {[SL7YR3]} & {[SL8YR3]} & {[SL9YR3]} & {[SL10YR3]} & {[SL11YR3]} & {[SL12YR3]} & {[SL1YR4]} & {[SL2YR4]} & {[SL3YR4]} & {[SL4YR4]} & {[SL5YR4]} & {[SL6YR4]} & {[SL7YR4]} & {[SL8YR4]} & {[SL9YR4]} & {[SL10YR4]} & {[SL11YR4]} & {[SL12YR4]} & {[SL1YR5]} & {[SL2YR5]} & {[SL3YR5]} & {[SL4YR5]} & {[SL5YR5]} & {[SL6YR5]} & {[SL7YR5]} & {[SL8YR5]} & {[SL9YR5]} & {[SL10YR5]} & {[SL11YR5]} & {[SL12YR5]} & {[SL1YR6]} & {[SL2YR6]} & {[SL3YR6]} & {[SL4YR6]} & {[SL5YR6]} & {[SL6YR6]} & {[SL7YR6]} & {[SL8YR6]} & {[SL9YR6]} & {[SL10YR6]} & {[SL11YR6]} & {[SL12YR6]} & {[SL1YR7]} & {[SL2YR7]} & {[SL3YR7]} & {[SL4YR7]} & {[SL5YR7]} & {[SL6YR7]} & {[SL7YR7]} & {[SL8YR7]} & {[SL9YR7]} & {[SL10YR7]} & {[SL11YR7]} & {[SL12YR7]} & {[SL1YR8]} & {[SL2YR8]} & {[SL3YR8]} & {[SL4YR8]} & {[SL5YR8]} & {[SL6YR8]} & {[SL7YR8]} & {[SL8YR8]} & {[SL9YR8]} & {[SL10YR8]} & {[SL11YR8]} & {[SL12YR8]} & {[SL1YR9]} & {[SL2YR9]} & {[SL3YR9]} & {[SL4YR9]} & {[SL5YR9]} & {[SL6YR9]} & {[SL7YR9]} & {[SL8YR9]} & {[SL9YR9]} & {[SL10YR9]} & {[SL11YR9]} & {[SL12YR9]} & {[SL1YR10]} & {[SL2YR10]} & {[SL3YR10]} & {[SL4YR10]} & {[SL5YR10]} & {[SL6YR10]} & {[SL7YR10]} & {[SL8YR10]} & {[SL9YR10]} & {[SL10YR10]} & {[SL11YR10]} & {[SL12YR10]} & % empty year slices
-{} &         % empty assignments
-{} & {} & {}\\ % empty total fte
-[INSERTTASKSUNDERTHISCATEGORY]
+\TaskCategoryLabel{[INSERTCATEGORYLABEL]}{[INSERTCATEGORYTITLE]} % category identification
+[INSERTEMPTYYEARSLICESLIST] &  % empty year slices
+{} &                           % empty assignments
+{} & {} & {}\\                 % empty total fte
+[INSERTTASKSUNDERTHISCATEGORY] % tasks under this category
 \hline
 [ENDCATEGORYSECTIONTEMPLATE]
 
+% COMMENT: the below template makes a single empty year slice. The script figures out how many to make and
+% COMMENT: then glues them together into a single string and replaces the INSERTEMPTYYEARSLICESLIST above
+[STARTUNCOLOREDTIMELINETEMPLATE]
+ & \TimelineSize{}
+[ENDUNCOLOREDTIMELINETEMPLATE]
+
 % COMMENT ****************************** ROW TEMPLATE ***************************************
-% COMMENT: the below produces a row for a task under a category, then all rows under category inserted at INSERTTASKSUNDERTHISCATEGORY above
-% COMMENT: accomodates years 1 through 10, script will trim down to needed number of years
+% COMMENT: the below produces a single row for a task under a category. The script then makes several such rows 
+% COMMENT: and glues them toegether, delimited by a end of line character, and this single string replaces the 
+% COMMENT: INSERTTASKSUNDERTHISCATEGORY above in the CATEGORYSECTIONTEMPLATE above.
 [STARTTASKROWTEMPLATE]
 % begin task
-\TaskTitleLabel{[INSERTTASKLABEL]}{[INSERTTASKTITLE]} & 
-{[SL1YR1]} & {[SL2YR1]} & {[SL3YR1]} & {[SL4YR1]} & {[SL5YR1]} & {[SL6YR1]} & {[SL7YR1]} & {[SL8YR1]} & {[SL9YR1]} & {[SL10YR1]} & {[SL11YR1]} & {[SL12YR1]} & {[SL1YR2]} & {[SL2YR2]} & {[SL3YR2]} & {[SL4YR2]} & {[SL5YR2]} & {[SL6YR2]} & {[SL7YR2]} & {[SL8YR2]} & {[SL9YR2]} & {[SL10YR2]} & {[SL11YR2]} & {[SL12YR2]} & {[SL1YR3]} & {[SL2YR3]} & {[SL3YR3]} & {[SL4YR3]} & {[SL5YR3]} & {[SL6YR3]} & {[SL7YR3]} & {[SL8YR3]} & {[SL9YR3]} & {[SL10YR3]} & {[SL11YR3]} & {[SL12YR3]} & {[SL1YR4]} & {[SL2YR4]} & {[SL3YR4]} & {[SL4YR4]} & {[SL5YR4]} & {[SL6YR4]} & {[SL7YR4]} & {[SL8YR4]} & {[SL9YR4]} & {[SL10YR4]} & {[SL11YR4]} & {[SL12YR4]} & {[SL1YR5]} & {[SL2YR5]} & {[SL3YR5]} & {[SL4YR5]} & {[SL5YR5]} & {[SL6YR5]} & {[SL7YR5]} & {[SL8YR5]} & {[SL9YR5]} & {[SL10YR5]} & {[SL11YR5]} & {[SL12YR5]} & {[SL1YR6]} & {[SL2YR6]} & {[SL3YR6]} & {[SL4YR6]} & {[SL5YR6]} & {[SL6YR6]} & {[SL7YR6]} & {[SL8YR6]} & {[SL9YR6]} & {[SL10YR6]} & {[SL11YR6]} & {[SL12YR6]} & {[SL1YR7]} & {[SL2YR7]} & {[SL3YR7]} & {[SL4YR7]} & {[SL5YR7]} & {[SL6YR7]} & {[SL7YR7]} & {[SL8YR7]} & {[SL9YR7]} & {[SL10YR7]} & {[SL11YR7]} & {[SL12YR7]} & {[SL1YR8]} & {[SL2YR8]} & {[SL3YR8]} & {[SL4YR8]} & {[SL5YR8]} & {[SL6YR8]} & {[SL7YR8]} & {[SL8YR8]} & {[SL9YR8]} & {[SL10YR8]} & {[SL11YR8]} & {[SL12YR8]} & {[SL1YR9]} & {[SL2YR9]} & {[SL3YR9]} & {[SL4YR9]} & {[SL5YR9]} & {[SL6YR9]} & {[SL7YR9]} & {[SL8YR9]} & {[SL9YR9]} & {[SL10YR9]} & {[SL11YR9]} & {[SL12YR9]} & {[SL1YR10]} & {[SL2YR10]} & {[SL3YR10]} & {[SL4YR10]} & {[SL5YR10]} & {[SL6YR10]} & {[SL7YR10]} & {[SL8YR10]} & {[SL9YR10]} & {[SL10YR10]} & {[SL11YR10]} & {[SL12YR10]} & 
-{[INSERTASSIGNMENTLISTFORTHISTASK]} & 
+\TaskTitleLabel{[INSERTTASKLABEL]}{[INSERTTASKTITLE]} % title of this task
+[INSERTYEARSLICESLIST] % timeline for this task
+{[INSERTASSIGNMENTLISTFORTHISTASK]} &  % assignments for this task
 \FteTotalFormat{[INSERTFTETOTAL]} & \FteUnfundedFormat{[INSERTFTEUNFUNDED]} & \FteFundedFormat{[INSERTFTEFUNDED]}\\
 [ENDTASKROWTEMPLATE] 
 
-% COMMENT: A timeline needs to be constructed for this task that will turn a cell blue or white, depending on if the cell is within the timespan
-% COMMENT: below are two templates that replace bracketted items above, turning cell blue and white, resp. 
+% COMMENT: the below template makes a single year slice that falls within the task timeline, helping to construct
+% COMMENT: a colored task timeline. The script picks this or the UNCOLORED template above the ROW TEMPLATE written above,
+% COMMENT: and puts them together into a single string that replaces INSERTYEARSLICESLIST above
 [STARTCOLOREDTIMELINETEMPLATE]
-\TimelineSize\cellcolor{\TimelineColor}
+ & \TimelineSize\cellcolor{\TimelineColor}
 [ENDCOLOREDTIMELINETEMPLATE]
-
-[STARTUNCOLOREDTIMELINETEMPLATE]
-\TimelineSize\cellcolor{\TimelineColor}
-[ENDUNCOLOREDTIMELINETEMPLATE]
 
 % COMMENT: the assignment list consists of the team member ids followed by number of work weeks, with whitespace delimiter
 % COMMENT: There are 3 templates, depending on if the team member institutional affiliation is US/funded, US/unfunded, or non-US
 % COMMENT: The assignment list is constructed as a single string and then replaces INSERTASSIGNMENTLISTFORTHISTASK in the TASKROWTEMPLATE
 % COMMENT: below is format for a team member who is funded and from U.S. institution
 [STARTFUNDEDUSTEAMASSIGNMENTTEMPLATE]
-\FundedUsTeam{[TEAMID]}\,\FundedUsTeam{[NUMBERWEEKS]}
+ & \FundedUsTeam{[TEAMID]}\,\FundedUsTeam{[NUMBERWEEKS]}
 [ENDFUNDEDUSTEAMASSIGNMENTTEMPLATE]
  
 % COMMENT: below is format for a team member who is UNfunded and from U.S. institution
 [STARTUNFUNDEDUSTEAMASSIGNMENTTEMPLATE]
-\UnfundedUsTeam{[TEAMID]}\,\UnfundedUsTeam{[NUMBERWEEKS]} 
+ & \UnfundedUsTeam{[TEAMID]}\,\UnfundedUsTeam{[NUMBERWEEKS]} 
 [ENDUNFUNDEDUSTEAMASSIGNMENTTEMPLATE]
 
 % COMMENT: below is format for a team member who is from NON U.S. institution (and by definition, unfunded)
 [STARTINTERNATIONALTEAMASSIGNMENTTEMPLATE]
-\InternationalTeam{[TEAMID]}\,\InternationalTeam{[NUMBERWEEKS]} 
+ & \InternationalTeam{[TEAMID]}\,\InternationalTeam{[NUMBERWEEKS]} 
 [ENDINTERNATIONALTEAMASSIGNMENTTEMPLATE]
 
 \end{longtable}
@@ -213,5 +226,5 @@
 % COMMENT: THIS INFORMATION FROM THE CAPTIOn, this table could be used as an anonymous one. 
 % COMMENT: the below is the template used for each item in the list
 [STARTIDTONAMETEMPLATE]
-\RevealIdentityFormat{[INSERTTEAMID]}{[INSERTTEAMNAME]}
+\RevealIdentityFormat{[INSERTTEAMID]}: {[INSERTTEAMNAME]}
 [ENDIDTONAMETEMPLATE]
