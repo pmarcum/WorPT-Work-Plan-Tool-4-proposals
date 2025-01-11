@@ -81,12 +81,10 @@ You can just comment out your added lines and recompile the document, if you wan
    
 <tr>
 <td><b>Column width adjustments</b></td>
-<td>
-<pre><code>
+<td><pre><code>
 \dev\LeftSideWidth{<mark>1.5in</mark>}  % left side column width
 \dev\RightSideWidth{<mark>5.0in</mark>} % right side column width
-</code></pre>
-</td>
+</code></pre></td>
 </tr>
  
 <tr>
@@ -118,8 +116,7 @@ If box is checked for "Include this proposal in funding status?" on the GENERAL 
 
 <tr>
 <td><b>Font style of grant descriptors in left colum</b></td>
-<td>
-<pre><code>
+<td><pre><code>
 \def\LeftFontstyle#1{<mark>\textbf</mark>{#1}} % boldface left column text
 </code></pre></td>
 </tr>
