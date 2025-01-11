@@ -129,9 +129,9 @@ be turned into plain test by removing the "\textbf", eg {{#1}}
 <tr>
 <td><b>Section banner labelling</b></td>
 <td><pre><code>
-\def\FteFundedTitleText{Work Efforts Funded By This Proposal}
-\def\FteUnfundedTitleText{Work Efforts NOT Funded By This Proposal}
-\def\FteBothTitleText{Total Work Efforts Proposed (Funded $+$ Unfunded)}
+\def\FteFundedBannerText{Work Efforts Funded By This Proposal}
+\def\FteUnfundedBannerText{Work Efforts NOT Funded By This Proposal}
+\def\FteBothBannerText{Total Work Efforts Proposed (Funded $+$ Unfunded)}
 </code></pre></td>
 </tr>
 
