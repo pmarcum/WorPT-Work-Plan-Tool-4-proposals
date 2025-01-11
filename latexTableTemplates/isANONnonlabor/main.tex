@@ -51,27 +51,52 @@
 \multicolumn{[INSERTLASTYEARPLUSTWO]}{|@{}c@{}|}{\cellcolor{\BannerColor}\color{\BannerFontColor}\BannerFontstyle{Equipment, Travel, Supplies, Page Charges}}\\ 
 
 %---- second header line 
-{\color{\CostLabelColor}\ColumnFontstyle{Cost Category}} & {\color{\YearLabelColor}\ColumnFontstyle{Year1}} & {\color{\YearLabelColor}\ColumnFontstyle{Year2}} & {\color{\YearLabelColor}\ColumnFontstyle{Year3}} & {\color{\YearLabelColor}\ColumnFontstyle{Year4}} & {\color{\YearLabelColor}\ColumnFontstyle{Year5}} & {\color{\YearLabelColor}\ColumnFontstyle{Year6}} & {\color{\YearLabelColor}\ColumnFontstyle{Year7}} & {\color{\YearLabelColor}\ColumnFontstyle{Year8}} & {\color{\YearLabelColor}\ColumnFontstyle{Year9}} & {\color{\YearLabelColor}\ColumnFontstyle{Year10}} & {\color{\TotalLabelColor}\TotalFontstyle{Total}}\\
-\hline
+{\color{\CostLabelColor}\ColumnFontstyle{Cost Category}} [INSERTYEARLABELLIST] & {\color{\TotalLabelColor}\TotalFontstyle{Total}}\\
+
+% COMMENT: the template below is a single item for the year label list. The script glues together all the needed items into a single 
+% COMMENT: string and replaces INSERTYEARLABELLIST above
+[STARTYEARLABELTEMPLATE]
+ & {\color{\YearLabelColor}\ColumnFontstyle{Year[INSERTYEARNUMBER]}}
+[ENDYEARLABELTEMPLATE]
 
 %---- table data inserted below
 [INSERTNONLABORCOSTSLIST]
 
-% COMMENT: the below template generates the rows of nonlabor costs to go into the main part of the table
-[STARTNONLABORITEM]
-\MajorCatFontstyle{[ITEMDESC]} & \MajorAmountFontstyle{\$[COSTYEAR1]} & \MajorAmountFontstyle{\$[COSTYEAR2]} & \MajorAmountFontstyle{\$[COSTYEAR3]} & \MajorAmountFontstyle{\$[COSTYEAR4]} & \MajorAmountFontstyle{\$[COSTYEAR5]} & \MajorAmountFontstyle{\$[COSTYEAR6]} & \MajorAmountFontstyle{\$[COSTYEAR7]} & \MajorAmountFontstyle{\$[COSTYEAR8]} & \MajorAmountFontstyle{\$[COSTYEAR9]} & \MajorAmountFontstyle{\$[COSTYEAR10]} & \MajorCatTotalFontstyle{\$[SUMOVERYEARS]}\\
-[ENDNONLABORITEM]
-
 %---- insert the rolled-up travel costs at bottom of table
 %---- first, insert the domestic and international rolled-up totals
-\MajorCatFontstyle{Travel} & \MajorAmountFontstyle{\$[TRAVELSUMYEAR1]} & \MajorAmountFontstyle{\$[TRAVELSUMYEAR2]}  & \MajorAmountFontstyle{\$[TRAVELSUMYEAR3]} & \MajorAmountFontstyle{\$[TRAVELSUMYEAR4]} & \MajorAmountFontstyle{\$[TRAVELSUMYEAR5]} & \MajorAmountFontstyle{\$[TRAVELSUMYEAR6]}  & \MajorAmountFontstyle{\$[TRAVELSUMYEAR7]} & \MajorAmountFontstyle{\$[TRAVELSUMYEAR8]} & \MajorAmountFontstyle{\$[TRAVELSUMYEAR9]} & \MajorAmountFontstyle{\$[TRAVELSUMYEAR10]} & \MajorCatTotalFontstyle{\$[TRAVELSUMALLYEARS]}\\
+\MajorCatFontstyle{Travel} [INSERTTRAVELSUMMARYLIST] & \MajorCatTotalFontstyle{\$[TRAVELSUMALLYEARS]}\\
 
 %---------- then insert only the domestic travel rolled-up totals
-\TravelSubcatFontstyle{~~~Domestic} & \TravelSubcatAmountFontstyle{\$[DOMSUMYEAR1]} & \TravelSubcatAmountFontstyle{\$[DOMSUMYEAR2]} & \TravelSubcatAmountFontstyle{\$[DOMSUMYEAR3]} & \TravelSubcatAmountFontstyle{\$[DOMSUMYEAR4]} & \TravelSubcatAmountFontstyle{\$[DOMSUMYEAR5]} & \TravelSubcatAmountFontstyle{\$[DOMSUMYEAR6]} & \TravelSubcatAmountFontstyle{\$[DOMSUMYEAR7]} & \TravelSubcatAmountFontstyle{\$[DOMSUMYEAR8]} & \TravelSubcatAmountFontstyle{\$[DOMSUMYEAR9]} & \TravelSubcatAmountFontstyle{\$[DOMSUMYEAR10]} & \TravelSubcatTotalFontstyle{\$[DOMSUMALLYEARS]}\\
+\TravelSubcatFontstyle{~~~Domestic} [INSERTTRAVELDOMESTICLIST] & \TravelSubcatTotalFontstyle{\$[DOMSUMALLYEARS]}\\
 
 %---------- then insert only the international travel rolled-up totals
-\TravelSubcatFontstyle{~~~Intern'l} & \TravelSubcatAmountFontstyle{\$[INTSUMYEAR1]} & \TravelSubcatAmountFontstyle{\$[INTSUMYEAR2]} & \TravelSubcatAmountFontstyle{\$[INTSUMYEAR3]} & \TravelSubcatAmountFontstyle{\$[INTSUMYEAR4]} & \TravelSubcatAmountFontstyle{\$[INTSUMYEAR5]} & \TravelSubcatAmountFontstyle{\$[INTSUMYEAR6]} & \TravelSubcatAmountFontstyle{\$[INTSUMYEAR7]} & \TravelSubcatAmountFontstyle{\$[INTSUMYEAR8]} & \TravelSubcatAmountFontstyle{\$[INTSUMYEAR9]} & \TravelSubcatAmountFontstyle{\$[INTSUMYEAR10]} & \TravelSubcatTotalFontstyle{\$[INTSUMALLYEARS]}\\
+\TravelSubcatFontstyle{~~~Intern'l} [INSERTTRAVELINTERNATIONALLIST] & \TravelSubcatTotalFontstyle{\$[INTSUMALLYEARS]}\\
 \hline
+
+% COMMENT: the below template generates a row of nonlabor costs. The script generates several rows using template,
+% COMMENT: and glues them together with end of line character, and replaces INSERTNONLABORCOSTSLIST
+[STARTNONLABORITEMTEMPLATE]
+\MajorCatFontstyle{[ITEMDESC]} [INSERTANNUALCOSTLIST] & \MajorCatTotalFontstyle{\$[SUMOVERYEARS]}\\
+[ENDNONLABORITEMTEMPLATE]
+
+% COMMENT: the below template generates a single nonlabor cost as part of the annual cost list. The script will 
+% COMMENT: glue together the items into a single string that replaces INSERTANNUALCOSTLIST in the above NONLABORITEM template
+[STARTPERYEARCOSTTEMPLATE]
+ & \MajorAmountFontstyle{\$[INSERTPERYEARCOST]}
+[ENDPERYEARCOSTTEMPLATE]
+
+% COMMENT: below template generates a single item for the travel summary list. The script glues together 
+% COMMENT: all the items into a single string that replaces INSERTTRAVELSUMMARYLIST
+[STARTPERYEARTRAVELSUMTEMPLATE]
+ & \MajorAmountFontstyle{\$[INSERTTRAVELSUMFORTHISYEAR]}
+[ENDPERYEARTRAVELSUMTEMPLATE]
+
+% COMMENT: below template generates a single item for the list of domestic travel costs. The script glues together
+% COMMENT: to make a string that replaces INSERTTRAVELSOMESTICLIST above
+[STARTPERYEARDOMINTTEMPLATE]
+ & \TravelSubcatAmountFontstyle{\$[INSERTTRAVELFORTHISYEAR]}
+[ENDPERYEARDOMINTTEMPLATE]
+
 \end{tabular}
 }
 {%
