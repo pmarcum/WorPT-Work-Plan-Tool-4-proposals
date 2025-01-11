@@ -81,25 +81,21 @@ You can just comment out your added lines and recompile the document, if you wan
 <table>
 <tr>
 <td><b>Table title and reference label</b></td>
-<td>
-<pre><code>
+<td><pre><code>
 \def\TableTitle{<mark>Work Effort for All</mark>} % table title at the top
 \def\TableLabel{<mark>tab:\WorPTfolder</mark>}    % put preference between " {}"
-</code></pre>
-</td>
+</code></pre></td>
 </tr>
 
 <tr>
 <td><b>Column width adjustments</b></td>
-<td>
-<pre><code>
+<td><pre><code>
 \def\ContributorWidth{<mark>1.8in</mark>}      % Contributor column width
 \def\PositionWidth{<mark>1.3in</mark>}         % Position column width
 \def\RoleWidth{<mark>2.5in</mark>}             % Role column width
 \def\FundedMemberWidth{<mark>0.10in</mark>}    % Funded(?) column width
 \def\FteWidth{<mark>0.28in</mark>}             % FTE column width
-</code></pre>
-</td>
+</code></pre></td>
 </tr>
     
 <tr>
@@ -109,18 +105,15 @@ The default typically works well (an overcount is caused by table + longtable co
 But if counter gets screwed up and needs manual intervention, use below to apply a correction:
 <pre><code>
 \def\TaskAddCounter{<mark>-1</mark>}    % additive correction to table number
-</code></pre>
-</td>
+</code></pre></td>
 </tr>
 
 <tr>
 <td><b>Table compactness</b></td>
-<td>
-<pre><code>
+<td><pre><code>
 \def\SpaceBetweenRows{<mark>1</mark>}      % vertical compactness of rows
 \def\SpaceBetweenColumns{<mark>1pt</mark>} % bigger = wider spacing between columns
-</code></pre>
-</td>
+</code></pre></td>
 </tr>
 
 <tr>
@@ -133,8 +126,7 @@ be turned into plain test by removing the "\textbf", eg {{#1}}
 \def\LabelColor{<mark>White</mark>}             % column heading font color
 \def\LabelFontstyle#1{<mark>\textbf</mark>{#1}} % boldface column label
 \def\VerticalLineColor{<mark>lightgray</mark>}  % color of vertical lines
-</code></pre>
-</td>
+</code></pre></td>
 </tr>
 
 <tr>
@@ -153,8 +145,7 @@ define them separately as the above customization options show, or replace them 
   <mark>p{\FundedMemberWidth}!{\color{\VerticalLineColor}\vrule}</mark>  % Funded(?) column
   <mark>p{\FteWidth}|</mark>                                             % FTE column
 }
-</code></pre>
-</td>
+</code></pre></td>
 </tr>
 </table>
 </details>
