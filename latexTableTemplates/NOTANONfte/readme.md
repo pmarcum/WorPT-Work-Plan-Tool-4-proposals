@@ -50,8 +50,11 @@ Copy/paste the special packages in preamble of your document, if you haven't don
 <mark>% Put OPTIONAL customizations for NOTANONfte HERE</mark>
 
 \begin{NOTANONfte}
+   
 <mark>\caption{Details of work efforts per member involved in the present proposal; {\color{red}Detailed responsibilities, tied to tasks and science goals, are provided in Sec.\,\ref{Subsec:tmeline}.}}
 \label{tab:NOTANONfte}</mark>
+
+\end{NOTANONfte}
 </code></pre>
 
 </details>
