@@ -88,7 +88,7 @@ You can just comment out your added lines and recompile the document, if you wan
 <td><b>Column width adjustments</b></td>
 <td><pre><code>
 \def\TaskWidth{<mark>3.7in</mark>}      % width of leftmost ("Tasks") column
-\def\StartFinishWidth{0.16in}           % width of start/finish columns
+\def\StartFinishWidth{0.2in}           % width of start/finish columns
 \def\LeadWidth{<mark>1.1in</mark>}      % width of middle ("Lead") column
 \def\ExpertiseWidth{<mark>1.7in</mark>} % width of rightmost ("Expertise") column
 </code></pre></td>
@@ -107,8 +107,8 @@ But if counter gets screwed up and needs manual intervention, use below to apply
 <tr>
 <td><b>Table compactness</b></td>
 <td><pre><code>
-\def\SpaceBetweenRows{<mark>1.0</mark>}    % vertical compactness of rows
-\def\SpaceBetweenColumns{<mark>1pt</mark>} % bigger = wider spacing between columns
+\def\SpaceBetweenRows{<mark>0.87</mark>}    % vertical compactness of rows
+\def\SpaceBetweenColumns{<mark>2pt</mark>} % bigger = wider spacing between columns
 </code></pre></td>
 </tr>
 
