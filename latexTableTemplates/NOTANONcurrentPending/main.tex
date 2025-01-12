@@ -72,7 +72,7 @@
 % COMMENT: current grants. Below is what gets written if there is a current grant(s)
 % COMMENT: everything between STARTCURRENT and ENDCURRENT will be used as the formatting 
 % COMMENT: template for entries in this section
-[STARTCURRENT]
+[STARTCURRENTTEMPLATE]
 %---- next CURRENT SUPPORT entry
 \LeftFontstyle{Title}&[INSERTCURRENTTITLE]\\ 
 \LeftFontstyle{Source of Support}&[INSERTCURRENTSOURCE]\\ 
@@ -83,41 +83,41 @@
 \LeftFontstyle{Award Period}&[INSERTCURRENTAWARDPERIOD]\\
 \LeftFontstyle{Award Amount}&[INSERTCURRENTDOLLAR]\\
 \LeftFontstyle{FTE}&[INSERTCURRENTFTES]\\
-[ENDCURRENT]
+[ENDCURRENTTEMPLATE]
 
 % COMMENT: below is what gets written if there is NO current / ongoing grant support
 % COMMENT: everything between STARTNOCURRENT and ENDNOCURRENT will be used as the 
 % COMMENT: single entry under this section
-[STARTNOCURRENT]
+[STARTNOCURRENTTEMPLATE]
 %---- placehold if no current support exists
 \LeftFontstyle{Title}&\multirow{2}{*}{No grant funding currently}\\
 \LeftFontstyle{Source of Support}&{}\\
-[ENDNOCURRENT]
+[ENDNOCURRENTTEMPLATE]
 
 % COMMENT: there are 2 optional text to appear in this banner. Below option if user
 % COMMENT: indicated current proposal WILL be included in current/pending
-[STARTINCLUDECURRENTPROPOSAL]
+[STARTINCLUDECURRENTPROPOSALTEMPLATE]
 {(including this proposal)}
-[ENDINCLUDECURRENTPROPOSAL]
+[ENDINCLUDECURRENTPROPOSALTEMPLATE]
 
 % COMMENT: there are 2 optional text to appear in this banner. Below option if user
 % COMMENT: indicated current proposal should NOT be included in current/pending
-[STARTDONOTINCLUDECURRENTPROPOSAL]
+[STARTDONOTINCLUDECURRENTPROPOSALTEMPLATE]
 {(not including this proposal)}
-[ENDDONOTINCLUDECURRENTPROPOSAL]
+[ENDDONOTINCLUDECURRENTPROPOSALTEMPLATE]
 
 % COMMENT: below option if user indicated current proposal SHOULD be included;
 % COMMENT: proposal is marked with the below tag
-[STARTCURRENTPROPOSALMARKER]
+[STARTCURRENTPROPOSALMARKERTEMPLATE]
 {\color{\ThisProposalColor}(this proposal)~~}
-[ENDCURRENTPROPOSALMARKER]
+[ENDCURRENTPROPOSALMARKERTEMPLATE]
 
 % COMMENT: under this section are all the pending proposals awaiting review
 % COMMENT: the script will use one of two entry options, depending on if there are
 % COMMENT: pending proposals. Below is used if there are pending proposals under
 % COMMENT: review. Everything between STARTPENDING and ENDPENDING will be used
 % COMMENT: as the template for entries under this section
-[STARTPENDING]
+[STARTPENDINGTEMPLATE]
 %---- next PENDING SUPPORT entry
 \LeftFontstyle{Title}&[INSERTTHISPROPOSALMARKER][INSERTPENDINGTITLE]\\
 \LeftFontstyle{Source of Support}&[INSERTPENDINGSOURCE]\\
@@ -128,31 +128,31 @@
 \LeftFontstyle{Award Period}&[INSERTPENDINGAWARDPERIOD]\\
 \LeftFontstyle{Award Amount}&[INSERTPENDINGDOLLAR]\\
 \LeftFontstyle{FTE}&[INSERTPENDINGFTES]\\
-[ENDPENDING]
+[ENDPENDINGTEMPLATE]
 
 % COMMENT: below is used if there are NO pending proposals
 % COMMENT: everything between STARTNOPENDING and ENDNOPENDING will be used as
 % COMMENT: single entry under this section
-[STARTNOPENDING]
+[STARTNOPENDINGTEMPLATE]
 %---- placehold if no pending support exists
 \LeftFontstyle{Title}&\multirow{2}{*}{No pending grant funding}\\
 \LeftFontstyle{Source of Support}&{}\\
-[ENDNOPENDING]
+[ENDNOPENDINGTEMPLATE]
 
 % COMMENT: the below are 2 options for how each current/pending report is 
 % COMMENT: separated from others. If the option that each bio sketch be put
 % COMMENT: on a new page (if the purple box above the "biosketch?" column on
 % COMMENT: PERSONNEL & FTE page), then use below option. 
-[STARTNEWPAGEOPTION]
-\n \newpage \n
-[ENDNEWPAGEOPTION]
+[STARTNEWPAGEOPTIONTEMPLATE]
+\newpage
+[ENDNEWPAGEOPTIONTEMPLATE]
 
 % COMMENT: if the box is not checked, then use this option that writes one bio sketch
 % COMMENT: immediately after the other, allowing possibility that a biosketch falls on
 % COMMENT: two pages instead of one
-[STARTNONEWPAGEOPTION]
-\n \bigskip \n
-[ENDNONEWPAGEOPTION]
+[STARTNONEWPAGEOPTIONTEMPLATE]
+\\ \bigskip \\
+[ENDNONEWPAGEOPTIONTEMPLATE]
 
 \hline
 }
