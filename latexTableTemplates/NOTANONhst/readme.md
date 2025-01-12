@@ -132,12 +132,15 @@ be turned into plain test by removing the "\textbf", eg {{#1}}
 <tr>
 <td><b>Table preamble - full control!</b></td>
 <td>
-Use table preamble for more control over table layout (removing/adding vertical lines, changing column alignment, etc).<br>
+Use table preamble for more control over table layout (removing/adding vertical lines,<br>
+changing column alignment, etc). <br>
 Copy/paste the ENTIRE below code in order to change default table preamble.<br>
-<u>IMPORTANT</u> Most of table preamble can be changed EXCEPT <i>do <b>NOT</b> change "T" variable, and preserve the number of columns</i>
-(eg, make sure that any 'p' that is removed is replaced by another alignment code). You may retain the parameters below (like \ContributorWidth) and
-define them separately as the above customization options show, or replace them entirely with hard-coded numbers. You can also change 
-the column user-definition of "L" if desired.
+<u>IMPORTANT</u> Most of table preamble can be changed EXCEPT <i>do <b>NOT</b> change<br>
+"T" variable, and preserve the number of columns</i> (eg, make sure that any 'p' that<br>
+is removed is replaced by another alignment code). You may retain the parameters below<br>
+(like \ContributorWidth) and define them separately as the above customization options<br>
+show, or replace them entirely with hard-coded numbers. You can also change the column<br>
+user-definition of "L" if desired.
 <pre><code>
 % define column type to help readability of table preamble
 <mark>\newcolumntype{L}[1]{>{\raggedright\let\newline
