@@ -135,13 +135,14 @@ Use table preamble for more control over table layout (removing/adding vertical 
 % define column type to help readability of table preamble
 <mark>\newcolumntype{L}[1]{>{\raggedright\let\newline
   \\\arraybackslash\hspace{0pt}}p{#1}}</mark>
-\newcolumntype{T}{ % start of table preamble
+%
+\newcolumntype{T}{                                                    % start of table preamble
 <mark>|L{\ContributorWidth}!{\color{\VerticalLineColor}\vrule}</mark> % Contributor
 <mark>L{\PositionWidth}!{\color{\VerticalLineColor}\vrule}</mark>     % Position
 <mark>L{\RoleWidth}!{\color{\VerticalLineColor}\vrule}</mark>         % Role
 <mark>p{\FundedMemberWidth}!{\color{\VerticalLineColor}\vrule}</mark> % Funded(?)
 <mark>p{\FteWidth}|</mark>                                            % FTE
-}                  % end of table preamble
+}                                                                     % end of table preamble
 </code></pre></td>
 </tr>
 
