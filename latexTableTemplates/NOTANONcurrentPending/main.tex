@@ -48,27 +48,25 @@
 
 % COMMENT: the rest of this file serves as a template for each person's current/funding report.
 % COMMENT: The funding status reports are then "glued together" by either \newpage or carriage returns
-% COMMENT: and then put into the INSERTCURRENTFUNDINGLIST above. 
+% COMMENT: and then put into the INSERTFUNDINGREPORTSLIST above. 
 
 % COMMENT: below provides global format for a funding status report
 [STARTPERPERSONTEMPLATE]
-
 %---- make colorized top name banner
 \hline
 \multicolumn{2}{|c|}{\cellcolor{\NameBannerColor}\color{\NameBannerFontColor}\NameBannerFontstyle{[INSERTNAME] ([INSERTROLE])}}\\ 
 \hline
-
 % COMMENT: below is the banner delineating the Current Grant section
 %---- start "CURRENT SUPPORT" section
 \multicolumn{2}{|c|}{\cellcolor{\SectionColor}\color{\SectionFontColor}\SectionFontstyle{Current Support}}\\
 \hline
 [INSERTCURRENTFUNDINGLIST]
-
 % COMMENT: below is the banner delineating the Pending Grant section
 %---- start "PENDING SUPPORT" section
 \hline
 \multicolumn{2}{|c|}{\cellcolor{\SectionColor}\color{\SectionFontColor}\SectionFontstyle{Pending Grant Support} [INSERTINCLUSIONOPTION]}\\ \hline
 [INSERTPENDINGFUNDINGLIST]
+[ENDPERPERSONTEMPLATE]
 
 % COMMENT: the script will use one of two formatting options, depending on if there are 
 % COMMENT: current grants. Below is what gets written if there is a current grant(s)
