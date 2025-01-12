@@ -82,8 +82,8 @@ You can just comment out your added lines and recompile the document, if you wan
 <tr>
 <td><b>Column width adjustments</b></td>
 <td><pre><code>
-\dev\LeftSideWidth{<mark>1.5in</mark>}  % left side column width
-\dev\RightSideWidth{<mark>5.0in</mark>} % right side column width
+\def\LeftSideWidth{<mark>1.5in</mark>}  % left side column width
+\def\RightSideWidth{<mark>5.0in</mark>} % right side column width
 </code></pre></td>
 </tr>
  
