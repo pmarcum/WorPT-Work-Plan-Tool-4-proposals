@@ -139,7 +139,8 @@ Copy/paste the ENTIRE below code in order to change default table preamble.<br>
 define them separately as the above customization options show, or replace them entirely with hard-coded numbers. You can also change 
 the column user-definition of "L" if desired.
 <pre><code>
-<mark>\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}</mark> % helps shorten below table preamble
+% define column type to help readability of table preamble
+<mark>\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}</mark>
    
 \newcolumntype{T}{ % start of table preamble
   <mark>|L{\ContributorWidth}!{\color{\VerticalLineColor}\vrule}</mark> % Contributor column
