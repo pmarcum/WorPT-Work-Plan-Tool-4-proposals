@@ -52,8 +52,7 @@ Copy/paste the special packages in preamble of your document, if you haven't don
 
 \begin{NOTANONhst}
 <mark>\begin{tablenotes}[flushleft] 
-Team members, identified by their name and role in the proposed project, are listed with their institutional affiliation and position, with a "F" or "US" indicating foriegn or U.S. institution. A brief narrative of their role in the project is given.  A 'Y' or 'N' indicates if the person is funded by the proposed budget or not, respectively.  The total work-effort of the team member,<br>
-summed over full life of the proposed  project, is in the rightmost column (multiply shown FTE value by 12 to get work effort in number of months).
+Team members, identified by their name and role in the proposed project, are listed with their institutional affiliation and position, with a "F" or "US" indicating foriegn or U.S. institution. A brief narrative of their role in the project is given.  A 'Y' or 'N' indicates if the person is funded by the proposed budget or not, respectively.  The total work-effort of the team member, summed over full life of the proposed  project, is in the rightmost column (multiply shown FTE value by 12 to get work effort in number of months).
 \end{tablenotes}</mark>
 \end{NOTANONhst}
 </code></pre>
@@ -101,8 +100,7 @@ You can just comment out your added lines and recompile the document, if you wan
 <tr>
 <td><b>Table number additive correction</b></td>
 <td>
-The default typically works well (an overcount is caused by table + longtable combination).<br>
-But if counter gets screwed up and needs manual intervention, use below to apply a correction:
+The default typically works well (an overcount is caused by table + longtable combination). But if counter gets screwed up and needs manual intervention, use below to apply a correction:
 <pre><code>
 \def\TaskAddCounter{<mark>-1</mark>}    % additive correction to table number
 </code></pre></td>
@@ -119,8 +117,7 @@ But if counter gets screwed up and needs manual intervention, use below to apply
 <tr>
 <td><b>Column label color and font style</b></td>
 <td>
-For fontstyle changes, the "\textbf" can be changed to "\emph" for italics, or can<br>
-be turned into plain test by removing the "\textbf", eg {{#1}}
+For fontstyle changes, the "\textbf" can be changed to "\emph" for italics, or can be turned into plain test by removing the "\textbf", eg {{#1}}
 <pre><code>
 \def\HeaderColor{<mark>Blue</mark>}             % column heading color
 \def\LabelColor{<mark>White</mark>}             % column heading font color
