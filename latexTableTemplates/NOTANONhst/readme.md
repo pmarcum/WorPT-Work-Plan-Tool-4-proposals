@@ -143,10 +143,10 @@ the column user-definition of "L" if desired.
    
 \newcolumntype{T}{ % start of table preamble
 <mark>  |L{\ContributorWidth}!{\color{\VerticalLineColor}\vrule} % Contributor column
-  L{\PositionWidth}!{\color{\VerticalLineColor}\vrule}      % Position column
-  L{\RoleWidth}!{\color{\VerticalLineColor}\vrule}          % Role column
-  p{\FundedMemberWidth}!{\color{\VerticalLineColor}\vrule}  % Funded(?) column
-  p{\FteWidth}|</mark>                                             % FTE column
+  L{\PositionWidth}!{\color{\VerticalLineColor}\vrule}       % Position column
+  L{\RoleWidth}!{\color{\VerticalLineColor}\vrule}           % Role column
+  p{\FundedMemberWidth}!{\color{\VerticalLineColor}\vrule}   % Funded(?) column
+  p{\FteWidth}|</mark>                                              % FTE column
 }                  % end of table preamble
 
 </code></pre></td>
