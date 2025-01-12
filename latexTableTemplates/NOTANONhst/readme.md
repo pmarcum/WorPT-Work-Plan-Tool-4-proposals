@@ -144,11 +144,11 @@ the column user-definition of "L" if desired.
    \\\arraybackslash\hspace{0pt}}p{#1}}</mark>
    
 \newcolumntype{T}{ % start of table preamble
-  <mark>|L{\ContributorWidth}!{\color{\VerticalLineColor}\vrule}</mark> % Contributor column
-  <mark>L{\PositionWidth}!{\color{\VerticalLineColor}\vrule}</mark>       % Position column
-  <mark>L{\RoleWidth}!{\color{\VerticalLineColor}\vrule}</mark>           % Role column
-  <mark>p{\FundedMemberWidth}!{\color{\VerticalLineColor}\vrule}</mark>   % Funded(?) column
-  <mark>p{\FteWidth}|</mark>                                              % FTE column
+  <mark>|L{\ContributorWidth}!{\color{\VerticalLineColor}\vrule}</mark> % Contributor
+  <mark>L{\PositionWidth}!{\color{\VerticalLineColor}\vrule}</mark>       % Position
+  <mark>L{\RoleWidth}!{\color{\VerticalLineColor}\vrule}</mark>           % Role
+  <mark>p{\FundedMemberWidth}!{\color{\VerticalLineColor}\vrule}</mark>   % Funded(?)
+  <mark>p{\FteWidth}|</mark>                                              % FTE
 }                  % end of table preamble
 
 </code></pre></td>
