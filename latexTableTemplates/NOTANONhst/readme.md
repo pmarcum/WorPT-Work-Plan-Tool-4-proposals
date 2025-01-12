@@ -131,8 +131,7 @@ be turned into plain test by removing the "\textbf", eg {{#1}}
 
 <tr>
 <td><b>Table preamble - full control!</b></td>
-<td>
-<pre><code>
+<td><pre><code>
 % define column type to help readability of table preamble
 <mark>\newcolumntype{L}[1]{>{\raggedright\let\newline
    \\\arraybackslash\hspace{0pt}}p{#1}}</mark>
@@ -149,7 +148,6 @@ be turned into plain test by removing the "\textbf", eg {{#1}}
 <mark>p{\FteWidth}|</mark>                                          
 % FTE
 }                  % end of table preamble
-
 </code></pre></td>
 </tr>
 </table>
