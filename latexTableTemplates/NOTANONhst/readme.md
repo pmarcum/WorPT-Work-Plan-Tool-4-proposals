@@ -133,6 +133,8 @@ Use table preamble for more control over table layout (removing/adding vertical 
 <u>IMPORTANT</u> Most of table preamble can be changed EXCEPT <i>do <b>NOT</b> change "T" variable, and preserve the number of columns</i> (eg, make sure that any 'p' that is removed is replaced by another alignment code). You may retain the parameters below (like \ContributorWidth) and define them separately as the above customization options show, or replace them entirely with hard-coded numbers. You can also change the column user-definition of "L" if desired.
 <pre><code>
 % define column type to help readability of table preamble
+<mark>\newcolumntype{L}[1]{>{\raggedright\let\newline
+  \\\arraybackslash\hspace{0pt}}p{#1}}</mark>
 \def\LabelColor{<mark>White</mark>}             % column heading font color
 \def\LabelFontstyle#1{<mark>\textbf</mark>{#1}} % boldface column label
 \def\VerticalLineColor{<mark>lightgray</mark>}  % color of vertical lines
