@@ -160,7 +160,7 @@ Copy/paste the ENTIRE below code in order to change default table preamble.<br>
 (eg, make sure that any 'l' that is removed is replaced by another alignment code).  
 <pre><code>
 \newcolumntype{T}{
-  <mark>{|l|</mark>*{\LastYearPlusOne}<mark>{l|}}</mark>
+   <mark>|l|</mark>*{\LastYearPlusOne}<mark>{l|}</mark>
 }
 </code></pre></td>
 </tr>
