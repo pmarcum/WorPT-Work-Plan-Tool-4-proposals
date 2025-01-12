@@ -87,7 +87,7 @@ You can just comment out your added lines and recompile the document, if you wan
 <tr>
 <td><b>Column width adjustments</b></td>
 <td><pre><code>
-\def\TaskWidth{<mark>3.7in</mark>}      % width of leftmost ("Tasks") column
+\def\TaskWidth{<mark>3.4in</mark>}      % width of leftmost ("Tasks") column
 \def\StartFinishWidth{0.2in}           % width of start/finish columns
 \def\LeadWidth{<mark>1.1in</mark>}      % width of middle ("Lead") column
 \def\ExpertiseWidth{<mark>1.7in</mark>} % width of rightmost ("Expertise") column
