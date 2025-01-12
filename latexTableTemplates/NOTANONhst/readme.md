@@ -132,8 +132,7 @@ be turned into plain test by removing the "\textbf", eg {{#1}}
 <tr>
 <td><b>Column label color and font style</b></td>
 <td>
-For fontstyle changes, the "\textbf" can be changed to "\emph" for italics, or can<br>
-be turned into plain test by removing the "\textbf", eg {{#1}}
+For fontstyle changes, the "\textbf" can be changed to "\emph" for italics, or can be turned into plain test by removing the "\textbf", eg {{#1}}
 <pre><code>
 \def\HeaderColor{<mark>Blue</mark>}             % column heading color
 \def\LabelColor{<mark>White</mark>}             % column heading font color
