@@ -129,8 +129,7 @@ For fontstyle changes, the "\textbf" can be changed to "\emph" for italics, or c
 <tr>
 <td><b>Column label color and font style</b></td>
 <td>
-Use table preamble for more control over table layout (removing/adding vertical lines, changing column alignment, etc). <br>
-Copy/paste the ENTIRE below code in order to change default table preamble.<br>
+Use table preamble for more control over table layout (removing/adding vertical lines, changing column alignment, etc). Copy/paste the ENTIRE below code in order to change default table preamble.<br>
 <pre><code>
 \def\HeaderColor{<mark>Blue</mark>}             % column heading color
 \def\LabelColor{<mark>White</mark>}             % column heading font color
