@@ -142,7 +142,7 @@ the column user-definition of "L" if desired.
 <mark>\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}</mark> % helps shorten below table preamble
    
 \newcolumntype{T}{ % start of table preamble
-<mark>  |L{\ContributorWidth}!{\color{\VerticalLineColor}\vrule}</mark> % Contributor column
+  <mark>|L{\ContributorWidth}!{\color{\VerticalLineColor}\vrule}</mark> % Contributor column
   <mark>L{\PositionWidth}!{\color{\VerticalLineColor}\vrule}</mark>       % Position column
   <mark>L{\RoleWidth}!{\color{\VerticalLineColor}\vrule}</mark>           % Role column
   <mark>p{\FundedMemberWidth}!{\color{\VerticalLineColor}\vrule}</mark>   % Funded(?) column
