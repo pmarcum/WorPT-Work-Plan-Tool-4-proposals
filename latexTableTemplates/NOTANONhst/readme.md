@@ -11,7 +11,7 @@
 <td>
 <details>
 <summary><b>NOTANONhst</b> (description)</summary>
-<b>NOTANONhst</b> is a tabulated summary of team member roles, following the format for HST Phase II proposals.  The table lists each team member, their relationship to the project (PI, co-I, etc.), their institutional affiliation and whether or not the institution is U.S.-based, and a brief narrative summary of their role on the project.  The table also indicates if the team member is funded or unfunded through the proposal, and what their total level of work effort (in FTE) is.
+<b>NOTANONhst</b> is a tabulated summary of team member roles, following the format for HST Phase II proposals.  The table lists each team member, their relationship to the project (PI, co-I, etc.), their institutional affiliation and whether or not the institution is U.S.-based, and a brief narrative summary of their role on the project. The table also indicates if the team member is funded or unfunded through the proposal, and what their total level of work effort (in FTE) is.
 </details>
 </td>
 </tr>
@@ -130,7 +130,7 @@ For fontstyle changes, the "\textbf" can be changed to "\emph" for italics, or c
 <td><b>Column label color and font style</b></td>
 <td>
 Use table preamble for more control over table layout (removing/adding vertical lines, changing column alignment, etc). Copy/paste the ENTIRE below code in order to change default table preamble.<br>
-<u>IMPORTANT</u> Most of table preamble can be changed EXCEPT <i>do <b>NOT</b> change "T" variable, and preserve the number of columns</i> (eg, make sure that any 'p' that is removed is replaced by
+<u>IMPORTANT</u> Most of table preamble can be changed EXCEPT <i>do <b>NOT</b> change "T" variable, and preserve the number of columns</i> (eg, make sure that any 'p' that is removed is replaced by another alignment code). You may retain the parameters below (like \ContributorWidth) and define them separately as the above customization options show, or replace them entirely with hard-coded numbers. You can also change the column user-definition of "L" if desired.
 
 <pre><code>
 \def\HeaderColor{<mark>Blue</mark>}             % column heading color
