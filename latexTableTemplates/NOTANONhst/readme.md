@@ -130,26 +130,18 @@ be turned into plain test by removing the "\textbf", eg {{#1}}
 </tr>
 
 <tr>
-<td><b>Table preamble - full control!</b></td>
-<td><pre><code>
-% define column type to help readability of table preamble
-<mark>\newcolumntype{L}[1]{>{\raggedright\let\newline
-   \\\arraybackslash\hspace{0pt}}p{#1}}</mark>
-   
-\newcolumntype{T}{ % start of table preamble
-<mark>|L{\ContributorWidth}!{\color{\VerticalLineColor}\vrule}</mark>
-% Contributor
-<mark>L{\PositionWidth}!{\color{\VerticalLineColor}\vrule}</mark>    
-% Position
-<mark>L{\RoleWidth}!{\color{\VerticalLineColor}\vrule}</mark>        
-% Role
-<mark>p{\FundedMemberWidth}!{\color{\VerticalLineColor}\vrule}</mark>
-% Funded(?)
-<mark>p{\FteWidth}|</mark>                                          
-% FTE
-}                  % end of table preamble
+<td><b>Column label color and font style</b></td>
+<td>
+For fontstyle changes, the "\textbf" can be changed to "\emph" for italics, or can<br>
+be turned into plain test by removing the "\textbf", eg {{#1}}
+<pre><code>
+\def\HeaderColor{<mark>Blue</mark>}             % column heading color
+\def\LabelColor{<mark>White</mark>}             % column heading font color
+\def\LabelFontstyle#1{<mark>\textbf</mark>{#1}} % boldface column label
+\def\VerticalLineColor{<mark>lightgray</mark>}  % color of vertical lines
 </code></pre></td>
 </tr>
+
 </table>
 </details>
 
