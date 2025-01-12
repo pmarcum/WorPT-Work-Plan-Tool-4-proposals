@@ -140,7 +140,8 @@ define them separately as the above customization options show, or replace them 
 the column user-definition of "L" if desired.
 <pre><code>
 % define column type to help readability of table preamble
-<mark>\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}</mark>
+<mark>\newcolumntype{L}[1]{>{\raggedright\let\newline
+   \\\arraybackslash\hspace{0pt}}p{#1}}</mark>
    
 \newcolumntype{T}{ % start of table preamble
   <mark>|L{\ContributorWidth}!{\color{\VerticalLineColor}\vrule}</mark> % Contributor column
