@@ -135,7 +135,6 @@ Use table preamble for more control over table layout (removing/adding vertical 
 % define column type to help readability of table preamble
 <mark>\newcolumntype{L}[1]{>{\raggedright\let\newline
   \\\arraybackslash\hspace{0pt}}p{#1}}</mark>
-
 \newcolumntype{T}{ % start of table preamble
 \def\LabelColor{<mark>White</mark>}             % column heading font color
 \def\LabelFontstyle#1{<mark>\textbf</mark>{#1}} % boldface column label
