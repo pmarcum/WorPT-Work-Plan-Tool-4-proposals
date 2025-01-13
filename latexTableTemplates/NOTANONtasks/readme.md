@@ -183,5 +183,5 @@ NOTE: To return to default values, all I have to do is comment-out (put a "%" at
 --------------------------------------->
 <details>
 <summary><b>NUCLEAR OPTION</b> <i>[when nothing else works]</i></summary>
-If you just cannot get the table to look like you want it to look, you can always copy/paste the entire NOTANONfte.tex file that appears in the WorPT subfolder, into your document, and then edit at-will.  Some of the WorPT files involve complicated LaTeX code, so be sure that you have a good mastery of LaTeX and know what you are doing before implementing this option!
+If you just cannot get the table to look like you want it to look, you can always copy/paste the entire NOTANONtasks.tex file that appears in the WorPT subfolder, into your document, and then edit at-will.  Some of the WorPT files involve complicated LaTeX code, so be sure that you have a good mastery of LaTeX and know what you are doing before implementing this option!
 </details>
