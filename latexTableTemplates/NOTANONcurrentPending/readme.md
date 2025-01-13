@@ -84,7 +84,12 @@ You can just comment out your added lines and recompile the document, if you wan
 <td><pre><code>
 \def\LeftSideWidth{<mark>1.5in</mark>}  % left side column width
 \def\RightSideWidth{<mark>5.0in</mark>} % right side column width
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1SAA_MZ9p1gkPKWXVDJ-46qNdm2IXU1yB" width=30%>
+</details>
+</td>
 </tr>
  
 <tr>
@@ -93,7 +98,12 @@ You can just comment out your added lines and recompile the document, if you wan
 \def\NameBannerColor{<mark>Blue</mark>}              % Current/Pending top banner color
 \def\NameBannerFontColor{<mark>White</mark>}             % Current/Pending top banner font color
 \def\NameBannerFontstyle#1{<mark>\textbf</mark>{#1}} % boldface banner text
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1Q6fAYXGcZgAlUA6MFaFjipEnR7sy2OS-" width=30%>
+</details>
+</td>
 </tr>
    
 <tr>
@@ -102,7 +112,12 @@ You can just comment out your added lines and recompile the document, if you wan
 \def\SectionColor{<mark>lightgray</mark>}         % "Current Support","Pending Grant Support" section divider color
 \def\SectionFontColor{<mark>Black</mark>}         % "Current Support","Pending Grant Support" section divider font color
 \def\SectionFontstyle#1{<mark>\textbf</mark>{#1}} % "Current Support","Pending Grant Support" section divider font style
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1FBgOkOroeONRwE3tkE6pqVinOJX0zX61" width=30%>
+</details>
+</td>
 </tr>
    
 <tr>
@@ -111,14 +126,24 @@ You can just comment out your added lines and recompile the document, if you wan
 If box is checked for "Include this proposal in funding status?" on the GENERAL INFO page in the WorPT spreadsheet, then this proposal will be included in PENDING list with this "this proposal" tag attached. 
 <pre><code>
 \def\ThisProposalColor{<mark>NavyBlue</mark>}  % "this proposal" font color in "pending" section
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1ELG8UNriHu4q-GnxX0htOkY1oF_DHFHA" width=30%>
+</details>
+</td>
 </tr>
 
 <tr>
 <td><b>Font style of grant descriptors in left colum</b></td>
 <td><pre><code>
 \def\LeftFontstyle#1{<mark>\textbf</mark>{#1}} % boldface left column text
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1OSAyoNQ7v1ODSW6MOGNzcY906PgI4vL2" width=30%>
+</details>
+</td>
 </tr>
 
 <tr>
