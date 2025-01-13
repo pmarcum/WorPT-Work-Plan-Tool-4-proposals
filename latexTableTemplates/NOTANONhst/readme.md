@@ -77,13 +77,6 @@ You can just comment out your added lines and recompile the document, if you wan
                               Options   
 <!-- . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . -->
 <table>
-<tr>
-<td><b>Table title and reference label</b></td>
-<td><pre><code>
-\def\TableTitle{<mark>Work Effort for All</mark>} % table title at the top
-\def\TableLabel{<mark>tab:\WorPTfolder</mark>}    % put preference between " {}"
-</code></pre></td>
-</tr>
 
 <tr>
 <td><b>Column width adjustments</b></td>
@@ -91,25 +84,32 @@ You can just comment out your added lines and recompile the document, if you wan
 \def\ContributorWidth{<mark>1.8in</mark>}      % Contributor column width
 \def\PositionWidth{<mark>1.3in</mark>}         % Position column width
 \def\RoleWidth{<mark>2.5in</mark>}             % Role column width
-\def\FundedMemberWidth{<mark>0.10in</mark>}    % Funded(?) column width
-\def\FteWidth{<mark>0.28in</mark>}             % FTE column width
+\def\FundedMemberWidth{<mark>0.2in</mark>}    % Funded(?) column width
+\def\FteWidth{<mark>0.4in</mark>}             % FTE column width
 </code></pre></td>
 </tr>
     
+<tr>
+<td><b>Table compactness</b></td>
+<td><pre><code>
+\def\SpaceBetweenRows{<mark>1</mark>}      % vertical compactness of rows
+\def\SpaceBetweenColumns{<mark>1pt</mark>} % bigger = wider spacing between columns
+</code></pre></td>
+</tr>
+
+<tr>
+<td><b>Nudge table to left or right</b></td>
+<td><pre><code>
+\def\NudgeTable{<mark>1.5\textwidth</mark>} % larger value nudges table to left
+</code></pre></td>
+</tr>
+
 <tr>
 <td><b>Table number additive correction</b></td>
 <td>
 The default typically works well (an overcount is caused by table + longtable combination). But if counter gets screwed up and needs manual intervention, use below to apply a correction:
 <pre><code>
 \def\TaskAddCounter{<mark>-1</mark>}    % additive correction to table number
-</code></pre></td>
-</tr>
-
-<tr>
-<td><b>Table compactness</b></td>
-<td><pre><code>
-\def\SpaceBetweenRows{<mark>1</mark>}      % vertical compactness of rows
-\def\SpaceBetweenColumns{<mark>1pt</mark>} % bigger = wider spacing between columns
 </code></pre></td>
 </tr>
 
