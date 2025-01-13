@@ -84,7 +84,7 @@ NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; yo
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/16SbKRxlDHWshgzt-tQNsjqqSOJeCXWm1" width=30%>
+<img src="https://lh3.googleusercontent.com/d/16SbKRxlDHWshgzt-tQNsjqqSOJeCXWm1" width=15%>
 </details>
 </td>
 </tr>
