@@ -194,7 +194,7 @@ redefine as:<br>
 <tr>
 <td><b>Delimiter of team members under TASK ASSIGNMENTS</b></td>
 <td><pre><code>
-\def\TaskAssignmentDelimiter{\hspace{2em}}      % how to separate multiple team members under TASK ASSIGNMENTS
+\def\TaskAssignmentDelimiter{;\hspace{3pt}} % delimiter used in TASK ASSIGNMENTS
 </code></pre></td>
 </tr>
 
