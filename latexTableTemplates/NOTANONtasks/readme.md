@@ -84,7 +84,7 @@ NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; yo
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/16SbKRxlDHWshgzt-tQNsjqqSOJeCXWm1" width=70%>
+<img src="https://lh3.googleusercontent.com/d/16SbKRxlDHWshgzt-tQNsjqqSOJeCXWm1" width=30%>
 </details>
 </td>
 </tr>
@@ -98,7 +98,7 @@ NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; yo
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/1Lc84Ce7q9vDGbn-PSkLpHm3Bk-018GLC" width=70%>
+<img src="https://lh3.googleusercontent.com/d/1Lc84Ce7q9vDGbn-PSkLpHm3Bk-018GLC" width=30%>
 </details>
 </td>
 </tr>
@@ -113,7 +113,7 @@ But if counter gets screwed up and needs manual intervention, use below to apply
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/1xbVxG1JR60WvRYuJqBIc7z7SdCIhZaMK" width=70%>
+<img src="https://lh3.googleusercontent.com/d/1xbVxG1JR60WvRYuJqBIc7z7SdCIhZaMK" width=30%>
 </details>
 </td>
 </tr>
@@ -126,7 +126,7 @@ But if counter gets screwed up and needs manual intervention, use below to apply
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/1BgsQCk-CpfftDKheaAs1wfUg7jO7UDAB" width=70%>
+<img src="https://lh3.googleusercontent.com/d/1BgsQCk-CpfftDKheaAs1wfUg7jO7UDAB" width=30%>
 </details>
 </td>
 </tr>
@@ -138,7 +138,7 @@ But if counter gets screwed up and needs manual intervention, use below to apply
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/19tDKpSmX3NA0sf9neZBASfN-yIYY9LTI" width=70%>
+<img src="https://lh3.googleusercontent.com/d/19tDKpSmX3NA0sf9neZBASfN-yIYY9LTI" width=30%>
 </details>
 </td>
 </tr>
@@ -155,7 +155,7 @@ be turned into plain test by removing the "\textbf", eg {{#1}}
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/1rpXA2Cuw9_19nElBYJPs79SEU8fNTMgT" width=70%>
+<img src="https://lh3.googleusercontent.com/d/1rpXA2Cuw9_19nElBYJPs79SEU8fNTMgT" width=30%>
 </details>
 </td>
 </tr>
@@ -169,7 +169,7 @@ be turned into plain test by removing the "\textbf", eg {{#1}}
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/1l2e9IXnIq7Zewg3RfBfrQ_SXUr9FtLy1" width=70%>
+<img src="https://lh3.googleusercontent.com/d/1l2e9IXnIq7Zewg3RfBfrQ_SXUr9FtLy1" width=30%>
 </details>
 </td>
 </tr>
@@ -181,7 +181,7 @@ be turned into plain test by removing the "\textbf", eg {{#1}}
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/1ZyFAQkPU5ifcHN4pSln1KSeHaLu5VGWq" width=70%>
+<img src="https://lh3.googleusercontent.com/d/1ZyFAQkPU5ifcHN4pSln1KSeHaLu5VGWq" width=30%>
 </details>
 </td>
 </tr>
