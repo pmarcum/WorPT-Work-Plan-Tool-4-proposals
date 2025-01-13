@@ -48,7 +48,7 @@ Copy/paste the special packages in preamble of your document, if you haven't don
 %
 \def\ProgramID{<mark>HST-xx-xxxxx (Cycle XX)</mark>} % <mark><b>fill in details</b></mark>
 %  
-<mark>% Put OPTIONAL customizations for NOTANONhst HERE</mark>
+<mark>% Put <u>OPTIONAL</u> customizations for NOTANONhst HERE</mark>
 %
 \begin{NOTANONhst}
 <mark>\caption{\textbf{Work Effort for All Members}\hspace{1em} Team members, identified by their name and role in the proposed project, are listed with their institutional affiliation and position, with a "F" or "US" indicating foreign or U.S. institution. A brief narrative of their role in the project is given.  A 'Y' or 'N' indicates if the person is funded by the proposed budget or not, respectively.  The total work-effort of the team member, summed over full life of the proposed  project, is in the rightmost column (multiply displayed FTE value by 12 to get work effort in number of months units).}
@@ -153,19 +153,7 @@ Use table preamble for more control over table layout (removing/adding vertical 
 <details>
 <summary><b>Examples</b></summary>
 The below is an example of how one can change the appearance of the table within a LaTeX document. After copy/pasting the code to incorporate the table into my document, and then deciding that my task titles were too long to fit with the table in portrait mode, I decided I needed to use landscape mode.  I copy/pasted the landscape fla and the 2 formatting lines that control the "Tasks" and "Expertise" column widths. (My team members have long last names, requiring a wider column than the default). I also slightly altered the caption to be appropriate to my proposal. The result?  A landscape-mode table that allows each task to appear in a single table row without spilling over into the next line, which is my preferred way to present these tables for easiest viewing. Here is a peek at what my LaTeX document looks like:  
-<pre><code>
-\include{do_NOT_manually_edit/NOTANONhst}
-    
-\def\TaskWidth{5.4in}          % width of leftmost ("Tasks") column
-\def\ExpertiseWidth{1.8in}     % width of rightmost ("Expertise") column
-
-\begin{NOTANONhst}
-\caption{\normalsize\textbf{Task Management and Team Responsibilities}:\\\\
-The tasks ({\color{red}gray} headers) and sub-tasks (left), with specific assignments for the roles of task lead (middle) and expertise / analysis assistance (right). See a more detailed description of these roles in the Project Management section.}
-\label{tab:NOTANONhst}
-
-\end{NOTANONhst}
-</code></pre>
+<!-- INSERT IMAGE HERE -->
 NOTE: To return to default values, all I have to do is comment-out (put a "%" at the line's beginning) the "\def" formatting lines that I pasted. 
 </details>
 
