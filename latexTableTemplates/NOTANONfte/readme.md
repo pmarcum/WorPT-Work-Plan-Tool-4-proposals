@@ -96,8 +96,8 @@ But if counter gets screwed up and needs manual intervention, use below to apply
 <tr>
 <td><b>Table compactness</b></td>
 <td><pre><code>
-\def\SpaceBetweenRows{<mark>1.0</mark>}               % vertical compactness of rows
-\def\SpaceBetweenColumns{<mark>5pt</mark>}            % spacing between columns
+\def\SpaceBetweenRows{<mark>1.0</mark>}       % vertical compactness of rows
+\def\SpaceBetweenColumns{<mark>5pt</mark>}    % spacing between columns
 </code></pre>
 <details>
 <summary>reference image</summary>
