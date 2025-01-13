@@ -86,7 +86,12 @@ You can just comment out your added lines and recompile the document, if you wan
 \def\RoleWidth{<mark>2.5in</mark>}             % Role column width
 \def\FundedMemberWidth{<mark>0.22in</mark>}    % Funded(?) column width
 \def\FteWidth{<mark>0.42in</mark>}             % FTE column width
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1VFoxre2-539OyEXfklTvudu-PYBlPuaJ" width=30%>
+</details>
+</td>
 </tr>
     
 <tr>
@@ -94,14 +99,24 @@ You can just comment out your added lines and recompile the document, if you wan
 <td><pre><code>
 \def\SpaceBetweenRows{<mark>1</mark>}      % vertical compactness of rows
 \def\SpaceBetweenColumns{<mark>1pt</mark>} % bigger = wider spacing between columns
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1XhVrw4lR70_WbosdIZ7x-mowtJRTPVqs" width=30%>
+</details>
+</td>
 </tr>
 
 <tr>
 <td><b>Nudge table to left or right</b></td>
 <td><pre><code>
 \def\NudgeTable{<mark>1.2\textwidth</mark>} % larger value nudges table to left
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/16KK8AuYbxc5C0dy9qPh2Pazoq_XdEWD2" width=30%>
+</details>
+</td>
 </tr>
 
 <tr>
@@ -110,7 +125,12 @@ You can just comment out your added lines and recompile the document, if you wan
 The default typically works well (an overcount is caused by table + longtable combination). But if counter gets screwed up and needs manual intervention, use below to apply a correction:
 <pre><code>
 \def\TaskAddCounter{<mark>-1</mark>}    % additive correction to table number
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1Vc29554V1Sny5-E8O-nm3IiZ1-NnGEQf" width=30%>
+</details>
+</td>
 </tr>
 
 <tr>
@@ -122,7 +142,12 @@ For fontstyle changes, the "\textbf" can be changed to "\emph" for italics, or c
 \def\LabelColor{<mark>White</mark>}             % column heading font color
 \def\LabelFontstyle#1{<mark>\textbf</mark>{#1}} % boldface column label
 \def\VerticalLineColor{<mark>lightgray</mark>}  % color of vertical lines
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1VlOwoxQeP8kprw-Ua_XleCuhklszXV7Z" width=30%>
+</details>
+</td>
 </tr>
 
 <tr>
