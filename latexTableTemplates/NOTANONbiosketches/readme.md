@@ -79,7 +79,7 @@ You can just comment out your added lines and recompile the document, if you wan
 <tr>
 <td><b>Font color and fontstyle</b></td>
 <td><pre><code>
-\def\NameColor{<mark>Blue</mark>}              % font color of name/role appearing at top of biosketch
+\def\NameColor{<mark>Blue</mark>} % font color of name/role at top of biosketch
 \def\NameSize{<mark>\large</mark>}             % font size of name/role
 \def\NameFontstyle#1{<mark>\textbf</mark>{#1}}  % boldface name/role
 \def\LabelFontstyle#1{<mark>\textbf</mark>{#1}} % boldface "Education",... labels
@@ -97,7 +97,7 @@ You can just comment out your added lines and recompile the document, if you wan
 <tr>
 <td><b>Symbol choice for publication list</b></td>
 <td><pre><code>
-\def\PubSym{<mark>\scriptsize{$\bullet$}{\hspace{-0.3em}}</mark>} % symbol at beginning of each publication
+\def\PubSym{<mark>\scriptsize{$\bullet$}{\hspace{-0.3em}}</mark>} % symbol in front of pubs
 </code></pre></td>
 </tr>
 </table>
