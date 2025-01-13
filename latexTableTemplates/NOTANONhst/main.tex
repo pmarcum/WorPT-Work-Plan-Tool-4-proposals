@@ -19,10 +19,6 @@
 %---- required input from user
 \def\ProgramId{HST-xx-xxxxx (Cycle XX)} % user needs to fill in details
 
-%--- table title and table reference label
-\def\TableTitle{Work Effort for All}
-\def\TableLabel{tab:[INSERTFILENAME]}
-
 %---- column widths and table orientation controls
 \def\ContributorWidth{1.8in}      % Contributor column width
 \def\PositionWidth{1.3in}         % Position column width
@@ -64,7 +60,6 @@
 \begin{longtable}{T}
 
 %--- put the required program number and PI(s) at the top
-\caption{\TableTitle \label{\TableLabel}}
 \multicolumn{5}{l}{\textbf{Program \#:} \ProgramId}\\
 \multicolumn{5}{l}{\textbf{Program Admin PI:} \AdminPIname}\\
 \multicolumn{5}{l}{\textbf{Science PI:} \SciencePIname}\\
