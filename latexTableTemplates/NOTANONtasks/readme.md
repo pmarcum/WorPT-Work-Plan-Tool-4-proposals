@@ -98,7 +98,7 @@ NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; yo
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/1Lc84Ce7q9vDGbn-PSkLpHm3Bk-018GLC" width=40%>
+<img src="https://lh3.googleusercontent.com/d/1Lc84Ce7q9vDGbn-PSkLpHm3Bk-018GLC" width=50%>
 </details>
 </td>
 </tr>
@@ -113,7 +113,7 @@ But if counter gets screwed up and needs manual intervention, use below to apply
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/1xbVxG1JR60WvRYuJqBIc7z7SdCIhZaMK" width=30%>
+<img src="https://lh3.googleusercontent.com/d/1xbVxG1JR60WvRYuJqBIc7z7SdCIhZaMK" width=50%>
 </details>
 </td>
 </tr>
