@@ -47,7 +47,7 @@ Copy/paste the special packages in preamble of your document, if you haven't don
 \include{do_NOT_manually_edit/NOTANONfte}   % reset/define parameters used for this file
 %            ^^^^ replace do_NOT_manually_edit if not correct folder name
 %
-<mark>% Put <u>OPTIONAL</u> customizations for NOTANONfte HERE</mark>
+<mark>% Put <b>OPTIONAL</b> customizations for NOTANONfte HERE</mark>
 %
 \begin{NOTANONfte}
 <mark>\caption{Details of work efforts per member involved in the present proposal; {\color{red}Detailed responsibilities, tied to tasks and science goals, are provided in Sec.\,\ref{Subsec:tmeline}.}}
