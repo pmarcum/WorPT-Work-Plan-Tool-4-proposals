@@ -26,6 +26,9 @@
 \def\FundedMemberWidth{0.10in}    % Funded(?) column width
 \def\FteWidth{0.28in}             % FTE column width
 
+%--- control to nudge table to the left or right
+\def\NudgeTable{1.2\textwidth}   % adjust to help center table
+
 %---- fix the Table Number in the caption
 \def\TaskAddCounter{-1}          % corrects table number messed up by table,longtable combination)
 
@@ -54,9 +57,12 @@
 }
 
 \newenvironment{[INSERTFILENAME]}{%
+\begin{table}
 \addtocounter{table}{\TaskAddCounter}
+\centerline{
 \renewcommand{\arraystretch}{\SpaceBetweenRows}  % changes vertical space bet/ rows
 \setlength{\tabcolsep}{\SpaceBetweenColumns}     % changes horizontal spacing bet/ columns
+\begin{minipage}{\NudgeTable}     % increase to nudge table to left
 \begin{longtable}{T}
 
 %--- put the required program number and PI(s) at the top
@@ -80,7 +86,9 @@
 [INSERTNAME] & [INSERTJOB] & [INSERTDESC] & [INSERTFUNDING] & [INSERTFTE]\hline
 [ENDROWTEMPLATE]
 
-}
-{%
 \end{longtable}
+\end{minipage}
+}}
+{%
+\end{table}
 }
