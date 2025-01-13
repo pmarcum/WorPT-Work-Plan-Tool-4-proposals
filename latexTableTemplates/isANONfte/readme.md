@@ -99,7 +99,6 @@ But if counter gets screwed up and needs manual intervention, use below to apply
 For fontstyle changes, the "\textbf" can be changed to "\emph" for italics, or can<br>
 be turned into plain test by removing the "\textbf", eg {{#1}}
 <pre><code>
-\def\NameLabelFontstyle#1{<mark>\textbf</mark>{#1}}      % boldface "Name" column label
 \def\RoleLabelFontstyle#1{<mark>\textbf</mark>{#1}}      % boldface "Role" column label
 \def\CommitmentLabelFontstyle#1{<mark>\textbf</mark>{#1}}% boldface "Commitment (FTE)" column label
 \def\YearLabelFontstyle#1{<mark>\textbf</mark>{#1}}      % boldface "Y1", "Y2", ...  column labels
