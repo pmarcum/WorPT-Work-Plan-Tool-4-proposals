@@ -78,7 +78,12 @@ You can just comment out your added lines and recompile the document, if you wan
 <td><b>Table title and reference label</b></td>
 <td><pre><code>
 \def\NameFontstyle#1{<mark>\textbf</mark>{#1}}   % boldface name at top of paragraph for that person
-</code></pre></td>
+</code></pre>
+</td>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1naTiTEcmSTj8_XO-DuQs8nrpSbpFjR2l" width=50%>
+</details>
 </tr>
 </table>
 </details>
