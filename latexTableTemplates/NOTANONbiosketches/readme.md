@@ -29,8 +29,8 @@ sections of a proposal have valid and current information.
              Special Packages
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 <details>
-<summary><b>Special WorPT Packages</b> [<i>one-time-only task</i> for inclusion of any/all WorPT files]</summary>
-Copy/paste the special packages in preamble of your document, if you haven't done so previously. (see https://github.com/pmarcum/WorPT-Work-Plan-Tool-4-proposals/blob/main/WorPTpackages for more info).
+<summary><b>Special WorPT Packages</b> [<i>SKIP if you've already done this for previous WorPT file!</i>]</summary>
+Copy/paste the special packages in preamble of your document, if you haven't done so previously. (see [https://github.com/pmarcum/WorPT-Work-Plan-Tool-4-proposals/blob/main/WorPTpackages](https://github.com/pmarcum/WorPT-Work-Plan-Tool-4-proposals/blob/main/latexTableTemplates/WorPTpackages/readme.md) for more info).
 </details>
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - 
