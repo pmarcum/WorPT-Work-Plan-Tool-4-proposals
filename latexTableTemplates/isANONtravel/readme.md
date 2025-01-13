@@ -45,13 +45,12 @@ Copy/paste the special packages in preamble of your document, if you haven't don
 </ol>
    
 <pre><code>
-\include{do_NOT_manually_edit/isANONtravel}  % reset file parameters
+\include{<mark>do_NOT_manually_edit</mark>/isANONtravel}  % reset file parameters
 %            ^^^^ replace do_NOT_manually_edit if not correct folder name
-   
-<mark>% Put OPTIONAL customizations for isANONtravel HERE</mark>
-
-\begin{isANONtravel}
-   
+%
+<mark>% Put <u>OPTIONAL</u> customizations for isANONtravel HERE</mark>
+%
+\begin{isANONtravel}  
 <mark>\caption{\normalsize \newline \newline
 \textbf{Notes and assumptions}:
 \newline \newline
@@ -65,9 +64,8 @@ per diem$+$M\&IE, public transport/day estimated at  \$\internationalPerDiemDoll
 (summed over \grantYears-year grant):
 \newline
 \perPersonNumberTripsList\
-\newline All travel will be to present science results of this project at conferences and/or visits to home institutions of the team members for in-person collaboration. Note that above values above do not include institutional overhead.}
-\label{tab:isANONtravel}</mark>
-   
+\newline All travel will be to present science results of this project at conferences and/or visits to home institutions of the team members for in-person collaboration. Note that above values above do not include institutional overhead.}</mark>
+<mark>\label{tab:isANONtravel}</mark>
 \end{isANONtravel}
 </code></pre>
 
@@ -94,8 +92,6 @@ You can just comment out your added lines and recompile the document, if you wan
 <!-- . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . -->
 <table>
  
-<tr>
-
 <tr>
 <td><b>Table compactness</b></td>
 <td><pre><code>
