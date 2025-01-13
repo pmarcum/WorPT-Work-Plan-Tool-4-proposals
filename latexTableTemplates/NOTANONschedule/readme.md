@@ -168,7 +168,7 @@ redefine as:<br>
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/1FptrYPilkvMpYVCh0EHQX5cKxFiZXUFh" width=70%>
+<img src="https://lh3.googleusercontent.com/d/1FptrYPilkvMpYVCh0EHQX5cKxFiZXUFh" width=50%>
 </details>
 </td>
 </tr>
@@ -181,7 +181,7 @@ redefine as:<br>
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/1AewnKa1OXlrgT4bNIqy3JrVWkqW4lcYR" width=70%>
+<img src="https://lh3.googleusercontent.com/d/1AewnKa1OXlrgT4bNIqy3JrVWkqW4lcYR" width=50%>
 </details></td>
 </tr>
 
@@ -192,7 +192,7 @@ redefine as:<br>
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/12H_J3b7oNhnd9ZDHivqEkQ2gdAJl8hWV" width=70%>
+<img src="https://lh3.googleusercontent.com/d/12H_J3b7oNhnd9ZDHivqEkQ2gdAJl8hWV" width=50%>
 </details></td>
 </tr>
 
@@ -205,7 +205,7 @@ redefine as:<br>
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/1cio03IIIDCGoOO5_4htjm2LV6q0JmEe4" width=30%>
+<img src="https://lh3.googleusercontent.com/d/1cio03IIIDCGoOO5_4htjm2LV6q0JmEe4" width=60%>
 </details>
 </td>
 </tr>
@@ -219,7 +219,7 @@ redefine as:<br>
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/1aqfgM6GA6TCNEcAKQ-pyegkXKijkH889" width=30%>
+<img src="https://lh3.googleusercontent.com/d/1aqfgM6GA6TCNEcAKQ-pyegkXKijkH889" width=60%>
 </details>
 </td>
 </tr>
@@ -231,7 +231,7 @@ redefine as:<br>
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/1nrSrK1mSC0hJRuNJs6Vxf4jZlveQ48BL" width=30%>
+<img src="https://lh3.googleusercontent.com/d/1nrSrK1mSC0hJRuNJs6Vxf4jZlveQ48BL" width=50%>
 </details>
 </td>
 </tr>
@@ -245,7 +245,7 @@ redefine as:<br>
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/1kdg5LRFovZQT9oI7B-eGPh5RJ9KARgmg" width=30%>
+<img src="https://lh3.googleusercontent.com/d/1kdg5LRFovZQT9oI7B-eGPh5RJ9KARgmg" width=50%>
 </details>
 </td>
 </tr>
@@ -257,7 +257,7 @@ redefine as:<br>
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/1AwZgBxEbQJB6sw5vg68fL2uH0bFsj5Ht" width=30%>
+<img src="https://lh3.googleusercontent.com/d/1AwZgBxEbQJB6sw5vg68fL2uH0bFsj5Ht" width=50%>
 </details>
 </td>
 </tr>
