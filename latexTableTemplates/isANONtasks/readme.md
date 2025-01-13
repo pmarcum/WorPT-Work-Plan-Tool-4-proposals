@@ -43,17 +43,16 @@ Copy/paste the special packages in preamble of your document, if you haven't don
 </ol>
    
 <pre><code>
-\include{do_NOT_manually_edit/isANONtasks}  % reset file parameters
+\include{<mark>do_NOT_manually_edit</mark>/isANONtasks}  % reset file parameters
 %            ^^^^ replace do_NOT_manually_edit if not correct folder name
-   
+%
 <mark>% Put OPTIONAL customizations for isANONtasks HERE</mark>
-
+%
 \begin{isANONtasks}
-<mark>\caption{\textbf{Task Timeline:} Team member roles, rightmost column, are cross-referenced with corresponding names in the non-anonymized personnel and work effort table. {\color{red} \textbf{Paper~1:} Sample and methods for enhancing detectability of  low SB X-ray emission, presentation of emission maps, description of database and pipeline software (which will be released in a public repository at the time of paper submission). \textbf{Paper~2:} Methodologies for measuring the gas halo size and other gas properties, analyisis of the diffuse hot gas halos as functions of galaxy properties (environment, galaxy morphology, stellar mass, and SFR) based on \Chandra, \Hubble, and \Spitzer\ observations, and the SED models from the GSWLC; application of multivariate mthods to ``baseline'' the  gas halo sizes (Sect.\,\ref{Sec:Baseline}). \textbf{Note~1:} See Sec.\,\ref{Sec:Sample}.}}
-\label{tab:isANONtasks}</mark>
+<mark>\caption{\textbf{Task Timeline:} Team member roles, rightmost column, are cross-referenced with corresponding names in the non-anonymized personnel and work effort table. {\color{red} \textbf{Paper~1:} Sample and methods for enhancing detectability of  low SB X-ray emission, presentation of emission maps, description of database and pipeline software (which will be released in a public repository at the time of paper submission). \textbf{Paper~2:} Methodologies for measuring the gas halo size and other gas properties, analyisis of the diffuse hot gas halos as functions of galaxy properties (environment, galaxy morphology, stellar mass, and SFR) based on \Chandra, \Hubble, and \Spitzer\ observations, and the SED models from the GSWLC; application of multivariate mthods to ``baseline'' the  gas halo sizes (Sect.\,\ref{Sec:Baseline}). \textbf{Note~1:} See Sec.\,\ref{Sec:Sample}.}}</mark>
+<mark>\label{tab:isANONtasks}</mark>
 \end{isANONtasks}
 </code></pre>
-
 
 </details>
 
@@ -88,7 +87,7 @@ You can just comment out your added lines and recompile the document, if you wan
 <td><b>Column width adjustments</b></td>
 <td><pre><code>
 \def\TaskWidth{<mark>3.4in</mark>}      % width of leftmost ("Tasks") column
-\def\StartFinishWidth{0.2in}           % width of start/finish columns
+\def\StartFinishWidth{<mark>0.2in</mark>}           % width of start/finish columns
 \def\LeadWidth{<mark>0.5in</mark>}      % width of middle ("Lead") column
 \def\ExpertiseWidth{<mark>1.5in</mark>} % width of rightmost ("Expertise") column
 </code></pre></td>
