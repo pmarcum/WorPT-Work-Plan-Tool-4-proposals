@@ -138,7 +138,6 @@ Use table preamble for more control over table layout (removing/adding vertical 
 Copy/paste the ENTIRE below code in order to change default table preamble.<br>
 <u>IMPORTANT</u> Most of table preamble can be changed EXCEPT <i>do <b>NOT</b> change "T" variable, and preserve the number of columns</i>
 (eg, make sure that any 'l' or "c" that is removed is replaced by another alignment code). You may retain the parameters below (like \PerTripShadingColor) and define them separately as the above customization options show, or replace them entirely with hard-coded numbers. 
-
 <pre><code>
 \newcolumntype{T}{
  <mark>|lcl >{\columncolor[\PerTripShadingColor]{\PerTripShadingTransparency}[\tabcolsep][\PerTripShadingMargin]}</mark> 
@@ -147,7 +146,7 @@ Copy/paste the ENTIRE below code in order to change default table preamble.<br>
  <mark>l >{\columncolor[\PerTripShadingColor]{\PerTripShadingTransparency}[\tabcolsep][\PerTripShadingMargin]}</mark> 
  <mark>l >{\columncolor[\PerTripShadingColor]{\PerTripShadingTransparency}[\tabcolsep][\PerTripShadingMargin]}</mark> 
  <mark>ll|</mark>
-}   
+}
 </code></pre></td>
 </tr>
 </table>
