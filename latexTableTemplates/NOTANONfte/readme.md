@@ -44,7 +44,7 @@ Copy/paste the special packages in preamble of your document, if you haven't don
 </ol>
     
 <pre><code>
-\include{do_NOT_manually_edit/NOTANONfte}   % reset/define parameters used for this file
+\include{<mark>do_NOT_manually_edit</mark>/NOTANONfte}   % reset/define parameters used for this file
 %            ^^^^ replace do_NOT_manually_edit if not correct folder name
 %
 <mark>% Put <b>OPTIONAL</b> customizations for NOTANONfte HERE</mark>
