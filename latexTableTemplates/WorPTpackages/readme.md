@@ -3,7 +3,7 @@
 
 <mark><b>How To Install WorPT Package Files In Your Document</b></mark>
 <p>
-You only need to install the WorPT Package files <b>ONCE</b>. After you have installed the WorPT Package files, you can incorporate as many of the WorPT files as you want, into your LaTeX document.  In each of the WorPT file installation instructions, "Step 1" is to install the WorPT Package files.  <b></b>You can skip that step, if you already have the WorPT Package files included in your document's preamble.</b> 
+You only need to install the WorPT Package files <b>ONCE</b>. After you have installed the WorPT Package files, you can incorporate as many of the WorPT files as you want, into your LaTeX document. 
 </p>
 
 <p>Choose one of the 2 below options, depending on if you are using the AAS document class file (which already incorporates some of the packages bundled in the WorPT Package files) or a non-AAS class file. </p>
