@@ -84,8 +84,8 @@ You can just comment out your added lines and recompile the document, if you wan
 \def\ContributorWidth{<mark>1.8in</mark>}      % Contributor column width
 \def\PositionWidth{<mark>1.3in</mark>}         % Position column width
 \def\RoleWidth{<mark>2.5in</mark>}             % Role column width
-\def\FundedMemberWidth{<mark>0.2in</mark>}    % Funded(?) column width
-\def\FteWidth{<mark>0.4in</mark>}             % FTE column width
+\def\FundedMemberWidth{<mark>0.22in</mark>}    % Funded(?) column width
+\def\FteWidth{<mark>0.42in</mark>}             % FTE column width
 </code></pre></td>
 </tr>
     
