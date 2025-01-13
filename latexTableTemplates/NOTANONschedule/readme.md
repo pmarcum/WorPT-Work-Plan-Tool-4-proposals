@@ -219,7 +219,7 @@ redefine as:<br>
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/1aqfgM6GA6TCNEcAKQ-pyegkXKijkH889" width=30%>
+<img src="https://lh3.googleusercontent.com/d/1aqfgM6GA6TCNEcAKQ-pyegkXKijkH889" width=40%>
 </details>
 </td>
 </tr>
