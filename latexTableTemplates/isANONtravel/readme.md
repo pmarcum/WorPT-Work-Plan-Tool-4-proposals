@@ -103,18 +103,18 @@ You can just comment out your added lines and recompile the document, if you wan
 <tr>
 <td><b>Top banner color and font style</b></td>
 <td><pre><code>
-\def\BannerFontstyle#1{<mark>\textbf</mark>{#1}}      % Bold-face for top banner "Travel Cost Details
-\def\BannerColor{<mark>Blue</mark>}                   % Color of the top "Travel Cost Details" banner
-\def\BannerFontColor{<mark>White</mark>}              % Font color for top "Travel Cost Details" banner
+\def\BannerFontstyle#1{<mark>\textbf</mark>{#1}} % Bold-face for top banner "Travel Cost Details
+\def\BannerColor{<mark>Blue</mark>}              % Color of the top "Travel Cost Details" banner
+\def\BannerFontColor{<mark>White</mark>}         % Font color for top "Travel Cost Details" banner
 </code></pre></td>
 </tr>
 
 <tr>
 <td><b>Column color shading</b></td>
 <td><pre><code>
-\def\PerTripShadingColor{<mark>gray</mark>}           % Shading color of "per trip" columns
-\def\PerTripShadingTransparency{<mark>0.85</mark>}    % Shading transparency for "per trip" colunns; transparent(1.0) - opaque(0.0)
-\def\PerTripShadingMargin{<mark>7pt</mark>}           % Margin width to right of each shaded "per trip" column (prevents white vertical line)
+\def\PerTripShadingColor{<mark>gray</mark>}        % Shading color of "per trip" columns
+\def\PerTripShadingTransparency{<mark>0.85</mark>} % Shading transparency for "per trip"; transparent(1.0) - opaque(0.0)
+\def\PerTripShadingMargin{<mark>7pt</mark>}        % Margin width to right of shaded "per trip" columns (prevents white vertical line)
 </code></pre></td>
 </tr>
 
@@ -137,8 +137,7 @@ You can just comment out your added lines and recompile the document, if you wan
 Use table preamble for more control over table layout (removing/adding vertical lines, changing column alignment, etc).<br>
 Copy/paste the ENTIRE below code in order to change default table preamble.<br>
 <u>IMPORTANT</u> Most of table preamble can be changed EXCEPT <i>do <b>NOT</b> change "T" variable, and preserve the number of columns</i>
-(eg, make sure that any 'l' or "c" that is removed is replaced by another alignment code). You may retain the parameters below (like \PerTripShadingColor) and
-define them separately as the above customization options show, or replace them entirely with hard-coded numbers. 
+(eg, make sure that any 'l' or "c" that is removed is replaced by another alignment code). You may retain the parameters below (like \PerTripShadingColor) and define them separately as the above customization options show, or replace them entirely with hard-coded numbers. 
 
 <pre><code>
 \newcolumntype{T}{
