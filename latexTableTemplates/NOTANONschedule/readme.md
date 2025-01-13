@@ -90,7 +90,7 @@ You can just comment out your added lines and recompile the document, if you wan
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/1dXDf4XkJcMxWQ1Q5zYmiN1Z0QKpHpFLV" width=30%>
+<img src="https://lh3.googleusercontent.com/d/1dXDf4XkJcMxWQ1Q5zYmiN1Z0QKpHpFLV" width=70%>
 </details>
 </td>
 </tr>
@@ -108,7 +108,7 @@ You can just comment out your added lines and recompile the document, if you wan
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/1Og1zQoUqQuLJB8sbMlIiaDNviE-RBah6" width=30%>
+<img src="https://lh3.googleusercontent.com/d/1Og1zQoUqQuLJB8sbMlIiaDNviE-RBah6" width=70%>
 </details>
 </td>
 </tr>
