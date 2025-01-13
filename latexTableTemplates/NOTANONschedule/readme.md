@@ -44,10 +44,10 @@ Copy/paste the special packages in preamble of your document, if you haven't don
    
 <pre><code>
 \newpage                                       % [optional] (could instead use \clearpage, or comment out)
-\include{do_NOT_manually_edit/NOTANONschedule} % reset file parameters
+\include{<mark>do_NOT_manually_edit</mark>/NOTANONschedule} % reset file parameters
 %            ^^^^ replace do_NOT_manually_edit if not correct folder name
 %
-<mark>% Put <u>OPTIONAL</u> customizations for NOTANONschedule HERE</mark>
+<mark>% Put <b>OPTIONAL</b> customizations for NOTANONschedule HERE</mark>
 %
 \begin{NOTANONschedule}
 <mark>\caption{Resource-loaded project schedule, where: 
