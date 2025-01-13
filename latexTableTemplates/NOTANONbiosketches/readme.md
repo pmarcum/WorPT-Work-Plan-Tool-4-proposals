@@ -96,7 +96,7 @@ You can just comment out your added lines and recompile the document, if you wan
 <tr>
 <td><b>Symbol choice for publication list</b></td>
 <td><pre><code>
-\def\PublicationBullet{<mark>\scriptsize{$\bullet$}{\hspace{-0.3em}}</mark>} % symbol at beginning of each publication item
+\def\PubSym{<mark>\scriptsize{$\bullet$}{\hspace{-0.3em}}</mark>} % symbol at beginning of each publication item
 </code></pre></td>
 </tr>
 </table>
