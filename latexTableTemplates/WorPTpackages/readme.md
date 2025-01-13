@@ -8,8 +8,6 @@ You only need to install the WorPT Package files <b>ONCE</b>. After you have ins
 
 <p>Choose one of the 2 below options, depending on if you are using the AAS document class file (which already incorporates some of the packages bundled in the WorPT Package files) or a non-AAS class file. </p>
 
-<p>If you have conflicts between the packages in the WorPT Package files and your LaTeX class file, then comment out the lines that are in conflict in your own files (see below how to get the files) and determine if the WorPT tables will render with those lines commented out.</p>
-
 <details>
 <summary><b>if using aastex.cls</b></summary>
 COPY contents of the following 3 files into your own 3 files.
@@ -44,3 +42,5 @@ Highlights indicate where edits might be needed.
 \usepackage{<mark>FUformatting</mark>} % apply Frequently-used formatting definitions/setups
 \usepackage{<mark>FUnewCommands</mark>} % <b>[OPTIONAL]</b> apply Frequently-used usercommands  
 </code></pre>
+
+<p>If you have conflicts between the packages in the WorPT Package files and your LaTeX class file, then comment out the lines that are in conflict in your own files (see below how to get the files) and determine if the WorPT tables will render with those lines commented out.</p>
