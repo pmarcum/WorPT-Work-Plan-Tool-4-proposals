@@ -84,10 +84,6 @@ You can just comment out your added lines and recompile the document, if you wan
 \def\NameFontstyle#1{<mark>\textbf</mark>{#1}}  % boldface name/role
 \def\LabelFontstyle#1{<mark>\textbf</mark>{#1}} % boldface "Education",... labels
 </code></pre>
-<details>
-<summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/1f3XxoAT5680nxNbcwWk4uifOvXdytuUh" width=60%>
-</details>
 </td>
 </tr>
    
