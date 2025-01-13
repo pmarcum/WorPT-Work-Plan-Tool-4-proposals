@@ -86,7 +86,7 @@ You can just comment out your added lines and recompile the document, if you wan
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/1vt_FwYDfmmGgSDPFmmYpQbH4EDXOExaN" width=60%>
+<img src="https://lh3.googleusercontent.com/d/1vt_FwYDfmmGgSDPFmmYpQbH4EDXOExaN" width=30%>
 </details>
 </td>
 </tr>
@@ -98,7 +98,7 @@ You can just comment out your added lines and recompile the document, if you wan
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/1TxGBbXY86Dwx5aXcPwpQC0dHzUr6diaV" width=60%>
+<img src="https://lh3.googleusercontent.com/d/1TxGBbXY86Dwx5aXcPwpQC0dHzUr6diaV" width=30%>
 </td>
 </details>
 </tr>
@@ -110,7 +110,7 @@ You can just comment out your added lines and recompile the document, if you wan
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/1ej8_jQPTlaiychgpRTfm32jH-gesh0Vl" width=60%>
+<img src="https://lh3.googleusercontent.com/d/1ej8_jQPTlaiychgpRTfm32jH-gesh0Vl" width=30%>
 </details>
 </td>
 </tr>
