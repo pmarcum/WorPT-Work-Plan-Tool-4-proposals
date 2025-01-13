@@ -169,7 +169,7 @@ be turned into plain test by removing the "\textbf", eg {{#1}}
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/1l2e9IXnIq7Zewg3RfBfrQ_SXUr9FtLy1" width=30%>
+<img src="https://lh3.googleusercontent.com/d/1l2e9IXnIq7Zewg3RfBfrQ_SXUr9FtLy1" width=50%>
 </details>
 </td>
 </tr>
@@ -181,7 +181,7 @@ be turned into plain test by removing the "\textbf", eg {{#1}}
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/1ZyFAQkPU5ifcHN4pSln1KSeHaLu5VGWq" width=30%>
+<img src="https://lh3.googleusercontent.com/d/1ZyFAQkPU5ifcHN4pSln1KSeHaLu5VGWq" width=50%>
 </details>
 </td>
 </tr>
