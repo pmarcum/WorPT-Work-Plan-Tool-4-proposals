@@ -142,12 +142,9 @@ be turned into plain test by removing the "\textbf", eg {{#1}}
 For fontstyle changes, the "\textbf" can be changed to "\emph" for italics, or can<br>
 be turned into plain test by removing the "\textbf", eg {{#1}}
 <pre><code>
-\def\TravelSubcatFontstyle#1{<mark>\textit</mark>{#1}}      
-% Above: italicize "domestic" and "international" lines 
-\def\TravelSubcatAmountFontstyle#1{<mark>\textit</mark>{#1}}
-% Above: italicize "domestic" and "international" Travel budget values 
-\def\TravelSubcatTotalFontstyle#1{<mark>\textit{#1}}
-% Above: italicize budget amounts under Total, and "Domestic" / "International" Travel lines 
+\def\TravelSubcatFontstyle#1{<mark>\textit</mark>{#1}} % italicize "domestic", "internat'l" rows 
+\def\TravelSubcatAmountFontstyle#1{<mark>\textit</mark>{#1}} % italicize "domestic", "internat'l" Travel values 
+\def\TravelSubcatTotalFontstyle#1{<mark>\textit{#1}} % italicize Total,"Domestic"/"International" Travel sums 
 </code></pre></td>
 </tr>
 
