@@ -54,13 +54,13 @@
 \def\TotalFteUnfundedHeaderIcon{\noDollarIcon{-0.4}{0.4mm}{0.2}{0.15}} % "no dollar" symbol label size
 \def\TotalFteFundedHeaderIcon{\dollarIcon{-0.4}{0.2}{0.015}}% green "dollar" symbol label size
 
-%--- aesthetic preferences of task CATEGORY label
+%--- preferences of task CATEGORY label
 \def\TaskCategoryLabel#1#2{{\normalsize\textbf\scshape{#1}}~{\normalsize\textbf{#2}}} % Task Category label format for row item
 
-%--- aesthetic preferences of TASK label
+%--- preferences of TASK label
 \def\TaskTitleLabel#1#2{~{\scriptsize{\textbf{\scshape{#1}}}}~{\color{mediumelectricblue}{\footnotesize\textbf{#2}}}} % Task title format for row item
 
-%--- aesthetic preferences of timeline color
+%--- preferences of timeline color
 \def\TimelineColor{mediumelectricblue}          % Task Timeline cell color
 
 %--- preferences for indicating US vs non-US instutional affiliations and funded vs unfunded team members
@@ -75,6 +75,9 @@
 
 %--- Format the identity reveals in the table caption
 \def\RevealIdentityFormat#1#2{\textbf{#1}: #2}
+
+%--- Delimiter of the task assignments
+\def\TaskAssignmentDelimiter{\hspace{2em}}      % how to separate multiple team members under TASK ASSIGNMENTS
 
 %--- internal parameters used by script but not for user
 \def\LastYearPlusTwo{[INSERTLASTYEARPLUSTWO]}
@@ -178,7 +181,7 @@
 [STARTTASKROWTEMPLATE]
 % begin task
 \TaskTitleLabel{[INSERTTASKLABEL]}{[INSERTTASKTITLE]} % title of this task
-[INSERTYEARSLICESLIST] % timeline for this task
+[INSERTYEARSLICESLIST] &  % timeline for this task
 {[INSERTASSIGNMENTLISTFORTHISTASK]} &  % assignments for this task
 \FteTotalFormat{[INSERTFTETOTAL]} & \FteUnfundedFormat{[INSERTFTEUNFUNDED]} & \FteFundedFormat{[INSERTFTEFUNDED]}\\
 [ENDTASKROWTEMPLATE] 
@@ -190,12 +193,13 @@
  & \TimelineSize\cellcolor{\TimelineColor}
 [ENDCOLOREDTIMELINETEMPLATE]
 
-% COMMENT: the assignment list consists of the team member ids followed by number of work weeks, with whitespace delimiter
+% COMMENT: the assignment list consists of the team member ids followed by number of work weeks, with delimiter specified in the 
+% COMMENT: list of \defs at the top of this file. 
 % COMMENT: There are 3 templates, depending on if the team member institutional affiliation is US/funded, US/unfunded, or non-US
 % COMMENT: The assignment list is constructed as a single string and then replaces INSERTASSIGNMENTLISTFORTHISTASK in the TASKROWTEMPLATE
 % COMMENT: below is format for a team member who is funded and from U.S. institution
 [STARTFUNDEDUSTEAMASSIGNMENTTEMPLATE]
- & \FundedUsTeam{[TEAMID]}\,\FundedUsTeam{[NUMBERWEEKS]}
+ \FundedUsTeam{[TEAMID]}\,\FundedUsTeam{[NUMBERWEEKS]}
 [ENDFUNDEDUSTEAMASSIGNMENTTEMPLATE]
  
 % COMMENT: below is format for a team member who is UNfunded and from U.S. institution
