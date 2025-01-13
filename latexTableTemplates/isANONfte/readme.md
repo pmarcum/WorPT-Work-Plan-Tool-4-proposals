@@ -85,7 +85,7 @@ But if counter gets screwed up and needs manual intervention, use below to apply
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/1iwFp24onzfQsG_goNJ1ytCKsUOT91Cc7" width=30%>
+<img src="https://lh3.googleusercontent.com/d/1iwFp24onzfQsG_goNJ1ytCKsUOT91Cc7" width=50%>
 </details>
 </td>
 </tr>
@@ -98,7 +98,7 @@ But if counter gets screwed up and needs manual intervention, use below to apply
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/1czlAoAQEGa5Hfh1XPlDfgt9ndY0uuui0" width=30%>
+<img src="https://lh3.googleusercontent.com/d/1czlAoAQEGa5Hfh1XPlDfgt9ndY0uuui0" width=50%>
 </details>
 </td>
 </tr>
@@ -116,7 +116,7 @@ be turned into plain test by removing the "\textbf", eg {{#1}}
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/12PIlxAVTwR_CvY8ilfmyMFF4oq2az77s" width=30%>
+<img src="https://lh3.googleusercontent.com/d/12PIlxAVTwR_CvY8ilfmyMFF4oq2az77s" width=50%>
 </details>
 </td>
 </tr>
@@ -133,7 +133,7 @@ be turned into plain test by removing the "\textbf", eg {{#1}}
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/1IpzNi8JPFHVYT-Li3Vu5UZn3NjKat33x" width=30%>
+<img src="https://lh3.googleusercontent.com/d/1IpzNi8JPFHVYT-Li3Vu5UZn3NjKat33x" width=50%>
 </details>
 </td>
 </tr>
@@ -149,7 +149,7 @@ be turned into plain test by removing the "\textbf", eg {{#1}}
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/1nJ-xTiNVfPcPj07NweQaPVdVeBe-j4cg" width=30%>
+<img src="https://lh3.googleusercontent.com/d/1nJ-xTiNVfPcPj07NweQaPVdVeBe-j4cg" width=50%>
 </details>
 </td>
 </tr>
