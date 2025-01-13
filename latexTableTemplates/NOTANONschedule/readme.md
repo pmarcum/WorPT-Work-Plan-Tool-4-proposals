@@ -168,7 +168,7 @@ redefine as:<br>
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/1FptrYPilkvMpYVCh0EHQX5cKxFiZXUFh" width=30%>
+<img src="https://lh3.googleusercontent.com/d/1FptrYPilkvMpYVCh0EHQX5cKxFiZXUFh" width=70%>
 </details>
 </td>
 </tr>
@@ -181,7 +181,7 @@ redefine as:<br>
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/1AewnKa1OXlrgT4bNIqy3JrVWkqW4lcYR" width=30%>
+<img src="https://lh3.googleusercontent.com/d/1AewnKa1OXlrgT4bNIqy3JrVWkqW4lcYR" width=70%>
 </details></td>
 </tr>
 
@@ -192,7 +192,7 @@ redefine as:<br>
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/12H_J3b7oNhnd9ZDHivqEkQ2gdAJl8hWV" width=30%>
+<img src="https://lh3.googleusercontent.com/d/12H_J3b7oNhnd9ZDHivqEkQ2gdAJl8hWV" width=70%>
 </details></td>
 </tr>
 
