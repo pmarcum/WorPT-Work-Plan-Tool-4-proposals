@@ -81,7 +81,12 @@ NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; yo
 <td><b>Table orientation</b></td>
 <td><pre><code>
 \LandScapetrue          % will put the table in landscape mode
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/16SbKRxlDHWshgzt-tQNsjqqSOJeCXWm1" width=70%>
+</details>
+</td>
 </tr>
 
 <tr>
@@ -90,7 +95,12 @@ NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; yo
 \def\TaskWidth{<mark>3.9in</mark>}            % leftmost ("Tasks") column width
 \def\LeadWidth{<mark>1.2in</mark>}            % middle ("Lead") column width
 \def\ExpertiseWidth{<mark>1.8in</mark>}       % rightmost ("Expertise") column width
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1Lc84Ce7q9vDGbn-PSkLpHm3Bk-018GLC" width=70%>
+</details>
+</td>
 </tr>
 
 <tr>
@@ -100,7 +110,12 @@ The default typically works well (an overcount is caused by table + longtable co
 But if counter gets screwed up and needs manual intervention, use below to apply a correction:
 <pre><code>
 \def\TaskAddCounter{<mark>-1</mark>}    % additive correction to table number
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1xbVxG1JR60WvRYuJqBIc7z7SdCIhZaMK" width=70%>
+</details>
+</td>
 </tr>
 
 <tr>
@@ -108,14 +123,24 @@ But if counter gets screwed up and needs manual intervention, use below to apply
 <td><pre><code>
 \def\SpaceBetweenRows{<mark>0.8</mark>}    % vertical compactness of rows
 \def\SpaceBetweenColumns{<mark>1pt</mark>} % bigger = wider spacing between columns
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1BgsQCk-CpfftDKheaAs1wfUg7jO7UDAB" width=70%>
+</details>
+</td>
 </tr>
 
 <tr>
 <td><b>Nudge table to left or right</b></td>
 <td><pre><code>
 \def\NudgeTable{<mark>1.5\textwidth</mark>} % larger value nudges table to left
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/19tDKpSmX3NA0sf9neZBASfN-yIYY9LTI" width=70%>
+</details>
+</td>
 </tr>
    
 <tr>
@@ -127,7 +152,12 @@ be turned into plain test by removing the "\textbf", eg {{#1}}
 \def\HeaderColor{<mark>Blue</mark>}            % column heading color
 \def\HeaderFontColor{<mark>White</mark>}       % column heading font color
 \def\HeaderFontstyle#1{<mark>\textbf</mark>{#1}}% boldface column heading labels
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1rpXA2Cuw9_19nElBYJPs79SEU8fNTMgT" width=70%>
+</details>
+</td>
 </tr>
 
 <tr>
@@ -136,14 +166,24 @@ be turned into plain test by removing the "\textbf", eg {{#1}}
 \def\SectionColor{<mark>gray!40</mark>}       % category section label colors
 \def\SectionFontColor{<mark>Black</mark>}     % category section label font color
 \def\SectionFontstyle#1{<mark>\textbf</mark>{#1}} % boldface category section labels
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1l2e9IXnIq7Zewg3RfBfrQ_SXUr9FtLy1" width=70%>
+</details>
+</td>
 </tr>
 
 <tr>
 <td><b>Color of faint vertical line</b></td>
 <td><pre><code>
 \def\VerticalLineColor{<mark>gray!40</mark>}  % color of line between "Lead" and "Expertise"
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1ZyFAQkPU5ifcHN4pSln1KSeHaLu5VGWq" width=70%>
+</details>
+</td>
 </tr>
 
 <tr>
