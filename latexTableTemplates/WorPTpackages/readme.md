@@ -1,13 +1,6 @@
 <b>WorPT Packages</b> need to be installed in your LaTeX document's preamble in order to use a WorPT file in your LaTeX document.  
 <hr>
 
-<!--------------------------------------
-   HOW TO USE
---------------------------------------->
-<b>HOW TO USE:</b>
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-             Special Packages
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 <mark><b>How To Install WorPT Package Files In Your Document</b></mark>
 <p>
 You only need to install the WorPT Package files <b>ONCE</b>. After you have installed the WorPT Package files, you can incorporate as many of the WorPT files as you want, into your LaTeX document.  In each of the WorPT file installation instructions, "Step 1" is to install the WorPT Package files.  <b></b>You can skip that step, if you already have the WorPT Package files included in your document's preamble.</b> 
