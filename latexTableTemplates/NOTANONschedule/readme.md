@@ -87,7 +87,12 @@ You can just comment out your added lines and recompile the document, if you wan
 \def\SumFteWidth{<mark>5ex</mark>}       % Total FTE/Sum column width
 \def\UnfundedFteWidth{<mark>5ex</mark>}  % Total FTE/Unfunded column width
 \def\FundedFteWidth{<mark>5ex</mark>}    % Total FTE/Funded column width
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1dXDf4XkJcMxWQ1Q5zYmiN1Z0QKpHpFLV" width=30%>
+</details>
+</td>
 </tr>
 
 <tr>
@@ -100,7 +105,12 @@ You can just comment out your added lines and recompile the document, if you wan
 \def\TaskTitleHeaderFontsize{<mark>\normalsize</mark>}      % "TASK TITLES" column label text size
 \def\YearSliceHeaderFontsize{<mark>\scriptsize</mark>}      % "1", "2"... year-quarter label text size
 \def\IdWksHeaderFontsize{<mark>\scriptsize</mark>}          % "id wks" text size  
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1Og1zQoUqQuLJB8sbMlIiaDNviE-RBah6" width=30%>
+</details>
+</td>
 </tr>
     
 <tr>
@@ -110,7 +120,12 @@ The default typically works well (an overcount is caused by table + longtable co
 But if counter gets screwed up and needs manual intervention, use below to apply a correction:
 <pre><code>
 \def\TaskAddCounter{<mark>-1</mark>}    % additive correction to table number
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1mYVKCIdWEPoyEQuEr2SYSAsr5-vGl48k" width=30%>
+</details>
+</td>
 </tr>
 
 <tr>
@@ -118,14 +133,23 @@ But if counter gets screwed up and needs manual intervention, use below to apply
 <td><pre><code>
 \def\SpaceBetweenRows{<mark>0.8</mark>}    % vertical compactness of rows
 \def\SpaceBetweenColumns{<mark>1pt</mark>} % bigger = wider spacing between columns
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1wgKhN-aCTVc2Vi6bJ8FAyoZrK3f8SNfA" width=30%>
+</details></td>
 </tr>
 
 <tr>
 <td><b>Nudge table to left or right</b></td>
 <td><pre><code>
 \def\NudgeTable{<mark>1.5\textwidth</mark>} % larger value nudges table to left
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1sgYYaDtI7YJF_sMnKDn7jXHWfZtgNBJX" width=30%>
+</details>
+</td>
 </tr>
 
 <tr>
@@ -141,7 +165,12 @@ redefine as:<br>
    {<mark>\normalsize\textbf</mark>{#2}}}                               % Category label
 \def\TaskTitleLabel#1#2{~{<mark>\scriptsize{\textbf{\scshape</mark>{#1}}}}~
    {<mark>\color{mediumelectricblue}{\footnotesize\textbf</mark>{#2}}}} % Task title format for row item
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1FptrYPilkvMpYVCh0EHQX5cKxFiZXUFh" width=30%>
+</details>
+</td>
 </tr>
 
 <tr>
@@ -149,14 +178,22 @@ redefine as:<br>
 <td><pre><code>
 \def\TimelineVerticalLineColor{<mark>lightgray</mark>} % vertical line in timeline section
 \def\TotalFteVerticalLineColor{<mark>lightgray</mark>} % vertical line in total fte section
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1AewnKa1OXlrgT4bNIqy3JrVWkqW4lcYR" width=30%>
+</details></td>
 </tr>
 
 <tr>
 <td><b>Color of task timelines</b></td>
 <td><pre><code>
 \def\TimelineColor{<mark>mediumelectricblue</mark>} % Task Timeline cell color
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/12H_J3b7oNhnd9ZDHivqEkQ2gdAJl8hWV" width=30%>
+</details></td>
 </tr>
 
 <tr>
@@ -165,7 +202,12 @@ redefine as:<br>
 \def\FundedUsTeam#1{<mark>\small \color{blue}</mark>{#1}}    % funded US team members ID, \#weeks format
 \def\UnfundedUsTeam#1{<mark>\small \color{black}</mark>{#1}} % UNfunded US team members ID, \#weeks fomat
 \def\InternationalTeam#1{<mark>\small \color{red}</mark>{#1}}% international team members ID, \#weeks format
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1cio03IIIDCGoOO5_4htjm2LV6q0JmEe4" width=30%>
+</details>
+</td>
 </tr>
 
 <tr>
@@ -174,14 +216,24 @@ redefine as:<br>
 \def\FteTotalFormat#1{<mark>\small</mark>{#1}}               % Total FTE/sum value format
 \def\FteUnfundedFormat#1{<mark>\small</mark>{#1}}            % Total FTE/unfunded value format
 \def\FteFundedFormat#1{<mark>\small \color{blue}</mark>{#1}} % Total FTE/funded value format
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1aqfgM6GA6TCNEcAKQ-pyegkXKijkH889" width=30%>
+</details>
+</td>
 </tr>
 
 <tr>
 <td><b>Team member identify table caption formatting</b></td>
 <td><pre><code>
 \def\RevealIdentityFormat#1#2{<mark>\textbf</mark>{#1}<mark>: </mark>#2} % \#1=ID, \#2=Name
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1nrSrK1mSC0hJRuNJs6Vxf4jZlveQ48BL" width=30%>
+</details>
+</td>
 </tr>
 
 <tr>
@@ -190,14 +242,24 @@ redefine as:<br>
 \def\TotalFteSumHeaderIcon{<mark>\textbf{\large{$\Sigma$}}</mark>}       % FTE sum symbol
 \def\TotalFteUnfundedHeaderIcon{<mark>\noDollarIcon{-0.4}{0.4mm}{0.2}{0.15}</mark>} % "FTE unfunded symbol
 \def\TotalFteFundedHeaderIcon{<mark>\dollarIcon{-0.4}{0.2}{0.015}</mark>}% FTE funded symbol
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1kdg5LRFovZQT9oI7B-eGPh5RJ9KARgmg" width=30%>
+</details>
+</td>
 </tr>
 
 <tr>
 <td><b>Delimiter of team members under TASK ASSIGNMENTS</b></td>
 <td><pre><code>
 \def\TaskAssignmentDelimiter{;\hspace{3pt}} % delimiter used in TASK ASSIGNMENTS
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1AwZgBxEbQJB6sw5vg68fL2uH0bFsj5Ht" width=30%>
+</details>
+</td>
 </tr>
 
 <tr>
