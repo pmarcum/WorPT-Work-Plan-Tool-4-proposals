@@ -141,7 +141,7 @@ be turned into plain test by removing the "\textbf", eg {{#1}}
 <pre><code>
 \def\TravelSubcatFontstyle#1{<mark>\textit</mark>{#1}}       % italicize "domestic", "internat'l" rows 
 \def\TravelSubcatAmountFontstyle#1{<mark>\textit</mark>{#1}} % italicize "domestic", "internat'l" Travel values 
-\def\TravelSubcatTotalFontstyle#1{<mark>\textit{#1}}  % italicize Total,"Domestic"/"International" Travel sums 
+\def\TravelSubcatTotalFontstyle#1{<mark>\textit</mark>{#1}}  % italicize Total,"Domestic"/"International" Travel sums 
 </code></pre></td>
 </tr>
 
