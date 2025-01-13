@@ -123,16 +123,10 @@ be turned into plain test by removing the "\textbf", eg {{#1}}
 </tr>
 
 <tr>
-<td><b>Color and font style of category totals</b></td>
+<td><b>Color, labelling, font style of category totals</b></td>
 <td><pre><code>
 \def\TotalWorkEffortFontstyle#1{<mark>\textbf</mark>{#1}}% boldface text in "Total .... Work Effort" line at section end
 \def\TotalWorkEffortFontColor{<mark>Blue</mark>}        % font color of "Total ... Work Effort" line at section end
-</code></pre></td>
-</tr>
-
-<tr>
-<td><b>Section summary labelling</b></td>
-<td><pre><code>
 \def\FteFundedTitleText{<mark>Total Funded Work Effort</mark>}
 \def\FteUnfundedTitleText{<mark>Total Unfunded Work Effort</mark>}
 \def\FteBothTitleText{<mark>Total Funded $+$ Unfunded Work Effort</mark>}
