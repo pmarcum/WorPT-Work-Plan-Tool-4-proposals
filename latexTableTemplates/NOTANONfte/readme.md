@@ -130,18 +130,18 @@ be turned into plain test by removing the "\textbf", eg {{#1}}
 <tr>
 <td><b>Section banner labelling</b></td>
 <td><pre><code>
-\def\FteFundedBannerText{Work Efforts Funded By This Proposal}
-\def\FteUnfundedBannerText{Work Efforts Proposed but NOT Funded By This Proposal}
-\def\FteBothBannerText{Total Work Efforts Proposed (Funded $+$ Unfunded)}
+\def\FteFundedBannerText{<mark>Work Efforts Funded By This Proposal</mark>}
+\def\FteUnfundedBannerText{<mark>Work Efforts Proposed but NOT Funded By This Proposal</mark>}
+\def\FteBothBannerText{<mark>Total Work Efforts Proposed (Funded $+$ Unfunded)</mark>}
 </code></pre></td>
 </tr>
 
 <tr>
 <td><b>Section summary labelling</b></td>
 <td><pre><code>
-\def\FteFundedTitleText{Total Funded Work Effort}
-\def\FteUnfundedTitleText{Total Unfunded Work Effort}
-\def\FteBothTitleText{Total Funded $+$ Unfunded Work Effort}
+\def\FteFundedTitleText{<mark>Total Funded Work Effort</mark>}
+\def\FteUnfundedTitleText{<mark>Total Unfunded Work Effort</mark>}
+\def\FteBothTitleText{<mark>Total Funded $+$ Unfunded Work Effort</mark>}
 </code></pre></td>
 </tr>
 
