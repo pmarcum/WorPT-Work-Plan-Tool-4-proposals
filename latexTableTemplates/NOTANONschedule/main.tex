@@ -87,13 +87,18 @@
 \def\RevealIdentities{[INSERTIDTONAMELIST]}
 
 %--- table preamble definition bundled into the "T" variable
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}      % title, assignment columns
+\newcolumntype{V}{!{\color{\TimelineVerticalLineColor}\vrule}} % vertical lines in timeline
+\newcolumntype{W}{!{\color{\TotalFteVerticalLineColor}\vrule}} % vertical lines in FTE
+%
 \newcolumntype{T}{
-  |>{\raggedright\arraybackslash}p{\TitleWidth}                  % title column
-  *{\NumberYears}{|p{\TimelineWidth}!{\color{\TimelineVerticalLineColor}\vrule}*{\SlicesPerYearMinusTwo}{p{\TimelineWidth}!{\color{\TimelineVerticalLineColor}\vrule}}p{\TimelineWidth}}    % timeline columns
-  |>{\raggedright\arraybackslash}p{\AssignmentsWidth}            % task assignment column
-  |p{\SumFteWidth}!{\color{\TotalFteVerticalLineColor}\vrule}    % total fte, sum column
-  p{\UnfundedFteWidth}!{\color{\TotalFteVerticalLineColor}\vrule}% total fte, unfunded column
-  p{\FundedFteWidth}|                                            % total fte, funded column
+  |L{\TitleWidth}         % title column
+  *{\NumberYears}{        % timeline columns
+  |p{\TimelineWidth}V*{\SlicesPerYearMinusTwo}{p{\TimelineWidth}V}p{\TimelineWidth}} 
+  |L{\AssignmentsWidth}   % task assignment column
+  |p{\SumFteWidth}W       % total fte, sum column
+  p{\UnfundedFteWidth}W   % total fte, unfunded column
+  p{\FundedFteWidth}|     % total fte, funded column
 }
 
 \newenvironment{[INSERTFILENAME]}{%
