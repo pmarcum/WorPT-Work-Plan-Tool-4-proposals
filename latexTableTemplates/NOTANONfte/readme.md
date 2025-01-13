@@ -137,7 +137,7 @@ be turned into plain test by removing the "\textbf", eg {{#1}}
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/1NTiiOwmyxD0kJgDg8sND7I-awQL8SG7q" width=50%>
+<img src="https://lh3.googleusercontent.com/d/11rh1t_PvnKtnVk5UFvHyqPvfTAbnL-Sw" width=50%>
 </details>
 </td>
 </tr>
