@@ -47,7 +47,7 @@ Copy/paste the special packages in preamble of your document, if you haven't don
 \include{<mark>do_NOT_manually_edit</mark>/isANONnonlabor}   % reset parameters used by file
 %            ^^^^ replace do_NOT_manually_edit if not correct folder name
 %
-<mark>% Put OPTIONAL customizations for isANONnonlabor HERE</mark>
+<mark>% Put <u>OPTIONAL</u> customizations for isANONnonlabor HERE</mark>
 %
 \begin{isANONnonlabor}
 <mark>\caption{
@@ -60,8 +60,8 @@ Copy/paste the special packages in preamble of your document, if you haven't don
 {\color{red} \underline{\scshape{Publication Costs}}: Our work plan includes the publication of four key manuscripts: (see Table \ref{tab:NOTANONschedule} for details),  but given the student projects, we have budgeted for 8 papers. We request a total of \$2K for publication costs,  using the assumption that the papers will fall between "Tier 1" and "Tier 2" categories as defined in ApJ/AJ guidelines. These fees are included in proposed budget.}
 \newline \newline
 {\color{red}\underline{\scshape{ Materials and Supplies}}: We request an annually-averaged budget of \$1,125 to cover purchase of disk space to back up our data products and miscellaneous office and IT supplies at PI and Science~PI home institution. The distribution of these funds is top-heavy at the beginning of the grant period, when such supplies will be needed most. The disk size of the data products will be approximately 39~Gb per exposure: four \texttt{float32} 
-extensions per CCD, corresponding to the \textbf{(1)} Zodiacal-CIB background, \textbf{(2)} in-field, and \textbf{(3)} out-field stray-light, and \textbf{(4)} thermal emission layers, plus one \texttt{binary} extension for the Solar System object trails (\emph{streak / no streak}), for a total of 18~4096$\times$4096 detector focal plane. Storage of these products will not be required, as they will be immediately produced by the pipeline on a exposure-by-exposure basis. End-to-end simulations shall not exceed 100~Gb, and they will be accessible to the community through a public internet server. Publication~IV will require the analysis of an area equivalent to 32 adjacent field of views, the equivalent of a sector of the \RST/WFI High Latitude Wide Area Survey, which corresponds to 128 exposures. Assuming an average exposure size of 9~Gb, plus $\sim$40~Gb for the background products, we project that we will require $\sim$10--15~Tb of disk space (including backups).}}
-\label{tab:isANONnonlabor}</mark>
+extensions per CCD, corresponding to the \textbf{(1)} Zodiacal-CIB background, \textbf{(2)} in-field, and \textbf{(3)} out-field stray-light, and \textbf{(4)} thermal emission layers, plus one \texttt{binary} extension for the Solar System object trails (\emph{streak / no streak}), for a total of 18~4096$\times$4096 detector focal plane. Storage of these products will not be required, as they will be immediately produced by the pipeline on a exposure-by-exposure basis. End-to-end simulations shall not exceed 100~Gb, and they will be accessible to the community through a public internet server. Publication~IV will require the analysis of an area equivalent to 32 adjacent field of views, the equivalent of a sector of the \RST/WFI High Latitude Wide Area Survey, which corresponds to 128 exposures. Assuming an average exposure size of 9~Gb, plus $\sim$40~Gb for the background products, we project that we will require $\sim$10--15~Tb of disk space (including backups).}}</mark>
+<mark>\label{tab:isANONnonlabor}</mark>
 \end{isANONnonlabor}
 </code></pre>
 
