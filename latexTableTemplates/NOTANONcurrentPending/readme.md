@@ -51,7 +51,7 @@ Copy/paste the special packages in preamble of your document, if you haven't don
 \include{<mark>do_NOT_manually_edit</mark>/NOTANONcurrentPending} % reset file parameters
 %            ^^^^ replace do_NOT_manually_edit if not correct folder name
 %
-<mark>% Put <u>OPTIONAL</u> customizations for NOTANONcurrentPending HERE</mark>
+<mark>% Put <b>OPTIONAL</b> customizations for NOTANONcurrentPending HERE</mark>
 %
 \begin{NOTANONcurrentPending}
 \end{NOTANONcurrentPending}  
