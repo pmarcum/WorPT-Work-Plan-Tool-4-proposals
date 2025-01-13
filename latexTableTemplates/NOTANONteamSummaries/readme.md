@@ -44,10 +44,10 @@ Copy/paste the special packages in preamble of your document, if you haven't don
    
 <pre><code>
 \newpage       % You can comment out or use \clearpage instead
-\include{do_NOT_manually_edit/NOTANONteamSummaries} % reset file parameters
+\include{<mark>do_NOT_manually_edit</mark>/NOTANONteamSummaries} % reset file parameters
 %            ^^^^ replace do_NOT_manually_edit if not correct folder name
 %
-<mark>% Put <u>OPTIONAL</u> customizations for NOTANONteamSummaries HERE</mark>
+<mark>% Put <b>OPTIONAL</b> customizations for NOTANONteamSummaries HERE</mark>
 %
 \begin{NOTANONteamSummaries}
 \end{NOTANONteamSummaries}  
