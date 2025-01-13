@@ -192,6 +192,13 @@ redefine as:<br>
 </tr>
 
 <tr>
+<td><b>Delimiter of team members under TASK ASSIGNMENTS</b></td>
+<td><pre><code>
+\def\TaskAssignmentDelimiter{\hspace{2em}}      % how to separate multiple team members under TASK ASSIGNMENTS
+</code></pre></td>
+</tr>
+
+<tr>
 <td><b>Table preamble - full control!</b></td>
 <td>
 Use table preamble for more control over table layout (removing/adding vertical lines, changing column alignment, etc).<br>
