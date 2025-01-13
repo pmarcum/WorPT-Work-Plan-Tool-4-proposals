@@ -43,17 +43,14 @@ Copy/paste the special packages in preamble of your document, if you haven't don
 </ol>
    
 <pre><code>
-\include{do_NOT_manually_edit/isANONfte}   % reset file parameters
+\include{<mark>do_NOT_manually_edit</mark>/isANONfte}   % reset file parameters
 %            ^^^^ replace do_NOT_manually_edit if not correct folder name
-   
-<mark>% Put OPTIONAL customizations for isANONfte HERE</mark>
-
+%
+<mark>% Put <u>OPTIONAL</u> customizations for isANONfte HERE</mark>
+%
 \begin{isANONfte}
-
-   <mark>\caption{Details of work efforts per member to be funded for the present proposal; {\color{red}Detailed responsibilities, tied to tasks and science goals, are provided in Sec.\,\ref{Subsec:tmeline}.}}
-
-   \label{tab:isANONfte}</mark>
-
+<mark>\caption{Details of work efforts per member to be funded for the present proposal; {\color{red}Detailed responsibilities, tied to tasks and science goals, are provided in Sec.\,\ref{Subsec:tmeline}.}}</mark>
+<mark>\label{tab:isANONfte}</mark>
 \end{isANONfte}
 </code></pre>
 </details>
