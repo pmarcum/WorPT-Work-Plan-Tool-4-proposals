@@ -88,7 +88,7 @@ But if counter gets screwed up and needs manual intervention, use below to apply
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/1OYKW_CoxSFIGP-3Dhpx5CYAp0VV8WJJ5" width=30%>
+<img src="https://lh3.googleusercontent.com/d/1OYKW_CoxSFIGP-3Dhpx5CYAp0VV8WJJ5" width=50%>
 </details>
 </td>
 </tr>
