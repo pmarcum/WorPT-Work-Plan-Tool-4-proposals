@@ -203,15 +203,21 @@ redefine as:<br>
 <td>
 Use table preamble for more control over table layout (removing/adding vertical lines, changing column alignment, etc).<br>
 Copy/paste the ENTIRE below code in order to change default table preamble.<br>
-<u>IMPORTANT</u> Most of table preamble can be changed EXCEPT <i>do <b>NOT</b> change "T", \NumberYears and \SlicesPerYearMinusTwo variables, and preserve the number of columns (eg, make sure that any 'p' that is removed is replaced by another alignment code).</i>
+<u>IMPORTANT</u> Most of table preamble can be changed EXCEPT <i>do <b>NOT</b> change "T", \NumberYears and \SlicesPerYearMinusTwo variables, and preserve the number of columns (eg, make sure that any 'p' that is removed is replaced by another alignment code). The helper definitions of "L", "V" and "W" may be changed or removed.</i>
 <pre><code>
+%--- table preamble definition bundled into the "T" variable
+<mark>\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}</mark>      % title, assignment columns
+<mark>\newcolumntype{V}{!{\color{\TimelineVerticalLineColor}\vrule}}</mark> % vertical lines in timeline
+<mark>\newcolumntype{W}{!{\color{\TotalFteVerticalLineColor}\vrule}}</mark> % vertical lines in FTE
+%
 \newcolumntype{T}{
-  <mark>|>{\raggedright\arraybackslash}p{\TitleWidth}</mark>                  % title column
-  *{\NumberYears}<mark>{|p{\TimelineWidth}!{\color{\TimelineVerticalLineColor}\vrule}</mark>*{\SlicesPerYearMinusTwo}<mark>{p{\TimelineWidth}!{\color{\TimelineVerticalLineColor}\vrule}}p{\TimelineWidth}}</mark>    % timeline columns
-  <mark>|>{\raggedright\arraybackslash}p{\AssignmentsWidth}</mark>            % task assignment column
-  <mark>|p{\SumFteWidth}!{\color{\TotalFteVerticalLineColor}\vrule}</mark>    % total fte, sum column
-  <mark>p{\UnfundedFteWidth}!{\color{\TotalFteVerticalLineColor}\vrule}</mark>% total fte, unfunded column
-  <mark>p{\FundedFteWidth}|</mark>                                            % total fte, funded column
+<mark>|L{\TitleWidth}</mark>         % title column
+*{\NumberYears}{        % timeline columns
+<mark>|p{\TimelineWidth}V</mark>*{\SlicesPerYearMinusTwo}<mark>{p{\TimelineWidth}V}p{\TimelineWidth}}</mark> 
+<mark>|L{\AssignmentsWidth}</mark>   % task assignment column
+<mark>|p{\SumFteWidth}W</mark>       % total fte, sum column
+<mark>p{\UnfundedFteWidth}W</mark>   % total fte, unfunded column
+<mark>p{\FundedFteWidth}|</mark>     % total fte, funded column
 }
 </code></pre></td>
 </tr>
