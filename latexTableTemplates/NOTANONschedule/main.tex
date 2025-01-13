@@ -97,7 +97,6 @@
 }
 
 \newenvironment{[INSERTFILENAME]}{%
-\begin{minipage}{\NudgeTable}                   % increase to allow a wide table to spill into margin
 \ifLandScape
   \begin{sidewaystable*}
 \else
@@ -107,6 +106,7 @@
 \renewcommand{\arraystretch}{\SpaceBetweenRows} % controls vertical row separation/spacing
 \setlength{\tabcolsep}{\SpaceBetweenColumns}    % controls horizontal column separation/spacing
 \centerline{
+\begin{minipage}{\NudgeTable}                   % increase to allow a wide table to spill into margin
 \begin{longtable}{T}
 
 % ------------------------- First line of headers
@@ -212,14 +212,14 @@
 \InternationalTeam{[TEAMID]}\,\InternationalTeam{[NUMBERWEEKS]} 
 [ENDINTERNATIONALTEAMASSIGNMENTTEMPLATE]
 
-\end{longtable}}}
+\end{longtable}
+\end{minipage}}}
 {%
 \ifLandScape
   \end{sidewaystable*}
 \else
   \end{table*}
 \fi
-\end{minipage}
 }
 
 % COMMENT: The caption for this table requires variables (just as the isANONtravel did). The below template defines
