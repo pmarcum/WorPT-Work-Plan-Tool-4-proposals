@@ -102,7 +102,7 @@ You can just comment out your added lines and recompile the document, if you wan
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/1XhVrw4lR70_WbosdIZ7x-mowtJRTPVqs" width=30%>
+<img src="https://lh3.googleusercontent.com/d/1XhVrw4lR70_WbosdIZ7x-mowtJRTPVqs" width=50%>
 </details>
 </td>
 </tr>
@@ -114,7 +114,7 @@ You can just comment out your added lines and recompile the document, if you wan
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/16KK8AuYbxc5C0dy9qPh2Pazoq_XdEWD2" width=30%>
+<img src="https://lh3.googleusercontent.com/d/16KK8AuYbxc5C0dy9qPh2Pazoq_XdEWD2" width=50%>
 </details>
 </td>
 </tr>
@@ -128,7 +128,7 @@ The default typically works well (an overcount is caused by table + longtable co
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/1Vc29554V1Sny5-E8O-nm3IiZ1-NnGEQf" width=30%>
+<img src="https://lh3.googleusercontent.com/d/1Vc29554V1Sny5-E8O-nm3IiZ1-NnGEQf" width=50%>
 </details>
 </td>
 </tr>
@@ -145,7 +145,7 @@ For fontstyle changes, the "\textbf" can be changed to "\emph" for italics, or c
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/1VlOwoxQeP8kprw-Ua_XleCuhklszXV7Z" width=30%>
+<img src="https://lh3.googleusercontent.com/d/1VlOwoxQeP8kprw-Ua_XleCuhklszXV7Z" width=50%>
 </details>
 </td>
 </tr>
