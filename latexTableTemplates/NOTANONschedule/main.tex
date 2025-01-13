@@ -199,23 +199,21 @@
 % COMMENT: The assignment list is constructed as a single string and then replaces INSERTASSIGNMENTLISTFORTHISTASK in the TASKROWTEMPLATE
 % COMMENT: below is format for a team member who is funded and from U.S. institution
 [STARTFUNDEDUSTEAMASSIGNMENTTEMPLATE]
- \FundedUsTeam{[TEAMID]}\,\FundedUsTeam{[NUMBERWEEKS]}
+\FundedUsTeam{[TEAMID]}\,\FundedUsTeam{[NUMBERWEEKS]}
 [ENDFUNDEDUSTEAMASSIGNMENTTEMPLATE]
  
 % COMMENT: below is format for a team member who is UNfunded and from U.S. institution
 [STARTUNFUNDEDUSTEAMASSIGNMENTTEMPLATE]
- & \UnfundedUsTeam{[TEAMID]}\,\UnfundedUsTeam{[NUMBERWEEKS]} 
+\UnfundedUsTeam{[TEAMID]}\,\UnfundedUsTeam{[NUMBERWEEKS]} 
 [ENDUNFUNDEDUSTEAMASSIGNMENTTEMPLATE]
 
 % COMMENT: below is format for a team member who is from NON U.S. institution (and by definition, unfunded)
 [STARTINTERNATIONALTEAMASSIGNMENTTEMPLATE]
- & \InternationalTeam{[TEAMID]}\,\InternationalTeam{[NUMBERWEEKS]} 
+\InternationalTeam{[TEAMID]}\,\InternationalTeam{[NUMBERWEEKS]} 
 [ENDINTERNATIONALTEAMASSIGNMENTTEMPLATE]
 
 \end{longtable}
-\end{minipage}
-}
-}
+\end{minipage}}}
 {%
 \ifLandScape
   \end{sidewaystable*}
@@ -228,7 +226,7 @@
 % COMMENT: the variables used in the caption formulation that is given in the github help page. Specifically, 
 % COMMENT: the below defines the names that go with the abbreviations used in the table.  IF YOU LEAVE OUT 
 % COMMENT: THIS INFORMATION FROM THE CAPTIOn, this table could be used as an anonymous one. 
-% COMMENT: the below is the template used for each item in the list
+% COMMENT: the below is the template used for each item in the list. The items are delimited by commas
 [STARTIDTONAMETEMPLATE]
 \RevealIdentityFormat{[INSERTTEAMID]}: {[INSERTTEAMNAME]}
 [ENDIDTONAMETEMPLATE]
