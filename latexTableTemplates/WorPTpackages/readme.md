@@ -43,4 +43,4 @@ Highlights indicate where edits might be needed.
 \usepackage{<mark>FUnewCommands</mark>} % <b>[OPTIONAL]</b> apply Frequently-used usercommands  
 </code></pre>
 
-<p>If you have conflicts between the packages in the WorPT Package files and your LaTeX class file, then comment out the lines that are in conflict in your own files (see below how to get the files) and determine if the WorPT tables will render with those lines commented out.</p>
+<p>If you have conflicts between the packages in the WorPT Package files and your LaTeX class file, then comment out the conflicting lines in the local copies of the WorPT Package file(s) and determine if the WorPT tables will compile correctly with those lines commented out.</p>
