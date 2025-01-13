@@ -100,7 +100,7 @@ You can just comment out your added lines and recompile the document, if you wan
 <tr>
 <td><b>Nudge table to left or right</b></td>
 <td><pre><code>
-\def\NudgeTable{<mark>1.5\textwidth</mark>} % larger value nudges table to left
+\def\NudgeTable{<mark>1.2\textwidth</mark>} % larger value nudges table to left
 </code></pre></td>
 </tr>
 
