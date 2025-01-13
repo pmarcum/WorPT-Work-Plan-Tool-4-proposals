@@ -1,3 +1,4 @@
+<b>NOTE:<i> You only need to do this ONCE in your LaTeX document!</i><br>
 <b>WorPT Packages</b> need to be installed in your LaTeX document's preamble in order to use a WorPT file in your LaTeX document.  
 <hr>
 
