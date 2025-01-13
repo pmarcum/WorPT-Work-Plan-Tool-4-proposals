@@ -123,7 +123,7 @@ But if counter gets screwed up and needs manual intervention, use below to apply
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/1mYVKCIdWEPoyEQuEr2SYSAsr5-vGl48k" width=50%>
+<img src="https://lh3.googleusercontent.com/d/1mYVKCIdWEPoyEQuEr2SYSAsr5-vGl48k" width=70%>
 </details>
 </td>
 </tr>
