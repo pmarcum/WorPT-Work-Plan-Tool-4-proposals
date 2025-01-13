@@ -127,12 +127,9 @@ be turned into plain test by removing the "\textbf", eg {{#1}}
 For fontstyle changes, the "\textbf" can be changed to "\emph" for italics, or can<br>
 be turned into plain test by removing the "\textbf", eg {{#1}}
 <pre><code>
-\def\MajorCatFontstyle#1{<mark>\textbf</mark>{#1}}     
-% Above: boldface listed budget items (except "domestic" and "international" Travel lines) 
-\def\MajorAmountFontstyle#1{<mark>\textbf</mark>{#1}}   
-% Above: boldface budget amounts except "Total" and "domestic" and "international" Travel lines 
-\def\MajorCatTotalFontstyle#1{<mark>\textbf</mark>{#1}} 
-% Above: boldface Total budget values except those in "Domestic" and "International" Travel lines 
+\def\MajorCatFontstyle#1{<mark>\textbf</mark>{#1}}   % boldface budget (excl. domestic, internat'l Travel rows) 
+\def\MajorAmountFontstyle#1{<mark>\textbf</mark>{#1}}% boldface budget (excl. Total, domestic, internat'l Travel rows) 
+\def\MajorCatTotalFontstyle#1{<mark>\textbf</mark>{#1}} % boldface Total budget (excl. domestic, internat'l Travel rows) 
 </code></pre></td>
 </tr>
 
@@ -142,7 +139,7 @@ be turned into plain test by removing the "\textbf", eg {{#1}}
 For fontstyle changes, the "\textbf" can be changed to "\emph" for italics, or can<br>
 be turned into plain test by removing the "\textbf", eg {{#1}}
 <pre><code>
-\def\TravelSubcatFontstyle#1{<mark>\textit</mark>{#1}}        % italicize "domestic", "internat'l" rows 
+\def\TravelSubcatFontstyle#1{<mark>\textit</mark>{#1}}       % italicize "domestic", "internat'l" rows 
 \def\TravelSubcatAmountFontstyle#1{<mark>\textit</mark>{#1}} % italicize "domestic", "internat'l" Travel values 
 \def\TravelSubcatTotalFontstyle#1{<mark>\textit{#1}}  % italicize Total,"Domestic"/"International" Travel sums 
 </code></pre></td>
