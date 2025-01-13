@@ -84,6 +84,10 @@ You can just comment out your added lines and recompile the document, if you wan
 \def\NameFontstyle#1{<mark>\textbf</mark>{#1}}  % boldface name/role
 \def\LabelFontstyle#1{<mark>\textbf</mark>{#1}} % boldface "Education",... labels
 </code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1vt_FwYDfmmGgSDPFmmYpQbH4EDXOExaN" width=60%>
+</details>
 </td>
 </tr>
    
@@ -91,14 +95,24 @@ You can just comment out your added lines and recompile the document, if you wan
 <td><b>Table compactness</b></td>
 <td><pre><code>
 \def\SectionSpacing{\par \vspace{<mark>-0.5em</mark>}} % vertical spacing bet/ categories
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1TxGBbXY86Dwx5aXcPwpQC0dHzUr6diaV" width=60%>
+</td>
+</details>
 </tr>
 
 <tr>
 <td><b>Symbol choice for publication list</b></td>
 <td><pre><code>
 \def\PubSym{<mark>\scriptsize{$\bullet$}{\hspace{-0.3em}}</mark>} % symbol in front of pubs
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1ej8_jQPTlaiychgpRTfm32jH-gesh0Vl" width=60%>
+</details>
+</td>
 </tr>
 </table>
 </details>
