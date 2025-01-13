@@ -111,11 +111,14 @@ be turned into plain test by removing the "\textbf", eg {{#1}}
 </tr>
 
 <tr>
-<td><b>Color and font style of category banners</b></td>
+<td><b>Color, labelling, font style of category banners</b></td>
 <td><pre><code>
 \def\SectionBannerColor{<mark>Blue</mark>}              % color of banners separating the 3 sections 
 \def\SectionBannerFontColor{<mark>White</mark>}         % font color of banners separating the 3 sections 
 \def\SectionBannerFontstyle#1{<mark>\textbf</mark>{#1}}  % boldface text in banners separating the 3 sections
+\def\FteFundedBannerText{<mark>Work Efforts Funded By This Proposal</mark>}
+\def\FteUnfundedBannerText{<mark>Work Efforts Proposed but NOT Funded By This Proposal</mark>}
+\def\FteBothBannerText{<mark>Total Work Efforts Proposed (Funded $+$ Unfunded)</mark>}
 </code></pre></td>
 </tr>
 
@@ -124,15 +127,6 @@ be turned into plain test by removing the "\textbf", eg {{#1}}
 <td><pre><code>
 \def\TotalWorkEffortFontstyle#1{<mark>\textbf</mark>{#1}}% boldface text in "Total .... Work Effort" line at section end
 \def\TotalWorkEffortFontColor{<mark>Blue</mark>}        % font color of "Total ... Work Effort" line at section end
-</code></pre></td>
-</tr>
-
-<tr>
-<td><b>Section banner labelling</b></td>
-<td><pre><code>
-\def\FteFundedBannerText{<mark>Work Efforts Funded By This Proposal</mark>}
-\def\FteUnfundedBannerText{<mark>Work Efforts Proposed but NOT Funded By This Proposal</mark>}
-\def\FteBothBannerText{<mark>Total Work Efforts Proposed (Funded $+$ Unfunded)</mark>}
 </code></pre></td>
 </tr>
 
