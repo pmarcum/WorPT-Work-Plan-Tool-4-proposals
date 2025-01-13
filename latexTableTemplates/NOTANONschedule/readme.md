@@ -137,8 +137,10 @@ need to keep the #1 and #2 references. For example, if you just want plain text,
 redefine as:<br>
 \def\TaskCategoryLabel#1#2{{#1}~{#2}}
 <pre><code>
-\def\TaskCategoryLabel#1#2{{<mark>\normalsize\textbf\scshape</mark>{#1}}~{<mark>\normalsize\textbf</mark>{#2}}} % Category label
-\def\TaskTitleLabel#1#2{~{<mark>\scriptsize{\textbf{\scshape</mark>{#1}}}}~{<mark>\color{mediumelectricblue}{\footnotesize\textbf</mark>{#2}}}} % Task title format for row item
+\def\TaskCategoryLabel#1#2{{<mark>\normalsize\textbf\scshape</mark>{#1}}~
+   {<mark>\normalsize\textbf</mark>{#2}}} % Category label
+\def\TaskTitleLabel#1#2{~{<mark>\scriptsize{\textbf{\scshape</mark>{#1}}}}~
+   {<mark>\color{mediumelectricblue}{\footnotesize\textbf</mark>{#2}}}} % Task title format for row item
 </code></pre></td>
 </tr>
 
