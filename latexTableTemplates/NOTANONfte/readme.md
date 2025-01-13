@@ -120,7 +120,7 @@ be turned into plain test by removing the "\textbf", eg {{#1}}
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/1BMSYTdkE-ChzBAV8T15hZA67JJlEmC9J" width=30%>
+<img src="https://lh3.googleusercontent.com/d/1BMSYTdkE-ChzBAV8T15hZA67JJlEmC9J" width=70%>
 </details>
 </td>
 </tr>
