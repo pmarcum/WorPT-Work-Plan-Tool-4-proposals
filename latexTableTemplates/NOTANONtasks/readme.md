@@ -126,7 +126,7 @@ But if counter gets screwed up and needs manual intervention, use below to apply
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/1BgsQCk-CpfftDKheaAs1wfUg7jO7UDAB" width=30%>
+<img src="https://lh3.googleusercontent.com/d/1BgsQCk-CpfftDKheaAs1wfUg7jO7UDAB" width=50%>
 </details>
 </td>
 </tr>
@@ -138,7 +138,7 @@ But if counter gets screwed up and needs manual intervention, use below to apply
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/19tDKpSmX3NA0sf9neZBASfN-yIYY9LTI" width=30%>
+<img src="https://lh3.googleusercontent.com/d/19tDKpSmX3NA0sf9neZBASfN-yIYY9LTI" width=50%>
 </details>
 </td>
 </tr>
@@ -155,7 +155,7 @@ be turned into plain test by removing the "\textbf", eg {{#1}}
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/1rpXA2Cuw9_19nElBYJPs79SEU8fNTMgT" width=30%>
+<img src="https://lh3.googleusercontent.com/d/1rpXA2Cuw9_19nElBYJPs79SEU8fNTMgT" width=50%>
 </details>
 </td>
 </tr>
