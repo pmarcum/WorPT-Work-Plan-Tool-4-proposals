@@ -48,7 +48,7 @@ Copy/paste the special packages in preamble of your document, if you haven't don
 \include{<mark>do_NOT_manually_edit</mark>/isANONtravel}  % reset file parameters
 %            ^^^^ replace do_NOT_manually_edit if not correct folder name
 %
-<mark>% Put <u>OPTIONAL</u> customizations for isANONtravel HERE</mark>
+<mark>% Put <b>OPTIONAL</b> customizations for isANONtravel HERE</mark>
 %
 \begin{isANONtravel}  
 <mark>\caption{\normalsize \newline \newline
