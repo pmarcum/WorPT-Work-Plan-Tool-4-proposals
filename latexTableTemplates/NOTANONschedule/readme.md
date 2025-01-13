@@ -136,7 +136,7 @@ But if counter gets screwed up and needs manual intervention, use below to apply
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/1wgKhN-aCTVc2Vi6bJ8FAyoZrK3f8SNfA" width=50%>
+<img src="https://lh3.googleusercontent.com/d/1wgKhN-aCTVc2Vi6bJ8FAyoZrK3f8SNfA" width=65%>
 </details></td>
 </tr>
 
@@ -147,7 +147,7 @@ But if counter gets screwed up and needs manual intervention, use below to apply
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/1sgYYaDtI7YJF_sMnKDn7jXHWfZtgNBJX" width=50%>
+<img src="https://lh3.googleusercontent.com/d/1sgYYaDtI7YJF_sMnKDn7jXHWfZtgNBJX" width=65%>
 </details>
 </td>
 </tr>
