@@ -82,7 +82,12 @@ The default typically works well (an overcount is caused by table + longtable co
 But if counter gets screwed up and needs manual intervention, use below to apply a correction:
 <pre><code>
 \def\TaskAddCounter{<mark>-1</mark>}    % additive correction to table number
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1iwFp24onzfQsG_goNJ1ytCKsUOT91Cc7" width=30%>
+</details>
+</td>
 </tr>
 
 <tr>
@@ -90,7 +95,12 @@ But if counter gets screwed up and needs manual intervention, use below to apply
 <td><pre><code>
 \def\SpaceBetweenRows{<mark>1</mark>}      % vertical compactness of rows
 \def\SpaceBetweenColumns{<mark>1pt</mark>} % bigger = wider spacing between columns
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1czlAoAQEGa5Hfh1XPlDfgt9ndY0uuui0" width=30%>
+</details>
+</td>
 </tr>
 
 <tr>
@@ -103,7 +113,12 @@ be turned into plain test by removing the "\textbf", eg {{#1}}
 \def\CommitmentLabelFontstyle#1{<mark>\textbf</mark>{#1}}% boldface "Commitment (FTE)" column label
 \def\YearLabelFontstyle#1{<mark>\textbf</mark>{#1}}      % boldface "Y1", "Y2", ...  column labels
 \def\TotalLabelFontstyle#1{<mark>\textbf</mark>{#1}}     % boldface "Total" column label
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/12PIlxAVTwR_CvY8ilfmyMFF4oq2az77s" width=30%>
+</details>
+</td>
 </tr>
 
 <tr>
@@ -115,7 +130,12 @@ be turned into plain test by removing the "\textbf", eg {{#1}}
 \def\FteFundedBannerText{<mark>Work Efforts Funded By This Proposal</mark>}
 \def\FteUnfundedBannerText{<mark>Work Efforts Proposed but NOT Funded By This Proposal</mark>}
 \def\FteBothBannerText{<mark>Total Work Efforts Proposed (Funded $+$ Unfunded)</mark>}
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1IpzNi8JPFHVYT-Li3Vu5UZn3NjKat33x" width=30%>
+</details>
+</td>
 </tr>
 
 <tr>
@@ -126,7 +146,12 @@ be turned into plain test by removing the "\textbf", eg {{#1}}
 \def\FteBothTitleText{<mark>Total Funded $+$ Unfunded Work Effort</mark>}
 \def\TotalWorkEffortFontstyle#1{<mark>\textbf</mark>{#1}}% boldface text in "Total .... Work Effort" line at section end
 \def\TotalWorkEffortFontColor{<mark>Blue</mark>}        % font color of "Total ... Work Effort" line at section end
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1nJ-xTiNVfPcPj07NweQaPVdVeBe-j4cg" width=30%>
+</details>
+</td>
 </tr>
 
 <tr>
