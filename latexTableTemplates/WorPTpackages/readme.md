@@ -1,17 +1,4 @@
-<!--------------------------------------
-   SCREEN SHOT
---------------------------------------->
-<table>
-<tr>
-<td><font size="3"><b>WorPT Packages</b></font></td>
-<td>
-<details>
-<summary><b>WorPT Packages</b> (description)</summary>
-<p><b>WorPT Packages</b> need to be installed in your LaTeX document's preamble, in the section above the \begin{document} line. The packages that are installed through inclusion of these package files are used by the WorPT tables. Any given WorPT table uses only one or a few of the packages, but if all the WorPT tables are implemented in your LaTeX document, then all of the packages in the WorPT Package files will get utilized.</p>
-</details>
-</td>
-</tr>
-</table>
+<b>WorPT Packages</b> need to be installed in your LaTeX document's preamble in order to use a WorPT file in your LaTeX document.  
 <hr>
 
 <!--------------------------------------
