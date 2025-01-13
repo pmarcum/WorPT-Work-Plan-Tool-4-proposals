@@ -257,7 +257,7 @@ redefine as:<br>
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/1AwZgBxEbQJB6sw5vg68fL2uH0bFsj5Ht" width=50%>
+<img src="https://lh3.googleusercontent.com/d/1AwZgBxEbQJB6sw5vg68fL2uH0bFsj5Ht" width=40%>
 </details>
 </td>
 </tr>
