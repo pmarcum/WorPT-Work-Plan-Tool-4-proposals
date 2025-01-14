@@ -44,7 +44,7 @@ Copy/paste the special packages in preamble of your document, if you haven't don
 </ol>
     
 <pre><code>
-\expinput{<mark>do_NOT_manually_edit</mark>/isANONnonlabor}   % reset parameters used by file
+\expinput{<mark>do_NOT_manually_edit</mark>/isANONnonlabor}   % reset parameters
 
 \begin{isANONnonlabor}
 <mark>\caption{
