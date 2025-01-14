@@ -50,8 +50,8 @@
 |l|*{\LastYearPlusOne}{c|}
 }
 
-\newenvironment{[INSERTFILENAME]}{%
-%%%\begin{table}                                   % \begin{table} makes caption have same width as table
+\providecommand{\[INSERTFILENAME]}[1]{
+\begin{table}                                   % \begin{table} makes caption have same width as table
 \addtocounter{table}{\TaskAddCounter}           % corrects double-counting of longtable and table combination
 \renewcommand{\arraystretch}{\SpaceBetweenRows} % controls vertical row separation/spacing
 \setlength{\tabcolsep}{\SpaceBetweenColumns}    % controls horizontal column separation/spacing
@@ -116,9 +116,6 @@
 [STARTANNUALTOTALFTETEMPLATE]
  & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTTOTALFTEPERYEAR]} 
 [ENDANNUALTOTALFTETEMPLATE]
-
 \hline
-\end{longtable}}
-{%
-%%%\end{table}
-}
+\end{longtable}
+\end{table}}
