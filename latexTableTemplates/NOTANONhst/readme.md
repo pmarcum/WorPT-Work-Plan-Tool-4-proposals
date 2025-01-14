@@ -52,7 +52,7 @@ Refer to <b>Customizations</b> section below to add personal preferences in the 
 <mark>\caption{\textbf{Work Effort for All Members}\hspace{1em} Team members, identified by their name and role in the proposed project, are listed with their institutional affiliation and position, with a "F" or "US" indicating foreign or U.S. institution. A brief narrative of their role in the project is given.  A 'Y' or 'N' indicates if the person is funded by the proposed budget or not, respectively.  The total work-effort of the team member, summed over full life of the proposed  project, is in the rightmost column (multiply displayed FTE value by 12 to get work effort in number of months units).}
 \label{tab:NOTANONhst}</mark>
 \end{NOTANONhst}
-%:::::::::::::::::::: start NOTANONhst ::::::::::::::::::::::
+%::::::::::::::::::::: end NOTANONhst :::::::::::::::::::::::
 </code></pre>
 
 </details>
