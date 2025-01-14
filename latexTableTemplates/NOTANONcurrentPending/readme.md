@@ -48,13 +48,13 @@ Refer to <b>Customizations</b> section below to add personal preferences in the 
 </ol>
    
 <pre><code>
-%::::::::::::::: start NOTANONbiosketches ::::::::::::::::::
+%:::::::::::::: start NOTANONcurrentPending ::::::::::::::::
 \clearpage                                          % [optional] (could instead use \newpage, or comment out)
 \expinput{<mark>do_NOT_manually_edit</mark>/NOTANONcurrentPending} % reset file parameters
 
 \begin{NOTANONcurrentPending}
 \end{NOTANONcurrentPending}  
-%:::::::::::::::: end NOTANONbiosketches ::::::::::::::::::
+%::::::::::::::: end NOTANONcurrentPending :::::::::::::::::
 </code></pre>
 
 </details>
