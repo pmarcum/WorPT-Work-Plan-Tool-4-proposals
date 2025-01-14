@@ -44,11 +44,8 @@ Copy/paste the special packages in preamble of your document, if you haven't don
 </ol>
     
 <pre><code>
-\include{<mark>do_NOT_manually_edit</mark>/isANONnonlabor}   % reset parameters used by file
-%            ^^^^ replace do_NOT_manually_edit if not correct folder name
-%
-<mark>% Put <b>OPTIONAL</b> customizations for isANONnonlabor HERE</mark>
-%
+\expinput{<mark>do_NOT_manually_edit</mark>/isANONnonlabor}   % reset parameters used by file
+
 \begin{isANONnonlabor}
 <mark>\caption{
 \normalsize \newline \newline
