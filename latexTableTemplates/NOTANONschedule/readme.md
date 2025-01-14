@@ -105,7 +105,7 @@ You can just comment out your added lines and recompile the document, if you wan
 \def\YearHeaderFontsize{<mark>\scriptsize</mark>}           % "YEAR1", "YEAR2"... label text size
 \def\TaskTitleHeaderFontsize{<mark>\normalsize</mark>}      % "TASK TITLES" column label text size
 \def\YearSliceHeaderFontsize{<mark>\scriptsize</mark>}      % "1", "2"... year-quarter label text size
-\def\IdWksHeaderFontsize{<mark>\scriptsize</mark>}          % "id wks" text size  
+\def\IdWksHeaderFontsize{<mark>\normalsize</mark>}          % "id wks" text size  
 </code></pre>
 <details>
 <summary>reference image</summary>
