@@ -46,7 +46,7 @@ Refer to <b>Customizations</b> section below to add personal preferences in the 
    
 <pre><code>
 %::::::::::::::::: start NOTANONschedule :::::::::::::::::::
-%\clearpage                                       % [optional] (could instead use \newpage, or comment out)
+%\clearpage         % [optional] (could instead use \newpage, or comment out)
 \expinput{<mark>do_NOT_manually_edit</mark>/NOTANONschedule} % reset file parameters
 
 \begin{NOTANONschedule}
@@ -54,7 +54,7 @@ Refer to <b>Customizations</b> section below to add personal preferences in the 
 {\TotalFteUnfundedHeaderIcon\hspace{-0.3em}$=$\hspace{-0.3em}}Not funded by this grant, {\TotalFteFundedHeaderIcon\hspace{-0.3em}$=$\hspace{-0.3em}}funded by this grant, {\TotalFteSumHeaderIcon\hspace{-0.3em}$=$\hspace{-0.3em}}funded $+$ unfunded; Tasks are listed (left side), with duration of task activity indicated in blue-colored timelines that measure quarter-years (1,2,3,4). Task assignments identify specific team members responsible for implementation with associated work weeks, where color indicates institutional affiliation (blue$=$funded/U.S., black$=$not funded/U.S., red=international). "Total FTE" (right side) are integrated work-weeks converted into FTE per task (1~FTE$=$12~months), displayed as "total",  "unfunded by this grant", and "funded by this grant", resp.  Assignment identities: \RevealIdentities.}
 \label{tab:NOTANONschedule}</mark>
 \end{NOTANONschedule}
-%::::::::::::::::: start NOTANONschedule :::::::::::::::::::
+%:::::::::::::::::: end NOTANONschedule ::::::::::::::::::::
 </code></pre>
 
 </details>
