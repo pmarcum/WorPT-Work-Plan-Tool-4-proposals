@@ -43,13 +43,9 @@ Copy/paste the special packages in preamble of your document, if you haven't don
 </ol>
    
 <pre><code>
-\include{<mark>do_NOT_manually_edit</mark>/NOTANONhst} % reset file parameters
-%            ^^^^ replace do_NOT_manually_edit if not correct folder name
-%
+\expinput{<mark>do_NOT_manually_edit</mark>/NOTANONhst} % reset file parameters
 \def\ProgramID{<mark>HST-xx-xxxxx (Cycle XX)</mark>} % <mark><b>fill in details</b></mark>
-%  
-<mark>% Put <b>OPTIONAL</b> customizations for NOTANONhst HERE</mark>
-%
+
 \begin{NOTANONhst}
 <mark>\caption{\textbf{Work Effort for All Members}\hspace{1em} Team members, identified by their name and role in the proposed project, are listed with their institutional affiliation and position, with a "F" or "US" indicating foreign or U.S. institution. A brief narrative of their role in the project is given.  A 'Y' or 'N' indicates if the person is funded by the proposed budget or not, respectively.  The total work-effort of the team member, summed over full life of the proposed  project, is in the rightmost column (multiply displayed FTE value by 12 to get work effort in number of months units).}
 \label{tab:NOTANONhst}</mark>
