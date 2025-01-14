@@ -47,13 +47,15 @@ Refer to <b>Customizations</b> section below to add personal preferences in the 
 </ol>
     
 <pre><code>
-\clearpage                                          % [optional] (could instead use \newpage, or comment out)
+%::::::::::::::::::: start NOTANONbtasks :::::::::::::::::::
+%\clearpage                                          % [optional] (could instead use \newpage, or comment out)
 \expinput{<mark>do_NOT_manually_edit</mark>/NOTANONtasks} % reset file parameters
 
 \begin{NOTANONtasks}
 <mark>\caption{\normalsize\textbf{Task Management and Team Responsibilities}:\\
 The tasks ({\color{red}gray} headers) and sub-tasks (left), with specific assignments for the roles of task lead (middle) and expertise / analysis assistance (right).} \label{tab:NOTANONtasks}</mark>
 \end{NOTANONtasks}
+%:::::::::::::::::: start NOTANONtasks :::::::::::::::::::::
 </code></pre>
 
 </details>
