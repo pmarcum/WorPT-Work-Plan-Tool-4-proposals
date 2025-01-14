@@ -72,11 +72,11 @@
 \def\FteUnfundedFormat#1{\small{#1}}            % Total FTE/unfunded value format
 \def\FteFundedFormat#1{\small \color{blue}{#1}} % Total FTE/funded value format
 
-%--- Format the identity reveals in the table caption
-\def\RevealIdentityFormat#1#2{\textbf{#1}: #2}
-
 %--- Delimiter of the task assignments
 \def\TaskAssignmentDelimiter{;\hspace{3pt}} % delimiter used in TASK ASSIGNMENTS
+
+%--- Format the identity reveals in the table caption
+\def\RevealIdentityFormat#1#2{\textbf{#1}: #2}
 
 %--- internal parameters used by script but not for user
 \def\LastYearPlusTwo{[INSERTLASTYEARPLUSTWO]}
@@ -89,15 +89,14 @@
 \newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}      % title, assignment columns
 \newcolumntype{V}{!{\color{\TimelineVerticalLineColor}\vrule}} % vertical lines in timeline
 \newcolumntype{W}{!{\color{\TotalFteVerticalLineColor}\vrule}} % vertical lines in FTE
-%
 \newcolumntype{T}{
-  |L{\TitleWidth}         % title column
-  *{\NumberYears}{        % timeline columns
-  |p{\TimelineWidth}V*{\SlicesPerYearMinusTwo}{p{\TimelineWidth}V}p{\TimelineWidth}} 
-  |L{\AssignmentsWidth}   % task assignment column
-  |p{\SumFteWidth}W       % total fte, sum column
-  p{\UnfundedFteWidth}W   % total fte, unfunded column
-  p{\FundedFteWidth}|     % total fte, funded column
+|L{\TitleWidth}         % title column
+*{\NumberYears}{        % timeline columns
+|p{\TimelineWidth}V*{\SlicesPerYearMinusTwo}{p{\TimelineWidth}V}p{\TimelineWidth}} 
+|L{\AssignmentsWidth}   % task assignment column
+|p{\SumFteWidth}W       % total fte, sum column
+p{\UnfundedFteWidth}W   % total fte, unfunded column
+p{\FundedFteWidth}|     % total fte, funded column
 }
 
 \newenvironment{[INSERTFILENAME]}{%
