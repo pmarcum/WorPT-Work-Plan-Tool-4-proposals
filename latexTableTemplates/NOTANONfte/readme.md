@@ -147,9 +147,9 @@ be turned into plain test by removing the "\textbf", eg {{#1}}
 <td><pre><code>
 \def\TotalWorkEffortFontstyle#1{<mark>\textbf</mark>{#1}}% boldface text in "Total .... Work Effort" line at section end
 \def\TotalWorkEffortFontColor{<mark>Blue</mark>}        % font color of "Total ... Work Effort" line at section end
-\def\FteFundedTitleText{<mark>Total Funded Work Effort</mark>}
-\def\FteUnfundedTitleText{<mark>Total Unfunded Work Effort</mark>}
-\def\FteBothTitleText{<mark>Total Funded $+$ Unfunded Work Effort</mark>}
+\def\FteFundedSummaryText{<mark>Total Funded Work Effort</mark>}
+\def\FteUnfundedSummaryText{<mark>Total Unfunded Work Effort</mark>}
+\def\FteBothSummaryText{<mark>Total Funded $+$ Unfunded Work Effort</mark>}
 </code></pre>
 <details>
 <summary>reference image</summary>
