@@ -47,7 +47,7 @@ Refer to <b>Customizations</b> section below to add personal preferences in the 
 </ol>
     
 <pre><code>
-\newpage                                          % [optional] (could instead use \clearpage, or comment out)
+\clearpage                                          % [optional] (could instead use \newpage, or comment out)
 \expinput{<mark>do_NOT_manually_edit</mark>/NOTANONtasks} % reset file parameters
 
 \begin{NOTANONtasks}
@@ -66,7 +66,7 @@ The tasks ({\color{red}gray} headers) and sub-tasks (left), with specific assign
 You can change column widths, column alignment, colors, font style using additional lines that are copy/pasted into your document. Specifically: 
 <ol>
 <li>COPY any or all lines in the code block below that are related to the formatting parameter that you want to edit. The lines below show default values. You will edit those values to make desired changes.</li>
-<li>PASTE the copied lines into your document at the "% Put customizations for NOTANONtasks HERE" line in the code that you copy/pasted in Step 2. Most importantly, the desired formatting lines should be pasted somewhere <b>between</b> the \include{do_NOT_manually_edit/NOTANONtasks} and \begin{NOTANONtasks} lines. </li>
+<li>PASTE the copied lines into your document into the gap <b>between</b> the \expinput and \begin{NOTANONtasks} lines. </li>
 <li>EDIT the pasted lines in your document, as desired. Some examples are given at the bottom of this page.</li>
 NOTE: you can PICK AND CHOOSE the lines you want to paste into your document; you do not have to copy/paste all of the beow lines!
 </ol>
