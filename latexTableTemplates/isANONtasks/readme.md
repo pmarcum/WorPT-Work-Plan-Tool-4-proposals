@@ -80,7 +80,12 @@ You can just comment out your added lines and recompile the document, if you wan
 <td><b>Table orientation</b></td>
 <td><pre><code>
 \LandScapetrue          % will put the table in landscape mode
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1vMs3teKHoqZGHGqHZj4HrtaZZp9Xq0Xa" width=60%>
+</details>
+</td>
 </tr>
 
 <tr>
@@ -90,7 +95,12 @@ You can just comment out your added lines and recompile the document, if you wan
 \def\StartFinishWidth{<mark>0.2in</mark>}           % width of start/finish columns
 \def\LeadWidth{<mark>0.5in</mark>}      % width of middle ("Lead") column
 \def\ExpertiseWidth{<mark>1.5in</mark>} % width of rightmost ("Expertise") column
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/13oCZxeIfopxwB6SfXjmThW4JepSNconJ" width=60%>
+</details>
+</td>
 </tr>
 
 <tr>
@@ -100,7 +110,12 @@ The default typically works well (an overcount is caused by table + longtable co
 But if counter gets screwed up and needs manual intervention, use below to apply a correction:
 <pre><code>
 \def\TaskAddCounter{<mark>-1</mark>}    % additive correction to table number
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1Qm9oKnrRSBDZQLlinY6nyBQjGY7M2pcX" width=60%>
+</details>
+</td>
 </tr>
 
 <tr>
@@ -108,14 +123,24 @@ But if counter gets screwed up and needs manual intervention, use below to apply
 <td><pre><code>
 \def\SpaceBetweenRows{<mark>0.87</mark>}    % vertical compactness of rows
 \def\SpaceBetweenColumns{<mark>2pt</mark>} % bigger = wider spacing between columns
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/16uvtXkaEDCZRso5eqzBA3Y3NKo4rjphn" width=60%>
+</details>
+</td>
 </tr>
 
 <tr>
 <td><b>Nudge table to left or right</b></td>
 <td><pre><code>
 \def\NudgeTable{<mark>1.2\textwidth</mark>} % larger value nudges table to left
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1sTVcig_jiHo8iuKm6R_71L1Voxptdtjr" width=60%>
+</details>
+</td>
 </tr>
     
 <tr>
@@ -124,7 +149,12 @@ But if counter gets screwed up and needs manual intervention, use below to apply
 \def\SectionColor{<mark>Blue</mark>}              % category section label colors
 \def\SectionFontColor{<mark>White</mark>}         % category title font color
 \def\SectionFontstyle#1{<mark>\textbf</mark>{#1}} % boldface category title
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1gxJcyUbm5iVLsKrsxrynn-wuqp7-YgnU" width=60%>
+</details>
+</td>
 </tr>
 
 <tr>
@@ -132,14 +162,24 @@ But if counter gets screwed up and needs manual intervention, use below to apply
 <td><pre><code>
 \def\ColumnLabelFontstyle#1{<mark>\textbf</mark>{#1}}  % boldface all the column headers
 \def\YearFontColor{<mark>Red</mark>}                   % font color under "Y" (year) columns in Start/Finish
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1FyRgEblao5yAiiuGxC78IHeV6m9k3843" width=60%>
+</details>
+</td>
 </tr>
 
 <tr>
 <td><b>Color of faint vertical line</b></td>
 <td><pre><code>
 \def\YearQuarterLineColor{<mark>lightgray</mark>}      % vertical line color in year/quarter Start/Finish columns
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1LHdvupXYjQmpvncz-UxbGuyjAjdidLnY" width=60%>
+</details>
+</td>
 </tr>
 
 <tr>
