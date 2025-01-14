@@ -44,11 +44,11 @@
 \def\FteBothSummaryText{Total Funded $+$ Unfunded Work Effort}
 
 %--- internal parameters used by script but not for user
-\def\LastYearPlusTwo{[INSERTLASTYEARPLUSTWO]}
+\def\LastYearPlusOne{[INSERTLASTYEARPLUSONE]}
 
 %--- table preamble definition bundled into the "T" variable
 \newcolumntype{T}{
-|l|*{\LastYearPlusTwo}{c|}
+|l|l|*{\LastYearPlusOne}{c|}
 }
 
 \newenvironment{[INSERTFILENAME]}{%
