@@ -45,12 +45,14 @@ Refer to <b>Customizations</b> section below to add personal preferences in the 
 </ol>
    
 <pre><code>
+%::::::::::::::::::: start isANONtasks :::::::::::::::::::::
 \expinput{<mark>do_NOT_manually_edit</mark>/isANONtasks}  % reset file parameters
 
 \begin{isANONtasks}
 <mark>\caption{\textbf{Task Timeline:} Team member roles, rightmost column, are cross-referenced with corresponding names in the non-anonymized personnel and work effort table. {\color{red} \textbf{Paper~1:} Sample and methods for enhancing detectability of  low SB X-ray emission, presentation of emission maps, description of database and pipeline software (which will be released in a public repository at the time of paper submission). \textbf{Paper~2:} Methodologies for measuring the gas halo size and other gas properties, analyisis of the diffuse hot gas halos as functions of galaxy properties (environment, galaxy morphology, stellar mass, and SFR) based on \Chandra, \Hubble, and \Spitzer\ observations, and the SED models from the GSWLC; application of multivariate mthods to ``baseline'' the  gas halo sizes (Sect.\,\ref{Sec:Baseline}). \textbf{Note~1:} See Sec.\,\ref{Sec:Sample}.}}</mark>
 <mark>\label{tab:isANONtasks}</mark>
 \end{isANONtasks}
+%::::::::::::::::::: end isANONtasks ::::::::::::::::::::::
 </code></pre>
 
 </details>
