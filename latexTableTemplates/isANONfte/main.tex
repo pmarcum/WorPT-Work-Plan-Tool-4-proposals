@@ -34,7 +34,7 @@
 %--- totals at bottom of each section preferences
 \def\TotalWorkEffortFontstyle#1{\textbf{#1}} % boldface text in "Total .... Work Effort" line at section end
 \def\TotalWorkEffortFontColor{Blue}          % font color of "Total ... Work Effort" line at section end
-\def\FaintHorizontalLine{\arrayrulecolor{lightgray!40}} % faint line above summary line
+\def\FaintHorizontalLine{\arrayrulecolor{lightgray!40}\hline} % faint line above summary line
 \def\FteFundedSummaryText{Total Funded Work Effort}            % total summary text
 \def\FteUnfundedSummaryText{Total Unfunded Work Effort}        % unfunded summary text
 \def\FteBothSummaryText{Total Funded $+$ Unfunded Work Effort} % total summary text
@@ -75,7 +75,7 @@
 \multicolumn{[INSERTLASTYEARPLUSTWO]}{|c|}{\cellcolor{\SectionBannerColor}\color{\SectionBannerFontColor}\SectionBannerFontstyle{\FteFundedBannerText}}\\
 [INSERTFUNDEDWORKEFFORTLIST]
 % COMMENT: the below is the colorized last line of the section providing sums per year for the funded category
-\FaintHorizontalLine\hline\arrayrulecolor{black}
+\FaintHorizontalLine\arrayrulecolor{black}
 \multicolumn{1}{|l}{\TotalWorkEffortFontstyle{\color{\TotalWorkEffortFontColor}\FteFundedSummaryText}} [INSERTLISTOFANNUALFUNDEDTOTALS] & \multicolumn{1}{c|}{\color{\TotalWorkEffortFontColor}[INSERTFUNDEDTOTALOVERYEAR]}\\
 
 % ==============================================   UNFUNDED FTEs
@@ -83,7 +83,7 @@
 \multicolumn{[INSERTLASTYEARPLUSTWO]}{|c|}{\cellcolor{\SectionBannerColor}\color{\SectionBannerFontColor}\SectionBannerFontstyle{\FteUnfundedBannerText}}\\
 [INSERTUNFUNDEDWORKEFFORTLIST]
 % COMMENT: the below is the colorized last line of the section providing sums per year for the TOTAL WORK UNFUNDED EFFORT category
-\FaintHorizontalLine\hline\arrayrulecolor{black}
+\FaintHorizontalLine\arrayrulecolor{black}
 \multicolumn{1}{|l}{\TotalWorkEffortFontstyle{\color{\TotalWorkEffortFontColor}\FteUnfundedSummaryText}} [INSERTLISTOFANNUALUNFUNDEDTOTALS] & \multicolumn{1}{c|}{\color{\TotalWorkEffortFontColor}[INSERTUNFUNDEDTOTALOVERYEAR]}\\
 
 % ==============================================   FUNDED + UNFUNDED FTEs 
@@ -91,7 +91,7 @@
 \multicolumn{[INSERTLASTYEARPLUSTWO]}{|c|}{\cellcolor{\SectionBannerColor}\color{\SectionBannerFontColor}\SectionBannerFontstyle{\FteBothBannerText}}\\
 [INSERTBOTHWORKEFFORTLIST]
 % COMMENT: the below is the colorized last line of the section providing sums per year for the TOTAL WORK EFFORT category
-\FaintHorizontalLine\hline\arrayrulecolor{black}
+\FaintHorizontalLine\arrayrulecolor{black}
 \multicolumn{1}{|l}{\TotalWorkEffortFontstyle{\color{\TotalWorkEffortFontColor}\FteBothSummaryText}} [INSERTLISTOFANNUALBOTHTOTALS] & \multicolumn{1}{c|}{\color{\TotalWorkEffortFontColor}[INSERTBOTHTOTALOVERYEAR]}\\
 
 % COMMENT: the 2 below templates generate a row for each team member under the this (funded, unfunded, or both) category
