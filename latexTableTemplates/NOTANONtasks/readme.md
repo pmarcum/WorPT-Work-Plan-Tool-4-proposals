@@ -41,7 +41,9 @@ Copy/paste the special packages in preamble of your document, if you haven't don
 <ol>
 <li>COPY the lines in the code block below, then</li>
 <li>PASTE into your document WHERE you want the content to appear, then</li>
-<li>MODIFY the editable lines you just pasted in your document as needed. The lines that may be edited (or even deleted altogether if not wanted) are indicated by highlight below. </li>
+<li>MODIFY the editable lines you just pasted in your document as needed. The lines that may be edited (or even deleted altogether if not wanted) are indicated by highlight below. </li><br>
+Refer to <b>Customizations</b> section below to add personal preferences in the gap between \expinput and \begin{NOTANONtasks} lines below.
+
 </ol>
     
 <pre><code>
