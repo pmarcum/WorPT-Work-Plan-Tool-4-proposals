@@ -11,7 +11,7 @@
 <td>
 <details>
 <summary><b>NOTANONbiosketches</b> (description)</summary>
-<b>NOTANONbiosketches</b> is a file containing a short (1-page) CV for each team member who is indicated as needing to have a biosketch on the PERSONNEL & FTE page. If the box is checked under "bio sketch?" column for a person, then that person's bio sketch will be generated and included as part of this file. All biosketches are formatted to have a consistant appearance.  The information for this file is extracted from each person's individual WorPT biosketch google sheet. Checked boxes in that sheet indicate what publications and awards to mention, etc., customizing for this particular proposal. The NOTANONbiosketches WorPT file can serve as the "bio sketches" section of your proposal.<br>
+<b>NOTANONbiosketches</b> is NOT a table, but rather a tex file containing a short (1-page) CV for each team member who is indicated as needing to have a biosketch on the PERSONNEL & FTE page. If the box is checked under "bio sketch?" column for a person, then that person's bio sketch will be generated and included as part of this file. All biosketches are formatted to have a consistant appearance.  The information for this file is extracted from each person's individual WorPT biosketch google sheet. Checked boxes in that sheet indicate what publications and awards to mention, etc., customizing for this particular proposal. The NOTANONbiosketches WorPT file can serve as the "bio sketches" section of your proposal.<br>
 NOTE: Biosketch files should be kept up-to-date so that the information that is extracted for both the current/pending and bio-sketch
 sections of a proposal have valid and current information.
 </details>
@@ -41,7 +41,8 @@ Copy/paste the special packages in preamble of your document, if you haven't don
 <ol>
 <li>COPY the lines in the code block below, then</li>
 <li>PASTE into your document WHERE you want the content to appear, then</li>
-<li>MODIFY the editable lines you just pasted in your document as needed. The lines that may be edited (or even deleted altogether if not wanted) are indicated by highlight below. </li>
+<li>MODIFY the editable lines you just pasted in your document as needed. The lines that may be edited (or even deleted altogether if not wanted) are indicated by highlight below. </li><br>
+Refer to <b>Customizations</b> section below to add personal preferences in the gap between \expinput and \begin{NOTANONbiosketches} lines below.
 </ol>
    
 <pre><code>
