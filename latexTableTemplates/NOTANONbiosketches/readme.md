@@ -46,7 +46,7 @@ Refer to <b>Customizations</b> section below to add personal preferences in the 
 </ol>
    
 <pre><code>
-\newpage          % [optional] (could instead use \clearpage, or comment out)
+\clearpage       % [optional] (could instead use \newpage, or comment out)
 \expinput{<mark>do_NOT_manually_edit</mark>/NOTANONbiosketches} % reset file parameters
 
 \begin{NOTANONbiosketches}
