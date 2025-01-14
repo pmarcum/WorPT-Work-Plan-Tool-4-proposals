@@ -165,7 +165,7 @@ be turned into plain test by removing the "\textbf", eg {{#1}}
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/1MdBbFNMZj7bFb58of5cYhJT1o4OOA-_u" width=50%>
+<img src="https://lh3.googleusercontent.com/d/1MdBbFNMZj7bFb58of5cYhJT1o4OOA-_u" width=60%>
 </details>
 </td>
 </tr>
