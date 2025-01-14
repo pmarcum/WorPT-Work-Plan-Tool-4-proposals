@@ -90,7 +90,7 @@ You can just comment out your added lines and recompile the document, if you wan
 </tr>
    
 <tr>
-<td><b>Table compactness</b></td>
+<td><b>Text compactness</b></td>
 <td><pre><code>
 \def\SectionSpacing{\par \vspace{<mark>-0.5em</mark>}} % vertical spacing bet/ categories
 </code></pre>
