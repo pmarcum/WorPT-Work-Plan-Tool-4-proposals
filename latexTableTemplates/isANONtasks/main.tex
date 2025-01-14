@@ -56,8 +56,8 @@
 \addtocounter{table}{\TaskAddCounter}           % corrects double-counting of longtable and table combination
 \renewcommand{\arraystretch}{\SpaceBetweenRows} % controls vertical row separation/spacing
 \setlength{\tabcolsep}{\SpaceBetweenColumns}    % controls horizontal column separation/spacing
-\centerline{
-\begin{minipage}{\NudgeTable}                   % increase to allow a wide table to spill into margin
+%\centerline{
+%\begin{minipage}{\NudgeTable}                   % increase to allow a wide table to spill into margin
 \begin{longtable}{T}
 
 %--- make colorized top banner labels, the column headers
@@ -80,8 +80,9 @@
 
 \hline
 \end{longtable}
-\end{minipage}
-}}
+%\end{minipage}
+%}}
+}
 {%
 \ifLandScape
   \end{sidewaystable*}
