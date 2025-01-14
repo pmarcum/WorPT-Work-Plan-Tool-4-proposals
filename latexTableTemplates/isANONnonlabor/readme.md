@@ -92,7 +92,12 @@ You can just comment out your added lines and recompile the document, if you wan
 <td><pre><code>
 \def\SpaceBetweenRows{<mark>1.0</mark>}               % vertical compactness of rows
 \def\SpaceBetweenColumns{<mark>5pt</mark>}            % spacing between columns
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1zKXhNimopI3-QFl46DlKd1jBUC4CrNoe" width=50%>
+</details>
+</td>
 </tr>
 
 <tr>
@@ -104,7 +109,12 @@ be turned into plain test by removing the "\textbf", eg {{#1}}
 \def\BannerColor{<mark>Blue</mark>}            % "Equipment, Travel, Supplies, Page Charges" banner color
 \def\BannerFontColor{<mark>White</mark>}       % "Equipment, Travel, Supplies, Page Charges" banner font color
 \def\BannerFontstyle#1{<mark>\textbf</mark>{#1}}% boldface "Equipment, Travel, Supplies, Page Charges" banner
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1rmODTjd-c463aTuAQafbt1jyEICW8dg_" width=50%>
+</details>
+</td>
 </tr>
 
 <tr>
@@ -118,7 +128,12 @@ be turned into plain test by removing the "\textbf", eg {{#1}}
 \def\YearLabelColor{<mark>Blue</mark>}         % "Y1", "Y2", etc  column label color
 \def\TotalLabelColor{<mark>Blue</mark>}        % "Total" column label color
 \def\TotalFontstyle#1{<mark>\textbf</mark>{#1}}% boldface "Total ..." column label
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1UC6l_4_C85egHLEFWuhMRWfQaI_6P7So" width=50%>
+</details>
+</td>
 </tr>
 
 <tr>
@@ -130,7 +145,12 @@ be turned into plain test by removing the "\textbf", eg {{#1}}
 \def\MajorCatFontstyle#1{<mark>\textbf</mark>{#1}}   % boldface budget (excl. domestic, internat'l Travel rows) 
 \def\MajorAmountFontstyle#1{<mark>\textbf</mark>{#1}}% boldface budget (excl. Total, domestic, internat'l Travel rows) 
 \def\MajorCatTotalFontstyle#1{<mark>\textbf</mark>{#1}} % boldface Total budget (excl. domestic, internat'l Travel rows) 
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1EkA1jToqM91FZdJkIMAaHtNO4lWIS1ct" width=50%>
+</details>
+</td>
 </tr>
 
 <tr>
@@ -142,7 +162,12 @@ be turned into plain test by removing the "\textbf", eg {{#1}}
 \def\TravelSubcatFontstyle#1{<mark>\textit</mark>{#1}}       % italicize "domestic", "internat'l" rows 
 \def\TravelSubcatAmountFontstyle#1{<mark>\textit</mark>{#1}} % italicize "domestic", "internat'l" Travel values 
 \def\TravelSubcatTotalFontstyle#1{<mark>\textit</mark>{#1}}  % italicize Total,"Domestic"/"International" Travel sums 
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1MdBbFNMZj7bFb58of5cYhJT1o4OOA-_u" width=50%>
+</details>
+</td>
 </tr>
 
 <tr>
