@@ -100,7 +100,7 @@ You can just comment out your added lines and recompile the document, if you wan
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/11nB6CliLC7Xj4pYc3E88ZEPDjcskKUj0" width=60%>
+<img src="https://lh3.googleusercontent.com/d/11nB6CliLC7Xj4pYc3E88ZEPDjcskKUj0" width=45%>
 </details>
 </td>
 </tr>
@@ -114,7 +114,7 @@ You can just comment out your added lines and recompile the document, if you wan
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/1CB_e_g9cgl-p6bZrXiV2vaYLcRfnBo7A" width=60%>
+<img src="https://lh3.googleusercontent.com/d/1CB_e_g9cgl-p6bZrXiV2vaYLcRfnBo7A" width=45%>
 </details>
 </td>
 </tr>
@@ -128,7 +128,7 @@ You can just comment out your added lines and recompile the document, if you wan
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/1qWhvQhd7U2OHHzhItXfXWIK73samcMRC" width=60%>
+<img src="https://lh3.googleusercontent.com/d/1qWhvQhd7U2OHHzhItXfXWIK73samcMRC" width=45%>
 </details>
 </td>
 </tr>
