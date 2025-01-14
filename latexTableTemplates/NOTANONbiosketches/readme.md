@@ -48,8 +48,7 @@ Refer to <b>Customizations</b> section below to add personal preferences in the 
 <pre><code>
 \newpage          % [optional] (could instead use \clearpage, or comment out)
 \expinput{<mark>do_NOT_manually_edit</mark>/NOTANONbiosketches} % reset file parameters
-<mark><br>
-<br></mark>
+
 \begin{NOTANONbiosketches}
 \end{NOTANONbiosketches}  
 </code></pre>
