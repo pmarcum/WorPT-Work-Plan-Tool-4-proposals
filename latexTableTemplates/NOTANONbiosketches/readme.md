@@ -46,11 +46,9 @@ Copy/paste the special packages in preamble of your document, if you haven't don
    
 <pre><code>
 \newpage          % [optional] (could instead use \clearpage, or comment out)
-\include{<mark>do_NOT_manually_edit</mark>/NOTANONbiosketches} % reset file parameters
-%            ^^^^ replace do_NOT_manually_edit if not correct folder name
-%
-<mark>% Put <b>OPTIONAL</b> customizations for NOTANONbiosketches HERE</mark>
-%
+\expinput{<mark>do_NOT_manually_edit</mark>/NOTANONbiosketches} % reset file parameters
+
+
 \begin{NOTANONbiosketches}
 \end{NOTANONbiosketches}  
 </code></pre>
