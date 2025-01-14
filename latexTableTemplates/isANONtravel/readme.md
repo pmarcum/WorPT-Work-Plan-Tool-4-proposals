@@ -97,7 +97,12 @@ You can just comment out your added lines and recompile the document, if you wan
 <td><pre><code>
 \def\SpaceBetweenRows{<mark>1.0</mark>}    % vertical compactness of rows
 \def\SpaceBetweenColumns{<mark>5pt</mark>} % bigger = wider spacing between columns
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/11nB6CliLC7Xj4pYc3E88ZEPDjcskKUj0" width=60%>
+</details>
+</td>
 </tr>
 
 <tr>
@@ -106,7 +111,12 @@ You can just comment out your added lines and recompile the document, if you wan
 \def\BannerFontstyle#1{<mark>\textbf</mark>{#1}} % Bold-face for top banner "Travel Cost Details
 \def\BannerColor{<mark>Blue</mark>}              % Color of the top "Travel Cost Details" banner
 \def\BannerFontColor{<mark>White</mark>}         % Font color for top "Travel Cost Details" banner
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1CB_e_g9cgl-p6bZrXiV2vaYLcRfnBo7A" width=60%>
+</details>
+</td>
 </tr>
 
 <tr>
@@ -115,7 +125,12 @@ You can just comment out your added lines and recompile the document, if you wan
 \def\PerTripShadingColor{<mark>gray</mark>}        % Shading color of "per trip" columns
 \def\PerTripShadingTransparency{<mark>0.85</mark>} % Shading transparency for "per trip"; transparent(1.0) - opaque(0.0)
 \def\PerTripShadingMargin{<mark>7pt</mark>} % Right margin of shaded "per trip" columns (prevents white vertical line)
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1qWhvQhd7U2OHHzhItXfXWIK73samcMRC" width=60%>
+</details>
+</td>
 </tr>
 
 <tr>
@@ -128,7 +143,12 @@ You can just comment out your added lines and recompile the document, if you wan
 \def\PerTripLabelFontstyle#1{<mark>\textbf</mark>{#1}}     % Bold-face column labels for "per trip" section
 \def\YearTripsDestFontstyle#1{<mark>\textbf</mark>{#1}}% Bold-face "Year", "#Trips", "Dest." labels
 \def\YearFontstyle#1{<mark>\textbf</mark>{#1}}        % Bold-face "Yr1", "YR2", etc labels
-</code></pre></td>
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/15WoAr8LTBeCeR_K4WR-drOVYS3wUpTTu" width=60%>
+</details>
+</td>
 </tr>
 
 <tr>
