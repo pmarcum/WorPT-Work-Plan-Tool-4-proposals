@@ -45,12 +45,14 @@ Refer to <b>Customizations</b> section below to add personal preferences in the 
 </ol>
     
 <pre><code>
+%::::::::::::::::::: start NOTANONfte ::::::::::::::::::::::
 \expinput{<mark>do_NOT_manually_edit</mark>/NOTANONfte}   % reset/define parameters
 
 \begin{NOTANONfte}
 <mark>\caption{Details of work efforts per member involved in the present proposal; {\color{red}Detailed responsibilities, tied to tasks and science goals, are provided in Sec.\,\ref{Subsec:tmeline}.}}
 \label{tab:NOTANONfte}</mark>
 \end{NOTANONfte}
+%::::::::::::::::::: end NOTANONfte :::::::::::::::::::::::
 </code></pre>
 
 </details>
