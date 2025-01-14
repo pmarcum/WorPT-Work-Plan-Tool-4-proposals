@@ -51,7 +51,7 @@
 }
 
 \newenvironment{[INSERTFILENAME]}{%
-\begin{table*}[h!]                              % \begin{table} makes caption have same width as table
+\begin{table}                                   % \begin{table} makes caption have same width as table
 \addtocounter{table}{\TaskAddCounter}           % corrects double-counting of longtable and table combination
 \renewcommand{\arraystretch}{\SpaceBetweenRows} % controls vertical row separation/spacing
 \setlength{\tabcolsep}{\SpaceBetweenColumns}    % controls horizontal column separation/spacing
@@ -118,8 +118,7 @@
 [ENDANNUALTOTALFTETEMPLATE]
 
 \hline
-\end{longtable}
-}
+\end{longtable}}
 {%
-\end{table*}
+\end{table}
 }
