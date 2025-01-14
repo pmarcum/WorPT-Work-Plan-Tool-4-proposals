@@ -11,7 +11,7 @@
 <td>
 <details>
 <summary><b>NOTANONteamSummaries</b> (description)</summary>
-<b>NOTANONteamSummaries</b> is a file containing a paragraph for each team member describing the role in the proposed project. The file is generated from the text written in the WorPT spreadsheet under "ROLE/BACKGROUND NARRATIVE" on the PERSONNEL & FTE page. The person's name is attached to the beginning of the paragraph and boldfaced. 
+<b>NOTANONteamSummaries</b> is NOT a table, but rather a file containing a paragraph for each team member describing the role in the proposed project. The file is generated from the text written in the WorPT spreadsheet under "ROLE/BACKGROUND NARRATIVE" on the PERSONNEL & FTE page. The person's name is attached to the beginning of the paragraph and boldfaced. 
 </details>
 </td>
 </tr>
@@ -45,11 +45,13 @@ Refer to <b>Customizations</b> section below to add personal preferences in the 
 </ol>
    
 <pre><code>
+%:::::::::::::: start NOTANONteamSummaries :::::::::::::::::
 \clearpage       % You can comment out or use \newpage instead
 \expinput{<mark>do_NOT_manually_edit</mark>/NOTANONteamSummaries} % reset file parameters
 
 \begin{NOTANONteamSummaries}
 \end{NOTANONteamSummaries}  
+%::::::::::::::: end NOTANONteamSummaries ::::::::::::::::::
 </code></pre>
 
 </details>
