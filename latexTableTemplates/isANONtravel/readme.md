@@ -45,11 +45,8 @@ Copy/paste the special packages in preamble of your document, if you haven't don
 </ol>
    
 <pre><code>
-\include{<mark>do_NOT_manually_edit</mark>/isANONtravel}  % reset file parameters
-%            ^^^^ replace do_NOT_manually_edit if not correct folder name
-%
-<mark>% Put <b>OPTIONAL</b> customizations for isANONtravel HERE</mark>
-%
+\expinput{<mark>do_NOT_manually_edit</mark>/isANONtravel}  % reset file parameters
+
 \begin{isANONtravel}  
 <mark>\caption{\normalsize \newline \newline
 \textbf{Notes and assumptions}:
