@@ -123,10 +123,10 @@ You can just comment out your added lines and recompile the document, if you wan
 <td><pre><code>
 \def\YearTripsDestLabelFontColor{<mark>Blue</mark>}   % Font color for "Year", "#TRips" and "Dest." column labels
 \def\TotalLabelFontColor{<mark>Blue</mark>}           % Font color "Total" column label
+\def\TotalLabelFontstyle#1{<mark>\textbf</mark>{#1}}       % Bold-face column label "Total"
 \def\PerTripLabelFontColor{<mark>Blue</mark>}         % Font color of column labels for "per trip" section
+\def\PerTripLabelFontstyle#1{<mark>\textbf</mark>{#1}}     % Bold-face column labels for "per trip" section
 \def\YearTripsDestFontstyle#1{<mark>\textbf</mark>{#1}}% Bold-face "Year", "#Trips", "Dest." labels
-\def\PerTripFontstyle#1{<mark>\textbf</mark>{#1}}     % Bold-face column labels for "per trip" section
-\def\TotalFontstyle#1{<mark>\textbf</mark>{#1}}       % Bold-face column label "Total"
 \def\YearFontstyle#1{<mark>\textbf</mark>{#1}}        % Bold-face "Yr1", "YR2", etc labels
 </code></pre></td>
 </tr>
