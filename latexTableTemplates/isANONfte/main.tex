@@ -45,14 +45,15 @@
 %--- internal parameters used by script but not for user
 \def\LastYearPlusOne{[INSERTLASTYEARPLUSONE]}
 
+%--- caption and label definitions
+\def\thisCaption{Details of work efforts per member to be funded for the present proposal; {\color{red}Detailed responsibilities, tied to tasks and science goals, are provided in Sec.\,\ref{Subsec:timeline}.}}
+\def\thisLabel{tab:[INSERTFILENAME]}
+
 %--- table preamble definition bundled into the "T" variable
 \newcolumntype{T}{
 |l|*{\LastYearPlusOne}{c|}
 }
-
-\providecommand{\[INSERTFILENAME]}{
-\nopagebreak
-\addtocounter{table}{\TaskAddCounter}           % corrects double-counting of longtable and table combination
+########################## SPLIT HERE #############################
 \renewcommand{\arraystretch}{\SpaceBetweenRows} % controls vertical row separation/spacing
 \setlength{\tabcolsep}{\SpaceBetweenColumns}    % controls horizontal column separation/spacing
 \begin{longtable}{T}
@@ -85,7 +86,7 @@
 \arrayrulecolor{lightgray!60}\hline\arrayrulecolor{black}
 \multicolumn{1}{|l}{\TotalWorkEffortFontstyle{\color{\TotalWorkEffortFontColor}\FteUnfundedSummaryText}} [INSERTLISTOFANNUALUNFUNDEDTOTALS] & \multicolumn{1}{c|}{\color{\TotalWorkEffortFontColor}[INSERTUNFUNDEDTOTALOVERYEAR]}\\
 
-% ==============================================   FUNDED + UNFUNDED FTEs
+% ==============================================   FUNDED + UNFUNDED FTEs 
 %--- both FUNDED and UNFUNDED work efforts
 \multicolumn{[INSERTLASTYEARPLUSTWO]}{|c|}{\cellcolor{\SectionBannerColor}\color{\SectionBannerFontColor}\SectionBannerFontstyle{\FteBothBannerText}}\\
 [INSERTBOTHWORKEFFORTLIST]
@@ -117,4 +118,6 @@
  & \multicolumn{1}{c}{\color{\TotalWorkEffortFontColor}[INSERTTOTALFTEPERYEAR]} 
 [ENDANNUALTOTALFTETEMPLATE]
 \hline
-\end{longtable}}
+\caption{\thisCaption}
+\label{\thisLabel}
+\end{longtable}
