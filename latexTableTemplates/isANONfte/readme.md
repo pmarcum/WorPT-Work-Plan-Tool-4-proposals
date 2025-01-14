@@ -156,6 +156,19 @@ be turned into plain test by removing the "\textbf", eg {{#1}}
 </tr>
 
 <tr>
+<td><b>Faint horizontal line and zeros</b></td>
+<td><pre><code>
+\def\FaintHorizontalLine{\arrayrulecolor{lightgray!40}\hline} % faint line above summary line
+\def\FaintZeros#1{{\color{gray!40}{#1}}}  % faint zero values
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/1IX0Elqi8nXv7uDAzVOJxf6FMVCfOAEMt" width=60%>
+</details>
+</td>
+</tr>
+
+<tr>
 <td><b>Table preamble - full control!</b></td>
 <td>
 Use table preamble for more control over table layout (removing/adding vertical lines, changing column alignment, etc).<br>
