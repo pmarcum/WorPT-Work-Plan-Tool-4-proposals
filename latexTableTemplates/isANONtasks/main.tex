@@ -51,15 +51,14 @@
 \ifLandScape
   \begin{sidewaystable*}
 \else
-  \begin{longtable}{T}
-%  \begin{table*}[h!]     % \begin{table} needed to make bottom table caption have same width as table
+  \begin{table*}[h!]  % \begin{table} needed to make bottom table caption have same width as table
 \fi
 \addtocounter{table}{\TaskAddCounter}           % corrects double-counting of longtable and table combination
 \renewcommand{\arraystretch}{\SpaceBetweenRows} % controls vertical row separation/spacing
 \setlength{\tabcolsep}{\SpaceBetweenColumns}    % controls horizontal column separation/spacing
-%\centerline{
-%\begin{minipage}{\NudgeTable}                   % increase to allow a wide table to spill into margin
-%\begin{longtable}{T}
+\centerline{
+\begin{minipage}{\NudgeTable}                   % increase to allow a wide table to spill into margin
+\begin{longtable}{T}
 
 %--- make colorized top banner labels, the column headers
 \hline
@@ -80,15 +79,13 @@
 [INSERTSUMMARIES]
 
 \hline
-%\end{longtable}
-%\end{minipage}
-%}}
-}
+\end{longtable}
+\end{minipage}
+}}
 {%
 \ifLandScape
   \end{sidewaystable*}
 \else
-%  \end{table*}
-  \end{longtable}
+  \end{table*}
 \fi
 }
