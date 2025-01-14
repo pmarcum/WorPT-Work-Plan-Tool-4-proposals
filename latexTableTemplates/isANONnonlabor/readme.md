@@ -46,7 +46,7 @@ Refer to <b>Customizations</b> section below to add personal preferences in the 
 </ol>
     
 <pre><code>
-%::::::::::::::::::: start NOTANONlabor :::::::::::::::::::::
+%:::::::::::::::::: start isANONnonlabor ::::::::::::::::::::
 \expinput{<mark>do_NOT_manually_edit</mark>/isANONnonlabor}   % reset parameters
 
 \begin{isANONnonlabor}
@@ -63,7 +63,7 @@ Refer to <b>Customizations</b> section below to add personal preferences in the 
 extensions per CCD, corresponding to the \textbf{(1)} Zodiacal-CIB background, \textbf{(2)} in-field, and \textbf{(3)} out-field stray-light, and \textbf{(4)} thermal emission layers, plus one \texttt{binary} extension for the Solar System object trails (\emph{streak / no streak}), for a total of 18~4096$\times$4096 detector focal plane. Storage of these products will not be required, as they will be immediately produced by the pipeline on a exposure-by-exposure basis. End-to-end simulations shall not exceed 100~Gb, and they will be accessible to the community through a public internet server. Publication~IV will require the analysis of an area equivalent to 32 adjacent field of views, the equivalent of a sector of the \RST/WFI High Latitude Wide Area Survey, which corresponds to 128 exposures. Assuming an average exposure size of 9~Gb, plus $\sim$40~Gb for the background products, we project that we will require $\sim$10--15~Tb of disk space (including backups).}}</mark>
 <mark>\label{tab:isANONnonlabor}</mark>
 \end{isANONnonlabor}
-%:::::::::::::::: end NOTANONbiosketches :::::::::::::::::::
+%:::::::::::::::::: end isANONnonlabor ::::::::::::::::::::::
 </code></pre>
 
 </details>
