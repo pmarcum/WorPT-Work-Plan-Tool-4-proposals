@@ -83,7 +83,7 @@ You can just comment out your added lines and recompile the document, if you wan
 </code></pre>
 <details>
 <summary>reference image</summary>
-<img src="https://lh3.googleusercontent.com/d/1vMs3teKHoqZGHGqHZj4HrtaZZp9Xq0Xa" width=60%>
+<img src="https://lh3.googleusercontent.com/d/1vMs3teKHoqZGHGqHZj4HrtaZZp9Xq0Xa" width=20%>
 </details>
 </td>
 </tr>
