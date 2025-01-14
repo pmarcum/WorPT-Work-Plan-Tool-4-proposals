@@ -17,13 +17,13 @@
 \def\SpaceBetweenRows{1}      % vertical compactness of rows
 \def\SpaceBetweenColumns{5pt} % spacing between columns
 
-%--- aesthetic preferences of column headers
+%--- column headers preferences
 \def\RoleLabelFontstyle#1{\textbf{#1}}       % boldface "Role" column label
 \def\CommitmentLabelFontstyle#1{\textbf{#1}} % boldface "Commitment (FTE)" column label
 \def\YearLabelFontstyle#1{\textbf{#1}}       % boldface "Y1", "Y2", ...  column labels
 \def\TotalLabelFontstyle#1{\textbf{#1}}      % boldface "Total" column label
 
-%--- aethetic preferences of colorized banners separating the categories
+%--- colorized banners separating the categories preferences
 \def\SectionBannerColor{Blue}               % color of banners separating the 3 sections 
 \def\SectionBannerFontColor{White}          % font color of banners separating the 3 sections 
 \def\SectionBannerFontstyle#1{\textbf{#1}}  % boldface text in banners separating the 3
@@ -31,13 +31,17 @@
 \def\FteUnfundedBannerText{Work Efforts Proposed but NOT Funded By This Proposal} % unfunded banner title
 \def\FteBothBannerText{Total Work Efforts Proposed (Funded $+$ Unfunded)}         % total banner title
 
-%--- aethetic preferences of totals at bottom of each section
+%--- totals at bottom of each section preferences
 \def\TotalWorkEffortFontstyle#1{\textbf{#1}} % boldface text in "Total .... Work Effort" line at section end
 \def\TotalWorkEffortFontColor{Blue}          % font color of "Total ... Work Effort" line at section end
 \def\FaintHorizontalLine{\arrayrulecolor{lightgray!40}\hline\arrayrulecolor{black}} % faint line above summary line
 \def\FteFundedSummaryText{Total Funded Work Effort}            % total summary text
 \def\FteUnfundedSummaryText{Total Unfunded Work Effort}        % unfunded summary text
 \def\FteBothSummaryText{Total Funded $+$ Unfunded Work Effort} % total summary text
+
+%--- making zeros appear fainter
+%    this definition is hard-coded into the WorPT script
+\def\FaintZeros#1{{\color{gray!40}{#1}}}
 
 %--- internal parameters used by script but not for user
 \def\LastYearPlusOne{[INSERTLASTYEARPLUSONE]}
