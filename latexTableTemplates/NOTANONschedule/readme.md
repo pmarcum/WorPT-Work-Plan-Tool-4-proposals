@@ -305,8 +305,8 @@ Copy/paste the ENTIRE below code in order to change default table preamble.<br>
 --------------------------------------->
 <details>
 <summary><b>Examples</b></summary>
-
-   
+The below is an example of how one can change the appearance of the contents within a LaTeX document. Yellow highlights note the preferences that were changed, and yellow highlight in the rendered file/table indicate the changes related to preferences. 
+      
 <img src="https://lh3.googleusercontent.com/d/1Fj0juT0UURcvBU8PaYDLYMuC4OVmdJCk" width=30%>
 
 NOTE: To return to default values, all I have to do is comment-out (put a "%" at the line's beginning) the "\def" formatting lines that I pasted. 
