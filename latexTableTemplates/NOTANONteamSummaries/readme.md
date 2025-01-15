@@ -94,9 +94,10 @@ You can just comment out your added lines and recompile the document, if you wan
 --------------------------------------->
 <details>
 <summary><b>Examples</b></summary>
-The below is an example of how one can change the appearance of the contents within a LaTeX document. I copy/pasted the only formatting line that controls font style and edited so that the name is both boldfaced and italicized. Here is a peek at what my LaTeX document looks like:  
 
-<!-- insert image of example -->
+https://drive.google.com/file/d/1naTiTEcmSTj8_XO-DuQs8nrpSbpFjR2l/view?usp=sharing
+
+
 
 NOTE: To return to default values, all I have to do is comment-out (put a "%" at the line's beginning) the "\def" formatting lines that I pasted. 
 </details>
