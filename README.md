@@ -10,7 +10,7 @@
 This script is attached to a Google Sheet and allows one to generate Latex tables that may be included in a Latex document written for a research grant proposal using a form of the "\input" command (detailed instructions appear in the Latex files that are generated as comments at the top of the files).  The tables describe the proposal's work-plan and associated schedules and labor distribution among the proposing team, and are rendered in 2 different versions:  an anonymous and non-anonymous version for inclusion in dual-anonymous-reviewed grant programs.  The tool allows one to make tweaks, additions, deletions and quickly re-render the new versions of these tables without worrying about human error or inconsistencies that arise when such edits are performed manually.
 
 The below is a link to the Proposal Work Plan Tool spreadsheet on Google Drive:
-https://docs.google.com/spreadsheets/d/1_Ts-1wnu5aIXn-olygI8RMq5eyzRfVQhs0rxho1PdHk/copy
+https://docs.google.com/spreadsheets/d/1nYdZT4c5NC77Ebzlvo23r0WMyGvUuL0i4Amji4YcRYM/copy
 
 and here is a link to the bio-sketch template that is also used in the script: 
 https://docs.google.com/spreadsheets/d/1Hx3A4Eje6NfnWr89DdWx9UJF51RJz8yVe7kp5KjmnII/copy
@@ -46,7 +46,18 @@ NOTE: A new series of videos have been published that describes how to use WorPT
            %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-Updates: ver 11162024 is the latest version
+Updates: ver 01152025 is the latest version
+
+01/15/2025
+- **MAJOR UPDATE!** To greatly facilitate the future maintenance of WorPT and to insure that users are always using the most recent versions of the LaTeX table templates, I have moved the LaTeX templates from the script that was attached to the WorPT googlesheet to individual files that are now hosted in github (see https://github.com/pmarcum/WorPT-Work-Plan-Tool-4-proposals/tree/main/latexTableTemplates for all the templates used to generate the WorPT tables). The WorPT script (attached to the spreadsheet) now pulls in the github-hosted templates to use for constructing the ~dozen WorPT file products. Many advantages are made possible with this change:
+        * If there are LaTeX code errors, the errors can be fixed through github and all users will immediately be utilizing the fixed LaTeX templates.  (The attached script for each user's WorPT spradsheet would have to be edited in order to fix any LaTeX coding errors in the templates, before this modularization).
+        * Using a github repo to host the templates opened the potential for a very detailed "how to use" guide that was not possible before.  Each LaTeX template file has its own github subfolder, with its own "readme" file that includes an organized guide with screen shots.
+        * This online guide eliminates the previous need to copy/paste a *very* long list of LaTeX code into one's document in order to insert the WorPT file.  Now, the user can obtain the considerably smaller list of basic code using a one-click icon, then paste into the document.
+        * The online guide provides a straightforward way of seeing what user preference options are available and to easily copy/paste them using a one-click icon.
+        * The guide provides detailed sceenshots as well as an example of how to use each WorPT file.
+        * Having the files hosted on github provides a modularity that will allow easy expansion, if new files are desired.  
+- In addition to the conversion to modularity and github-hosting the LaTeX templates, some minor LaTex code errors in the LaTeX table templates were corrected (there was an unnecessary and unclosed curly bracket in one of the templates).
+- Another major update is planned some time later this year. That update will be relatively transparent to the user, but will further push modularity by converting most of the WorPT script into a webapp (this allowing the script to be completely decoupled from the WorPT spreadsheet). 
 
 11/17/2024
 - DRIVE and DRIVE ACTIVITY were added as services to the script.
