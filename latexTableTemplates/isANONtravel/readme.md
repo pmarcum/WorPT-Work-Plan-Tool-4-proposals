@@ -123,9 +123,7 @@ You can just comment out your added lines and recompile the document, if you wan
 <tr>
 <td><b>Column color shading</b></td>
 <td><pre><code>
-\def\PerTripShadingColor{<mark>lightgray</mark>}        % Shading color of "per trip" columns
-\def\PerTripShadingTransparency{<mark>0.85</mark>} % Shading transparency for "per trip"; transparent(1.0) - opaque(0.0)
-\def\PerTripShadingMargin{<mark>7pt</mark>} % Right margin of shaded "per trip" columns (prevents white vertical line)
+\def\PerTripShadingColor{<mark>gray!15</mark>}        % Shading color of "per trip" columns
 </code></pre>
 <details>
 <summary>reference image</summary>
