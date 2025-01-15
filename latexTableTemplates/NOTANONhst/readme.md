@@ -176,7 +176,12 @@ Use table preamble for more control over table layout (removing/adding vertical 
 --------------------------------------->
 <details>
 <summary><b>Examples</b></summary>
-The below is an example of how one can change the appearance of the table within a LaTeX document. After copy/pasting the code to incorporate the table into my document, and then deciding that my task titles were too long to fit with the table in portrait mode, I decided I needed to use landscape mode.  I copy/pasted the landscape fla and the 2 formatting lines that control the "Tasks" and "Expertise" column widths. (My team members have long last names, requiring a wider column than the default). I also slightly altered the caption to be appropriate to my proposal. The result?  A landscape-mode table that allows each task to appear in a single table row without spilling over into the next line, which is my preferred way to present these tables for easiest viewing. Here is a peek at what my LaTeX document looks like:  
+The below is an example of how one can change the appearance of the table within a LaTeX document. After copy/pasting the code to incorporate the table into my 
+
+ <img src="https://lh3.googleusercontent.com/d/1QOff63_b8AUEFpRMKUlaGK0LcEz3NvCK" width=50%>
+
+
+   
 <!-- INSERT IMAGE HERE -->
 NOTE: To return to default values, all I have to do is comment-out (put a "%" at the line's beginning) the "\def" formatting lines that I pasted. 
 </details>
