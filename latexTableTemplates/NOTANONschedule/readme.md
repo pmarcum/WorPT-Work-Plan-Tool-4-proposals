@@ -77,6 +77,18 @@ You can just comment out your added lines and recompile the document, if you wan
                               Options   
 <!-- . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . -->
 <table>
+   
+<tr>
+<td><b>Table orientation</b></td>
+<td><pre><code>
+\LandScapetrue          % will put the table in landscape mode
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/16SbKRxlDHWshgzt-tQNsjqqSOJeCXWm1" width=15%>
+</details>
+</td>
+</tr>
 
 <tr>
 <td><b>Column width adjustments</b></td>
