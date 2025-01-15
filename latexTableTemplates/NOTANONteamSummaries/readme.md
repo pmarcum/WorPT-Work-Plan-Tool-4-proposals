@@ -95,9 +95,7 @@ You can just comment out your added lines and recompile the document, if you wan
 <details>
 <summary><b>Examples</b></summary>
 
-https://drive.google.com/file/d/1naTiTEcmSTj8_XO-DuQs8nrpSbpFjR2l/view?usp=sharing
-
-
+<img src="https://lh3.googleusercontent.com/d/1WFpSF6KWz2-EH9hsjyvleSztdONlHiXc" width=30%>
 
 NOTE: To return to default values, all I have to do is comment-out (put a "%" at the line's beginning) the "\def" formatting lines that I pasted. 
 </details>
