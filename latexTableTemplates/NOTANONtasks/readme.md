@@ -214,7 +214,7 @@ define them separately as the above customization options show, or replace them 
 <summary><b>Examples</b></summary>
 The below is an example of how one can change the appearance of the contents within a LaTeX document. Yellow highlights note the preferences that were changed, and yellow highlight in the rendered file/table indicate the changes related to preferences. 
      
-<img src="https://lh3.googleusercontent.com/d/1JaLRe1Et6Ap4g--A7tGZg7aey46fFeN6" width=50%>
+<img src="https://lh3.googleusercontent.com/d/1JaLRe1Et6Ap4g--A7tGZg7aey46fFeN6" width=60%>
 
 NOTE: To return to default values, all I have to do is comment-out (put a "%" at the line's beginning) the "\def" formatting lines that I pasted. 
 </details>
