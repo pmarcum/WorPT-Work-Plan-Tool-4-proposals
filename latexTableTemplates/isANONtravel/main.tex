@@ -15,19 +15,17 @@
 \def\SpaceBetweenColumns{5pt}            % spacing between columns
 
 %--- aesthetic preferences
-\def\BannerFontstyle#1{\textbf{#1}}      % Bold-face for top banner "Travel Cost Details
-\def\BannerColor{Blue}                   % Color of the top "Travel Cost Details" banner
-\def\BannerFontColor{White}              % Font color for top "Travel Cost Details" banner
-\def\PerTripShadingColor{lightgray}           % Shading color of "per trip" columns
-\def\PerTripShadingTransparency{0.85}    % Shading transparency for "per trip" colunns; transparent(1.0) - opaque(0.0)
-\def\PerTripShadingMargin{7pt}           % Margin width to right of each shaded "per trip" column (prevents white vertical line)
-\def\YearTripsDestLabelFontColor{Blue}   % Font color for "Year", "#TRips" and "Dest." column labels
-\def\TotalLabelFontColor{Blue}           % Font color "Total" column label
-\def\TotalLabelFontstyle#1{\textbf{#1}}       % Bold-face column label "Total"
-\def\PerTripLabelFontColor{Blue}         % Font color of column labels for "per trip" section
-\def\PerTripLabelFontstyle#1{\textbf{#1}}     % Bold-face column labels for "per trip" section
+\def\BannerFontstyle#1{\textbf{#1}}       % Bold-face for top banner "Travel Cost Details
+\def\BannerColor{Blue}                    % Color of the top "Travel Cost Details" banner
+\def\BannerFontColor{White}               % Font color for top "Travel Cost Details" banner
+\def\PerTripShadingColor{gray!15}         % Shading color of "per trip" columns
+\def\YearTripsDestLabelFontColor{Blue}    % Font color for "Year", "#TRips" and "Dest." column labels
+\def\TotalLabelFontColor{Blue}            % Font color "Total" column label
+\def\TotalLabelFontstyle#1{\textbf{#1}}   % Bold-face column label "Total"
+\def\PerTripLabelFontColor{Blue}          % Font color of column labels for "per trip" section
+\def\PerTripLabelFontstyle#1{\textbf{#1}} % Bold-face column labels for "per trip" section
 \def\YearTripsDestFontstyle#1{\textbf{#1}}% Bold-face "Year", "#Trips", "Dest." labels
-\def\YearFontstyle#1{\textbf{#1}}        % Bold-face "Yr1", "YR2", etc labels
+\def\YearFontstyle#1{\textbf{#1}}         % Bold-face "Yr1", "YR2", etc labels
 
 %---- definitions used by the script in the caption and should not be altered by user
 \def\daysPerDomesticTrip{[INSERTNDAYSDOMESTICTRIP]}
@@ -38,14 +36,16 @@
 \def\internationalGroundTravelDollars{[INSERTINTERNATIONALGROUNDTRAVELDOLLARS]}
 \def\grantYears{[INSERTNGRANTYEARS]}
 \def\perPersonNumberTripsList{[INSERTPERPERSONNUMBERTRIPS]}
+\def\PerTripShadingMargin{\SpaceBetweenColumns} 
+% above margin width to right of each shaded "per trip" column (prevents white vertical line)
 
 %--- table preamble definition bundled into the "T" variable
 \newcolumntype{T}{
- |lcl >{{\columncolor[\PerTripShadingColor]{\PerTripShadingTransparency}}[\tabcolsep][\PerTripShadingMargin]}
- l>{{\columncolor[\PerTripShadingColor]{\PerTripShadingTransparency}}[\tabcolsep][\PerTripShadingMargin]}
- l>{{\columncolor[\PerTripShadingColor]{\PerTripShadingTransparency}}[\tabcolsep][\PerTripShadingMargin]}
- l>{{\columncolor[\PerTripShadingColor]{\PerTripShadingTransparency}}[\tabcolsep][\PerTripShadingMargin]}
- l>{{\columncolor[\PerTripShadingColor]{\PerTripShadingTransparency}}[\tabcolsep][\PerTripShadingMargin]}
+ |lcl >{\columncolor{\PerTripShadingColor}[\tabcolsep][\PerTripShadingMargin]}
+ l>{\columncolor{\PerTripShadingColor}[\tabcolsep][\PerTripShadingMargin]}
+ l>{\columncolor{\PerTripShadingColor}[\tabcolsep][\PerTripShadingMargin]}
+ l>{\columncolor{\PerTripShadingColor}[\tabcolsep][\PerTripShadingMargin]}
+ l>{\columncolor{\PerTripShadingColor}[\tabcolsep][\PerTripShadingMargin]}
  ll|
 }
 
@@ -58,7 +58,7 @@
 \begin{tabular}{T}
 %---- top header line
 \multicolumn{9}{|@{}c@{}|}{\cellcolor{\BannerColor}\color{\BannerFontColor}\BannerFontstyle{Travel Cost Details}}\\
-\multicolumn{3}{|c}{} & \multicolumn{5}{>{\columncolor[\PerTripShadingColor]{\PerTripShadingTransparency}[\tabcolsep][\PerTripShadingMargin]}c}{\color{\PerTripLabelFontColor}\emph{\textbf{per trip}}} & \\
+\multicolumn{3}{|c}{} & \multicolumn{5}{>{\columncolor{\PerTripShadingColor}[\tabcolsep][\PerTripShadingMargin]}c}{\color{\PerTripLabelFontColor}\emph{\textbf{per trip}}} & \\
 \cline{4-8}
 %---- middle header line
 {\YearTripsDestLabelFontstyle{\color{\YearTripsDestLabelFontColor}{Year}}} & {\YearTripsDestLabelFontstyle{\color{\YearTripsDestLabelFontColor}{\#Trips}}} & {\YearTripsDestLabelFontstyle{\color{\YearTripsDestLabelFontColor}{Dest.}}} & {\PerTripLabelFontstyle{\color{\PerTripLabelFontColor}{Airfare}}} & {\PerTripLabelFontstyle{\color{\PerTripLabelFontColor}{per}}} & {\PerTripLabelFontstyle{\color{\PerTripLabelFontColor}{Conf.}}} & {\PerTripLabelFontstyle{ \color{\PerTripLabelFontColor}{Ground}}} & {\PerTripLabelFontstyle{\color{\PerTripLabelFontColor}{per}}} & {\TotalLabelFontstyle{\color{\TotalLabelFontColor}{Total}}}\\ 
