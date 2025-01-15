@@ -212,9 +212,7 @@ define them separately as the above customization options show, or replace them 
 --------------------------------------->
 <details>
 <summary><b>Examples</b></summary>
-The below is an example of how one can change the appearance of the table within a LaTeX document. After copy/pasting the code to incorporate the table into my document, and then deciding that my task titles were too long to fit with the table in portrait mode, I decided I needed to use landscape mode.  I copy/pasted the landscape fla and the 2 formatting lines that control the "Tasks" and "Expertise" column widths. (My team members have long last names, requiring a wider column than the default). I also altered the caption to be appropriate to my proposal (e.g., changed the red font that signaled words that needed to be adapted). The result?  A landscape-mode table that allows each task to appear in a single table row without spilling over into the next line, which is my preferred way to present these tables for easiest viewing. I also decided I wanted the banners that separate the tasks into groups to just be plain text instead of boldfaced. I also wanted to left-align the Start and Finish columns. Here is a peek at what my LaTeX document looks like:  
-
-<!--     INSERT IMAGE -->
+<img src="https://lh3.googleusercontent.com/d/11h84W4PCBE_a9TruZ6TXbafv7afOQFQk" width=60%>
 
 NOTE: To return to default values, all I have to do is comment-out (put a "%" at the line's beginning) the "\def" formatting lines that I pasted. 
 </details>
