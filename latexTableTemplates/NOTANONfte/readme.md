@@ -192,8 +192,8 @@ Copy/paste the ENTIRE below code in order to change default table preamble.<br>
 --------------------------------------->
 <details>
 <summary><b>Examples</b></summary>
-The below is an example of how one can change the appearance of the table within a LaTeX document. After copy/pasting the code to incorporate the table into my document, I decided I wanted to turn the top blue header to green, and the gray shading to yellow shading (resulting in a hideous color scheme, by the way!). I copy/pasted the lines relevant to these formats. Here's what my LaTeX document looks like:  
-
+The below is an example of how one can change the appearance of the contents within a LaTeX document. Yellow highlights note the preferences that were changed, and yellow highlight in the rendered file/table indicate the changes related to preferences. 
+   
    <img src="https://lh3.googleusercontent.com/d/1QOff63_b8AUEFpRMKUlaGK0LcEz3NvCK" width=60%>
 
 NOTE: To return to default values, all I have to do is comment-out (put a "%" at the line's beginning) the "\def" formatting lines that I pasted. 
