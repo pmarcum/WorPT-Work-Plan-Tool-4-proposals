@@ -169,8 +169,8 @@ define them separately as the above customization options show, or replace them 
 --------------------------------------->
 <details>
 <summary><b>Examples</b></summary>
-The below is an example of how one can change the appearance of the contents within a LaTeX document. After copy/pasting the code to incorporate the file contents into my document, I decided to change the color of the name banners from blue to black, the font color to yellow, and to italicize the font in the name banner.  I also needed to make the right column a bit wider. To accomplish these tasks, I copy/pasted the relevant formatting lines that control these items and then edited my preferences. Here is a peek at what my LaTeX document looks like:  
-
+The below is an example of how one can change the appearance of the contents within a LaTeX document. Yellow highlights note the preferences that were changed, and yellow highlight in the rendered file/table indicate the changes related to preferences. 
+   
 <img src="https://lh3.googleusercontent.com/d/1zMt6_Rmxzkl0xW7V_Amhsx5RiH9GXk9w" width=30%>
 
 
