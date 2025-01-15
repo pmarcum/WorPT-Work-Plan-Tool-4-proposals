@@ -145,15 +145,28 @@ be turned into plain test by removing the "\textbf", eg {{#1}}
 <tr>
 <td><b>Color, labelling, font style of category totals</b></td>
 <td><pre><code>
-\def\TotalWorkEffortFontstyle#1{<mark>\textbf</mark>{#1}}% boldface text in "Total .... Work Effort" line at section end
-\def\TotalWorkEffortFontColor{<mark>Blue</mark>}        % font color of "Total ... Work Effort" line at section end
 \def\FteFundedSummaryText{<mark>Total Funded Work Effort</mark>}
 \def\FteUnfundedSummaryText{<mark>Total Unfunded Work Effort</mark>}
 \def\FteBothSummaryText{<mark>Total Funded $+$ Unfunded Work Effort</mark>}
+\def\TotalWorkEffortFontstyle#1{<mark>\textbf</mark>{#1}}% boldface text in "Total .... Work Effort" line at section end
+\def\TotalWorkEffortFontColor{<mark>Blue</mark>}        % font color of "Total ... Work Effort" line at section end
 </code></pre>
 <details>
 <summary>reference image</summary>
 <img src="https://lh3.googleusercontent.com/d/1_eISEUxZ67brf0oYlZ9iLEFzqngz3rAl" width=50%>
+</details>
+</td>
+</tr>
+
+<tr>
+<td><b>Faint horizontal line and zeros</b></td>
+<td><pre><code>
+\def\FaintHorizontalLine{\arrayrulecolor{lightgray!40}\hline} % faint line above summary line
+\def\FaintZeros#1{{\color{gray!40}{#1}}}  % faint zero values
+</code></pre>
+<details>
+<summary>reference image</summary>
+<img src="https://lh3.googleusercontent.com/d/19IUvqwetj380AfeKb3SqUVpElA4rMjop" width=60%>
 </details>
 </td>
 </tr>
